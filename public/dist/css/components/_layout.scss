@@ -83,6 +83,17 @@ header.ba-header {
                 }
             }
         }
+        .ba-dropdown-items li a {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: #2B3E62;
+        }
         .ba-user-profile-nav-toggle {
             background-color: transparent;
             box-shadow: none;
