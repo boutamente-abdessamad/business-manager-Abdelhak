@@ -10,6 +10,11 @@ $(document).ready(() => {
 
         /* do your magic here*/
 
+        // sidebar toggle 
+        $('.ba-sidebar-toggle').on('click', function (e) {
+            e.preventDefault();
+            $('body').toggleClass('ba-sidebar-open');
+        });
 
 
     } catch (e) {

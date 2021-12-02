@@ -1,0 +1,251 @@
+/* ............... Header syles ................ */
+
+header.ba-header {
+    background: $bule;
+    padding: 0 pxToVw(30);
+    height: pxToVw(90);
+    // nav 
+    nav.ba-navbar {
+        @include flexCenterBetween();
+        height: 100%;
+        .ba-navbar-leftside,
+        .ba-navbar-rightside {
+            @include flexCenterBetween();
+        }
+        a.ba-nav-logo span {
+            font-family: Ropa Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: pxToVw(19);
+            line-height: pxToVw(20);
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            padding-left: pxToVw(20);
+        }
+        a.ba-nav-logo {
+            @include flexCenter();
+        }
+        a.ba-nav-logo img {
+            width: pxToVw(33);
+            height: pxToVw(33);
+        }
+        a.ba-nav-site-link {
+            background: #1A4799;
+            border-radius: 100px;
+            height: pxToVw(43);
+            @include flexCenter();
+            padding: 0 pxToVw(13);
+        }
+        a.ba-nav-site-link img {
+            width: pxToVw(21);
+            height: pxToVw(21);
+        }
+        a.ba-nav-site-link span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: pxToVw(13);
+            line-height: pxToVw(15);
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            margin-left: pxToVw(15);
+        }
+        .ba-search-nav {
+            position: relative;
+            padding-right: 36px;
+            &::after {
+                content: "";
+                left: pxToVw(15);
+                @include yAbsoluteCenter();
+                background: url($iconsPath+ '/light-search.svg') no-repeat center;
+                background-size: contain;
+                width: pxToVw(20);
+                height: pxToVw(20);
+            }
+            input {
+                height: pxToVw(43);
+                background: rgba(246, 246, 249, 0.2);
+                border-radius: 100px;
+                border: none;
+                font-family: Roboto;
+                font-style: normal;
+                outline: none;
+                font-weight: 500;
+                font-size: pxToVw(13);
+                line-height: pxToVw(15);
+                width: auto;
+                min-width: pxToVw(347);
+                text-indent: pxToVw(53);
+                letter-spacing: 0.03em;
+                color: #E7EDF8;
+                &::placeholder {
+                    color: #E7EDF8;
+                }
+            }
+        }
+        .ba-user-profile-nav-toggle {
+            background-color: transparent;
+            box-shadow: none;
+            align-items: center;
+            display: flex;
+            padding: 0;
+            &:hover {
+                background: transparent;
+            }
+            span {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(15);
+                line-height: pxToVw(24);
+                color: #FFFFFF;
+                margin-left: pxToVw(10);
+                margin-right: pxToVw(23);
+            }
+        }
+        .ba-user-profile-nav-toggle {
+            i {
+                font-size: pxToVw(20);
+                color: #FFFFFF;
+            }
+            img {
+                width: pxToVw(46);
+                height: pxToVw(46);
+            }
+        }
+        a.ba-sidebar-toggle {
+            margin: 0 pxToVw(60);
+            img {
+                width: pxToVw(26);
+                height: pxToVw(26);
+            }
+        }
+    }
+    // nav 
+}
+
+
+/* .............. ./Header syles ............... */
+
+
+/* .............. ./Sidebar syles ............... */
+
+.ba-sidebar {
+    .ba-logout.ba-sidebar-items {
+        margin-top: pxToVw(74);
+    }
+    transition: .3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.1),
+    0px 7px 10px 1px rgba(0, 0, 0, 0.07),
+    0px 2px 16px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 0px pxToVw(15) pxToVw(15) 0px;
+    position: absolute;
+    top: pxToVw(90);
+    left: 0;
+    height: auto;
+    padding: pxToVw(22);
+    width: pxToVw(100);
+    .ba-sidebar-toggle {
+        margin: pxToVw(60) auto;
+        @include flexCenterCenter();
+        width: pxToVw(32);
+        height: pxToVw(32);
+        background: #E7EDF8;
+        border-radius: 50%;
+        color: $bule;
+        font-size: pxToVw(21);
+        i {
+            transition: .1s all cubic-bezier(0.65, 0.05, 0.36, 1);
+            font-size: pxToVw(22);
+            color: $bule;
+        }
+    }
+    ul.ba-sidebar-items {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            &.active {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    height: 14px;
+                    width: 14px;
+                    background: #F7B422;
+                    border: 3px solid #FFFFFF;
+                    border-radius: 50%;
+                }
+                position: relative;
+                a {
+                    background-color: $bule;
+                    img {
+                        filter: brightness(10);
+                    }
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
+            a {
+                transition: .3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+                background: #F3F6FC;
+                opacity: 0.82;
+                @include flexCenter();
+                padding-left: 17px;
+                margin-bottom: pxToVw(25);
+                border-radius: 50%;
+                width: pxToVw(56);
+                height: pxToVw(56);
+                overflow: hidden;
+                span {
+                    transition: .1s all cubic-bezier(0.65, 0.05, 0.36, 1);
+                    transition-delay: .2s;
+                    font-family: Roboto;
+                    overflow: hidden;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: pxToVw(15);
+                    line-height: pxToVw(18);
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: #104CBA;
+                    margin-left: pxToVw(15);
+                    opacity: 0;
+                }
+                img {
+                    width: pxToVw(23);
+                    height: pxToVw(23);
+                }
+            }
+        }
+    }
+}
+
+body.ba-sidebar-open {
+    .ba-sidebar {
+        width: pxToVw(250);
+        ul.ba-sidebar-items {
+            li a {
+                justify-content: flex-start;
+                border-radius: pxToVw(15);
+                width: 100%;
+                @include flexCenter();
+                padding: pxToVw(18) pxToVw(17);
+                span {
+                    opacity: 1;
+                }
+            }
+        }
+        .ba-sidebar-toggle {
+            i {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+
+/* .............. ./Sidebar syles ............... */

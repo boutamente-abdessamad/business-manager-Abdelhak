@@ -22,30 +22,42 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Ropa Sans  */
+
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+
 /*-------------- End Fonts -------------------*/
 
-// @mixin name($name) {
-//   @if $name == 'Inter' {
-//     @include font-family('Inter', sans-serif);
-//   } @else if $name == 'Poppins' {
-//     @include font-family('Poppins', sans-serif);
-//   } @else if $name == 'Roboto' {
-//     @include font-family('Roboto', sans-serif);
-//   } @else {
-//     @include font-family('Inter', sans-serif);
-//   }
-// }
+// mixins
+
+/* ........... Global .............. */
+
+.btn.active,
+.btn.active:focus,
+.btn.focus,
+.btn:active,
+.btn:active:focus,
+.btn:focus,
+.btn:hover {
+    box-shadow: none;
+}
+
+
+/* ........... conmponents .............. */
+
+@import "./components/variables";
+@import "./components/mixin";
 @import "./components/buttons";
+@import "./components/layout";
 
-/*======================= Global classes  =======================*/
+/* ........... ./conmponents .............. */
 
-$primaryColor: #00bcd4;
-.app-root {
-    // @extend .some-class;
-    height: calc(100vh - 64px);
-    width: 100vw;
-    background-color: $primaryColor;
-    display: flex;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2B3E62;
+    background-color: #F4F5F5;
+    text-decoration-line: none;
+    margin: 0;
 }
 
 
