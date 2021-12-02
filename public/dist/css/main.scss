@@ -42,6 +42,16 @@
     box-shadow: none;
 }
 
+.btn {
+    text-transform: initial;
+    vertical-align: initial;
+    border: 0;
+    padding: initial;
+    font-size: .75rem;
+    line-height: 1.5;
+    box-shadow: none;
+}
+
 
 /* ........... conmponents .............. */
 
@@ -58,6 +68,63 @@ body {
     background-color: #F4F5F5;
     text-decoration-line: none;
     margin: 0;
+}
+
+// main nav 
+.ba-main-tabs {
+    position: relative;
+    &::after {
+        content: "";
+        background-color: rgba(16, 76, 186, 0.15);
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        border-radius: 5px;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        li {
+            a {
+                position: relative;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.03em;
+                padding: 20px 40px;
+                color: rgba(43, 62, 98, 0.65);
+            }
+            &.active {
+                a {
+                    color: $bule;
+                    &::after {
+                        content: "";
+                        background-color: $bule;
+                        height: 3px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        border-radius: 5px;
+                        right: 0;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
