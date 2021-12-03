@@ -36,25 +36,66 @@
 
 /* ........... conmponents .............. */
 /* ............... mixin ................ */
-/* button {
-    display: inline-block;
-    padding: 0.5em 1em;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    background: #eee;
-    color: #333;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-        background: #ddd;
-    }
-    &:active {
-        background: #ccc;
-    }
-} */
+[class*="ba-btn-"] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(15 * 0.0651111111vw);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: calc(12 * 0.0651111111vw) calc(25 * 0.0651111111vw);
+  border-radius: 7px;
+}
+
+[class*="ba-btn-"] img {
+  width: calc(13 * 0.0651111111vw);
+  height: calc(13 * 0.0651111111vw);
+}
+
+[class*="ba-btn-"] > img ~ span {
+  margin-left: calc(10 * 0.0651111111vw);
+}
+
+[class*="ba-btn-"] > span ~ img {
+  margin-left: calc(10 * 0.0651111111vw);
+}
+
+.ba-btn-primary {
+  background-color: #104CBA;
+  color: #FFFFFF;
+}
+
+.ba-btn-primary:hover {
+  background-color: #1A4799;
+  color: #FFFFFF;
+}
+
+.ba-btn-default {
+  background-color: transparent;
+  color: #2B3E62;
+  border: 1px solid rgba(43, 62, 98, 0.25);
+}
+
+.ba-btn-default:hover {
+  background-color: #1a479933;
+  color: #2B3E62;
+}
+
+.ba-btn-round {
+  border-radius: calc(100 * 0.0651111111vw);
+}
+
 /* ............... Header syles ................ */
 header.ba-header {
   background: #104CBA;
@@ -72,6 +113,8 @@ header.ba-header nav.ba-navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 100%;
 }
 
@@ -86,6 +129,8 @@ header.ba-header nav.ba-navbar .ba-navbar-rightside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header.ba-header nav.ba-navbar a.ba-nav-logo span {
@@ -106,6 +151,8 @@ header.ba-header nav.ba-navbar a.ba-nav-logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header.ba-header nav.ba-navbar a.ba-nav-logo img {
@@ -123,6 +170,8 @@ header.ba-header nav.ba-navbar a.ba-nav-site-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 calc(13 * 0.0651111111vw);
 }
 
@@ -198,8 +247,8 @@ header.ba-header nav.ba-navbar .ba-dropdown-items li a {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
-  line-height: 25px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(25 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,6 +309,7 @@ header.ba-header nav.ba-navbar a.ba-sidebar-toggle img {
 /* .............. ./Header syles ............... */
 /* .............. ./Sidebar syles ............... */
 .ba-sidebar {
+  z-index: 9;
   -webkit-transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   background: #FFFFFF;
@@ -289,6 +339,8 @@ header.ba-header nav.ba-navbar a.ba-sidebar-toggle img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: calc(32 * 0.0651111111vw);
   height: calc(32 * 0.0651111111vw);
   background: #E7EDF8;
@@ -350,7 +402,11 @@ header.ba-header nav.ba-navbar a.ba-sidebar-toggle img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 17px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: calc(25 * 0.0651111111vw);
   border-radius: 50%;
   width: calc(56 * 0.0651111111vw);
@@ -374,6 +430,7 @@ header.ba-header nav.ba-navbar a.ba-sidebar-toggle img {
   color: #104CBA;
   margin-left: calc(15 * 0.0651111111vw);
   opacity: 0;
+  display: none;
 }
 
 .ba-sidebar ul.ba-sidebar-items li a img {
@@ -390,6 +447,7 @@ body.ba-sidebar-open .ba-sidebar ul.ba-sidebar-items li a {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-radius: calc(15 * 0.0651111111vw);
+  padding-left: 17px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,11 +455,14 @@ body.ba-sidebar-open .ba-sidebar ul.ba-sidebar-items li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: calc(18 * 0.0651111111vw) calc(17 * 0.0651111111vw);
 }
 
 body.ba-sidebar-open .ba-sidebar ul.ba-sidebar-items li a span {
   opacity: 1;
+  display: block;
 }
 
 body.ba-sidebar-open .ba-sidebar .ba-sidebar-toggle i {
@@ -410,19 +471,51 @@ body.ba-sidebar-open .ba-sidebar .ba-sidebar-toggle i {
 }
 
 /* .............. ./Sidebar syles ............... */
-main.app-root {
-  padding: 51px;
-  padding-left: 151px;
+main.ba-app-root {
+  padding: calc(51 * 0.0651111111vw);
+  padding-left: calc(151 * 0.0651111111vw);
 }
 
-main.app-root .main-cart {
-  padding: 55px;
+main.ba-app-root .ba-main-cart {
+  padding: calc(55 * 0.0651111111vw);
   background: #FFFFFF;
-  width: 100%;
-  height: 100vh;
   -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1), 0px 7px 10px rgba(0, 0, 0, 0.07), 0px 2px 16px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1), 0px 7px 10px rgba(0, 0, 0, 0.07), 0px 2px 16px rgba(0, 0, 0, 0.06);
-  border-radius: 15px;
+  border-radius: calc(15 * 0.0651111111vw);
+}
+
+/* ........... Global elements ............. */
+.ba-block-title-ontainer {
+  margin-top: calc(20 * 0.0651111111vw);
+  padding-bottom: calc(10 * 0.0651111111vw);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(21 * 0.0651111111vw);
+  line-height: calc(25 * 0.0651111111vw);
+  color: #2B3E62;
+  margin: calc(30 * 0.0651111111vw) 0px;
+}
+
+.block-title span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(27 * 0.0651111111vw);
+  line-height: calc(32 * 0.0651111111vw);
+  color: #104CBA;
+}
+
+.gray-bb {
+  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
 }
 
 /* ........... ./conmponents .............. */
@@ -469,8 +562,8 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,7 +572,7 @@ body {
           align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 20px 40px;
+  padding: calc(20 * 0.0651111111vw) calc(40 * 0.0651111111vw);
   color: rgba(43, 62, 98, 0.65);
 }
 
@@ -498,6 +591,245 @@ body {
   border-radius: 5px;
   right: 0;
   display: block;
+}
+
+.ba-group-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: calc(45 * 0.0651111111vw) 0px;
+}
+
+.ba-statistics-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: calc(37 * 0.0651111111vw);
+}
+
+.ba-statistics-numbers h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(45 * 0.0651111111vw);
+  line-height: calc(67 * 0.0651111111vw);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #104CBA;
+  margin-bottom: 0;
+}
+
+.ba-statistics-numbers p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin-bottom: 0;
+}
+
+.ba-statistics-numbers .ba-statistic-number {
+  width: 25%;
+  position: relative;
+}
+
+.ba-statistics-numbers .ba-statistic-number:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  border-right: 1px solid rgba(16, 76, 186, 0.28);
+  right: 0;
+  height: calc(55 * 0.0651111111vw);
+}
+
+.ba-invoices-status-container {
+  background: #F1F5FB;
+  margin-top: calc(63 * 0.0651111111vw);
+  border-radius: calc(15 * 0.0651111111vw);
+  padding: calc(30 * 0.0651111111vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box {
+  height: calc(278 * 0.0651111111vw);
+  min-width: calc(198 * 0.0651111111vw);
+  background-color: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: calc(15 * 0.0651111111vw);
+  -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.11);
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.ba-add-new-invoice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.ba-add-new-invoice img {
+  width: calc(25 * 0.0651111111vw);
+  height: calc(25 * 0.0651111111vw);
+  margin-bottom: calc(15 * 0.0651111111vw);
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.ba-add-new-invoice span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #104CBA;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box:not(:last-child) {
+  margin-right: calc(60 * 0.0651111111vw);
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box::after {
+  content: "";
+  background-color: #ffffff;
+  height: calc(22 * 0.0651111111vw);
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  z-index: 0;
+  right: 0;
+  border-radius: calc(15 * 0.0651111111vw);
+  display: block;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.invoice-cashed {
+  background: #50CB93;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.invoice-cashed .ba-invoice-status p {
+  color: #50CB93;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.invoice-cashed .ba-invoice-status span {
+  background: rgba(247, 180, 34, 0.15);
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.invoice-late {
+  background: #F8485E;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.invoice-late .ba-invoice-status p {
+  color: #F8485E;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.invoice-late .ba-invoice-status span {
+  background: rgba(248, 72, 94, 0.15);
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.invoice-pending {
+  background: #F7B422;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.invoice-pending .ba-invoice-status p {
+  color: #F7B422;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box.invoice-pending .ba-invoice-status span {
+  background: rgba(247, 180, 34, 0.15);
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box .ba-invoice-status-item {
+  background: #FFFFFF;
+  padding: calc(20 * 0.0651111111vw);
+  border-radius: calc(15 * 0.0651111111vw);
+  z-index: 1;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box .ba-invoice-status-item .ba-invoice-status-skeleton img {
+  height: calc(139 * 0.0651111111vw);
+  width: 100%;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box .ba-invoice-status-item h5.ba-invoice-status-total {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  /* or 153% */
+  text-align: right;
+  color: rgba(43, 62, 98, 0.65);
+  margin: calc(15 * 0.0651111111vw) 0px;
+  margin-bottom: calc(40 * 0.0651111111vw);
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box .ba-invoice-status-item .ba-invoice-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box .ba-invoice-status-item .ba-invoice-status p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+}
+
+.ba-invoices-status-container .ba-invoice-status-item-box .ba-invoice-status-item .ba-invoice-status span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(10 * 0.0651111111vw);
+  border-radius: calc(30 * 0.0651111111vw);
+  height: calc(9 * 0.0651111111vw);
+  width: calc(76 * 0.0651111111vw);
 }
 
 /* ---------------------------------------------------------------------------- */

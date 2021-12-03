@@ -1,19 +1,50 @@
-/* button {
-    display: inline-block;
-    padding: 0.5em 1em;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    background: #eee;
-    color: #333;
-    font-size: 1em;
-    font-weight: bold;
+// buttons 
+[class*="ba-btn-"] {
+    display: inline-flex;
     text-decoration: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: pxToVw(13);
+    line-height: pxToVw(15);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: pxToVw(12) pxToVw(25);
+    border-radius: 7px;
+    img {
+        width: pxToVw(13);
+        height: pxToVw(13);
+    }
+    &>img~span {
+        margin-left: pxToVw(10);
+    }
+    &>span~img {
+        margin-left: pxToVw(10);
+    }
+}
+
+.ba-btn-primary {
+    background-color: $bule;
+    color: #FFFFFF;
     &:hover {
-        background: #ddd;
+        background-color: $buleHover;
+        color: #FFFFFF;
     }
-    &:active {
-        background: #ccc;
+}
+
+.ba-btn-default {
+    background-color: transparent;
+    color: #2B3E62;
+    border: 1px solid rgba(43, 62, 98, 0.25);
+    &:hover {
+        background-color: #1a479933;
+        color: #2B3E62;
     }
-} */
+}
+
+.ba-btn-round {
+    border-radius: pxToVw(100);
+}

@@ -5,29 +5,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 @mixin flexCenter() {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 @mixin flexCenterBetween() {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 @mixin inlineFlexCenterCenter() {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 @mixin inlineFlexCenterBetween() {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 @mixin yAbsoluteCenter() {

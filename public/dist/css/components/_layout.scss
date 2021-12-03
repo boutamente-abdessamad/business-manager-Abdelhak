@@ -87,8 +87,8 @@ header.ba-header {
             font-family: Roboto;
             font-style: normal;
             font-weight: 500;
-            font-size: 13px;
-            line-height: 25px;
+            font-size: pxToVw(13);
+            line-height: pxToVw(25);
             display: flex;
             align-items: center;
             letter-spacing: 0.03em;
@@ -145,6 +145,7 @@ header.ba-header {
     .ba-logout.ba-sidebar-items {
         margin-top: pxToVw(74);
     }
+    z-index: 9;
     transition: .3s all cubic-bezier(0.65, 0.05, 0.36, 1);
     background: #FFFFFF;
     box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.1),
@@ -205,7 +206,7 @@ header.ba-header {
                 background: #F3F6FC;
                 opacity: 0.82;
                 @include flexCenter();
-                padding-left: 17px;
+                justify-content: center;
                 margin-bottom: pxToVw(25);
                 border-radius: 50%;
                 width: pxToVw(56);
@@ -225,6 +226,7 @@ header.ba-header {
                     color: #104CBA;
                     margin-left: pxToVw(15);
                     opacity: 0;
+                    display: none;
                 }
                 img {
                     width: pxToVw(23);
@@ -242,11 +244,13 @@ body.ba-sidebar-open {
             li a {
                 justify-content: flex-start;
                 border-radius: pxToVw(15);
+                padding-left: 17px;
                 width: 100%;
                 @include flexCenter();
                 padding: pxToVw(18) pxToVw(17);
                 span {
                     opacity: 1;
+                    display: block;
                 }
             }
         }
@@ -262,15 +266,13 @@ body.ba-sidebar-open {
 /* .............. ./Sidebar syles ............... */
 
 // main app 
-main.app-root {
-    padding: 51px;
-    padding-left: 151px;
-    .main-cart {
-        padding: 55px;
+main.ba-app-root {
+    padding: pxToVw(51);
+    padding-left: pxToVw(151);
+    .ba-main-cart {
+        padding: pxToVw(55);
         background: #FFFFFF;
-        width: 100%;
-        height: 100vh;
         box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1), 0px 7px 10px rgba(0, 0, 0, 0.07), 0px 2px 16px rgba(0, 0, 0, 0.06);
-        border-radius: 15px;
+        border-radius: pxToVw(15);
     }
 }

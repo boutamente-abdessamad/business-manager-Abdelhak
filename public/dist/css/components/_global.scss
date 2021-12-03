@@ -1,0 +1,31 @@
+/* ........... Global elements ............. */
+
+// block-title
+.ba-block-title-ontainer {
+    margin-top: pxToVw(20);
+    padding-bottom: pxToVw(10);
+    align-items: center;
+    display: flex;
+}
+
+.block-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: pxToVw(21);
+    line-height: pxToVw(25);
+    color: #2B3E62;
+    margin: pxToVw(30) 0px;
+}
+
+.block-title span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: pxToVw(27);
+    line-height: pxToVw(32);
+    color: $bule;
+}
+
+.gray-bb {
+    border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+}
