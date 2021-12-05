@@ -14,7 +14,7 @@
     font-weight: 500;
     font-size: pxToVw(21);
     line-height: pxToVw(25);
-    color: #2B3E62;
+    color: $buleText;
     margin: pxToVw(30) 0px;
 }
 
@@ -28,4 +28,141 @@
 
 .gray-bb {
     border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+}
+
+input {
+    &:focus-visible {
+        outline: $bule auto 1px;
+    }
+}
+
+.invoice-status {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: pxToVw(13);
+    line-height: pxToVw(23);
+    padding: 2px pxToVw(15);
+}
+
+.invoice-status-danger {
+    background: $redTbg;
+    color: $redText;
+}
+
+.invoice-status-success {
+    background: $greenTbg;
+    color: $greenText;
+}
+
+.dropdown {
+    .dropdown-menu.ba-dropdown-items {
+        box-shadow: 0px 3px 11px #00000029;
+        .dropdown-item {
+            background: rgba(246, 246, 249, 0.33);
+            border-radius: 5px !important;
+            margin: pxToVw(5);
+            width: auto;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: pxToVw(11);
+            line-height: pxToVw(27);
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: $buleText;
+            &:hover {
+                background: rgba(16, 76, 186, 0.05);
+            }
+            img {
+                width: pxToVw(12);
+                height: pxToVw(12);
+                margin-right: pxToVw(8);
+            }
+        }
+    }
+    .dropdown-menu {
+        min-width: auto;
+    }
+}
+
+
+/* daterangepicker */
+
+.daterangepicker {
+    td.in-range {
+        background-color: $bule !important;
+        color: white !important;
+    }
+    td.active.start-date {
+        color: #fff;
+        background: $bule;
+        border-radius: pxToVw(100) 0px 0px pxToVw(100) !important;
+        &:hover {
+            color: #fff;
+            background: $bule;
+            border-radius: pxToVw(100) 0px 0px pxToVw(100) !important;
+        }
+    }
+    td.active.end-date {
+        color: #fff;
+        background: $bule !important;
+        border-radius: 0 pxToVw(100) pxToVw(100) 0px !important;
+        &:hover {
+            color: #fff;
+            background: $bule !important;
+            border-radius: 0 pxToVw(100) pxToVw(100) 0px !important;
+        }
+    }
+    .calendar-table {
+        th {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            color: #373737;
+            font-size: pxToVw(13);
+            line-height: pxToVw(16);
+        }
+        table {
+            >thead {
+                >tr {
+                    th {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: pxToVw(15);
+                        line-height: pxToVw(24);
+                        padding-bottom: pxToVw(15);
+                        color: #1D3B4A;
+                    }
+                }
+            }
+        }
+        td {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: pxToVw(13);
+            line-height: pxToVw(16);
+            color: #373737;
+            width: pxToVw(30);
+            height: pxToVw(40);
+        }
+    }
+    direction: ltr;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.25);
+    border-radius: pxToVw(5);
+    width: pxToVw(600);
+    text-align: left;
+    padding:pxToVw(15);
+    .drp-calendar {
+        max-width: 50%;
+        width: 50%;
+    }
+}
+
+.daterangepicker.show-calendar {
+    .drp-buttons {
+        display: none !important;
+    }
 }

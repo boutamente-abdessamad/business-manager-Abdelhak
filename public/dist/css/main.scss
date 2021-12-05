@@ -32,40 +32,22 @@
 
 /* ........... Global .............. */
 
-.btn.active,
-.btn.active:focus,
-.btn.focus,
-.btn:active,
-.btn:active:focus,
-.btn:focus,
-.btn:hover {
-    box-shadow: none;
-}
-
-.btn {
-    text-transform: initial;
-    vertical-align: initial;
-    border: 0;
-    padding: initial;
-    font-size: .75rem;
-    line-height: 1.5;
-    box-shadow: none;
-}
-
 
 /* ........... conmponents .............. */
 
 @import "./components/variables";
 @import "./components/mixin";
+@import "./components/forms";
 @import "./components/buttons";
 @import "./components/layout";
 @import "./components/global";
+@import "./components/datatables";
 
 /* ........... ./conmponents .............. */
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #2B3E62;
+    color: $buleText;
     background-color: #F4F5F5;
     text-decoration-line: none;
     margin: 0;
@@ -146,7 +128,7 @@ body {
         line-height: pxToVw(67);
         text-align: center;
         letter-spacing: 0.03em;
-        color: #104CBA;
+        color: $bule;
         margin-bottom: 0;
     }
     p {
@@ -157,7 +139,7 @@ body {
         line-height: pxToVw(18);
         text-align: center;
         letter-spacing: 0.03em;
-        color: #2B3E62;
+        color: $buleText;
         margin-bottom: 0;
     }
     .ba-statistic-number {
@@ -305,6 +287,96 @@ body {
                     width: pxToVw(76);
                 }
             }
+        }
+    }
+}
+
+// filters 
+.filter-input {
+    max-width: pxToVw(224);
+    position: relative;
+    &.left-icon {
+        input {
+            text-indent: pxToVw(50);
+        }
+        &::after {
+            left: pxToVw(18);
+        }
+    }
+    &.input-date::after {
+        content: "";
+        @include yAbsoluteCenter();
+        width: pxToVw(17);
+        height: pxToVw(17);
+        background: url(../../assets/icons/gray-calendar.svg) no-repeat center;
+        background-size: contain;
+    }
+    &.input-search::after {
+        content: "";
+        @include yAbsoluteCenter();
+        width: pxToVw(17);
+        height: pxToVw(17);
+        background: url(../../assets/icons/gray-search.svg) no-repeat center;
+        background-size: contain;
+    }
+    &.right-icon {
+        input {
+            text-indent: pxToVw(20);
+        }
+        &::after {
+            right: pxToVw(18);
+        }
+    }
+    input {
+        border: 1px solid rgba(43, 62, 98, 0.25);
+        box-sizing: border-box;
+        border-radius: pxToVw(7);
+        height: pxToVw(44);
+        min-width: pxToVw(224);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: pxToVw(13);
+        line-height: pxToVw(15);
+        display: flex;
+        align-items: center;
+        color: $buleText;
+    }
+}
+
+.datatable-filters-leftside {
+    display: flex;
+    align-items: center;
+}
+
+.datatable-filters-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.datatable-filters-rightside {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ba-display-mode {
+    background: #E7EDF8;
+    border-radius: pxToVw(7);
+    height: pxToVw(44);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    // overflow: hidden;
+    a {
+        &.active {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 7px rgba(43, 62, 98, 0.25);
+        }
+        border-radius: pxToVw(7);
+        padding: pxToVw(9) pxToVw(14);
+        img {
+            width: pxToVw(24);
+            height: pxToVw(24);
         }
     }
 }

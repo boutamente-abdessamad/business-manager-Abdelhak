@@ -1,0 +1,59 @@
+// Forms components
+.btn.active,
+.btn.active:focus,
+.btn.focus,
+.btn:active,
+.btn:active:focus,
+.btn:focus,
+.btn:hover {
+    box-shadow: none;
+}
+
+.btn {
+    text-transform: initial;
+    vertical-align: initial;
+    border: 0;
+    padding: initial;
+    box-shadow: none;
+}
+
+.ba-select-warpper .bootstrap-select>.dropdown-toggle {
+    width: auto;
+    border: 1px solid rgba(43, 62, 98, 0.25);
+    box-sizing: border-box;
+    border-radius: pxToVw(7);
+    height: pxToVw(44);
+    align-items: center;
+    padding-left: pxToVw(22);
+    padding-right: pxToVw(15);
+}
+
+.ba-select-warpper .filter-option-inner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.ba-select-warpper .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    overflow: hidden;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: pxToVw(13);
+    line-height: pxToVw(15);
+    letter-spacing: 1px;
+    color: #2B3E62;
+}
+
+.bootstrap-select .dropdown-menu li a span.text {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: pxToVw(13);
+    line-height: pxToVw(15);
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000000;
+}

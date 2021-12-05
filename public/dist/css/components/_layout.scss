@@ -30,7 +30,7 @@ header.ba-header {
             height: pxToVw(33);
         }
         a.ba-nav-site-link {
-            background: #1A4799;
+            background: $buleHover;
             border-radius: 100px;
             height: pxToVw(43);
             @include flexCenter();
@@ -223,7 +223,7 @@ header.ba-header {
                     line-height: pxToVw(18);
                     text-align: center;
                     letter-spacing: 0.03em;
-                    color: #104CBA;
+                    color: $bule;
                     margin-left: pxToVw(15);
                     opacity: 0;
                     display: none;

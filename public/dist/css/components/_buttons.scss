@@ -35,16 +35,37 @@
     }
 }
 
+.ba-btn-secondary {
+    background-color: #F1F1F1;
+    color: $buleText;
+    &:hover {
+        background-color: $buleTextHover;
+        color: $buleText;
+    }
+}
+
 .ba-btn-default {
     background-color: transparent;
-    color: #2B3E62;
+    color: $buleText;
     border: 1px solid rgba(43, 62, 98, 0.25);
     &:hover {
-        background-color: #1a479933;
-        color: #2B3E62;
+        background-color: $buleTextHover;
+        color: $buleText;
     }
 }
 
 .ba-btn-round {
     border-radius: pxToVw(100);
+}
+
+.ba-btn-circle {
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    img {
+        width: 20px;
+        height: 20px;
+    }
 }

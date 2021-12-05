@@ -16,6 +16,8 @@ $(document).ready(() => {
             $('body').toggleClass('ba-sidebar-open');
         });
 
+        
+
 
     } catch (e) {
         console.log('Error In script detected');

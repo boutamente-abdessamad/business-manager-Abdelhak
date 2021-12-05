@@ -12,6 +12,17 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="../../../libs/font-awesome/font-awesome.min.css">
     <!-- End font-awesome -->
+    <!-- bootstrap select  -->
+    <link rel="stylesheet" href="../../../libs/bootstrap-select/bootstrap-select.min.css">
+    <!-- bootstrap select  -->
+    <!-- datatabels  -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="../../../libs/datatables-bs4/css/dataTables.bootstrap4.min.css ">
+    <link rel="stylesheet " href="../../../libs/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <!-- datatabels  -->
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="../../../libs/daterangepicker/daterangepicker.css">
     <!-- skin style  -->
     <link rel="stylesheet" href="../../../public/dist/css/main.css">
     <!-- end skin style  -->
@@ -324,17 +335,202 @@
                     <div class="datatable-filters-container">
 
                         <div class="datatable-filters-leftside">
-                            <a href="" class="btn ba-btn-default me-3">
-                                <img src="../../../public/assets/icons/gray-filter.svg" alt="">
-                                <span>Trier par</span>
-                            </a>
+                            <!-- user profile  -->
+                            <div class="ba-user-profile-nav dropdown">
+                                <button class="btn ba-btn-default me-3" type="button" id="orderByDropdown" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <img src="../../../public/assets/icons/gray-filter.svg" alt="">
+                                    <span>Trier par</span>
+                                </button>
+                                <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="orderByDropdown">
+                                    <li><a class="dropdown-item" href="#">Nom</a></li>
+                                    <li><a class="dropdown-item" href="#">Date</a></li>
+                                </ul>
+                            </div>
+                            <!-- user profile  -->
+
+
+                            <div class="filter-input left-icon input-date me-3">
+                                <input type="text" class="date-range" name="date" placeholder="01/05/2021 - 09/08/2021" value="">
+                            </div>
+
+                            <div class="ba-select-warpper">
+                                <select id="" name="data_size" class="selectpicker ba-select">
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                </select>
+                            </div>
+
                         </div>
 
                         <div class="datatable-filters-rightside">
-
+                            <div class="filter-input right-icon input-search me-3">
+                                <input type="text" name="date" placeholder="Rechercher par....." value="">
+                            </div>
+                            <div class="ba-display-mode">
+                                <a href="" class="active">
+                                    <img src="../../../public/assets/icons/gray-burger-menu.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="../../../public/assets/icons/gray-display-mode.svg" alt="">
+                                </a>
+                            </div>
                         </div>
 
                     </div>
+
+
+
+                    <!-- datatable area  -->
+                    <div class="ba-datatable-warpper">
+
+                        <table class="ba-datatable dataTable table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Client</th>
+                                    <th>N° de facture</th>
+                                    <th>Date d’émission</th>
+                                    <th>Date d’échéance</th>
+                                    <th>Montant TTC </th>
+                                    <th>Montant HT </th>
+                                    <th>Statut</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- tr  -->
+                                <tr>
+
+                                    <td>Mohamed Jazouli</td>
+                                    <td>F0259565</td>
+                                    <td>02/08/2021</td>
+                                    <td>02/08/2021</td>
+                                    <td>1500 €</td>
+                                    <td> 1200 €</td>
+                                    <td>
+                                        <span class="invoice-status ba-btn-round invoice-status-danger">En retard</span>
+                                    </td>
+                                    <td>
+                                        <div class="ba-user-profile-nav dropdown">
+                                            <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <!-- tr  -->
+                                <!-- tr  -->
+                                <tr>
+
+                                    <td>Mohamed Jazouli</td>
+                                    <td>F0259565</td>
+                                    <td>02/08/2021</td>
+                                    <td>02/08/2021</td>
+                                    <td>1500 €</td>
+                                    <td> 1200 €</td>
+                                    <td>
+                                        <span class="invoice-status ba-btn-round invoice-status-success">En retard</span>
+                                    </td>
+                                    <td>
+                                        <div class="ba-user-profile-nav dropdown">
+                                            <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown2">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <!-- tr  -->
+
+                            </tbody>
+                        </table>
+
+                        <div class="datatable-footer">
+
+                            <div class="ba-group-buttons p-0">
+
+                                <a href="" class="btn ba-btn-default me-3">
+                                   Voir les factures archivées
+                                </a>
+
+                                <a href="" class="btn ba-btn-default">
+                                    Voir les factures supprimées 
+                                </a>
+
+                            </div>
+
+                            <!-- pagination  -->
+                            <div class="elements-pagination">
+                                <!-- options  -->
+                                <div class="pagination-more-options ba-user-profile-nav dropdown">
+                                    <a href="" class="ep-more" type="button" id="paginationDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                Plus <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <div class="dropdown-menu ba-dropdown-items pagination-more-dropdown" aria-labelledby="paginationDropDown1">
+                                        <a class="dropdown-item" href="#">plus 1</a>
+                                        <a class="dropdown-item" href="#">plus 2</a>
+                                        <a class="dropdown-item" href="#">plus 3</a>
+                                    </div>
+                                </div>
+                                <!-- page limit  -->
+                                <div class="pages-limit ba-user-profile-nav dropdown">
+                                    <a href="" class="ep-paged" type="button" id="paginationDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                10 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <div class="dropdown-menu ba-dropdown-items pagination-paged-dropdown" aria-labelledby="paginationDropDown2">
+                                        <a class="dropdown-item" href="#">20</a>
+                                        <a class="dropdown-item" href="#">50</a>
+                                        <a class="dropdown-item" href="#">100</a>
+                                    </div>
+                                </div>
+                                <!-- elements  -->
+                                <div class="ep-elements">
+                                    Eléments <span>1-6</span> / <span>1-6</span>
+                                    <a href="" class="ep-prev is-last"><i class="fa fa-angle-left"
+                                                    aria-hidden="true"></i></a>
+                                    <a href="" class="ep-next"><i class="fa fa-angle-right"
+                                                    aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <!-- pagination  -->
+                        </div>
+
+                    </div>
+                    <!-- datatable area  -->
 
                 </div>
                 <!-- show-area  -->
@@ -355,10 +551,26 @@
     <script src="../../../libs/jquery/jquery-3.3.1.slim.min.js"></script>
     <!-- End jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Mdb  -->
+    <script src="../../../libs/bootstrap/bootstrap.bundle.js"></script>
     <script src="../../../libs/mdb/js/mdb.min.js"></script>
     <!-- Mdb  -->
+    <!-- bootstrap select  -->
+    <script src="../../../libs/bootstrap-select/bootstrap-select.min.js"></script>
+    <!-- bootstrap select  -->
+    <!-- DataTables -->
+    <script src="../../../libs/datatables/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+    <script src="../../../libs/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../../libs/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../../libs/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <!-- End jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- date-range-picker -->
+    <script src="../../../libs/moment/moment.min.js"></script>
+    <script src="../../../libs/daterangepicker/daterangepicker.js"></script>
+    <!-- jquery-circle-progress -->
     <!-- uw scripts -->
     <script src="../../../public/dist/js/main.js"></script>
+    <script src="../../../public/dist/js/instances.js"></script>
     <!-- end uw scripts -->
 </body>
 
