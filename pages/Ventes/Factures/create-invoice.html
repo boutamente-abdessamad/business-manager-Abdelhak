@@ -270,7 +270,7 @@
                                 <div class="ba-invoice-collapse">
                                     <!-- ba-invoice-collapse-head  -->
                                     <div class="ba-invoice-collapse-head">
-                                        <h5 class="ba-invoice-collapse-head-title">Autres détails</h5>
+                                        <h5 class="ba-invoice-collapse-head-title">Envoyer des rappels</h5>
                                         <div class="ba-invoice-collapse-head-icon">
                                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                                         </div>
@@ -279,10 +279,13 @@
                                     <div class="ba-invoice-collapse-body">
 
                                         <div class="ba-checkbox-default">
-                                            <span>
-                                                <input type="checkbox" name="autoSendRappels" id="autoSendRappels">
-                                            </span>
-                                            <label for="autoSendRappels">Envoyer automatiquement des rappels pour les facture de ce client</label>
+                                            <label for="autoSendRappels">
+                                               <span>
+                                                    <input type="checkbox" name="autoSendRappels" id="autoSendRappels">
+                                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                               </span>
+                                               <p>Envoyer automatiquement des rappels pour les facture de ce client</p>
+                                            </label>
                                         </div>
                                         <!-- ba-invoice-reminders-list -->
                                         <div class="ba-invoice-reminders-list">
@@ -290,11 +293,11 @@
                                             <div class="ba-invoice-reminder-item">
                                                 <div class="ba-invoice-reminder-item-head">
                                                     <p>RAPPEL # 1</p>
-                                                    <div class="ba-user-profile-nav dropdown">
+                                                    <div class="ba-user-profile-nav dropdown dropstart">
                                                         <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown3" data-mdb-toggle="dropdown" aria-expanded="false">
                                                             <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
                                                         </button>
-                                                        <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown3">
+                                                        <ul class="dropdown-menu ba-dropdown-items  dropdown-menu-left" aria-labelledby="moreActionsDropDown3">
                                                             <li>
                                                                 <a class="dropdown-item" href="#">
                                                                     <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
@@ -320,7 +323,7 @@
                                                         <p>jours</p>
                                                     </div>
                                                     <div class="send-deadline-warpper">
-                                                        <a href="" class="btn ba-btn-default">
+                                                        <a href="" class="btn ba-btn-default me-3">
                                                             Avant
                                                         </a>
                                                         <a href="" class="btn ba-btn-default">
