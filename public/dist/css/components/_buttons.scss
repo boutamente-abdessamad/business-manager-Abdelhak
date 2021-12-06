@@ -35,6 +35,24 @@
     }
 }
 
+.ba-btn-success {
+    background-color: $greenBg;
+    color: #FFFFFF;
+    &:hover {
+        background-color: $greenText;
+        color: #FFFFFF;
+    }
+}
+
+.ba-btn-danger {
+    background-color: $redBg;
+    color: #FFFFFF;
+    &:hover {
+        background-color: $redText;
+        color: #FFFFFF;
+    }
+}
+
 .ba-btn-secondary {
     background-color: #F1F1F1;
     color: $buleText;

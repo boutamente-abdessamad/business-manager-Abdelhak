@@ -159,10 +159,137 @@ input {
         max-width: 50%;
         width: 50%;
     }
+    &.show-calendar {
+        .drp-buttons {
+            display: none !important;
+        }
+    }
 }
 
-.daterangepicker.show-calendar {
-    .drp-buttons {
-        display: none !important;
+// ba-cart-header-actions 
+.ba-cart-header-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+// ba-cart-header-back
+a.ba-cart-header-back {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #2B3E62;
+    .back-link-icon {
+        width: 45px;
+        height: 45px;
+        background: #E7EDF8;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+}
+
+// create invoice 
+.ba-create-invoice-warpper {
+    display: flex;
+    justify-content: space-between;
+    .ba-create-invoice-staps {
+        width: 38.4307446%;
+        background: #F1F5FB;
+        border-radius: 15px;
+        padding: 24px;
+        .invoice-step-acourdion {
+            background: #F3F6FC;
+            box-shadow: 0px 1px 5px rgba(62, 86, 130, 0.45);
+            border-radius: 15px;
+            overflow: hidden;
+            .ba-accordion-header {
+                background-color: #FFFFFF;
+                padding: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .ba-accordion-header-title {
+                    display: flex;
+                    align-items: center;
+                    .ba-accordion-header-title-icon {
+                        img {
+                            width: 27px;
+                            height: 27px;
+                        }
+                        width: 62px;
+                        height: 62px;
+                        background: #E7EDF8;
+                        border-radius: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    span {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 25px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.03em;
+                        color: #2B3E62;
+                        margin-left: 20px;
+                    }
+                }
+                .ba-accordion-header-toggle img {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+            .ba-accordion-body {
+                box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.15);
+                padding: 30px;
+                .ba-accordion-body-content {
+                    .ba-invoice-infos {
+                        border-bottom: 1px solid rgba(43, 62, 98, 0.21);
+                        padding-bottom: 15px;
+                        margin-bottom: 15px;
+                        .ba-invoice-infos-list {
+                            ul {
+                                padding: 0;
+                                list-style: none;
+                                margin-bottom: 10px;
+                                li {
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 13px;
+                                    line-height: 23px;
+                                    color: #2B3E62;
+                                }
+                            }
+                            a.invoice-all-details-link {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 13px;
+                                line-height: 28px;
+                                color: #104CBA;
+                                display: inline-flex;
+                                align-items: center;
+                                i {
+                                    margin-left: 15px;
+                                    font-size: 21px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
