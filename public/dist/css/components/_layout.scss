@@ -1,7 +1,7 @@
 /* ............... Header syles ................ */
 
 header.ba-header {
-    background: $bule;
+    background: $blue;
     padding: 0 pxToVw(30);
     height: pxToVw(90);
     // nav 
@@ -30,7 +30,7 @@ header.ba-header {
             height: pxToVw(33);
         }
         a.ba-nav-site-link {
-            background: $buleHover;
+            background: $blueHover;
             border-radius: 100px;
             height: pxToVw(43);
             @include flexCenter();
@@ -165,12 +165,12 @@ header.ba-header {
         height: pxToVw(32);
         background: #E7EDF8;
         border-radius: 50%;
-        color: $bule;
+        color: $blue;
         font-size: pxToVw(21);
         i {
             transition: .1s all cubic-bezier(0.65, 0.05, 0.36, 1);
             font-size: pxToVw(22);
-            color: $bule;
+            color: $blue;
         }
     }
     ul.ba-sidebar-items {
@@ -192,7 +192,7 @@ header.ba-header {
                 }
                 position: relative;
                 a {
-                    background-color: $bule;
+                    background-color: $blue;
                     img {
                         filter: brightness(10);
                     }
@@ -223,7 +223,7 @@ header.ba-header {
                     line-height: pxToVw(18);
                     text-align: center;
                     letter-spacing: 0.03em;
-                    color: $bule;
+                    color: $blue;
                     margin-left: pxToVw(15);
                     opacity: 0;
                     display: none;

@@ -32,6 +32,45 @@ $(document).ready(() => {
             buttonClasses: "d-none"
         })
     }
+
+    // sliders 
+    // invoices-models-slider
+
+     let invoicesModelsSlider = $('.invoices-models-slider');
+    if (invoicesModelsSlider) {
+      invoicesModelsSlider.slick({
+        focusOnSelect: true,
+        slidesToShow: 2,
+        dots: false,
+        autoplay: false,
+        speed: 1000,
+        autoplaySpeed: 3000,
+        arrows: false,
+        swipe: true,
+        infinite: false,
+        swipeToSlide: true,
+        // responsive: [{
+        //     breakpoint: 1025,
+        //     settings: {
+        //       slidesToShow: 3,
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 769,
+        //     settings: {
+        //       slidesToShow: 2,
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 480,
+        //     settings: {
+        //       centerMode: true,
+        //       slidesToShow: 1,
+        //     }
+        //   }
+        // ]
+      });
+    }
         
 
 

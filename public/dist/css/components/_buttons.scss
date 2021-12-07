@@ -27,10 +27,10 @@
 }
 
 .ba-btn-primary {
-    background-color: $bule;
+    background-color: $blue;
     color: #FFFFFF;
     &:hover {
-        background-color: $buleHover;
+        background-color: $blueHover;
         color: #FFFFFF;
     }
 }
@@ -55,20 +55,20 @@
 
 .ba-btn-secondary {
     background-color: #F1F1F1;
-    color: $buleText;
+    color: $blueText;
     &:hover {
-        background-color: $buleTextHover;
-        color: $buleText;
+        background-color: $blueTextHover;
+        color: $blueText;
     }
 }
 
 .ba-btn-default {
     background-color: transparent;
-    color: $buleText;
+    color: $blueText;
     border: 1px solid rgba(43, 62, 98, 0.25);
     &:hover {
-        background-color: $buleTextHover;
-        color: $buleText;
+        background-color: $blueTextHover;
+        color: $blueText;
     }
 }
 

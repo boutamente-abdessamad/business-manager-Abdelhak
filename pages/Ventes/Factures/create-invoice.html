@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="../../../libs/datatables-bs4/css/dataTables.bootstrap4.min.css ">
     <link rel="stylesheet " href="../../../libs/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- datatabels  -->
+    <!-- sliders  -->
+    <link rel="stylesheet" href="../../../libs/slick/slick.css">
+    <link rel="stylesheet" href="../../../libs/slick/slick-theme.css">
+    <!-- sliders  -->
     <!-- daterange picker -->
     <link rel="stylesheet" href="../../../libs/daterangepicker/daterangepicker.css">
     <!-- skin style  -->
@@ -212,7 +216,9 @@
                 <div class="ba-create-invoice-staps">
 
 
-                    <!-- invoice step  -->
+                    <!-- -------------------------->
+                    <!------- invoice step   ------>
+                    <!-- -------------------------->
                     <div class="invoice-step-acourdion">
 
                         <!-- accordion header  -->
@@ -359,6 +365,127 @@
                             </div>
                         </div>
                     </div>
+                    <!-- -------------------------->
+                    <!------- invoice step   ------>
+                    <!-- -------------------------->
+                    <div class="invoice-step-acourdion">
+
+                        <!-- accordion header  -->
+                        <!-- 59.4875901 -->
+                        <!-- 38.4307446 -->
+                        <div class="ba-accordion-header">
+                            <div class="ba-accordion-header-title">
+                                <div class="ba-accordion-header-title-icon">
+                                    <img src="../../../public/assets/icons/blue-customize.svg" alt="">
+                                </div>
+                                <span>Personnaliser le style de facture</span>
+                            </div>
+                            <a href="" class="ba-accordion-header-toggle">
+                                <img src="../../../public/assets/icons/blue-plus-box.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- accordion body  -->
+                        <div class="ba-accordion-body">
+                            <!-- ba-accordion-body-content -->
+                            <div class="ba-accordion-body-content">
+                                <!-- ba-invoice-collapse  -->
+                                <div class="ba-invoice-collapse">
+                                    <!-- ba-invoice-collapse-head  -->
+                                    <div class="ba-invoice-collapse-head">
+                                        <h5 class="ba-invoice-collapse-head-title">Choisissez un modèle</h5>
+                                        <div class="ba-slider-angles">
+                                            <a href="" class="ba-angle-slide-left">
+                                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="" class="ba-angle-slide-right">
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ba-invoice-collapse-body  -->
+                                    <div class="ba-invoice-collapse-body">
+
+                                        <!-- invoices models slider  -->
+                                        <div class="invoices-models-slider">
+                                            <div class="invoices-models-slider-item">
+                                                <img src="../../../public/assets/images/invoice-models/model-1.png" alt="">
+                                            </div>
+                                            <div class="invoices-models-slider-item">
+                                                <img src="../../../public/assets/images/invoice-models/model-1.png" alt="">
+                                            </div>
+                                            <div class="invoices-models-slider-item">
+                                                <img src="../../../public/assets/images/invoice-models/model-1.png" alt="">
+                                            </div>
+                                            <div class="invoices-models-slider-item">
+                                                <img src="../../../public/assets/images/invoice-models/model-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- block-head-title -->
+                                        <div class="block-head-title">
+                                            <h5>CHOISISSEZ UNE COULEUR DE THÈME</h5>
+                                        </div>
+                                        <!-- invoices models slider  -->
+                                        <div class="ba-colors-slider-warpper">
+                                            <div class="ba-colors-slider">
+                                                <label for="" class="color-check-box">
+                                                    <span style="background-color: aquamarine;"></span>
+                                                    <input type="checkbox" name="" id="">
+                                                </label>
+                                                <label for="" class="color-check-box">
+                                                    <span style="background-color: aquamarine;"></span>
+                                                    <input type="checkbox" name="" id="">
+                                                </label>
+                                                <label for="" class="color-check-box">
+                                                    <span style="background-color: aquamarine;"></span>
+                                                    <input type="checkbox" name="" id="">
+                                                </label>
+                                                <label for="" class="color-check-box">
+                                                    <span style="background-color: aquamarine;"></span>
+                                                    <input type="checkbox" name="" id="">
+                                                </label>
+                                            </div>
+                                            <div class="ba-slider-angles">
+                                                <a href="" class="ba-angle-slide-left">
+                                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="" class="ba-angle-slide-right">
+                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- block-head-title -->
+                                        <div class="block-head-title">
+                                            <h5>CHOISISSEZ UN police</h5>
+                                        </div>
+                                        <div class="ba-select-warpper">
+                                            <select id="" class="selectpicker ba-select">
+                                                <option value="Roboto">Roboto</option>
+                                                <option value="Poppin">Poppin</option>
+                                                <option value="Inter">Inter</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- group buttons  -->
+                                        <div class="ba-group-buttons p-0">
+                                            <a href="" class="btn ba-btn-default me-3">
+                                                Annuler
+                                            </a>
+                                            <a href="" class="btn ba-btn-primary">
+                                               Terminer
+                                            </a>
+                                        </div>
+                                        <!-- group buttons  -->
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -404,6 +531,9 @@
     <script src="../../../libs/moment/moment.min.js"></script>
     <script src="../../../libs/daterangepicker/daterangepicker.js"></script>
     <!-- jquery-circle-progress -->
+    <!-- sliders  -->
+    <script src="../../../libs/slick/slick.min.js"></script>
+    <!-- sliders  -->
     <!-- uw scripts -->
     <script src="../../../public/dist/js/main.js"></script>
     <script src="../../../public/dist/js/instances.js"></script>
