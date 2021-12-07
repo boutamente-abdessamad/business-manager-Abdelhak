@@ -41,6 +41,20 @@
     transform: translateY(-50%);
 }
 
+@mixin normalText($color) {
+    @if expression($color) {
+        color: $color;
+    }
+    @else {
+        color: #2B3E62;
+    }
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: pxToVw(13);
+    line-height: pxToVw(23);
+}
+
 @function pxToVw($px) {
     $value: calc(#{$px} * 0.0651111111vw);
     @return $value;

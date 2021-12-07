@@ -37,11 +37,7 @@ input {
 }
 
 .invoice-status {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: pxToVw(13);
-    line-height: pxToVw(23);
+    @include normalText($buleText);
     padding: 2px pxToVw(15);
 }
 
@@ -178,21 +174,21 @@ a.ba-cart-header-back {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: pxToVw(17);
+    line-height: pxToVw(20);
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
-    color: #2B3E62;
+    color: $buleText;
     .back-link-icon {
-        width: 45px;
-        height: 45px;
+        width: pxToVw(45);
+        height: pxToVw(45);
         background: #E7EDF8;
         border-radius: 50%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin-right: 15px;
+        margin-right: pxToVw(15);
     }
 }
 
@@ -203,52 +199,48 @@ a.ba-cart-header-back {
     .ba-create-invoice-staps {
         width: 38.4307446%;
         background: #F1F5FB;
-        border-radius: 15px;
-        padding: 24px;
+        border-radius: pxToVw(15);
+        padding: pxToVw(24);
         .invoice-step-acourdion {
             background: #F3F6FC;
             box-shadow: 0px 1px 5px rgba(62, 86, 130, 0.45);
-            border-radius: 15px;
+            border-radius: pxToVw(15);
             overflow: hidden;
             .ba-accordion-header {
                 cursor: pointer;
                 background-color: #FFFFFF;
-                padding: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                padding: pxToVw(30);
+                @include flexCenterBetween();
                 .ba-accordion-header-title {
                     display: flex;
                     align-items: center;
                     .ba-accordion-header-title-icon {
                         img {
-                            width: 27px;
-                            height: 27px;
+                            width: pxToVw(27);
+                            height: pxToVw(27);
                         }
-                        width: 62px;
-                        height: 62px;
+                        width: pxToVw(62);
+                        height: pxToVw(62);
                         background: #E7EDF8;
-                        border-radius: 100px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        border-radius: pxToVw(100);
+                        @include flexCenterBetween();
                     }
                     span {
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 15px;
-                        line-height: 25px;
+                        font-size: pxToVw(15);
+                        line-height: pxToVw(25);
                         display: flex;
                         align-items: center;
                         letter-spacing: 0.03em;
-                        color: #2B3E62;
-                        margin-left: 20px;
+                        color: $buleText;
+                        margin-left: pxToVw(20);
                     }
                 }
                 .ba-accordion-header-toggle img {
-                    width: 23px;
-                    height: 23px;
+                    width: pxToVw(23);
+                    height: pxToVw(23);
                 }
             }
             .ba-accordion-body {
@@ -257,95 +249,63 @@ a.ba-cart-header-back {
                 max-height: 0;
                 transition: $baTransition;
                 overflow: hidden;
-                padding: 0 30px;
+                padding: 0 pxToVw(30);
                 .ba-accordion-body-content {
                     .ba-invoice-infos {
                         border-bottom: 1px solid rgba(43, 62, 98, 0.21);
-                        padding-bottom: 15px;
-                        margin-bottom: 15px;
+                        padding-bottom: pxToVw(15);
+                        margin-bottom: pxToVw(15);
                         .ba-invoice-infos-list {
                             ul {
                                 padding: 0;
                                 list-style: none;
-                                margin-bottom: 10px;
+                                margin-bottom: pxToVw(10);
                                 li {
-                                    font-family: Roboto;
-                                    font-style: normal;
-                                    font-weight: normal;
-                                    font-size: 13px;
-                                    line-height: 23px;
-                                    color: #2B3E62;
+                                    @include normalText($buleText);
                                 }
                             }
                             a.invoice-all-details-link {
-                                font-family: Roboto;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 13px;
-                                line-height: 28px;
-                                color: #104CBA;
+                                @include normalText($buleText);
                                 display: inline-flex;
                                 align-items: center;
                                 i {
-                                    margin-left: 15px;
-                                    font-size: 21px;
+                                    margin-left: pxToVw(15);
+                                    font-size: pxToVw(21);
                                     font-weight: bold;
                                 }
                             }
                         }
                     }
                     .ba-invoice-collapse-head {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
+                        @include flexCenterBetween();
                         .ba-invoice-collapse-head-title {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 13px;
-                            line-height: 27px;
+                            @include normalText($buleText);
                             /* identical to box height, or 208% */
-                            display: flex;
-                            align-items: center;
+                            @include flexCenter();
                             letter-spacing: 0.03em;
-                            color: #2B3E62;
                             margin-bottom: 0;
                         }
                         .ba-invoice-collapse-head-icon {
                             i {
-                                color: #2B3E62;
-                                font-size: 22px;
+                                color: $buleText;
+                                font-size: pxToVw(22);
                                 font-weight: bold;
                             }
                         }
                     }
                     .ba-invoice-reminder-item-head {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
+                        @include flexCenterBetween();
                         p {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 13px;
-                            line-height: 23px;
-                            /* or 177% */
-                            color: #2B3E62;
+                            @include normalText($buleText);
                             margin-bottom: 0;
                         }
                     }
                     .send-reminde-warpper {
                         display: flex;
                         align-items: center;
-                        margin: 20px 0px;
+                        margin: pxToVw(20) 0px;
                         p {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 13px;
-                            line-height: 23px;
-                            /* or 177% */
-                            color: #2B3E62;
+                            @include normalText($buleText);
                             margin-bottom: 0;
                         }
                         input.ba-fom-controll {
@@ -353,17 +313,17 @@ a.ba-cart-header-back {
                             border: 1px solid rgba(43, 62, 98, 0.21);
                             box-sizing: border-box;
                             border-radius: 5px;
-                            height: 39px;
+                            height: pxToVw(39);
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: normal;
-                            font-size: 15px;
-                            line-height: 21px;
+                            font-size: pxToVw(15);
+                            line-height: pxToVw(21);
                             /* identical to box height, or 140% */
                             text-align: center;
                             color: $buleText;
                             max-width: 65px;
-                            margin: 0 20px;
+                            margin: 0 pxToVw(20);
                             &::placeholder {
                                 color: rgba(43, 62, 98, 0.45);
                             }
@@ -373,15 +333,9 @@ a.ba-cart-header-back {
                         display: flex;
                         align-items: center;
                         p {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 13px;
-                            line-height: 23px;
-                            /* or 177% */
-                            color: #2B3E62;
+                            @include normalText($buleText);
                             margin-bottom: 0;
-                            margin-left: 15px;
+                            margin-left: pxToVw(15);
                         }
                     }
                 }
@@ -389,7 +343,7 @@ a.ba-cart-header-back {
             &.in {
                 .ba-accordion-body {
                     height: 100%;
-                    padding: 30px;
+                    padding: pxToVw(30);
                     max-height: 1000px;
                 }
             }
@@ -398,36 +352,29 @@ a.ba-cart-header-back {
 }
 
 .ba-checkbox-default {
-    margin: 15px 0px;
+    margin: pxToVw(15) 0px;
     label {
         display: flex;
         cursor: pointer;
         margin: 0;
         p {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 13px;
-            line-height: 21px;
-            color: rgba(43, 62, 98, 0.45);
+            @include normalText($buleText);
             margin-bottom: 0;
         }
         span {
-            min-width: 25px;
-            width: 25px;
-            height: 25px;
+            min-width: pxToVw(25);
+            width: pxToVw(25);
+            height: pxToVw(25);
             background: #FFFFFF;
             border: 1px solid rgba(43, 62, 98, 0.21);
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
+            border-radius: pxToVw(5);
+            @include flexCenterBetween();
+            margin-right: pxToVw(15);
             i {
                 opacity: 0;
                 transform: scale(1.2);
                 transition: $baTransition;
-                color: #104cba;
+                color: $blue;
             }
             input {
                 display: none;
@@ -442,24 +389,24 @@ a.ba-cart-header-back {
 
 .full-dotted-link {
     width: 100%;
-    height: 45px;
+    height: pxToVw(45);
     background: #FFFFFF;
-    border: 1px dashed #104CBA;
+    border: 1px dashed $blue;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: pxToVw(11);
+    line-height: pxToVw(13);
     text-align: center;
     letter-spacing: 0.03em;
-    color: #104CBA;
+    color: $blue;
     margin: 30px 0px;
     img {
-        width: 11px;
-        height: 11px;
-        margin-right: 15px;
+        width: pxToVw(11);
+        height: pxToVw(11);
+        margin-right: pxToVw(15);
     }
 }
