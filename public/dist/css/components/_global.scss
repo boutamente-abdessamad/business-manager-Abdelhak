@@ -30,6 +30,18 @@
     border-bottom: 1px solid rgba(16, 76, 186, 0.28);
 }
 
+.ba-opacity-25 {
+    opacity: 0.25;
+}
+
+.ba-opacity-50 {
+    opacity: 0.50;
+}
+
+.ba-opacity-75 {
+    opacity: 0.75;
+}
+
 input {
     &:focus-visible {
         outline: $blue auto 1px;
@@ -202,14 +214,17 @@ a.ba-cart-header-back {
         border-radius: pxToVw(15);
         padding: pxToVw(24);
         .invoice-step-acourdion {
+            overflow: hidden;
             &:not(:last-child) {
                 margin-bottom: pxToVw(25);
             }
             background: #F3F6FC;
             box-shadow: 0px 1px 5px rgba(62, 86, 130, 0.45);
             border-radius: pxToVw(15);
-            overflow: hidden;
+            // overflow: hidden;
             .ba-accordion-header {
+                border-top-right-radius: calc(15 * 0.0651111111vw);
+                border-top-left-radius: calc(15 * 0.0651111111vw);
                 cursor: pointer;
                 background-color: #FFFFFF;
                 padding: pxToVw(30);
@@ -312,24 +327,10 @@ a.ba-cart-header-back {
                             margin-bottom: 0;
                         }
                         input.ba-fom-controll {
-                            background: #FFFFFF;
-                            border: 1px solid rgba(43, 62, 98, 0.21);
-                            box-sizing: border-box;
-                            border-radius: 5px;
-                            height: pxToVw(39);
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: pxToVw(15);
-                            line-height: pxToVw(21);
-                            /* identical to box height, or 140% */
                             text-align: center;
                             color: $blueText;
                             max-width: 65px;
                             margin: 0 pxToVw(20);
-                            &::placeholder {
-                                color: rgba(43, 62, 98, 0.45);
-                            }
                         }
                     }
                     .send-deadline-warpper {
@@ -344,10 +345,12 @@ a.ba-cart-header-back {
                 }
             }
             &.in {
+                overflow: auto;
                 .ba-accordion-body {
                     height: 100%;
                     padding: pxToVw(30);
                     max-height: 1000px;
+                    overflow: auto;
                 }
             }
         }
@@ -359,6 +362,7 @@ a.ba-cart-header-back {
     label {
         display: flex;
         cursor: pointer;
+        align-items: center;
         margin: 0;
         p {
             @include normalText($blueText);
@@ -375,6 +379,7 @@ a.ba-cart-header-back {
             margin-right: pxToVw(15);
             i {
                 opacity: 0;
+                font-size: 11px;
                 transform: scale(1.2);
                 transition: $baTransition;
                 color: $blue;
@@ -411,5 +416,100 @@ a.ba-cart-header-back {
         width: pxToVw(11);
         height: pxToVw(11);
         margin-right: pxToVw(15);
+    }
+}
+
+// ba-slider-angles
+.ba-slider-angles {
+    @include flexCenterCenter();
+    a {
+        margin: 0 6px;
+        i {
+            font-size: 27px;
+            font-weight: bold;
+            opacity: 0.5;
+            color: $blueText;
+            transition: $baTransition;
+        }
+        &:hover i {
+            opacity: 1;
+        }
+    }
+}
+
+.invoices-models-slider {
+    margin: pxToVw(20) 0px;
+    .invoices-models-slider-item img {
+        height: 239.4px;
+        width: 100%;
+    }
+    /* the slides */
+    .slick-slide {
+        margin: 0 15px;
+    }
+    /* the parent */
+    .slick-list {
+        margin: 0 -15px;
+    }
+}
+
+// ba-invoice-collapse-head
+// .ba-invoice-collapse-head h5 {
+//     @include normalText($blueText);
+// }
+.block-head-title {
+    @include flexCenterBetween();
+    padding: pxToVw(15) 0px;
+    h5 {
+        @include normalText($blueText);
+        margin-bottom: 0;
+    }
+}
+
+// ba-colors-slider
+.ba-colors-slider-warpper {
+    @include flexCenterBetween();
+    .ba-colors-slider {
+        width: calc(100% - 70px);
+        /* the slides */
+        .slick-slide {
+            margin: 0 8px;
+        }
+        /* the parent */
+        .slick-list {
+            margin: 0 -8px;
+        }
+    }
+    .ba-slider-angles {
+        width: pxToVw(70);
+    }
+    .color-check-box {
+        @include flexCenterCenter();
+        span {
+            width: pxToVw(27) !important;
+            height: pxToVw(27) !important;
+            border-radius: 50%;
+            transition: $baTransition;
+        }
+        &:hover {
+            span {
+                border: 3px solid #FFFFFF;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+            }
+        }
+        input {
+            display: none;
+            &:checked~span {
+                border: 3px solid #FFFFFF;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
+
+.paylent-ways {
+    img {
+        width: pxToVw(195);
+        height: pxToVw(70);
     }
 }

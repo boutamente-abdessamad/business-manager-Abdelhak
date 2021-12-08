@@ -45,10 +45,48 @@ $(document).ready(() => {
         autoplay: false,
         speed: 1000,
         autoplaySpeed: 3000,
-        arrows: false,
+        // arrows: false,
         swipe: true,
-        infinite: false,
-        swipeToSlide: true,
+        prevArrow: $('.invoices-models-prev'),
+        nextArrow: $('.invoices-models-next'),
+        infinite: true,
+        // swipeToSlide: true,
+        // responsive: [{
+        //     breakpoint: 1025,
+        //     settings: {
+        //       slidesToShow: 3,
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 769,
+        //     settings: {
+        //       slidesToShow: 2,
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 480,
+        //     settings: {
+        //       centerMode: true,
+        //       slidesToShow: 1,
+        //     }
+        //   }
+        // ]
+      });
+    }
+     let baColorsSlider = $('.ba-colors-slider');
+    if (baColorsSlider) {
+      baColorsSlider.slick({
+        focusOnSelect: true,
+        slidesToShow: 7,
+        dots: false,
+        autoplay: false,
+        speed: 1000,
+        autoplaySpeed: 3000,
+        swipe: true,
+        infinite: true,
+        prevArrow: $('.colors-slider-prev'),
+        nextArrow: $('.colors-slider-next'),
+        // swipeToSlide: true,
         // responsive: [{
         //     breakpoint: 1025,
         //     settings: {

@@ -46,6 +46,7 @@
           align-items: center;
   padding-left: calc(22 * 0.0651111111vw);
   padding-right: calc(15 * 0.0651111111vw);
+  margin-bottom: calc(20 * 0.0651111111vw);
 }
 
 .ba-select-warpper .filter-option-inner {
@@ -84,6 +85,52 @@
           align-items: center;
   letter-spacing: 1px;
   color: #000000;
+}
+
+.ba-select-warpper.w-100 .dropdown-toggle {
+  width: 100%;
+}
+
+.ba-select-warpper.w-100 .dropdown.bootstrap-select.ba-select {
+  width: 100%;
+}
+
+.ba-select-warpper.w-100 .dropdown .dropdown-menu {
+  min-width: 100%;
+}
+
+.ba-form-controll {
+  background: #FFFFFF;
+  border: 1px solid rgba(43, 62, 98, 0.21);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  height: calc(39 * 0.0651111111vw);
+  font-family: Roboto;
+  text-indent: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
+  color: #2B3E62;
+  width: 100%;
+  margin-bottom: calc(20 * 0.0651111111vw);
+}
+
+.ba-form-controll::-webkit-input-placeholder {
+  color: rgba(43, 62, 98, 0.45);
+}
+
+.ba-form-controll:-ms-input-placeholder {
+  color: rgba(43, 62, 98, 0.45);
+}
+
+.ba-form-controll::-ms-input-placeholder {
+  color: rgba(43, 62, 98, 0.45);
+}
+
+.ba-form-controll::placeholder {
+  color: rgba(43, 62, 98, 0.45);
 }
 
 [class*="ba-btn-"] {
@@ -613,6 +660,18 @@ main.ba-app-root .ba-main-cart {
   border-bottom: 1px solid rgba(16, 76, 186, 0.28);
 }
 
+.ba-opacity-25 {
+  opacity: 0.25;
+}
+
+.ba-opacity-50 {
+  opacity: 0.50;
+}
+
+.ba-opacity-75 {
+  opacity: 0.75;
+}
+
 input:focus-visible {
   outline: #104CBA auto 1px;
 }
@@ -814,11 +873,11 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion {
+  overflow: hidden;
   background: #F3F6FC;
   -webkit-box-shadow: 0px 1px 5px rgba(62, 86, 130, 0.45);
           box-shadow: 0px 1px 5px rgba(62, 86, 130, 0.45);
   border-radius: calc(15 * 0.0651111111vw);
-  overflow: hidden;
 }
 
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion:not(:last-child) {
@@ -826,6 +885,8 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-header {
+  border-top-right-radius: calc(15 * 0.0651111111vw);
+  border-top-left-radius: calc(15 * 0.0651111111vw);
   cursor: pointer;
   background-color: #FFFFFF;
   padding: calc(30 * 0.0651111111vw);
@@ -1034,38 +1095,10 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-body .ba-accordion-body-content .send-reminde-warpper input.ba-fom-controll {
-  background: #FFFFFF;
-  border: 1px solid rgba(43, 62, 98, 0.21);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 5px;
-  height: calc(39 * 0.0651111111vw);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: calc(15 * 0.0651111111vw);
-  line-height: calc(21 * 0.0651111111vw);
-  /* identical to box height, or 140% */
   text-align: center;
   color: #2B3E62;
   max-width: 65px;
   margin: 0 calc(20 * 0.0651111111vw);
-}
-
-.ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-body .ba-accordion-body-content .send-reminde-warpper input.ba-fom-controll::-webkit-input-placeholder {
-  color: rgba(43, 62, 98, 0.45);
-}
-
-.ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-body .ba-accordion-body-content .send-reminde-warpper input.ba-fom-controll:-ms-input-placeholder {
-  color: rgba(43, 62, 98, 0.45);
-}
-
-.ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-body .ba-accordion-body-content .send-reminde-warpper input.ba-fom-controll::-ms-input-placeholder {
-  color: rgba(43, 62, 98, 0.45);
-}
-
-.ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-body .ba-accordion-body-content .send-reminde-warpper input.ba-fom-controll::placeholder {
-  color: rgba(43, 62, 98, 0.45);
 }
 
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-body .ba-accordion-body-content .send-deadline-warpper {
@@ -1088,10 +1121,15 @@ a.ba-cart-header-back .back-link-icon {
   margin-left: calc(15 * 0.0651111111vw);
 }
 
+.ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion.in {
+  overflow: auto;
+}
+
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion.in .ba-accordion-body {
   height: 100%;
   padding: calc(30 * 0.0651111111vw);
   max-height: 1000px;
+  overflow: auto;
 }
 
 .ba-checkbox-default {
@@ -1103,6 +1141,9 @@ a.ba-cart-header-back .back-link-icon {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
 }
 
@@ -1139,6 +1180,7 @@ a.ba-cart-header-back .back-link-icon {
 
 .ba-checkbox-default label span i {
   opacity: 0;
+  font-size: 11px;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -1185,6 +1227,156 @@ a.ba-cart-header-back .back-link-icon {
   width: calc(11 * 0.0651111111vw);
   height: calc(11 * 0.0651111111vw);
   margin-right: calc(15 * 0.0651111111vw);
+}
+
+.ba-slider-angles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ba-slider-angles a {
+  margin: 0 6px;
+}
+
+.ba-slider-angles a i {
+  font-size: 27px;
+  font-weight: bold;
+  opacity: 0.5;
+  color: #2B3E62;
+  -webkit-transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.ba-slider-angles a:hover i {
+  opacity: 1;
+}
+
+.invoices-models-slider {
+  margin: calc(20 * 0.0651111111vw) 0px;
+  /* the slides */
+  /* the parent */
+}
+
+.invoices-models-slider .invoices-models-slider-item img {
+  height: 239.4px;
+  width: 100%;
+}
+
+.invoices-models-slider .slick-slide {
+  margin: 0 15px;
+}
+
+.invoices-models-slider .slick-list {
+  margin: 0 -15px;
+}
+
+.block-head-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: calc(15 * 0.0651111111vw) 0px;
+}
+
+.block-head-title h5 {
+  color: #2B3E62;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  margin-bottom: 0;
+}
+
+.ba-colors-slider-warpper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ba-colors-slider-warpper .ba-colors-slider {
+  width: calc(100% - 70px);
+  /* the slides */
+  /* the parent */
+}
+
+.ba-colors-slider-warpper .ba-colors-slider .slick-slide {
+  margin: 0 8px;
+}
+
+.ba-colors-slider-warpper .ba-colors-slider .slick-list {
+  margin: 0 -8px;
+}
+
+.ba-colors-slider-warpper .ba-slider-angles {
+  width: calc(70 * 0.0651111111vw);
+}
+
+.ba-colors-slider-warpper .color-check-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ba-colors-slider-warpper .color-check-box span {
+  width: calc(27 * 0.0651111111vw) !important;
+  height: calc(27 * 0.0651111111vw) !important;
+  border-radius: 50%;
+  -webkit-transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.ba-colors-slider-warpper .color-check-box:hover span {
+  border: 3px solid #FFFFFF;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.ba-colors-slider-warpper .color-check-box input {
+  display: none;
+}
+
+.ba-colors-slider-warpper .color-check-box input:checked ~ span {
+  border: 3px solid #FFFFFF;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.paylent-ways img {
+  width: calc(195 * 0.0651111111vw);
+  height: calc(70 * 0.0651111111vw);
 }
 
 /* tables  */
