@@ -1424,6 +1424,10 @@ a.ba-cart-header-back .back-link-icon {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 }
 
+.editableform .form-control {
+  height: 43px;
+}
+
 .paylent-ways img {
   width: calc(195 * 0.0651111111vw);
   height: calc(70 * 0.0651111111vw);
@@ -1613,6 +1617,10 @@ a.ba-cart-header-back .back-link-icon {
   display: block;
 }
 
+.ba-create-invoice-main .ba-invoice-articles-warpp table tbody tr td.td-invoice-delete {
+  padding: 0;
+}
+
 .ba-create-invoice-main .ba-invoice-add-column-buttons-warp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1625,33 +1633,26 @@ a.ba-cart-header-back .back-link-icon {
           justify-content: space-between;
 }
 
-.ba-create-invoice-main .ba-invoice-add-column-buttons-warp a {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: none;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 45px;
-}
-
 .ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-dromdown {
+  border: none;
   width: 60px;
 }
 
 .ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-dromdown img {
   width: 25px;
   height: 22px;
+}
+
+.ba-create-invoice-main .ba-invoice-add-column-buttons-warp a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-col {
@@ -1661,12 +1662,201 @@ a.ba-cart-header-back .back-link-icon {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #104CBA;
+  text-align: center;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  height: 45px;
 }
 
 .ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-col img {
   width: 13px;
   height: 13px;
   margin-right: 10px;
+}
+
+.ba-create-invoice-main .ba-invoice-total-warpp {
+  width: 50%;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row:not(.final-total-box) {
+  width: 80%;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin: 0;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row > p {
+  width: 50%;
+}
+
+.ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row.final-total-box {
+  border: 1px solid rgba(16, 76, 186, 0.28);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 17px 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row .ba-invoice-total-label {
+  width: 50%;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row .ba-invoice-total-label p {
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ba-create-invoice-main .invoice-note {
+  margin-top: 40px;
+}
+
+.ba-create-invoice-main .ba-invoice-footer {
+  border-top: 2px solid #104CBA;
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 10px;
+}
+
+.ba-create-invoice-main .invoice-attatchements {
+  background: #F1F5FB;
+  border: 1px dashed rgba(16, 76, 186, 0.37);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  height: 138px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ba-create-invoice-main .invoice-attatchements a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  /* or 140% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #104CBA;
+}
+
+.ba-create-invoice-main .invoice-attatchements a img {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.ba-invoice-dropdown-mission-items {
+  padding: 8px;
+}
+
+.ba-invoice-dropdown-mission-items .dropdown-mission-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F3F6FC;
+  border-radius: 5px;
+  padding: 6px 0;
+  margin: 5px 0;
+  color: rgba(43, 62, 98, 0.65);
+}
+
+.ba-invoice-dropdown-mission-items .ba-dci-mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ba-invoice-dropdown-mission-items .ba-dci-mission img {
+  width: 15px;
+  height: 15px;
 }
 
 .combodate select {

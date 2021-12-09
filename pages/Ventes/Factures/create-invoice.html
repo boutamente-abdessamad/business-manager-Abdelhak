@@ -682,7 +682,7 @@
                 <div class="ba-create-invoice-main">
 
                     <!-- invoice editor  -->
-                    <div class="ba-invoice-editor">
+                    <div class="ba-invoice-builder">
 
                         <!-- editable link is a pakage you can find and customize in link below  -->
                         <!-- https://vitalets.github.io/x-editable/docs.html -->
@@ -813,7 +813,7 @@
                                         <td>
                                             <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">00.00 MAD</a>
                                         </td>
-                                        <td>
+                                        <td class="td-invoice-delete">
                                             <a href="" class="ba-invoice-delete-article-col">
                                                 <img src="../../../public/assets/icons/blue-delete.svg" alt="">
                                             </a>
@@ -826,24 +826,114 @@
 
                             </table>
 
+
+
                         </div>
 
                         <!-- invoice add column buttons  -->
                         <div class="ba-invoice-add-column-buttons-warp">
-                            <a href="" class="btn ba-btn-default ba-primary-light-bg ba-invoice-add-column-button-dromdown">
-                                <img src="../../../public/assets/icons/blue-add-pack.svg" alt="">
-                            </a>
+                            <div class="ba-invoice-mission-dropdown dropdown">
+                                <a href="" class="btn ba-btn-default ba-primary-light-bg ba-invoice-add-column-button-dromdown" id="add_invoice_missions" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <img src="../../../public/assets/icons/blue-add-pack.svg" alt="">
+                                </a>
+                                <div class="dropdown-menu ba-invoice-dropdown-mission-items" aria-labelledby="add_invoice_missions">
+                                    <div class="filter-input right-icon input-search">
+                                        <input type="text" name="date" placeholder="Rechercher par....." value="">
+                                    </div>
+                                    <a class="dropdown-mission-item" href="#">
+                                        <div class="ba-dci-mission">
+                                            <img src="../../../public/assets/icons/blue-pack.svg" alt="">
+                                        </div>
+                                        Développement de sites Web
+                                    </a>
+
+                                    <a class="dropdown-mission-item" href="#">
+                                        <div class="ba-dci-mission">
+                                            <img src="../../../public/assets/icons/blue-pack.svg" alt="">
+                                        </div>
+                                        Développement de sites Web
+                                    </a>
+
+                                    <a class="dropdown-mission-item" href="#">
+                                        <div class="ba-dci-mission">
+                                            <img src="../../../public/assets/icons/blue-pack.svg" alt="">
+                                        </div>
+                                        Développement de sites Web
+                                    </a>
+
+                                </div>
+                            </div>
+
                             <a href="" class="btn ba-btn-default ba-primary-light-bg ba-invoice-add-column-button-col">
                                 <img src="../../../public/assets/icons/blue-plus.svg" alt=""> Ajouter une ligne
                             </a>
                         </div>
                         <!-- invoice add column buttons  -->
+                        <!-- total -->
+                        <div class="ba-invoice-total-warpp">
+                            <!-- row  -->
+                            <div class="ba-invoice-total-row">
+                                <div class="ba-invoice-total-label">
+                                    <p>Total</p>
+                                    <a href="" class="ba-add-link" data-mdb-toggle="modal" data-mdb-target="#add_discount_modal"> + Ajouter une réduction </a>
+                                </div>
+                                <p>0.00</p>
+                            </div>
+                            <!-- row  -->
+                            <div class="ba-invoice-total-row gray-bb">
+                                <div class="ba-invoice-total-label">
+                                    <p>Impôt</p>
+                                </div>
+                                <p>0.00</p>
+                            </div>
+                            <!-- row  -->
+                            <div class="ba-invoice-total-row">
+                                <div class="ba-invoice-total-label">
+                                    <p>Total</p>
+                                </div>
+                                <p>0.00</p>
+                            </div>
+                            <!-- row  -->
+                            <div class="ba-invoice-total-row">
+                                <div class="ba-invoice-total-label">
+                                    <p>Le montant payé</p>
+                                </div>
+                                <p>0.00</p>
+                            </div>
+                            <!-- row  -->
+                            <div class="ba-invoice-total-row  final-total-box ba-primary-light-bg">
+                                <div class="ba-invoice-total-label">
+                                    <p>Montant dû</p>
+                                    <a href="" class="ba-add-link">Demander un acompte</a>
+                                </div>
+                                <p>0.00</p>
+                            </div>
+                            <a href="" class="ba-add-link">Ajouter un calendrier de paiement</a>
+
+                        </div>
+                        <!-- note -->
+                        <div class="invoice-note">
+                            <p class="ba-invoice-label">Mohamed Makdad</p>
+                            <a href="" class="editable-link" data-type="textarea" data-pk="1" data-title="Enter username">Entrez des notes ou des détails qui figureront sur la facture du client.....</a>
+                        </div>
+                        <!-- invoice footer  -->
+                        <div class="ba-invoice-footer">
+                            <a href="" class="editable-link" data-type="textarea" data-pk="1" data-title="Enter username">Champ pied de page.....</a>
+                        </div>
+
 
                     </div>
                     <!-- invoice editor  -->
 
+                    <!-- invoice attatchements  -->
+                    <label for="" class="invoice-attatchements ba-primary-light-bg">
+                        <a href=""> 
+                            <img src="../../../public/assets/icons/blue-download.svg" alt="">
+                            Ajouter des pièces jointes à la facture</a>
+                    </label>
                 </div>
                 <!-- main  -->
+
 
             </div>
             <!-- create invoice ba-select-warpper  -->
@@ -857,6 +947,23 @@
     <!--===============================================-->
     <!--============== ./app root  ======================-->
     <!--===============================================-->
+    <!-- Modal -->
+
+    <!-- Ajouter une réduction -->
+    <div class="modal fade" id="add_discount_modal" tabindex="-1" aria-labelledby="add_discount_modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="add_discount_modalLabel">Ajouter une réduction</h5>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn ba-btn-default" data-mdb-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn ba-btn-primary">Ajouter une réduction</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap fontawsom JS -->

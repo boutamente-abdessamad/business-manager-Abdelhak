@@ -15,6 +15,11 @@ $(document).ready(() => {
             e.preventDefault();
             $('body').toggleClass('ba-sidebar-open');
         });
+        // accordion toggle 
+        $('.ba-accordion-header').on('click', function (e) {
+            e.preventDefault();
+            $(this).closest('.invoice-step-acourdion').toggleClass('in');
+        });
 
         
 
