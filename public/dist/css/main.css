@@ -224,8 +224,8 @@
 }
 
 .ba-btn-circle {
-  width: 36px;
-  height: 36px;
+  width: calc(36 * 0.0651111111vw);
+  height: calc(36 * 0.0651111111vw);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -234,8 +234,30 @@
 }
 
 .ba-btn-circle img {
-  width: 20px;
-  height: 20px;
+  width: calc(20 * 0.0651111111vw);
+  height: calc(20 * 0.0651111111vw);
+}
+
+.editable-submit {
+  padding: calc(4 * 0.0651111111vw) calc(7 * 0.0651111111vw);
+  background-color: #104CBA;
+  color: #FFFFFF;
+}
+
+.editable-submit:hover {
+  background-color: #1A4799;
+  color: #FFFFFF;
+}
+
+.editable-cancel {
+  padding: calc(4 * 0.0651111111vw) calc(7 * 0.0651111111vw);
+  background-color: #F1F1F1;
+  color: #2B3E62;
+}
+
+.editable-cancel:hover {
+  background-color: #1a479933;
+  color: #2B3E62;
 }
 
 /* ............... Header syles ................ */
@@ -672,6 +694,34 @@ main.ba-app-root .ba-main-cart {
   opacity: 0.75;
 }
 
+.ba-danger-bg {
+  background-color: #F8485E !important;
+}
+
+.ba-success-bg {
+  background-color: #50CB93 !important;
+}
+
+.ba-primary-bg {
+  background-color: #104CBA !important;
+}
+
+.ba-primary-light-bg {
+  background-color: #F1F5FB !important;
+}
+
+.ba-default-bg {
+  background-color: transparent !important;
+}
+
+.ba-secondary-bg {
+  background-color: #F1F1F1 !important;
+}
+
+.ba-color-blue {
+  color: #104CBA !important;
+}
+
 input:focus-visible {
   outline: #104CBA auto 1px;
 }
@@ -1094,7 +1144,7 @@ a.ba-cart-header-back .back-link-icon {
   margin-bottom: 0;
 }
 
-.ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-body .ba-accordion-body-content .send-reminde-warpper input.ba-fom-controll {
+.ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-body .ba-accordion-body-content .send-reminde-warpper input.ba-form-controll {
   text-align: center;
   color: #2B3E62;
   max-width: 65px;
@@ -1377,6 +1427,348 @@ a.ba-cart-header-back .back-link-icon {
 .paylent-ways img {
   width: calc(195 * 0.0651111111vw);
   height: calc(70 * 0.0651111111vw);
+}
+
+.editable-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: rgba(43, 62, 98, 0.45);
+  position: relative;
+}
+
+.editable-date::after {
+  content: "";
+  right: -20px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 11px;
+  height: 11px;
+  background: url("../../../public/assets/icons/blue-calendar.svg") no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+
+.dotted-upload-zone {
+  border: 1px dashed rgba(16, 76, 186, 0.45);
+  border-radius: 7px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.dotted-upload-zone p,
+.dotted-upload-zone a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  pointer-events: none;
+}
+
+.dotted-upload-zone p {
+  color: #2B3E62;
+  margin: 0;
+}
+
+.dotted-upload-zone input {
+  display: none;
+}
+
+.dotted-upload-zone a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #104CBA;
+}
+
+.ba-create-invoice-main {
+  width: 59.4875901%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 7px rgba(62, 86, 130, 0.45);
+          box-shadow: 0px 1px 7px rgba(62, 86, 130, 0.45);
+  border-radius: 5px;
+  padding: calc(40 * 0.0651111111vw);
+}
+
+.ba-create-invoice-main .ba-invoice-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ba-create-invoice-main .ba-invoice-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin-bottom: 0;
+}
+
+.ba-create-invoice-main .ba-invoice-infos-warpp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 45px;
+}
+
+.ba-create-invoice-main .ba-invoice-client {
+  height: 109px;
+  background: #F1F5FB;
+  border-radius: 7px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 215px;
+  margin-top: 10px;
+}
+
+.ba-create-invoice-main .ba-invoice-clients-dropdown > a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #104CBA;
+}
+
+.ba-create-invoice-main .ba-invoice-clients-dropdown > a img {
+  width: 13px;
+  height: 13px;
+  margin-right: 15px;
+}
+
+.ba-create-invoice-main .ba-invoice-articles-warpp {
+  margin-top: 40px;
+}
+
+.ba-create-invoice-main .ba-invoice-articles-warpp table {
+  width: calc(100% + ( 40 * 0.0651111111vw));
+}
+
+.ba-create-invoice-main .ba-invoice-articles-warpp table thead tr th {
+  background: #104CBA;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding: 18.5px 16px;
+}
+
+.ba-create-invoice-main .ba-invoice-articles-warpp table thead tr th:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.ba-create-invoice-main .ba-invoice-articles-warpp table thead tr th:nth-child(4n) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.ba-create-invoice-main .ba-invoice-articles-warpp table thead tr th:nth-child(5n) {
+  background: #FFFFFF;
+}
+
+.ba-create-invoice-main .ba-invoice-articles-warpp table tbody tr td {
+  padding: 18px 16px;
+  vertical-align: baseline;
+}
+
+.ba-create-invoice-main .ba-invoice-articles-warpp table tbody tr td a {
+  display: block;
+}
+
+.ba-create-invoice-main .ba-invoice-add-column-buttons-warp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ba-create-invoice-main .ba-invoice-add-column-buttons-warp a {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+}
+
+.ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-dromdown {
+  width: 60px;
+}
+
+.ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-dromdown img {
+  width: 25px;
+  height: 22px;
+}
+
+.ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-col {
+  width: calc(100% - 70px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #104CBA;
+}
+
+.ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-col img {
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+}
+
+.combodate select {
+  background: #FFFFFF;
+  border: 1px solid rgba(43, 62, 98, 0.21);
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+  color: #2B3E62;
+  height: 27px;
+}
+
+.ba-add-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #104CBA;
+}
+
+.ba-invoice-clients-dropdown .ba-invoice-dropdown-items {
+  padding: 8px;
+}
+
+.ba-invoice-clients-dropdown .ba-invoice-dropdown-items .dropdown-client-item {
+  background: #F3F6FC;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 12px;
+  margin: 4px 0px;
+}
+
+.ba-invoice-clients-dropdown .ba-invoice-dropdown-items .dropdown-client-item .ba-dci-infos {
+  margin-left: 15px;
+}
+
+.ba-invoice-clients-dropdown .ba-invoice-dropdown-items .dropdown-client-item .ba-dci-infos h5 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+  /* or 162% */
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.ba-invoice-clients-dropdown .ba-invoice-dropdown-items .dropdown-client-item .ba-dci-infos p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 18px;
+  /* or 370% */
+  color: rgba(43, 62, 98, 0.45);
+  margin-bottom: 0;
+}
+
+.ba-invoice-clients-dropdown .ba-invoice-dropdown-items .dropdown-client-item .ba-dci-letter {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 37px;
+  /* or 218% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.editable-click,
+a.editable-click,
+a.editable-click:hover {
+  text-decoration: underline;
+  border-bottom: none;
 }
 
 /* tables  */
