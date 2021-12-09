@@ -28,6 +28,9 @@
     <!-- daterange picker -->
     <link rel="stylesheet" href="../../../libs/daterangepicker/daterangepicker.css">
     <!-- skin style  -->
+    <!-- x-editable -->
+    <link rel="stylesheet" href="../../../libs/x-editable/bootstrap-editable.css">
+    <!-- x-editable -->
     <link rel="stylesheet" href="../../../public/dist/css/main.css">
     <!-- end skin style  -->
     <!-- skin Responsive style  -->
@@ -222,8 +225,6 @@
                     <div class="invoice-step-acourdion">
 
                         <!-- accordion header  -->
-                        <!-- 59.4875901 -->
-                        <!-- 38.4307446 -->
                         <div class="ba-accordion-header">
                             <div class="ba-accordion-header-title">
                                 <div class="ba-accordion-header-title-icon">
@@ -371,8 +372,6 @@
                     <div class="invoice-step-acourdion">
 
                         <!-- accordion header  -->
-                        <!-- 59.4875901 -->
-                        <!-- 38.4307446 -->
                         <div class="ba-accordion-header">
                             <div class="ba-accordion-header-title">
                                 <div class="ba-accordion-header-title-icon">
@@ -682,6 +681,167 @@
                 <!-- main  -->
                 <div class="ba-create-invoice-main">
 
+                    <!-- invoice editor  -->
+                    <div class="ba-invoice-editor">
+
+                        <!-- editable link is a pakage you can find and customize in link below  -->
+                        <!-- https://vitalets.github.io/x-editable/docs.html -->
+                        <!-- invoice header  -->
+                        <div class="ba-invoice-header">
+
+                            <!-- header client infos  -->
+                            <div class="ba-invoice-header-client-infos">
+
+                                <p class="ba-invoice-label">Mohamed Makdad</p>
+                                <p class="ba-invoice-label">0699008147</p>
+
+                                <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">Rue.....</a>
+                                <div class="d-iline-flex">
+                                    <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">Ville.....</a>
+                                    <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">,Etat.....</a>
+                                </div>
+                                <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">Code postal.....</a>
+                                <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">Payé.....</a>
+
+                            </div>
+
+                            <!-- header client infos  -->
+                            <div class="ba-invoice-header-client-logo">
+
+                                <label class="dotted-upload-zone" for="upload_logo_invoice">
+                                    <p>Faites glaiser votre <br> logo ici ou </p>
+                                    <input type="file" name="" id="upload_logo_invoice">
+                                    <a href="">Selectionner un fichier</a>
+                                </label>
+
+                            </div>
+
+
+                        </div>
+                        <!-- invoice header  -->
+
+                        <!-- invoice infos  -->
+                        <div class="ba-invoice-infos-warpp">
+                            <div class="ba-invoice-infos">
+                                <!-- ba-invoice-infos-block  -->
+                                <p class="ba-invoice-label">Numéro de facture</p>
+                                <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">00002.....</a>
+                                <p class="ba-invoice-label">Date d'émission</p>
+                                <a href="#" class="editable-link editable-date" data-type="combodate" data-value="2021-12-08" data-format="DD-MM-YYYY" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Date d'émission">08/08/2021.....</a>
+                                <p class="ba-invoice-label">Date d'échéance</p>
+                                <a href="#" class="editable-link editable-date" data-type="combodate" data-value="2021-12-08" data-format="DD-MM-YYYY" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Date d'échéance">08/08/2021.....</a>
+                            </div>
+                            <div class="ba-invoice-infos">
+                                <!-- ba-invoice-infos-block  -->
+                                <p class="ba-invoice-label">Référence</p>
+                                <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">Saississez une valeur.....</a>
+                                <p class="ba-invoice-label">Période de facturation </p>
+                                <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">Saississez une valeur.....</a>
+                            </div>
+                            <div class="ba-invoice-infos">
+                                <!-- ba-invoice-infos-block  -->
+                                <p class="ba-invoice-label text-end">Facturé à </p>
+
+                                <!-- client  -->
+                                <div class="ba-invoice-client">
+                                    <div class="ba-invoice-clients-dropdown dropdown">
+                                        <a href="" type="button" id="add_invoice_client" data-mdb-toggle="dropdown" aria-expanded="false">
+                                            <img src="../../../public/assets/icons/blue-plus.svg" alt=""> Ajouter un client
+                                        </a>
+                                        <div class="dropdown-menu ba-invoice-dropdown-items" aria-labelledby="add_invoice_client">
+                                            <div class="filter-input right-icon input-search">
+                                                <input type="text" name="date" placeholder="Rechercher par....." value="">
+                                            </div>
+                                            <a class="dropdown-client-item" href="#">
+                                                <div class="ba-dci-letter  ba-danger-bg">H</div>
+                                                <div class="ba-dci-infos">
+                                                    <h5>Hajar Ben jaloun</h5>
+                                                    <p>client@gmail.com</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown-client-item" href="#">
+                                                <div class="ba-dci-letter ba-success-bg">H</div>
+                                                <div class="ba-dci-infos">
+                                                    <h5>Hajar Ben jaloun</h5>
+                                                    <p>client@gmail.com</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown-client-item" href="#">
+                                                <div class="ba-dci-letter ba-primary-bg">H</div>
+                                                <div class="ba-dci-infos">
+                                                    <h5>Hajar Ben jaloun</h5>
+                                                    <p>client@gmail.com</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- invoice infos  -->
+
+                        <!-- invoice articles  -->
+                        <div class="ba-invoice-articles-warpp">
+
+                            <!-- tabel  -->
+                            <table>
+                                <!-- thead -->
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Prix</th>
+                                        <th>Qté</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <!-- tbody -->
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">Entrez un nom d'article.....</a>
+                                            <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">Entrez une description de l'article.....</a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">00.00 MAD</a>
+                                            <a href="" class="ba-add-link"> + Ajouter des taxes</a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">025</a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="editable-link" data-type="text" data-pk="1" data-title="Enter username">00.00 MAD</a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="ba-invoice-delete-article-col">
+                                                <img src="../../../public/assets/icons/blue-delete.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+
+
+
+                            </table>
+
+                        </div>
+
+                        <!-- invoice add column buttons  -->
+                        <div class="ba-invoice-add-column-buttons-warp">
+                            <a href="" class="btn ba-btn-default ba-primary-light-bg ba-invoice-add-column-button-dromdown">
+                                <img src="../../../public/assets/icons/blue-add-pack.svg" alt="">
+                            </a>
+                            <a href="" class="btn ba-btn-default ba-primary-light-bg ba-invoice-add-column-button-col">
+                                <img src="../../../public/assets/icons/blue-plus.svg" alt=""> Ajouter une ligne
+                            </a>
+                        </div>
+                        <!-- invoice add column buttons  -->
+
+                    </div>
+                    <!-- invoice editor  -->
+
                 </div>
                 <!-- main  -->
 
@@ -723,6 +883,8 @@
     <!-- sliders  -->
     <script src="../../../libs/slick/slick.min.js"></script>
     <!-- sliders  -->
+    <!-- x-editable -->
+    <script src="../../../libs/x-editable/bootstrap-editable.min.js"></script>
     <!-- uw scripts -->
     <script src="../../../public/dist/js/main.js"></script>
     <script src="../../../public/dist/js/instances.js"></script>

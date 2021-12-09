@@ -8,6 +8,18 @@ $(document).ready(() => {
     // start script 
     try {
 
+      // editable links 
+
+    if ($.fn.editable) {
+      // $.fn.editable.defaults.mode = 'inline';
+       $('.editable-link').editable({
+        //  toggle: 'manual'
+        mode: 'inline',
+      });
+    }
+
+   
+
       // select 
 
        if ( $('.ba-select').length) {
