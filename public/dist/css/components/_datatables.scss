@@ -259,10 +259,12 @@ table.dataTable {
         td.select-checkbox {
             &:before {
                 left: pxToVw(23);
-                width: pxToVw(26);
                 margin-top: pxToVw(11);
-                height: pxToVw(26);
-                border: 2px solid $blue;
+                width: pxToVw(21);
+                height: pxToVw(21);
+                background: #FFFFFF;
+                border: 1px solid rgba(43, 62, 98, 0.22);
+                border-radius: 5px;
             }
             &:after {
                 left: pxToVw(23);
@@ -287,11 +289,11 @@ table.dataTable {
             }
         }
         >tr.selected {
-            background-color: #8bc34a4a;
+            background-color: #3f51b51c;
         }
         >tr {
             >.selected {
-                background-color: #8bc34a4a;
+                background-color: #3f51b51c;
             }
         }
     }
@@ -305,10 +307,10 @@ table.dataTable {
                 font-style: normal;
                 font-variant: normal;
                 text-rendering: auto;
-                font-size: pxToVw(30);
+                font-size: pxToVw(21);
                 position: absolute;
-                top: pxToVw(30);
-                left: pxToVw(21);
+                top: pxToVw(31);
+                left: pxToVw(19);
                 line-height: 1;
                 margin-left: pxToVw(-4);
                 color: $blue;
@@ -324,10 +326,10 @@ table.dataTable {
                 font-style: normal;
                 font-variant: normal;
                 text-rendering: auto;
-                font-size: pxToVw(30);
+                font-size: pxToVw(24);
                 position: absolute;
-                top: pxToVw(30);
-                left: pxToVw(21);
+                top: pxToVw(18);
+                left: pxToVw(29);
                 line-height: 1;
                 margin-left: pxToVw(-4);
                 color: $blue;
@@ -340,11 +342,18 @@ table.dataTable {
 .datatable-check {
     outline: none !important;
     padding: 0;
-    border: none;
-    background: transparent;
+    width: 21px;
+    height: 21px;
+    background: #FFFFFF;
+    border: 1px solid rgba(43, 62, 98, 0.22);
+    box-sizing: border-box;
+    border-radius: 5px;
     i {
-        font-size: pxToVw(30);
+        font-size: pxToVw(19);
         color: $blue;
+        &.fa-square {
+            color: transparent;
+        }
     }
 }
 

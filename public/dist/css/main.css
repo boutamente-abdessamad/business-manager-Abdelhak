@@ -49,17 +49,7 @@
   margin-bottom: calc(20 * 0.0651111111vw);
 }
 
-.ba-select-warpper .filter-option-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ba-select-warpper .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+.ba-select-warpper .bootstrap-select > .dropdown-toggle .filter-option-inner-inner {
   overflow: hidden;
   font-family: Roboto;
   font-style: normal;
@@ -70,7 +60,21 @@
   color: #2B3E62;
 }
 
-.bootstrap-select .dropdown-menu li a span.text {
+.ba-select-warpper.mb-0 .bootstrap-select > .dropdown-toggle {
+  margin-bottom: 0;
+}
+
+.ba-select-warpper .filter-option-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ba-select-warpper .dropdown-menu li a span.text {
   display: inline-block;
   font-family: Roboto;
   font-style: normal;
@@ -708,6 +712,10 @@ main.ba-app-root .ba-main-cart {
 
 .gray-bb {
   border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+}
+
+.gray-bt {
+  border-top: 1px solid rgba(16, 76, 186, 0.28);
 }
 
 .ba-opacity-25 {
@@ -2187,7 +2195,7 @@ a.editable-click:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
-  width: 100%;
+  width: 99%;
   height: 88px;
   padding: 15px;
   font-family: Roboto;
@@ -2333,6 +2341,140 @@ a.editable-click:hover {
 
 .ba-left-dote.ba-left-dote-danger:after {
   background: #F8485E;
+}
+
+.consult-list-cart-body > h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 33px;
+  line-height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.ba-progress-bar-warpp > label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  /* or 127% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.45);
+  margin: 0;
+}
+
+.ba-progress-bar-warpp span.ba-progress-nbr {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin-bottom: 8px;
+}
+
+.ba-progress-bar-warpp .ba-progress-bar-sm {
+  height: 5px;
+  width: 100%;
+  background: #E7EDF8;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ba-progress-bar-warpp .ba-progress-bar-sm span {
+  border-radius: 20px;
+  display: block;
+  height: 100%;
+}
+
+.light-blue-container {
+  background: #F1F5FB;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.ba-invoice-pay-cart-head-icon img {
+  width: 27px;
+  height: 27px;
+}
+
+.ba-comment-user {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  /* or 124% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 0.03em;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E7EDF8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  color: rgba(16, 76, 186, 0.45);
+}
+
+.ba-invoice-payment-status-panel .ba-invoice-pay-cart-body .ba-invoice-chat ul li {
+  padding: 15px 0px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ba-invoice-payment-status-panel .ba-invoice-pay-cart-body .ba-invoice-chat ul li .ba-invoice-chat-message {
+  width: calc(100% - 100px);
+}
+
+.ba-invoice-payment-status-panel .ba-invoice-pay-cart-body .ba-invoice-chat ul li .ba-invoice-chat-message h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  margin: 0;
+}
+
+.ba-invoice-payment-status-panel .ba-invoice-pay-cart-body .ba-invoice-chat ul li .ba-invoice-chat-message p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
 }
 
 /* tables  */
@@ -2575,10 +2717,12 @@ table.dataTable thead .sorting_desc_disabled:before {
 
 table.dataTable tbody td.select-checkbox:before {
   left: calc(23 * 0.0651111111vw);
-  width: calc(26 * 0.0651111111vw);
   margin-top: calc(11 * 0.0651111111vw);
-  height: calc(26 * 0.0651111111vw);
-  border: 2px solid #104CBA;
+  width: calc(21 * 0.0651111111vw);
+  height: calc(21 * 0.0651111111vw);
+  background: #FFFFFF;
+  border: 1px solid rgba(43, 62, 98, 0.22);
+  border-radius: 5px;
 }
 
 table.dataTable tbody td.select-checkbox:after {
@@ -2604,11 +2748,11 @@ table.dataTable tbody th.select-checkbox:after {
 }
 
 table.dataTable tbody > tr.selected {
-  background-color: #8bc34a4a;
+  background-color: #3f51b51c;
 }
 
 table.dataTable tbody > tr > .selected {
-  background-color: #8bc34a4a;
+  background-color: #3f51b51c;
 }
 
 table.dataTable tr.selected td.select-checkbox:after {
@@ -2619,10 +2763,10 @@ table.dataTable tr.selected td.select-checkbox:after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  font-size: calc(30 * 0.0651111111vw);
+  font-size: calc(21 * 0.0651111111vw);
   position: absolute;
-  top: calc(30 * 0.0651111111vw);
-  left: calc(21 * 0.0651111111vw);
+  top: calc(31 * 0.0651111111vw);
+  left: calc(19 * 0.0651111111vw);
   line-height: 1;
   margin-left: calc(-4 * 0.0651111111vw);
   color: #104CBA;
@@ -2637,10 +2781,10 @@ table.dataTable tr.selected th.select-checkbox:after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  font-size: calc(30 * 0.0651111111vw);
+  font-size: calc(24 * 0.0651111111vw);
   position: absolute;
-  top: calc(30 * 0.0651111111vw);
-  left: calc(21 * 0.0651111111vw);
+  top: calc(18 * 0.0651111111vw);
+  left: calc(29 * 0.0651111111vw);
   line-height: 1;
   margin-left: calc(-4 * 0.0651111111vw);
   color: #104CBA;
@@ -2650,13 +2794,22 @@ table.dataTable tr.selected th.select-checkbox:after {
 .datatable-check {
   outline: none !important;
   padding: 0;
-  border: none;
-  background: transparent;
+  width: 21px;
+  height: 21px;
+  background: #FFFFFF;
+  border: 1px solid rgba(43, 62, 98, 0.22);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .datatable-check i {
-  font-size: calc(30 * 0.0651111111vw);
+  font-size: calc(19 * 0.0651111111vw);
   color: #104CBA;
+}
+
+.datatable-check i.fa-square {
+  color: transparent;
 }
 
 table td > a {
@@ -3129,6 +3282,7 @@ body {
 .filter-input {
   max-width: calc(224 * 0.0651111111vw);
   position: relative;
+  height: calc(44 * 0.0651111111vw);
 }
 
 .filter-input.left-icon input {

@@ -30,6 +30,10 @@
         border-bottom: 1px solid rgba(16, 76, 186, 0.28);
     }
     
+    .gray-bt {
+        border-top: 1px solid rgba(16, 76, 186, 0.28);
+    }
+    
     .ba-opacity-25 {
         opacity: 0.25;
     }
@@ -1107,7 +1111,7 @@
                         border: 1px solid rgba(16, 76, 186, 0.15);
                         box-sizing: border-box;
                         border-radius: 5px;
-                        width: 100%;
+                        width: 99%;
                         height: 88px;
                         padding: 15px;
                         font-family: Roboto;
@@ -1217,5 +1221,128 @@
         }
         &.ba-left-dote-danger:after {
             background: $red;
+        }
+    }
+    
+    .consult-list-cart-body {
+        &>h2 {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 33px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            letter-spacing: 0.03em;
+            color: #2B3E62;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
+    }
+    
+    // progress bar 
+    .ba-progress-bar-warpp {
+        &>label {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 19px;
+            /* or 127% */
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: rgba(43, 62, 98, 0.45);
+            margin: 0;
+        }
+        span.ba-progress-nbr {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            display: block;
+            text-align: right;
+            letter-spacing: 0.03em;
+            color: #2B3E62;
+            margin-bottom: 8px;
+        }
+        .ba-progress-bar-sm {
+            height: 5px;
+            width: 100%;
+            background: #E7EDF8;
+            border-radius: 20px;
+            overflow: hidden;
+            span {
+                border-radius: 20px;
+                display: block;
+                height: 100%;
+            }
+        }
+    }
+    
+    .light-blue-container {
+        background: #F1F5FB;
+        border-radius: 15px;
+        padding: 24px;
+    }
+    
+    .ba-invoice-pay-cart-head-icon img {
+        width: 27px;
+        height: 27px;
+    }
+    
+    .ba-comment-user {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        /* or 124% */
+        display: flex;
+        letter-spacing: 0.03em;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        background: #E7EDF8;
+        justify-content: center;
+        border-radius: 50%;
+        color: rgba(16, 76, 186, 0.45);
+    }
+    
+    .ba-invoice-payment-status-panel {
+        .ba-invoice-pay-cart-body {
+            .ba-invoice-chat {
+                ul {
+                    li {
+                        padding: 15px 0px;
+                        align-items: flex-start;
+                        .ba-invoice-chat-message {
+                            width: calc(100% - 100px);
+                            h3 {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 15px;
+                                line-height: 21px;
+                                letter-spacing: 0.03em;
+                                color: rgba(43, 62, 98, 0.65);
+                                margin: 0;
+                            }
+                            p {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 13px;
+                                line-height: 20px;
+                                letter-spacing: 0.03em;
+                                color: rgba(43, 62, 98, 0.65);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }

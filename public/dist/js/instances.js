@@ -36,7 +36,61 @@ $(document).ready(() => {
             "info": false,
             "responsive": true,
             "autoWidth": false,
+            columnDefs: [{
+                orderable: false,
+                className: 'select-checkbox',
+                targets: 0,
+                checkboxes: {
+                    'selectRow': true
+                }
+            }],
+            select: {
+                style: 'multi',
+                selector: 'td:first-child'
+            },
+            dom: 'Bfrtip',
+            buttons: [
+                'selectAll',
+                'selectNone'
+            ],
+            order: [
+                [1, 'asc']
+            ]
         });
+        baDatatable.on('select deselect', function (e, dt, type, indexes) {
+          if (type === 'row') {
+              // We may use dt instead of timesDataTable to have the freshest data.
+              if (dt.rows().count() === dt.rows({
+                      selected: true
+                  }).count()) {
+                  // Deselect all items button.
+                  $('#baDataTableCheckAllButton i').attr('class', 'fa fa-check-square');
+                  return;
+              }
+
+              if (dt.rows({
+                      selected: true
+                  }).count() === 0) {
+                  // Select all items button.
+                  $('#baDataTableCheckAllButton i').attr('class', 'fa fa-square');
+                  return;
+              }
+
+              // Deselect some items button.
+              $('#baDataTableCheckAllButton i').attr('class', 'fa fa-minus-square');
+          }
+      });
+      $('#baDataTableCheckAllButton').click(function (e) {
+          e.preventDefault();
+          if (baDatatable.rows({
+                  selected: true
+              }).count() > 0) {
+              baDatatable.rows().deselect();
+              return;
+          }
+
+          baDatatable.rows().select();
+      });
     }
     // daterangepicker
     if ($('.date-range').length) {
@@ -49,7 +103,7 @@ $(document).ready(() => {
     // invoices-models-slider
 
      let invoicesModelsSlider = $('.invoices-models-slider');
-    if (invoicesModelsSlider) {
+    if (invoicesModelsSlider.length) {
       invoicesModelsSlider.slick({
         focusOnSelect: true,
         slidesToShow: 2,
@@ -86,7 +140,7 @@ $(document).ready(() => {
       });
     }
      let baColorsSlider = $('.ba-colors-slider');
-    if (baColorsSlider) {
+    if (baColorsSlider.length) {
       baColorsSlider.slick({
         focusOnSelect: true,
         slidesToShow: 7,

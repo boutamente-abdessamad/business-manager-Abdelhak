@@ -295,6 +295,7 @@ body {
 .filter-input {
     max-width: pxToVw(224);
     position: relative;
+    height: pxToVw(44);
     &.left-icon {
         input {
             text-indent: pxToVw(50);
