@@ -1188,15 +1188,20 @@
         }
     }
     
-    li.ba-left-dote {
+    .ba-left-dote {
         position: relative;
         &::after {
             content: "";
             position: absolute;
             width: 15px;
             height: 15px;
-            left: 0;
+            left: 15px;
             border-radius: 50%;
+        }
+        padding-left: 30px;
+        &.ba-left-dote-sm::after {
+            width: 7px;
+            height: 7px;
         }
         &.ba-left-dote-default:after {
             background: $blueLightBg;
@@ -1209,5 +1214,8 @@
         }
         &.ba-left-dote-success:after {
             background: $green;
+        }
+        &.ba-left-dote-danger:after {
+            background: $red;
         }
     }

@@ -2296,33 +2296,43 @@ a.editable-click:hover {
           transform: rotate(180deg);
 }
 
-li.ba-left-dote {
+.ba-left-dote {
   position: relative;
+  padding-left: 30px;
 }
 
-li.ba-left-dote::after {
+.ba-left-dote::after {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 0;
+  left: 15px;
   border-radius: 50%;
 }
 
-li.ba-left-dote.ba-left-dote-default:after {
+.ba-left-dote.ba-left-dote-sm::after {
+  width: 7px;
+  height: 7px;
+}
+
+.ba-left-dote.ba-left-dote-default:after {
   background: #F1F5FB;
 }
 
-li.ba-left-dote.ba-left-dote-primary:after {
+.ba-left-dote.ba-left-dote-primary:after {
   background: #104CBA;
 }
 
-li.ba-left-dote.ba-left-dote-warning:after {
+.ba-left-dote.ba-left-dote-warning:after {
   background: #F7B422;
 }
 
-li.ba-left-dote.ba-left-dote-success:after {
+.ba-left-dote.ba-left-dote-success:after {
   background: #50CB93;
+}
+
+.ba-left-dote.ba-left-dote-danger:after {
+  background: #F8485E;
 }
 
 /* tables  */
