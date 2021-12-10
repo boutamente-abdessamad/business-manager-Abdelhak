@@ -950,16 +950,23 @@
     <!-- Modal -->
 
     <!-- Ajouter une réduction -->
-    <div class="modal fade" id="add_discount_modal" tabindex="-1" aria-labelledby="add_discount_modalLabel" aria-hidden="true">
+    <div class="modal fade ba-modal-auto-size blue-light-modal" id="add_discount_modal" tabindex="-1" aria-labelledby="add_discount_modalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="add_discount_modalLabel">Ajouter une réduction</h5>
                 </div>
-                <div class="modal-body">...</div>
+                <div class="modal-body">
+
+                    <div class="side-text-input input-sufix" attr-sufix="%">
+                        <input type="text" class="ba-form-controll">
+                        <label>du sous-total de la facture</label>
+                    </div>
+
+                </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn ba-btn-default" data-mdb-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn ba-btn-primary">Ajouter une réduction</button>
+                    <button type="button" class="btn ba-btn-default ba-btn-sm" data-mdb-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn ba-btn-primary ba-btn-sm">Ajouter une réduction</button>
                 </div>
             </div>
         </div>

@@ -168,6 +168,34 @@
   margin-left: calc(10 * 0.0651111111vw);
 }
 
+[class*="ba-btn-"] > span ~ i {
+  margin-left: calc(10 * 0.0651111111vw);
+}
+
+[class*="ba-btn-"] > i ~ span {
+  margin-left: calc(10 * 0.0651111111vw);
+}
+
+[class*="ba-btn-"] i {
+  font-size: 19px;
+}
+
+[class*="ba-btn-"] i.dark-back-round {
+  background-color: #00000024;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .ba-btn-primary {
   background-color: #104CBA;
   color: #FFFFFF;
@@ -718,8 +746,28 @@ main.ba-app-root .ba-main-cart {
   background-color: #F1F1F1 !important;
 }
 
+.ba-primary-light-bg {
+  background-color: rgba(16, 76, 186, 0.09) !important;
+}
+
+.ba-danger-light-bg {
+  background-color: rgba(253, 98, 94, 0.09) !important;
+}
+
+.ba-success-light-bg {
+  background-color: rgba(42, 181, 125, 0.09) !important;
+}
+
+.ba-warning-light-bg {
+  background-color: rgba(247, 180, 34, 0.09) !important;
+}
+
 .ba-color-blue {
   color: #104CBA !important;
+}
+
+.ba-color-green {
+  color: #50CB93 !important;
 }
 
 input:focus-visible {
@@ -783,6 +831,14 @@ input:focus-visible {
 
 .dropdown .dropdown-menu {
   min-width: auto;
+}
+
+.ba-cart {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
+  border-radius: calc(11 * 0.0651111111vw);
+  padding: calc(15 * 0.0651111111vw);
 }
 
 /* daterangepicker */
@@ -1961,6 +2017,304 @@ a.editable-click,
 a.editable-click:hover {
   text-decoration: underline;
   border-bottom: none;
+}
+
+.ba-invoice-sidezone {
+  width: 38.4307446%;
+}
+
+.ba-invoice-payment-status-panel {
+  background: #F1F5FB;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.ba-invoice-payment-status-panel .ba-invoice-payment-status-panel-header {
+  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.ba-invoice-payment-status-panel .ba-invoice-payment-status-panel-header h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin: 0;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-head {
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-head h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 25px;
+  /* or 132% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-head p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 27px;
+  /* identical to box height, or 180% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin: 0;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-body {
+  padding: 0px;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+  max-height: 0px;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-body ul li {
+  padding: 15px 0px;
+  border-bottom: 1px solid rgba(16, 76, 186, 0.21);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-body ul li p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 27px;
+  /* identical to box height, or 208% */
+  margin: 0;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 24px;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-user {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  /* or 124% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 0.03em;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E7EDF8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  color: rgba(16, 76, 186, 0.45);
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-controll {
+  width: calc(100% - 50px);
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-controll textarea {
+  background: rgba(245, 248, 253, 0.65);
+  border: 1px solid rgba(16, 76, 186, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  height: 88px;
+  padding: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  /* or 123% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #104CBA;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-controll textarea::-webkit-input-placeholder {
+  color: rgba(43, 62, 98, 0.45);
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-controll textarea:-ms-input-placeholder {
+  color: rgba(43, 62, 98, 0.45);
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-controll textarea::-ms-input-placeholder {
+  color: rgba(43, 62, 98, 0.45);
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-controll textarea::placeholder {
+  color: rgba(43, 62, 98, 0.45);
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-controll textarea:focus-within {
+  outline: 1px solid #104CBA;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-controll span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.45);
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-toggle {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-toggle p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 27px;
+  /* or 208% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #104CBA;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-toggle a {
+  width: calc(29 * 0.0651111111vw);
+  height: calc(29 * 0.0651111111vw);
+  font-size: 19px;
+}
+
+.ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-toggle a i {
+  -webkit-transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.ba-invoice-payment-status-panel.in .ba-cart .ba-invoice-pay-cart-body {
+  padding: 25px 0px;
+  height: auto;
+  max-height: 1000px;
+}
+
+.ba-invoice-payment-status-panel.in .ba-invoice-pay-toggle a i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+li.ba-left-dote {
+  position: relative;
+}
+
+li.ba-left-dote::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  border-radius: 50%;
+}
+
+li.ba-left-dote.ba-left-dote-default:after {
+  background: #F1F5FB;
+}
+
+li.ba-left-dote.ba-left-dote-primary:after {
+  background: #104CBA;
+}
+
+li.ba-left-dote.ba-left-dote-warning:after {
+  background: #F7B422;
+}
+
+li.ba-left-dote.ba-left-dote-success:after {
+  background: #50CB93;
 }
 
 /* tables  */

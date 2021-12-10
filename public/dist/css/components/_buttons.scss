@@ -24,6 +24,24 @@
     &>span~img {
         margin-left: pxToVw(10);
     }
+    &>span~i {
+        margin-left: pxToVw(10);
+    }
+    &>i~span {
+        margin-left: pxToVw(10);
+    }
+    i {
+        font-size: 19px;
+        &.dark-back-round {
+            background-color: #00000024;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 .ba-btn-primary {
@@ -36,7 +54,7 @@
 }
 
 .ba-btn-success {
-    background-color: $greenBg;
+    background-color: $green;
     color: #FFFFFF;
     &:hover {
         background-color: $greenText;

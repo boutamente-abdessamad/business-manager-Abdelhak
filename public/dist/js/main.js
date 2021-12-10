@@ -20,6 +20,18 @@ $(document).ready(() => {
             e.preventDefault();
             $(this).closest('.invoice-step-acourdion').toggleClass('in');
         });
+        // accordion toggle 
+        $('.ba-invoice-pay-toggle').on('click', function (e) {
+            e.preventDefault();
+            $(this).closest('.ba-invoice-payment-status-panel').toggleClass('in');
+            if ($(this).closest('.ba-invoice-payment-status-panel').hasClass('in')) {
+                $(this).find('p').text('Cacher');
+            }else{
+                $(this).find('p').text('Voir l\'historique');
+            }
+                
+
+        });
 
         
 
