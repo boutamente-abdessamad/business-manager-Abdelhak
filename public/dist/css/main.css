@@ -770,6 +770,14 @@ main.ba-app-root .ba-main-cart {
   color: #50CB93 !important;
 }
 
+.ba-color-red {
+  color: #F8485E !important;
+}
+
+.ba-color-orange {
+  color: #F7B422 !important;
+}
+
 input:focus-visible {
   outline: #104CBA auto 1px;
 }

@@ -92,6 +92,14 @@
         color: $green !important;
     }
     
+    .ba-color-red {
+        color: $red !important;
+    }
+    
+    .ba-color-orange {
+        color: $orange !important;
+    }
+    
     input {
         &:focus-visible {
             outline: $blue auto 1px;
