@@ -357,7 +357,7 @@ header.ba-header nav.ba-navbar a.ba-nav-site-link span {
 
 header.ba-header nav.ba-navbar .ba-search-nav {
   position: relative;
-  padding-right: 36px;
+  padding-right: calc(36 * 0.0651111111vw);
 }
 
 header.ba-header nav.ba-navbar .ba-search-nav::after {
@@ -535,8 +535,8 @@ header.ba-header nav.ba-navbar a.ba-sidebar-toggle img {
   position: absolute;
   top: 0px;
   right: 0px;
-  height: 14px;
-  width: 14px;
+  height: calc(14 * 0.0651111111vw);
+  width: calc(14 * 0.0651111111vw);
   background: #F7B422;
   border: 3px solid #FFFFFF;
   border-radius: 50%;
@@ -870,7 +870,7 @@ input:focus-visible {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: calc(40 * 0.0651111111vw);
 }
 
 a.ba-cart-header-back {
@@ -1147,7 +1147,7 @@ a.ba-cart-header-back .back-link-icon {
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-body .ba-accordion-body-content .send-reminde-warpper input.ba-form-controll {
   text-align: center;
   color: #2B3E62;
-  max-width: 65px;
+  max-width: calc(65 * 0.0651111111vw);
   margin: 0 calc(20 * 0.0651111111vw);
 }
 
@@ -1178,7 +1178,7 @@ a.ba-cart-header-back .back-link-icon {
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion.in .ba-accordion-body {
   height: 100%;
   padding: calc(30 * 0.0651111111vw);
-  max-height: 1000px;
+  max-height: calc(1000 * 0.0651111111vw);
   overflow: auto;
 }
 
@@ -1190,10 +1190,12 @@ a.ba-cart-header-back .back-link-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
   margin: 0;
 }
 
@@ -1230,7 +1232,7 @@ a.ba-cart-header-back .back-link-icon {
 
 .ba-checkbox-default label span i {
   opacity: 0;
-  font-size: 11px;
+  font-size: calc(11 * 0.0651111111vw);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -1270,7 +1272,7 @@ a.ba-cart-header-back .back-link-icon {
   text-align: center;
   letter-spacing: 0.03em;
   color: #104CBA;
-  margin: 30px 0px;
+  margin: calc(30 * 0.0651111111vw) 0px;
 }
 
 .full-dotted-link img {
@@ -1298,7 +1300,7 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-slider-angles a i {
-  font-size: 27px;
+  font-size: calc(27 * 0.0651111111vw);
   font-weight: bold;
   opacity: 0.5;
   color: #2B3E62;
@@ -1317,16 +1319,16 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .invoices-models-slider .invoices-models-slider-item img {
-  height: 239.4px;
+  height: calc(240 * 0.0651111111vw);
   width: 100%;
 }
 
 .invoices-models-slider .slick-slide {
-  margin: 0 15px;
+  margin: 0 calc(15 * 0.0651111111vw);
 }
 
 .invoices-models-slider .slick-list {
-  margin: 0 -15px;
+  margin: 0 calc(-15 * 0.0651111111vw);
 }
 
 .block-head-title {
@@ -1375,7 +1377,7 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-colors-slider-warpper .ba-colors-slider .slick-slide {
-  margin: 0 8px;
+  margin: 0 calc(8 * 0.0651111111vw);
 }
 
 .ba-colors-slider-warpper .ba-colors-slider .slick-list {
@@ -1425,7 +1427,7 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .editableform .form-control {
-  height: 43px;
+  height: calc(43 * 0.0651111111vw);
 }
 
 .paylent-ways img {
@@ -1437,8 +1439,8 @@ a.ba-cart-header-back .back-link-icon {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(24 * 0.0651111111vw);
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1448,13 +1450,13 @@ a.ba-cart-header-back .back-link-icon {
 
 .editable-date::after {
   content: "";
-  right: -20px;
+  right: calc(-20 * 0.0651111111vw);
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 11px;
-  height: 11px;
+  width: calc(11 * 0.0651111111vw);
+  height: calc(11 * 0.0651111111vw);
   background: url("../../../public/assets/icons/blue-calendar.svg") no-repeat center;
   background-size: contain;
   z-index: 1;
@@ -1463,7 +1465,7 @@ a.ba-cart-header-back .back-link-icon {
 .dotted-upload-zone {
   border: 1px dashed rgba(16, 76, 186, 0.45);
   border-radius: 7px;
-  padding: 30px;
+  padding: calc(30 * 0.0651111111vw);
   cursor: pointer;
 }
 
@@ -1472,8 +1474,8 @@ a.ba-cart-header-back .back-link-icon {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
-  line-height: 17px;
+  font-size: calc(10 * 0.0651111111vw);
+  line-height: calc(17 * 0.0651111111vw);
   letter-spacing: 0.03em;
   text-align: center;
   pointer-events: none;
@@ -1516,8 +1518,8 @@ a.ba-cart-header-back .back-link-icon {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(24 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: #2B3E62;
   margin-bottom: 0;
@@ -1530,11 +1532,11 @@ a.ba-cart-header-back .back-link-icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 45px;
+  margin-top: calc(45 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-client {
-  height: 109px;
+  height: calc(109 * 0.0651111111vw);
   background: #F1F5FB;
   border-radius: 7px;
   display: -webkit-inline-box;
@@ -1546,16 +1548,16 @@ a.ba-cart-header-back .back-link-icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 215px;
-  margin-top: 10px;
+  min-width: calc(215 * 0.0651111111vw);
+  margin-top: calc(10 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-clients-dropdown > a {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 13px;
+  font-size: calc(11 * 0.0651111111vw);
+  line-height: calc(13 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1569,13 +1571,13 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-create-invoice-main .ba-invoice-clients-dropdown > a img {
-  width: 13px;
-  height: 13px;
-  margin-right: 15px;
+  width: calc(13 * 0.0651111111vw);
+  height: calc(13 * 0.0651111111vw);
+  margin-right: calc(15 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-articles-warpp {
-  margin-top: 40px;
+  margin-top: calc(40 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-articles-warpp table {
@@ -1587,11 +1589,11 @@ a.ba-cart-header-back .back-link-icon {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 11px;
-  line-height: 13px;
+  font-size: calc(11 * 0.0651111111vw);
+  line-height: calc(13 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  padding: 18.5px 16px;
+  padding: calc(18 * 0.0651111111vw) calc(16 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-articles-warpp table thead tr th:first-child {
@@ -1609,7 +1611,7 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-create-invoice-main .ba-invoice-articles-warpp table tbody tr td {
-  padding: 18px 16px;
+  padding: calc(18 * 0.0651111111vw) calc(16 * 0.0651111111vw);
   vertical-align: baseline;
 }
 
@@ -1635,12 +1637,12 @@ a.ba-cart-header-back .back-link-icon {
 
 .ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-dromdown {
   border: none;
-  width: 60px;
+  width: calc(60 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-dromdown img {
-  width: 25px;
-  height: 22px;
+  width: calc(25 * 0.0651111111vw);
+  height: calc(22 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-add-column-buttons-warp a {
@@ -1667,21 +1669,21 @@ a.ba-cart-header-back .back-link-icon {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 13px;
-  height: 45px;
+  font-size: calc(11 * 0.0651111111vw);
+  line-height: calc(13 * 0.0651111111vw);
+  height: calc(45 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-col img {
-  width: 13px;
-  height: 13px;
-  margin-right: 10px;
+  width: calc(13 * 0.0651111111vw);
+  height: calc(13 * 0.0651111111vw);
+  margin-right: calc(10 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-total-warpp {
   width: 50%;
   margin-left: auto;
-  margin-top: 40px;
+  margin-top: calc(40 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row {
@@ -1694,21 +1696,21 @@ a.ba-cart-header-back .back-link-icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 0px;
+  padding: calc(10 * 0.0651111111vw) 0px;
 }
 
 .ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row:not(.final-total-box) {
   width: 80%;
   margin-left: auto;
-  margin-right: 40px;
+  margin-right: calc(40 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row p {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1734,9 +1736,9 @@ a.ba-cart-header-back .back-link-icon {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
-  padding: 17px 40px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding: calc(17 * 0.0651111111vw) calc(40 * 0.0651111111vw);
+  margin-top: calc(15 * 0.0651111111vw);
+  margin-bottom: calc(15 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row .ba-invoice-total-label {
@@ -1755,19 +1757,19 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-create-invoice-main .invoice-note {
-  margin-top: 40px;
+  margin-top: calc(40 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-footer {
   border-top: 2px solid #104CBA;
-  margin-top: 55px;
+  margin-top: calc(55 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 10px;
+  padding: calc(20 * 0.0651111111vw) calc(10 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .invoice-attatchements {
@@ -1776,7 +1778,7 @@ a.ba-cart-header-back .back-link-icon {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
-  height: 138px;
+  height: calc(138 * 0.0651111111vw);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1793,8 +1795,8 @@ a.ba-cart-header-back .back-link-icon {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 28px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(28 * 0.0651111111vw);
   /* or 140% */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1809,21 +1811,21 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-create-invoice-main .invoice-attatchements a img {
-  width: 35px;
-  height: 35px;
-  margin-right: 15px;
+  width: calc(35 * 0.0651111111vw);
+  height: calc(35 * 0.0651111111vw);
+  margin-right: calc(15 * 0.0651111111vw);
 }
 
 .ba-invoice-dropdown-mission-items {
-  padding: 8px;
+  padding: calc(8 * 0.0651111111vw);
 }
 
 .ba-invoice-dropdown-mission-items .dropdown-mission-item {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 23px;
+  font-size: calc(11 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1847,16 +1849,16 @@ a.ba-cart-header-back .back-link-icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: calc(24 * 0.0651111111vw);
+  height: calc(24 * 0.0651111111vw);
   background: #FFFFFF;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: calc(10 * 0.0651111111vw);
 }
 
 .ba-invoice-dropdown-mission-items .ba-dci-mission img {
-  width: 15px;
-  height: 15px;
+  width: calc(15 * 0.0651111111vw);
+  height: calc(15 * 0.0651111111vw);
 }
 
 .combodate select {
@@ -1866,18 +1868,18 @@ a.ba-cart-header-back .back-link-icon {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 23px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
   color: #2B3E62;
-  height: 27px;
+  height: calc(27 * 0.0651111111vw);
 }
 
 .ba-add-link {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 24px;
+  font-size: calc(11 * 0.0651111111vw);
+  line-height: calc(24 * 0.0651111111vw);
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1885,7 +1887,7 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-invoice-clients-dropdown .ba-invoice-dropdown-items {
-  padding: 8px;
+  padding: calc(8 * 0.0651111111vw);
 }
 
 .ba-invoice-clients-dropdown .ba-invoice-dropdown-items .dropdown-client-item {
@@ -1897,19 +1899,19 @@ a.ba-cart-header-back .back-link-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 12px;
+  padding: calc(15 * 0.0651111111vw) calc(12 * 0.0651111111vw);
   margin: 4px 0px;
 }
 
 .ba-invoice-clients-dropdown .ba-invoice-dropdown-items .dropdown-client-item .ba-dci-infos {
-  margin-left: 15px;
+  margin-left: calc(15 * 0.0651111111vw);
 }
 
 .ba-invoice-clients-dropdown .ba-invoice-dropdown-items .dropdown-client-item .ba-dci-infos h5 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: calc(13 * 0.0651111111vw);
   line-height: 21px;
   /* or 162% */
   letter-spacing: 0.03em;
@@ -1922,8 +1924,8 @@ a.ba-cart-header-back .back-link-icon {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 10px;
-  line-height: 18px;
+  font-size: calc(10 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
   /* or 370% */
   color: rgba(43, 62, 98, 0.45);
   margin-bottom: 0;
@@ -1933,8 +1935,8 @@ a.ba-cart-header-back .back-link-icon {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
-  line-height: 37px;
+  font-size: calc(17 * 0.0651111111vw);
+  line-height: calc(37 * 0.0651111111vw);
   /* or 218% */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1944,8 +1946,8 @@ a.ba-cart-header-back .back-link-icon {
           align-items: center;
   text-align: center;
   color: #FFFFFF;
-  width: 32px;
-  height: 32px;
+  width: calc(32 * 0.0651111111vw);
+  height: calc(32 * 0.0651111111vw);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2204,7 +2206,7 @@ table.dataTable tbody td.select-checkbox:before {
   width: calc(26 * 0.0651111111vw);
   margin-top: calc(11 * 0.0651111111vw);
   height: calc(26 * 0.0651111111vw);
-  border: 2px solid green;
+  border: 2px solid #104CBA;
 }
 
 table.dataTable tbody td.select-checkbox:after {
@@ -2219,7 +2221,7 @@ table.dataTable tbody th.select-checkbox:before {
   width: calc(26 * 0.0651111111vw);
   margin-top: calc(11 * 0.0651111111vw);
   height: calc(26 * 0.0651111111vw);
-  border: 2px solid green;
+  border: 2px solid #104CBA;
 }
 
 table.dataTable tbody th.select-checkbox:after {
@@ -2251,7 +2253,7 @@ table.dataTable tr.selected td.select-checkbox:after {
   left: calc(21 * 0.0651111111vw);
   line-height: 1;
   margin-left: calc(-4 * 0.0651111111vw);
-  color: green;
+  color: #104CBA;
   text-shadow: unset;
 }
 
@@ -2269,7 +2271,7 @@ table.dataTable tr.selected th.select-checkbox:after {
   left: calc(21 * 0.0651111111vw);
   line-height: 1;
   margin-left: calc(-4 * 0.0651111111vw);
-  color: green;
+  color: #104CBA;
   text-shadow: unset;
 }
 
@@ -2282,7 +2284,7 @@ table.dataTable tr.selected th.select-checkbox:after {
 
 .datatable-check i {
   font-size: calc(30 * 0.0651111111vw);
-  color: green;
+  color: #104CBA;
 }
 
 table td > a {

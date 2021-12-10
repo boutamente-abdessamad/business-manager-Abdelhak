@@ -262,7 +262,7 @@ table.dataTable {
                 width: pxToVw(26);
                 margin-top: pxToVw(11);
                 height: pxToVw(26);
-                border: 2px solid green;
+                border: 2px solid $blue;
             }
             &:after {
                 left: pxToVw(23);
@@ -277,7 +277,7 @@ table.dataTable {
                 width: pxToVw(26);
                 margin-top: pxToVw(11);
                 height: pxToVw(26);
-                border: 2px solid green;
+                border: 2px solid $blue;
             }
             &:after {
                 left: pxToVw(23);
@@ -311,7 +311,7 @@ table.dataTable {
                 left: pxToVw(21);
                 line-height: 1;
                 margin-left: pxToVw(-4);
-                color: green;
+                color: $blue;
                 text-shadow: unset;
             }
         }
@@ -330,7 +330,7 @@ table.dataTable {
                 left: pxToVw(21);
                 line-height: 1;
                 margin-left: pxToVw(-4);
-                color: green;
+                color: $blue;
                 text-shadow: unset;
             }
         }
@@ -344,7 +344,7 @@ table.dataTable {
     background: transparent;
     i {
         font-size: pxToVw(30);
-        color: green;
+        color: $blue;
     }
 }
 
