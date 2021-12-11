@@ -475,9 +475,7 @@
         height: pxToVw(45);
         background: #FFFFFF;
         border: 1px dashed $blue;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenterCenter();
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -619,8 +617,8 @@
     
     // dotted-upload 
     .dotted-upload-zone {
-        border: 1px dashed rgba(16, 76, 186, 0.45);
-        border-radius: 7px;
+        border: 1px dashed $blueText;
+        border-radius: pxToVw(7);
         padding: pxToVw(30);
         cursor: pointer;
         p,
@@ -652,7 +650,7 @@
         width: 59.4875901%;
         background: #FFFFFF;
         box-shadow: 0px 1px 7px rgba(62, 86, 130, 0.45);
-        border-radius: 5px;
+        border-radius: pxToVw(5);
         padding: pxToVw(40);
         .ba-invoice-header {
             display: flex;
@@ -679,7 +677,7 @@
         .ba-invoice-client {
             height: pxToVw(109);
             background: #F1F5FB;
-            border-radius: 7px;
+            border-radius: pxToVw(7);
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -723,12 +721,12 @@
                             color: #FFFFFF;
                             padding: pxToVw(18) pxToVw(16);
                             &:first-child {
-                                border-top-left-radius: 5px;
-                                border-bottom-left-radius: 5px;
+                                border-top-left-radius: pxToVw(5);
+                                border-bottom-left-radius: pxToVw(5);
                             }
                             &:nth-child(4n) {
-                                border-top-right-radius: 5px;
-                                border-bottom-right-radius: 5px;
+                                border-top-right-radius: pxToVw(5);
+                                border-bottom-right-radius: pxToVw(5);
                             }
                             &:nth-child(5n) {
                                 background: #FFFFFF;
@@ -825,7 +823,7 @@
                 &.final-total-box {
                     border: 1px solid rgba(16, 76, 186, 0.28);
                     box-sizing: border-box;
-                    border-radius: 5px;
+                    border-radius: pxToVw(5);
                     padding: pxToVw(17) pxToVw(40);
                     margin-top: pxToVw(15);
                     margin-bottom: pxToVw(15);
@@ -864,15 +862,13 @@
             display: flex;
             align-items: center;
             background: #F3F6FC;
-            border-radius: 5px;
+            border-radius: pxToVw(5);
             padding: 6px 0;
             margin: 5px 0;
-            color: rgba(43, 62, 98, 0.65);
+            color: $blueText;
         }
         .ba-dci-mission {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenterCenter();
             width: pxToVw(24);
             height: pxToVw(24);
             background: #FFFFFF;
@@ -888,7 +884,7 @@
     .combodate select {
         background: #FFFFFF;
         border: 1px solid rgba(43, 62, 98, 0.21);
-        border-radius: 5px;
+        border-radius: pxToVw(5);
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -915,7 +911,7 @@
             padding: pxToVw(8);
             .dropdown-client-item {
                 background: #F3F6FC;
-                border-radius: 7px;
+                border-radius: pxToVw(7);
                 display: flex;
                 align-items: center;
                 padding: pxToVw(15) pxToVw(12);
@@ -927,7 +923,7 @@
                         font-style: normal;
                         font-weight: 500;
                         font-size: pxToVw(13);
-                        line-height: 21px;
+                        line-height: pxToVw(21);
                         /* or 162% */
                         letter-spacing: 0.03em;
                         color: $blueText;
@@ -980,36 +976,36 @@
     
     .ba-invoice-payment-status-panel {
         background: #F1F5FB;
-        border-radius: 15px;
-        padding: 24px;
+        border-radius: pxToVw(15);
+        padding: pxToVw(24);
         .ba-invoice-payment-status-panel-header {
             border-bottom: 1px solid rgba(16, 76, 186, 0.28);
-            padding-bottom: 24px;
-            margin-bottom: 24px;
+            padding-bottom: pxToVw(24);
+            margin-bottom: pxToVw(24);
             h3 {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 31px;
-                line-height: 36px;
+                font-size: pxToVw(31);
+                line-height: pxToVw(36);
                 display: flex;
                 align-items: center;
                 letter-spacing: 0.03em;
-                color: #2B3E62;
+                color: $blueText;
                 margin: 0;
             }
         }
         .ba-cart {
             // pay invoice status panel 
             .ba-invoice-pay-cart-head {
-                border-radius: 7px;
-                padding: 15px;
+                border-radius: pxToVw(7);
+                padding: pxToVw(15);
                 h3 {
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 19px;
-                    line-height: 25px;
+                    font-size: pxToVw(19);
+                    line-height: pxToVw(25);
                     /* or 132% */
                     display: flex;
                     align-items: center;
@@ -1020,13 +1016,13 @@
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 15px;
-                    line-height: 27px;
+                    font-size: pxToVw(15);
+                    line-height: pxToVw(27);
                     /* identical to box height, or 180% */
                     display: flex;
                     align-items: center;
                     letter-spacing: 0.03em;
-                    color: #2B3E62;
+                    color: $blueText;
                     margin: 0;
                 }
             }
@@ -1041,22 +1037,22 @@
                     padding: 0;
                     list-style: none;
                     li {
-                        padding: 15px 0px;
+                        padding: pxToVw(15) 0px;
                         border-bottom: 1px solid rgba(16, 76, 186, 0.21);
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        padding-left: 40px;
+                        padding-left: pxToVw(40);
                         p {
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: normal;
-                            font-size: 13px;
-                            line-height: 27px;
+                            font-size: pxToVw(13);
+                            line-height: pxToVw(27);
                             /* identical to box height, or 208% */
                             margin: 0;
                             letter-spacing: 0.03em;
-                            color: rgba(43, 62, 98, 0.65);
+                            color: $blueText;
                         }
                     }
                 }
@@ -1064,24 +1060,24 @@
             .ba-invoice-comment-message {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 24px;
+                margin-top: pxToVw(24);
                 .ba-comment-user {
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 17px;
-                    line-height: 21px;
+                    font-size: pxToVw(17);
+                    line-height: pxToVw(21);
                     /* or 124% */
                     display: flex;
                     letter-spacing: 0.03em;
-                    width: 36px;
-                    height: 36px;
+                    width: pxToVw(36);
+                    height: pxToVw(36);
                     display: flex;
                     align-items: center;
                     background: #E7EDF8;
                     justify-content: center;
                     border-radius: 50%;
-                    color: rgba(16, 76, 186, 0.45);
+                    color: $blueText;
                 }
                 .ba-comment-controll {
                     width: calc(100% - 50px);
@@ -1089,15 +1085,15 @@
                         background: rgba(245, 248, 253, 0.65);
                         border: 1px solid rgba(16, 76, 186, 0.15);
                         box-sizing: border-box;
-                        border-radius: 5px;
+                        border-radius: pxToVw(5);
                         width: 99%;
-                        height: 88px;
-                        padding: 15px;
+                        height: pxToVw(88);
+                        padding: pxToVw(15);
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: normal;
-                        font-size: 13px;
-                        line-height: 16px;
+                        font-size: pxToVw(13);
+                        line-height: pxToVw(16);
                         /* or 123% */
                         display: flex;
                         align-items: center;
@@ -1113,8 +1109,8 @@
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: normal;
-                        font-size: 11px;
-                        line-height: 27px;
+                        font-size: pxToVw(11);
+                        line-height: pxToVw(27);
                         display: flex;
                         letter-spacing: 0.03em;
                         color: rgba(43, 62, 98, 0.45);
@@ -1126,14 +1122,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                margin-top: 15px;
-                margin-bottom: 15px;
+                margin-top: pxToVw(15);
+                margin-bottom: pxToVw(15);
                 p {
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 13px;
-                    line-height: 27px;
+                    font-size: pxToVw(13);
+                    line-height: pxToVw(27);
                     /* or 208% */
                     display: flex;
                     align-items: center;
@@ -1141,12 +1137,12 @@
                     text-decoration-line: underline;
                     color: #104CBA;
                     margin: 0;
-                    margin-right: 10px;
+                    margin-right: pxToVw(10);
                 }
                 a {
                     width: calc(29 * 0.0651111111vw);
                     height: calc(29 * 0.0651111111vw);
-                    font-size: 19px;
+                    font-size: pxToVw(19);
                     i {
                         transition: $baTransition;
                     }
@@ -1156,7 +1152,7 @@
         &.in {
             .ba-cart {
                 .ba-invoice-pay-cart-body {
-                    padding: 25px 0px;
+                    padding: pxToVw(25) 0px;
                     height: auto;
                     max-height: 1000px;
                 }
@@ -1176,15 +1172,15 @@
         &::after {
             content: "";
             position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 15px;
+            width: pxToVw(15);
+            height: pxToVw(15);
+            left: pxToVw(15);
             border-radius: 50%;
         }
-        padding-left: 30px;
+        padding-left: pxToVw(30);
         &.ba-left-dote-sm::after {
-            width: 7px;
-            height: 7px;
+            width: pxToVw(7);
+            height: pxToVw(7);
         }
         &.ba-left-dote-default:after {
             background: $blueLightBg;
@@ -1208,15 +1204,15 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 33px;
-            line-height: 39px;
+            font-size: pxToVw(33);
+            line-height: pxToVw(39);
             display: flex;
             align-items: center;
             text-align: right;
             letter-spacing: 0.03em;
-            color: #2B3E62;
+            color: $blueText;
             justify-content: flex-end;
-            margin-bottom: 24px;
+            margin-bottom: pxToVw(24);
         }
     }
     
@@ -1226,8 +1222,8 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 15px;
-            line-height: 19px;
+            font-size: pxToVw(15);
+            line-height: pxToVw(19);
             /* or 127% */
             display: flex;
             align-items: center;
@@ -1239,22 +1235,22 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 12px;
-            line-height: 14px;
+            font-size: pxToVw(12);
+            line-height: pxToVw(14);
             display: block;
             text-align: right;
             letter-spacing: 0.03em;
-            color: #2B3E62;
-            margin-bottom: 8px;
+            color: $blueText;
+            margin-bottom: pxToVw(8);
         }
         .ba-progress-bar-sm {
-            height: 5px;
+            height: pxToVw(5);
             width: 100%;
             background: #E7EDF8;
-            border-radius: 20px;
+            border-radius: pxToVw(20);
             overflow: hidden;
             span {
-                border-radius: 20px;
+                border-radius: pxToVw(20);
                 display: block;
                 height: 100%;
             }
@@ -1263,32 +1259,29 @@
     
     .light-blue-container {
         background: #F1F5FB;
-        border-radius: 15px;
-        padding: 24px;
+        border-radius: pxToVw(15);
+        padding: pxToVw(24);
     }
     
     .ba-invoice-pay-cart-head-icon img {
-        width: 27px;
-        height: 27px;
+        width: pxToVw(27);
+        height: pxToVw(27);
     }
     
     .ba-comment-user {
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 17px;
-        line-height: 21px;
+        font-size: pxToVw(17);
+        line-height: pxToVw(21);
         /* or 124% */
-        display: flex;
+        @include flexCenterCenter();
         letter-spacing: 0.03em;
-        width: 36px;
-        height: 36px;
-        display: flex;
-        align-items: center;
+        width: pxToVw(36);
+        height: pxToVw(36);
         background: #E7EDF8;
-        justify-content: center;
         border-radius: 50%;
-        color: rgba(16, 76, 186, 0.45);
+        color: $blueText;
     }
     
     .ba-invoice-payment-status-panel {
@@ -1296,7 +1289,7 @@
             .ba-invoice-chat {
                 ul {
                     li {
-                        padding: 15px 0px;
+                        padding: pxToVw(15) 0px;
                         align-items: flex-start;
                         .ba-invoice-chat-message {
                             width: calc(100% - 100px);
@@ -1304,20 +1297,20 @@
                                 font-family: Roboto;
                                 font-style: normal;
                                 font-weight: bold;
-                                font-size: 15px;
-                                line-height: 21px;
+                                font-size: pxToVw(15);
+                                line-height: pxToVw(21);
                                 letter-spacing: 0.03em;
-                                color: rgba(43, 62, 98, 0.65);
+                                color: $blueText;
                                 margin: 0;
                             }
                             p {
                                 font-family: Roboto;
                                 font-style: normal;
                                 font-weight: normal;
-                                font-size: 13px;
-                                line-height: 20px;
+                                font-size: pxToVw(13);
+                                line-height: pxToVw(20);
                                 letter-spacing: 0.03em;
-                                color: rgba(43, 62, 98, 0.65);
+                                color: $blueText;
                             }
                         }
                     }
@@ -1330,16 +1323,16 @@
     .ba-panel {
         background: #FFFFFF;
         box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
-        border-radius: 11px;
+        border-radius: pxToVw(11);
         .ba-panel-head {
-            padding: 21px 50px;
-            border-radius: 11px 11px 0px 0px;
+            padding: pxToVw(21) pxToVw(50);
+            border-radius: pxToVw(11) pxToVw(11) 0px 0px;
             >h2 {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 27px;
-                line-height: 32px;
+                font-size: pxToVw(27);
+                line-height: pxToVw(32);
                 display: flex;
                 align-items: center;
                 letter-spacing: 0.03em;
@@ -1350,8 +1343,8 @@
         .ba-panel-body {
             background: #FFFFFF;
             box-shadow: 0px 3px 11px #0000003d;
-            border-radius: 11px;
-            padding: 50px;
+            border-radius: pxToVw(11);
+            padding: pxToVw(50);
         }
     }
     
@@ -1359,12 +1352,10 @@
         background: #F1F5FB;
         border: 1px dashed rgba(16, 76, 186, 0.37);
         box-sizing: border-box;
-        border-radius: 5px;
+        border-radius: pxToVw(5);
         height: pxToVw(138);
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenterCenter();
         &.invoice-attatchements-sm {
             height: pxToVw(100);
             a {
@@ -1381,8 +1372,8 @@
                     margin-right: pxToVw(5);
                 }
                 i {
-                    font-size: 18px;
-                    margin-left: 7px;
+                    font-size: pxToVw(18);
+                    margin-left: pxToVw(7);
                 }
             }
         }
@@ -1407,55 +1398,53 @@
     }
     
     .ba-alert {
-        padding: 50px;
+        padding: pxToVw(50);
         background: #FFFFFF;
         box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
-        border-radius: 11px;
+        border-radius: pxToVw(11);
         display: inline-flex;
         flex-direction: column;
         width: auto;
         align-items: center;
-        min-width: 306px;
+        min-width: pxToVw(306);
         justify-content: center;
         .bar-alert-icon {
-            width: 130px;
-            height: 130px;
+            width: pxToVw(130);
+            height: pxToVw(130);
             background: rgba(80, 203, 147, 0.15);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
+            @include flexCenterCenter();
+            margin-bottom: pxToVw(20);
             img {
-                width: 49px;
-                height: 49px;
+                width: pxToVw(49);
+                height: pxToVw(49);
             }
         }
         h2 {
             font-family: Roboto;
             font-style: normal;
             font-weight: bold;
-            font-size: 21px;
-            line-height: 27px;
+            font-size: pxToVw(21);
+            line-height: pxToVw(27);
             /* identical to box height, or 129% */
             text-align: center;
             letter-spacing: 0.03em;
             color: #50CB93;
             width: 100%;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            padding-bottom: pxToVw(20);
+            margin-bottom: pxToVw(20);
             border-bottom: 1px solid #E7EDF8;
         }
         p {
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 15px;
-            line-height: 21px;
+            font-size: pxToVw(15);
+            line-height: pxToVw(21);
             /* or 140% */
             text-align: center;
             letter-spacing: 0.03em;
-            color: rgba(43, 62, 98, 0.65);
+            color: $blueText;
             margin: 0;
         }
         &.ba-alert-primary {
@@ -1490,23 +1479,23 @@
     // modals 
     .ba-light-modal {
         .modal-content {
-            padding: 15px 30px;
+            padding: pxToVw(15) pxToVw(30);
         }
         .ba-modal-head {
-            padding-bottom: 15px;
+            padding-bottom: pxToVw(15);
             border-bottom: 1px solid rgba(43, 62, 98, 0.12);
-            margin-bottom: 25px;
+            margin-bottom: pxToVw(25);
         }
         h2 {
             font-family: Roboto;
             font-style: normal;
             font-weight: 500;
-            font-size: 15px;
-            line-height: 18px;
+            font-size: pxToVw(15);
+            line-height: pxToVw(18);
             display: flex;
             align-items: center;
             letter-spacing: 0.03em;
-            color: #2B3E62;
+            color: $blueText;
             margin: 0;
         }
         .ba-modal-footer {
@@ -1522,6 +1511,6 @@
     
     @media (min-width: 992px) {
         .modal-md {
-            max-width: 600px;
+            max-width: pxToVw(600);
         }
     }

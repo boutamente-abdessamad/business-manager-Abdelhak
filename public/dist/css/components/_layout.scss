@@ -244,7 +244,7 @@ body.ba-sidebar-open {
             li a {
                 justify-content: flex-start;
                 border-radius: pxToVw(15);
-                padding-left: 17px;
+                padding-left: pxToVw(17);
                 width: 100%;
                 @include flexCenter();
                 padding: pxToVw(18) pxToVw(17);

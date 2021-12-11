@@ -455,8 +455,8 @@ body {
                         &::after {
                             content: "";
                             @include yAbsoluteCenter();
-                            width: 7px;
-                            height: 7px;
+                            width: pxToVw(7);
+                            height: pxToVw(7);
                             border-radius: 50%;
                             left: 0;
                             display: block;

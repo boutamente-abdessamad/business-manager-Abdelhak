@@ -342,12 +342,12 @@ table.dataTable {
 .datatable-check {
     outline: none !important;
     padding: 0;
-    width: 21px;
-    height: 21px;
+    width: pxToVw(21);
+    height: pxToVw(21);
     background: #FFFFFF;
     border: 1px solid rgba(43, 62, 98, 0.22);
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: pxToVw(5);
     i {
         font-size: pxToVw(19);
         color: $blue;

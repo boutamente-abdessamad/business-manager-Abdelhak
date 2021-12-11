@@ -6,12 +6,12 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: 11px;
-        line-height: 27px;
+        font-size: pxToVw(14);
+        line-height: pxToVw(27);
         /* or 245% */
         align-items: center;
         letter-spacing: 0.03em;
-        color: #2B3E62;
+        color: $blueText;
     }
     .modal-content {
         background: #F3F6FC;
@@ -21,10 +21,10 @@
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 9px;
-                line-height: 23px;
+                font-size: pxToVw(9);
+                line-height: pxToVw(23);
                 /* identical to box height, or 256% */
-                color: #2B3E62;
+                color: $blueText;
             }
         }
     }

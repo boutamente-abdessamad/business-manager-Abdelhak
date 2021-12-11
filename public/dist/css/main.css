@@ -111,7 +111,7 @@
   border-radius: 5px;
   height: calc(39 * 0.0651111111vw);
   font-family: Roboto;
-  text-indent: 15px;
+  text-indent: calc(15 * 0.0651111111vw);
   font-style: normal;
   font-weight: normal;
   font-size: calc(15 * 0.0651111111vw);
@@ -122,31 +122,31 @@
 }
 
 .ba-form-controll::-webkit-input-placeholder {
-  color: rgba(43, 62, 98, 0.45);
+  color: rgba(16, 76, 186, 0.09);
 }
 
 .ba-form-controll:-ms-input-placeholder {
-  color: rgba(43, 62, 98, 0.45);
+  color: rgba(16, 76, 186, 0.09);
 }
 
 .ba-form-controll::-ms-input-placeholder {
-  color: rgba(43, 62, 98, 0.45);
+  color: rgba(16, 76, 186, 0.09);
 }
 
 .ba-form-controll::placeholder {
-  color: rgba(43, 62, 98, 0.45);
+  color: rgba(16, 76, 186, 0.09);
 }
 
 .ba-form-warpp {
-  margin-bottom: 20px;
+  margin-bottom: calc(20 * 0.0651111111vw);
 }
 
 .ba-form-warpp label {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +155,7 @@
           align-items: center;
   letter-spacing: 0.03em;
   color: #2B3E62;
-  margin-bottom: 10px;
+  margin-bottom: calc(10 * 0.0651111111vw);
 }
 
 .ba-form-warpp .ba-form-control {
@@ -170,14 +170,14 @@
           box-sizing: border-box;
   border-radius: 5px;
   width: 100%;
-  height: 49px;
-  text-indent: 20px;
-  padding-right: 40px;
+  height: calc(49 * 0.0651111111vw);
+  text-indent: calc(20 * 0.0651111111vw);
+  padding-right: calc(40 * 0.0651111111vw);
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(16 * 0.0651111111vw);
   /* or 123% */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,40 +190,40 @@
 
 .ba-form-warpp .ba-form-control input ::-webkit-input-placeholder,
 .ba-form-warpp .ba-form-control textarea ::-webkit-input-placeholder {
-  color: rgba(43, 62, 98, 0.45);
+  color: rgba(16, 76, 186, 0.09);
 }
 
 .ba-form-warpp .ba-form-control input :-ms-input-placeholder,
 .ba-form-warpp .ba-form-control textarea :-ms-input-placeholder {
-  color: rgba(43, 62, 98, 0.45);
+  color: rgba(16, 76, 186, 0.09);
 }
 
 .ba-form-warpp .ba-form-control input ::-ms-input-placeholder,
 .ba-form-warpp .ba-form-control textarea ::-ms-input-placeholder {
-  color: rgba(43, 62, 98, 0.45);
+  color: rgba(16, 76, 186, 0.09);
 }
 
 .ba-form-warpp .ba-form-control input ::placeholder,
 .ba-form-warpp .ba-form-control textarea ::placeholder {
-  color: rgba(43, 62, 98, 0.45);
+  color: rgba(16, 76, 186, 0.09);
 }
 
 .ba-form-warpp .ba-form-control.ba-sm-control input,
 .ba-form-warpp .ba-form-control.ba-sm-control textarea {
-  height: 39px;
+  height: calc(39 * 0.0651111111vw);
 }
 
 .ba-form-warpp .ba-form-control[class*="ba-fc-right-icon-"]::after {
   content: "";
-  width: 17px;
-  height: 17px;
+  width: calc(17 * 0.0651111111vw);
+  height: calc(17 * 0.0651111111vw);
   opacity: .21;
   background-size: contain;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 16px;
+  right: calc(16 * 0.0651111111vw);
 }
 
 .ba-form-warpp .ba-form-control.ba-fc-right-icon-date::after {
@@ -231,7 +231,7 @@
 }
 
 .ba-form-warpp .ba-form-control textarea {
-  height: 90px;
+  height: calc(90 * 0.0651111111vw);
 }
 
 .ba-form-infos h5,
@@ -246,21 +246,21 @@
 
 .ba-form-infos p {
   font-weight: normal;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: calc(17 * 0.0651111111vw);
+  line-height: calc(27 * 0.0651111111vw);
   /* or 159% */
   margin: 0;
 }
 
 .ba-form-infos h5 {
   font-weight: bold;
-  font-size: 19px;
-  line-height: 27px;
+  font-size: calc(19 * 0.0651111111vw);
+  line-height: calc(27 * 0.0651111111vw);
   /* or 142% */
 }
 
 .ba-form-illustration img {
-  height: 235px;
+  height: calc(235 * 0.0651111111vw);
   width: 100%;
 }
 
@@ -315,8 +315,8 @@
 [class*="ba-btn-"] i.dark-back-round {
   background-color: #00000024;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: calc(20 * 0.0651111111vw);
+  height: calc(20 * 0.0651111111vw);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -333,7 +333,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: calc(15 * 0.0651111111vw);
   line-height: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,7 +461,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 20px;
+  padding: calc(15 * 0.0651111111vw) calc(20 * 0.0651111111vw);
 }
 
 .ba-excel-file-upload .ba-excel-file-text {
@@ -472,15 +472,15 @@
       -ms-flex-align: center;
           align-items: center;
   border-right: 1px solid rgba(46, 125, 50, 0.45);
-  margin-right: 15px;
+  margin-right: calc(15 * 0.0651111111vw);
 }
 
 .ba-excel-file-upload .ba-excel-file-text p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 21px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
   /* or 162% */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,17 +492,17 @@
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2E7D32;
-  margin: 0 12px;
+  margin: 0 calc(12 * 0.0651111111vw);
 }
 
 .ba-excel-file-upload .ba-excel-file-text img {
-  width: 25px;
-  height: 28px;
+  width: calc(25 * 0.0651111111vw);
+  height: calc(28 * 0.0651111111vw);
 }
 
 .ba-excel-file-upload .ba-excel-file-icon img {
-  height: 14px;
-  width: 14px;
+  height: calc(14 * 0.0651111111vw);
+  width: calc(14 * 0.0651111111vw);
 }
 
 /* ............... Header syles ................ */
@@ -856,7 +856,7 @@ body.ba-sidebar-open .ba-sidebar ul.ba-sidebar-items li a {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-radius: calc(15 * 0.0651111111vw);
-  padding-left: 17px;
+  padding-left: calc(17 * 0.0651111111vw);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1551,12 +1551,14 @@ a.ba-cart-header-back .back-link-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1756,8 +1758,8 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .dotted-upload-zone {
-  border: 1px dashed rgba(16, 76, 186, 0.45);
-  border-radius: 7px;
+  border: 1px dashed #2B3E62;
+  border-radius: calc(7 * 0.0651111111vw);
   padding: calc(30 * 0.0651111111vw);
   cursor: pointer;
 }
@@ -1794,7 +1796,7 @@ a.ba-cart-header-back .back-link-icon {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 7px rgba(62, 86, 130, 0.45);
           box-shadow: 0px 1px 7px rgba(62, 86, 130, 0.45);
-  border-radius: 5px;
+  border-radius: calc(5 * 0.0651111111vw);
   padding: calc(40 * 0.0651111111vw);
 }
 
@@ -1831,7 +1833,7 @@ a.ba-cart-header-back .back-link-icon {
 .ba-create-invoice-main .ba-invoice-client {
   height: calc(109 * 0.0651111111vw);
   background: #F1F5FB;
-  border-radius: 7px;
+  border-radius: calc(7 * 0.0651111111vw);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1890,13 +1892,13 @@ a.ba-cart-header-back .back-link-icon {
 }
 
 .ba-create-invoice-main .ba-invoice-articles-warpp table thead tr th:first-child {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: calc(5 * 0.0651111111vw);
+  border-bottom-left-radius: calc(5 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-articles-warpp table thead tr th:nth-child(4n) {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: calc(5 * 0.0651111111vw);
+  border-bottom-right-radius: calc(5 * 0.0651111111vw);
 }
 
 .ba-create-invoice-main .ba-invoice-articles-warpp table thead tr th:nth-child(5n) {
@@ -2028,7 +2030,7 @@ a.ba-cart-header-back .back-link-icon {
   border: 1px solid rgba(16, 76, 186, 0.28);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: calc(5 * 0.0651111111vw);
   padding: calc(17 * 0.0651111111vw) calc(40 * 0.0651111111vw);
   margin-top: calc(15 * 0.0651111111vw);
   margin-bottom: calc(15 * 0.0651111111vw);
@@ -2082,22 +2084,24 @@ a.ba-cart-header-back .back-link-icon {
       -ms-flex-align: center;
           align-items: center;
   background: #F3F6FC;
-  border-radius: 5px;
+  border-radius: calc(5 * 0.0651111111vw);
   padding: 6px 0;
   margin: 5px 0;
-  color: rgba(43, 62, 98, 0.65);
+  color: #2B3E62;
 }
 
 .ba-invoice-dropdown-mission-items .ba-dci-mission {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: calc(24 * 0.0651111111vw);
   height: calc(24 * 0.0651111111vw);
   background: #FFFFFF;
@@ -2113,7 +2117,7 @@ a.ba-cart-header-back .back-link-icon {
 .combodate select {
   background: #FFFFFF;
   border: 1px solid rgba(43, 62, 98, 0.21);
-  border-radius: 5px;
+  border-radius: calc(5 * 0.0651111111vw);
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -2141,7 +2145,7 @@ a.ba-cart-header-back .back-link-icon {
 
 .ba-invoice-clients-dropdown .ba-invoice-dropdown-items .dropdown-client-item {
   background: #F3F6FC;
-  border-radius: 7px;
+  border-radius: calc(7 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2161,7 +2165,7 @@ a.ba-cart-header-back .back-link-icon {
   font-style: normal;
   font-weight: 500;
   font-size: calc(13 * 0.0651111111vw);
-  line-height: 21px;
+  line-height: calc(21 * 0.0651111111vw);
   /* or 162% */
   letter-spacing: 0.03em;
   color: #2B3E62;
@@ -2218,22 +2222,22 @@ a.editable-click:hover {
 
 .ba-invoice-payment-status-panel {
   background: #F1F5FB;
-  border-radius: 15px;
-  padding: 24px;
+  border-radius: calc(15 * 0.0651111111vw);
+  padding: calc(24 * 0.0651111111vw);
 }
 
 .ba-invoice-payment-status-panel .ba-invoice-payment-status-panel-header {
   border-bottom: 1px solid rgba(16, 76, 186, 0.28);
-  padding-bottom: 24px;
-  margin-bottom: 24px;
+  padding-bottom: calc(24 * 0.0651111111vw);
+  margin-bottom: calc(24 * 0.0651111111vw);
 }
 
 .ba-invoice-payment-status-panel .ba-invoice-payment-status-panel-header h3 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 31px;
-  line-height: 36px;
+  font-size: calc(31 * 0.0651111111vw);
+  line-height: calc(36 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2246,16 +2250,16 @@ a.editable-click:hover {
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-head {
-  border-radius: 7px;
-  padding: 15px;
+  border-radius: calc(7 * 0.0651111111vw);
+  padding: calc(15 * 0.0651111111vw);
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-head h3 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 19px;
-  line-height: 25px;
+  font-size: calc(19 * 0.0651111111vw);
+  line-height: calc(25 * 0.0651111111vw);
   /* or 132% */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2271,8 +2275,8 @@ a.editable-click:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 27px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(27 * 0.0651111111vw);
   /* identical to box height, or 180% */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2301,7 +2305,7 @@ a.editable-click:hover {
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-body ul li {
-  padding: 15px 0px;
+  padding: calc(15 * 0.0651111111vw) 0px;
   border-bottom: 1px solid rgba(16, 76, 186, 0.21);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2312,19 +2316,19 @@ a.editable-click:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 40px;
+  padding-left: calc(40 * 0.0651111111vw);
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-cart-body ul li p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 27px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(27 * 0.0651111111vw);
   /* identical to box height, or 208% */
   margin: 0;
   letter-spacing: 0.03em;
-  color: rgba(43, 62, 98, 0.65);
+  color: #2B3E62;
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message {
@@ -2334,22 +2338,22 @@ a.editable-click:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 24px;
+  margin-top: calc(24 * 0.0651111111vw);
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-user {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 21px;
+  font-size: calc(17 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
   /* or 124% */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   letter-spacing: 0.03em;
-  width: 36px;
-  height: 36px;
+  width: calc(36 * 0.0651111111vw);
+  height: calc(36 * 0.0651111111vw);
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2359,7 +2363,7 @@ a.editable-click:hover {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  color: rgba(16, 76, 186, 0.45);
+  color: #2B3E62;
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-comment-message .ba-comment-controll {
@@ -2371,15 +2375,15 @@ a.editable-click:hover {
   border: 1px solid rgba(16, 76, 186, 0.15);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: calc(5 * 0.0651111111vw);
   width: 99%;
-  height: 88px;
-  padding: 15px;
+  height: calc(88 * 0.0651111111vw);
+  padding: calc(15 * 0.0651111111vw);
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(16 * 0.0651111111vw);
   /* or 123% */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2414,8 +2418,8 @@ a.editable-click:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 27px;
+  font-size: calc(11 * 0.0651111111vw);
+  line-height: calc(27 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2434,16 +2438,16 @@ a.editable-click:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: calc(15 * 0.0651111111vw);
+  margin-bottom: calc(15 * 0.0651111111vw);
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-toggle p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 27px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(27 * 0.0651111111vw);
   /* or 208% */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2456,13 +2460,13 @@ a.editable-click:hover {
           text-decoration-line: underline;
   color: #104CBA;
   margin: 0;
-  margin-right: 10px;
+  margin-right: calc(10 * 0.0651111111vw);
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-toggle a {
   width: calc(29 * 0.0651111111vw);
   height: calc(29 * 0.0651111111vw);
-  font-size: 19px;
+  font-size: calc(19 * 0.0651111111vw);
 }
 
 .ba-invoice-payment-status-panel .ba-cart .ba-invoice-pay-toggle a i {
@@ -2471,7 +2475,7 @@ a.editable-click:hover {
 }
 
 .ba-invoice-payment-status-panel.in .ba-cart .ba-invoice-pay-cart-body {
-  padding: 25px 0px;
+  padding: calc(25 * 0.0651111111vw) 0px;
   height: auto;
   max-height: 1000px;
 }
@@ -2483,21 +2487,21 @@ a.editable-click:hover {
 
 .ba-left-dote {
   position: relative;
-  padding-left: 30px;
+  padding-left: calc(30 * 0.0651111111vw);
 }
 
 .ba-left-dote::after {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 15px;
+  width: calc(15 * 0.0651111111vw);
+  height: calc(15 * 0.0651111111vw);
+  left: calc(15 * 0.0651111111vw);
   border-radius: 50%;
 }
 
 .ba-left-dote.ba-left-dote-sm::after {
-  width: 7px;
-  height: 7px;
+  width: calc(7 * 0.0651111111vw);
+  height: calc(7 * 0.0651111111vw);
 }
 
 .ba-left-dote.ba-left-dote-default:after {
@@ -2524,8 +2528,8 @@ a.editable-click:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 33px;
-  line-height: 39px;
+  font-size: calc(33 * 0.0651111111vw);
+  line-height: calc(39 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2538,15 +2542,15 @@ a.editable-click:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 24px;
+  margin-bottom: calc(24 * 0.0651111111vw);
 }
 
 .ba-progress-bar-warpp > label {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 19px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(19 * 0.0651111111vw);
   /* or 127% */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2563,67 +2567,68 @@ a.editable-click:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(14 * 0.0651111111vw);
   display: block;
   text-align: right;
   letter-spacing: 0.03em;
   color: #2B3E62;
-  margin-bottom: 8px;
+  margin-bottom: calc(8 * 0.0651111111vw);
 }
 
 .ba-progress-bar-warpp .ba-progress-bar-sm {
-  height: 5px;
+  height: calc(5 * 0.0651111111vw);
   width: 100%;
   background: #E7EDF8;
-  border-radius: 20px;
+  border-radius: calc(20 * 0.0651111111vw);
   overflow: hidden;
 }
 
 .ba-progress-bar-warpp .ba-progress-bar-sm span {
-  border-radius: 20px;
+  border-radius: calc(20 * 0.0651111111vw);
   display: block;
   height: 100%;
 }
 
 .light-blue-container {
   background: #F1F5FB;
-  border-radius: 15px;
-  padding: 24px;
+  border-radius: calc(15 * 0.0651111111vw);
+  padding: calc(24 * 0.0651111111vw);
 }
 
 .ba-invoice-pay-cart-head-icon img {
-  width: 27px;
-  height: 27px;
+  width: calc(27 * 0.0651111111vw);
+  height: calc(27 * 0.0651111111vw);
 }
 
 .ba-comment-user {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 21px;
+  font-size: calc(17 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
   /* or 124% */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  letter-spacing: 0.03em;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #E7EDF8;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  letter-spacing: 0.03em;
+  width: calc(36 * 0.0651111111vw);
+  height: calc(36 * 0.0651111111vw);
+  background: #E7EDF8;
   border-radius: 50%;
-  color: rgba(16, 76, 186, 0.45);
+  color: #2B3E62;
 }
 
 .ba-invoice-payment-status-panel .ba-invoice-pay-cart-body .ba-invoice-chat ul li {
-  padding: 15px 0px;
+  padding: calc(15 * 0.0651111111vw) 0px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -2637,10 +2642,10 @@ a.editable-click:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
   letter-spacing: 0.03em;
-  color: rgba(43, 62, 98, 0.65);
+  color: #2B3E62;
   margin: 0;
 }
 
@@ -2648,30 +2653,30 @@ a.editable-click:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(20 * 0.0651111111vw);
   letter-spacing: 0.03em;
-  color: rgba(43, 62, 98, 0.65);
+  color: #2B3E62;
 }
 
 .ba-panel {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
           box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
-  border-radius: 11px;
+  border-radius: calc(11 * 0.0651111111vw);
 }
 
 .ba-panel .ba-panel-head {
-  padding: 21px 50px;
-  border-radius: 11px 11px 0px 0px;
+  padding: calc(21 * 0.0651111111vw) calc(50 * 0.0651111111vw);
+  border-radius: calc(11 * 0.0651111111vw) calc(11 * 0.0651111111vw) 0px 0px;
 }
 
 .ba-panel .ba-panel-head > h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 27px;
-  line-height: 32px;
+  font-size: calc(27 * 0.0651111111vw);
+  line-height: calc(32 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2687,8 +2692,8 @@ a.editable-click:hover {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 3px 11px #0000003d;
           box-shadow: 0px 3px 11px #0000003d;
-  border-radius: 11px;
-  padding: 50px;
+  border-radius: calc(11 * 0.0651111111vw);
+  padding: calc(50 * 0.0651111111vw);
 }
 
 .invoice-attatchements {
@@ -2696,18 +2701,20 @@ a.editable-click:hover {
   border: 1px dashed rgba(16, 76, 186, 0.37);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: calc(5 * 0.0651111111vw);
   height: calc(138 * 0.0651111111vw);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .invoice-attatchements.invoice-attatchements-sm {
@@ -2733,8 +2740,8 @@ a.editable-click:hover {
 }
 
 .invoice-attatchements.invoice-attatchements-xs a i {
-  font-size: 18px;
-  margin-left: 7px;
+  font-size: calc(18 * 0.0651111111vw);
+  margin-left: calc(7 * 0.0651111111vw);
 }
 
 .invoice-attatchements a {
@@ -2763,11 +2770,11 @@ a.editable-click:hover {
 }
 
 .ba-alert {
-  padding: 50px;
+  padding: calc(50 * 0.0651111111vw);
   background: #FFFFFF;
   -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
           box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
-  border-radius: 11px;
+  border-radius: calc(11 * 0.0651111111vw);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2779,47 +2786,49 @@ a.editable-click:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 306px;
+  min-width: calc(306 * 0.0651111111vw);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .ba-alert .bar-alert-icon {
-  width: 130px;
-  height: 130px;
+  width: calc(130 * 0.0651111111vw);
+  height: calc(130 * 0.0651111111vw);
   background: rgba(80, 203, 147, 0.15);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: calc(20 * 0.0651111111vw);
 }
 
 .ba-alert .bar-alert-icon img {
-  width: 49px;
-  height: 49px;
+  width: calc(49 * 0.0651111111vw);
+  height: calc(49 * 0.0651111111vw);
 }
 
 .ba-alert h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 27px;
+  font-size: calc(21 * 0.0651111111vw);
+  line-height: calc(27 * 0.0651111111vw);
   /* identical to box height, or 129% */
   text-align: center;
   letter-spacing: 0.03em;
   color: #50CB93;
   width: 100%;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: calc(20 * 0.0651111111vw);
+  margin-bottom: calc(20 * 0.0651111111vw);
   border-bottom: 1px solid #E7EDF8;
 }
 
@@ -2827,12 +2836,12 @@ a.editable-click:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
   /* or 140% */
   text-align: center;
   letter-spacing: 0.03em;
-  color: rgba(43, 62, 98, 0.65);
+  color: #2B3E62;
   margin: 0;
 }
 
@@ -2869,21 +2878,21 @@ a.editable-click:hover {
 }
 
 .ba-light-modal .modal-content {
-  padding: 15px 30px;
+  padding: calc(15 * 0.0651111111vw) calc(30 * 0.0651111111vw);
 }
 
 .ba-light-modal .ba-modal-head {
-  padding-bottom: 15px;
+  padding-bottom: calc(15 * 0.0651111111vw);
   border-bottom: 1px solid rgba(43, 62, 98, 0.12);
-  margin-bottom: 25px;
+  margin-bottom: calc(25 * 0.0651111111vw);
 }
 
 .ba-light-modal h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2913,7 +2922,7 @@ a.editable-click:hover {
 
 @media (min-width: 992px) {
   .modal-md {
-    max-width: 600px;
+    max-width: calc(600 * 0.0651111111vw);
   }
 }
 
@@ -3234,13 +3243,13 @@ table.dataTable tr.selected th.select-checkbox:after {
 .datatable-check {
   outline: none !important;
   padding: 0;
-  width: 21px;
-  height: 21px;
+  width: calc(21 * 0.0651111111vw);
+  height: calc(21 * 0.0651111111vw);
   background: #FFFFFF;
   border: 1px solid rgba(43, 62, 98, 0.22);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: calc(5 * 0.0651111111vw);
 }
 
 .datatable-check i {
@@ -3969,8 +3978,8 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 7px;
-  height: 7px;
+  width: calc(7 * 0.0651111111vw);
+  height: calc(7 * 0.0651111111vw);
   border-radius: 50%;
   left: 0;
   display: block;
