@@ -25,6 +25,11 @@ $(document).ready(() => {
     if ( $('.ba-select').length) {
         $('.ba-select').selectpicker();
     }
+    // editor wysiwyg
+    var editor = new FroalaEditor('#editor_wysiwyg',{
+        codeMirror: false,
+         tabSize: 4
+    })
 
     // global datatabele 
     if ($(".ba-datatable").length) {

@@ -154,8 +154,8 @@
                     background: rgba(16, 76, 186, 0.05);
                 }
                 img {
-                    width: pxToVw(12);
-                    height: pxToVw(12);
+                    width: pxToVw(17);
+                    height: pxToVw(17);
                     margin-right: pxToVw(8);
                 }
             }
@@ -1367,6 +1367,24 @@
         justify-content: center;
         &.invoice-attatchements-sm {
             height: pxToVw(100);
+            a {
+                font-size: pxToVw(14);
+            }
+        }
+        &.invoice-attatchements-xs {
+            height: pxToVw(50);
+            a {
+                font-size: pxToVw(11);
+                img {
+                    width: pxToVw(20);
+                    height: pxToVw(20);
+                    margin-right: pxToVw(5);
+                }
+                i {
+                    font-size: 18px;
+                    margin-left: 7px;
+                }
+            }
         }
         a {
             font-family: Roboto;
@@ -1466,5 +1484,44 @@
                 display: inline-flex;
                 width: auto;
             }
+        }
+    }
+    
+    // modals 
+    .ba-light-modal {
+        .modal-content {
+            padding: 15px 30px;
+        }
+        .ba-modal-head {
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(43, 62, 98, 0.12);
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: #2B3E62;
+            margin: 0;
+        }
+        .ba-modal-footer {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+    
+    #fr-logo {
+        display: none;
+    }
+    
+    @media (min-width: 992px) {
+        .modal-md {
+            max-width: 600px;
         }
     }

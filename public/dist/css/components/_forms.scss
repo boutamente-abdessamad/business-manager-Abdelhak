@@ -105,7 +105,7 @@
     }
     
     .ba-form-warpp {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         label {
             font-family: Roboto;
             font-style: normal;
@@ -120,7 +120,8 @@
         }
         .ba-form-control {
             position: relative;
-            input {
+            input,
+            textarea {
                 background: rgba(245, 248, 253, 0.65);
                 border: 1px solid rgba(16, 76, 186, 0.15);
                 box-sizing: border-box;
@@ -140,6 +141,12 @@
                 color: $blueText;
                  ::placeholder {
                     color: rgba(43, 62, 98, 0.45);
+                }
+            }
+            &.ba-sm-control {
+                input,
+                textarea {
+                    height: 39px;
                 }
             }
             &[class*="ba-fc-right-icon-"]::after {
