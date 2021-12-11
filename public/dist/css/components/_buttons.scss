@@ -44,6 +44,31 @@
     }
 }
 
+.ba-btn-social {
+    border: 1px solid rgba(43, 62, 98, 0.21);
+    // justify-content: space-between;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #2B3E62;
+    img {
+        width: pxToVw(29);
+        height: pxToVw(29);
+    }
+    &>img~span {
+        margin-left: pxToVw(72);
+    }
+    &>span~img {
+        margin-left: pxToVw(72);
+    }
+}
+
 .ba-btn-primary {
     background-color: $blue;
     color: #FFFFFF;
@@ -123,5 +148,47 @@
     &:hover {
         background-color: $blueTextHover;
         color: $blueText;
+    }
+}
+
+// excel button 
+.ba-excel-file-upload {
+    background: #F4FDF5;
+    border: 1px dashed rgba(46, 125, 50, 0.37);
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    .ba-excel-file-text {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid rgba(46, 125, 50, 0.45);
+        margin-right: 15px;
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 21px;
+            /* or 162% */
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #2E7D32;
+            margin: 0 12px;
+        }
+    }
+    .ba-excel-file-text {
+        img {
+            width: 25px;
+            height: 28px;
+        }
+    }
+    .ba-excel-file-icon {
+        img {
+            height: 14px;
+            width: 14px;
+        }
     }
 }
