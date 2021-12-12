@@ -437,10 +437,12 @@
         margin: pxToVw(15) 0px;
         label {
             @include flexCenter();
+            flex-wrap: nowrap;
             cursor: pointer;
             margin: 0;
             p {
                 @include normalText($blueText);
+                line-height: calc(16 * 0.0651111111vw);
                 margin-bottom: 0;
             }
             span {

@@ -30,6 +30,8 @@
     <!-- skin style  -->
     <!-- x-editable -->
     <link rel="stylesheet" href="../../../libs/x-editable/bootstrap-editable.css">
+    <!-- editor wysiwyg -->
+    <link rel="stylesheet" href="../../../libs/froala_editor/froala_editor.pkgd.min.css">
     <!-- x-editable -->
     <link rel="stylesheet" href="../../../public/dist/css/main.css">
     <!-- end skin style  -->
@@ -200,7 +202,7 @@
                     <a href="" class="btn ba-btn-success ba-btn-round me-3">
                        Enregistrer
                     </a>
-                    <a href="" class="btn ba-btn-primary ba-btn-round me-3">
+                    <a href="" class="btn ba-btn-primary ba-btn-round me-3" data-mdb-toggle="modal" data-mdb-target="#send_mail_modal">
                          Envoyer à... 
                     </a>
                     <a href="" class="btn ba-btn-danger ba-btn-round">
@@ -949,25 +951,101 @@
     <!--===============================================-->
     <!-- Modal -->
 
-    <!-- Ajouter une réduction -->
-    <div class="modal fade ba-modal-auto-size blue-light-modal" id="add_discount_modal" tabindex="-1" aria-labelledby="add_discount_modalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <!-- Send mail -->
+    <div class="modal fade ba-light-modal" id="send_mail_modal" tabindex="-1" aria-labelledby="send_mail_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="add_discount_modalLabel">Ajouter une réduction</h5>
-                </div>
-                <div class="modal-body">
+                <form>
+                    <!-- head  -->
+                    <div class="ba-modal-head">
+                        <h2>Vous allez envoyer la facture par mail</h2>
+                    </div>
+                    <!-- body  -->
+                    <div class="ba-modal-body">
 
-                    <div class="side-text-input input-sufix" attr-sufix="%">
-                        <input type="text" class="ba-form-controll">
-                        <label>du sous-total de la facture</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Distinataire*</label>
+                                    <div class="ba-form-control ba-sm-control">
+                                        <input type="email" placeholder="Nom/Prénom" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Email*</label>
+                                    <div class="ba-form-control ba-sm-control">
+                                        <input type="email" placeholder="mail@gmail.com" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Cc*</label>
+                                    <div class="ba-form-control ba-sm-control">
+                                        <input type="email" placeholder="mail@gmail.com" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Cci*</label>
+                                    <div class="ba-form-control ba-sm-control">
+                                        <input type="text" placeholder="mail@gmail.com" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Objet</label>
+                                    <div class="ba-form-control ba-sm-control">
+                                        <input type="text" placeholder="Objet" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Contenu</label>
+                                    <div class="ba-form-control ba-sm-control">
+                                        <!-- for more editor wysiwyg options check this link  -->
+                                        <!-- https://froala.com/wysiwyg-editor/docs/overview/ -->
+                                        <div id="editor_wysiwyg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- footer  -->
+                    <div class="ba-modal-footer">
+                        <div class="ba-checkbox-default me-3 w-50 mb-0">
+                            <label for="add_invoice_as_pdf">
+                                <span>
+                                    <input type="checkbox" name="add_invoice_as_pdf" id="add_invoice_as_pdf">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </span>
+                                <p class="ba-opacity-75">Ajouter la facture en format PDF au mail </p>
+                            </label>
+                        </div>
+                        <button type="button" class="btn ba-btn-default me-3" data-mdb-dismiss="modal">
+                            <span>Annuler</span>
+                        </button>
+                        <button type="submit" class="btn ba-btn-primary">
+                            <img src="../../../public/assets/icons/light-send.svg" alt="">
+                            <span>Envoyer</span>
+                        </button>
+
                     </div>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn ba-btn-default ba-btn-sm" data-mdb-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn ba-btn-primary ba-btn-sm">Ajouter une réduction</button>
-                </div>
+
+                </form>
             </div>
         </div>
     </div>
@@ -999,6 +1077,8 @@
     <!-- sliders  -->
     <!-- x-editable -->
     <script src="../../../libs/x-editable/bootstrap-editable.min.js"></script>
+    <!-- editor wysiwyg -->
+    <script src="../../../libs/froala_editor/froala_editor.pkgd.min.js"></script>
     <!-- uw scripts -->
     <script src="../../../public/dist/js/main.js"></script>
     <script src="../../../public/dist/js/instances.js"></script>

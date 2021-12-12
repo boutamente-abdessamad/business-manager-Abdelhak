@@ -1488,6 +1488,8 @@ a.ba-cart-header-back .back-link-icon {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   cursor: pointer;
   margin: 0;
 }
@@ -1499,6 +1501,7 @@ a.ba-cart-header-back .back-link-icon {
   font-weight: normal;
   font-size: calc(13 * 0.0651111111vw);
   line-height: calc(23 * 0.0651111111vw);
+  line-height: calc(16 * 0.0651111111vw);
   margin-bottom: 0;
 }
 
