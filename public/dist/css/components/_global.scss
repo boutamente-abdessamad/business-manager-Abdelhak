@@ -85,6 +85,10 @@
         background-color: transparent !important;
     }
     
+    .ba-warning-bg {
+        background-color: $orange !important;
+    }
+    
     .ba-secondary-bg {
         background-color: $secondaryBg !important;
     }
@@ -1147,7 +1151,7 @@
                     align-items: center;
                     letter-spacing: 0.03em;
                     text-decoration-line: underline;
-                    color: #104CBA;
+                    color: $blue;
                     margin: 0;
                     margin-right: pxToVw(10);
                 }
@@ -1604,7 +1608,7 @@
             font-size: pxToVw(15);
             line-height: pxToVw(25);
             letter-spacing: 0.03em;
-            color: #2B3E62;
+            color: $blueText;
             margin: 0;
             margin-left: pxToVw(10);
         }
@@ -1634,5 +1638,128 @@
         .light-blue-container {
             border-radius: 5px 5px 0px 0px;
             margin-bottom: pxToVw(24);
+        }
+    }
+    
+    .ba-inline-profile-box h2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: pxToVw(17);
+        line-height: pxToVw(19);
+        /* or 112% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        margin: 0;
+        color: $blue;
+        margin-left: pxToVw(15);
+    }
+    
+    .user-profile-avatar {
+        width: pxToVw(108);
+        height: pxToVw(108);
+        background: #E7EDF8;
+        border-radius: 50%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: pxToVw(27);
+        line-height: pxToVw(19);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $blue;
+        justify-content: center;
+    }
+    
+    .ba-inline-profile-box {
+        display: flex;
+        align-items: center;
+    }
+    
+    .ba-client-name-role {
+        h5 {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: pxToVw(17);
+            line-height: pxToVw(28);
+            /* or 112% */
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: $blueText;
+            margin: 0;
+        }
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: pxToVw(17);
+            line-height: pxToVw(28);
+            /* or 112% */
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: $blueOpacity;
+            margin: 0;
+        }
+    }
+    
+    .ba-client-content {
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li,
+            li a {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: pxToVw(15);
+                line-height: pxToVw(24);
+                /* or 180% */
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.03em;
+                color: $blueText;
+            }
+        }
+    }
+    
+    .ba-figures-cart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .ba-figure-icon {
+            width: pxToVw(41);
+            height: pxToVw(41);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .ba-figures-content {
+            h2 {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(21);
+                line-height: pxToVw(31);
+                letter-spacing: 0.03em;
+                color: $blueText;
+                margin: 0;
+            }
+            p {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: pxToVw(15);
+                line-height: pxToVw(19);
+                letter-spacing: 0.03em;
+                color: $blueOpacity;
+                margin: 0;
+            }
         }
     }

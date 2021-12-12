@@ -1056,6 +1056,10 @@ main.ba-app-root .ba-main-cart {
   background-color: transparent !important;
 }
 
+.ba-warning-bg {
+  background-color: #F7B422 !important;
+}
+
 .ba-secondary-bg {
   background-color: #F1F1F1 !important;
 }
@@ -3178,6 +3182,164 @@ a.editable-click:hover {
 .create-client-file-warpp .light-blue-container {
   border-radius: 5px 5px 0px 0px;
   margin-bottom: calc(24 * 0.0651111111vw);
+}
+
+.ba-inline-profile-box h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(17 * 0.0651111111vw);
+  line-height: calc(19 * 0.0651111111vw);
+  /* or 112% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: #104CBA;
+  margin-left: calc(15 * 0.0651111111vw);
+}
+
+.user-profile-avatar {
+  width: calc(108 * 0.0651111111vw);
+  height: calc(108 * 0.0651111111vw);
+  background: #E7EDF8;
+  border-radius: 50%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(27 * 0.0651111111vw);
+  line-height: calc(19 * 0.0651111111vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #104CBA;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ba-inline-profile-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ba-client-name-role h5 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(17 * 0.0651111111vw);
+  line-height: calc(28 * 0.0651111111vw);
+  /* or 112% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin: 0;
+}
+
+.ba-client-name-role p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(17 * 0.0651111111vw);
+  line-height: calc(28 * 0.0651111111vw);
+  /* or 112% */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  margin: 0;
+}
+
+.ba-client-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ba-client-content ul li,
+.ba-client-content ul li a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(24 * 0.0651111111vw);
+  /* or 180% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+}
+
+.ba-figures-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ba-figures-cart .ba-figure-icon {
+  width: calc(41 * 0.0651111111vw);
+  height: calc(41 * 0.0651111111vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.ba-figures-cart .ba-figures-content h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(21 * 0.0651111111vw);
+  line-height: calc(31 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin: 0;
+}
+
+.ba-figures-cart .ba-figures-content p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(19 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  margin: 0;
 }
 
 /* tables  */
