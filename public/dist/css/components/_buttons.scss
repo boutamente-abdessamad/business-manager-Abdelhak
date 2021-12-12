@@ -187,9 +187,25 @@
         }
     }
     .ba-excel-file-icon {
+        display: flex;
+        align-items: center;
         img {
             height: pxToVw(14);
             width: pxToVw(14);
+        }
+    }
+    &.ba-excel-file-lg {
+        padding: pxToVw(25) pxToVw(20);
+        justify-content: start;
+        .ba-excel-file-text {
+            border: none;
+            img {
+                width: pxToVw(35);
+                height: pxToVw(40);
+            }
+            p {
+                margin-left: 90px;
+            }
         }
     }
 }

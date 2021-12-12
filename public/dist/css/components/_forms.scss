@@ -110,6 +110,13 @@
                 }
             }
         }
+        &.ba-light-select {
+            .bootstrap-select {
+                &>.dropdown-toggle {
+                    background-color: white;
+                }
+            }
+        }
     }
     
     .ba-form-controll {

@@ -18,6 +18,16 @@
         margin: pxToVw(30) 0px;
     }
     
+    .gray-global-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: pxToVw(13);
+        line-height: pxToVw(42);
+        color: rgba(43, 62, 98, 0.45);
+        margin: 0;
+    }
+    
     .block-title span {
         font-style: normal;
         font-weight: bold;
@@ -1515,7 +1525,7 @@
             }
         }
         .modal-mds {
-            max-width: 365px;
+            max-width: pxToVw(380);
         }
     }
     
@@ -1546,5 +1556,83 @@
             color: $blueText;
             opacity: .45;
             margin: 0;
+        }
+    }
+    
+    .light-blue-container.ba-all-clients-total {
+        border-radius: 5px;
+        @include flexCenterBetween();
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: pxToVw(15);
+            line-height: pxToVw(23);
+            color: $blueText;
+            margin: 0;
+            opacity: .7;
+        }
+        h2 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: pxToVw(23);
+            line-height: pxToVw(23);
+            color: $blueText;
+            ;
+            margin: 0;
+        }
+    }
+    
+    .ba-default-panel {
+        border: 1px solid rgba(43, 62, 98, 0.21);
+        border-radius: 5px;
+        padding: pxToVw(30);
+        .ba-default-panel-head {
+            @include flexCenterBetween();
+            margin-bottom: pxToVw(25);
+        }
+    }
+    
+    .header-title-icon {
+        display: flex;
+        align-items: center;
+        h2 {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: pxToVw(15);
+            line-height: pxToVw(25);
+            letter-spacing: 0.03em;
+            color: #2B3E62;
+            margin: 0;
+            margin-left: pxToVw(10);
+        }
+        .hti-icon {
+            background: #E7EDF8;
+            border-radius: 50%;
+            padding: pxToVw(10);
+            @include flexCenterCenter();
+            img {
+                width: pxToVw(21);
+                height: pxToVw(21);
+            }
+        }
+    }
+    
+    .ba-action-link {
+        @include inlineFlexCenterCenter();
+        padding: pxToVw(8);
+        border-radius: 5px;
+        img {
+            width: pxToVw(23);
+            height: pxToVw(23);
+        }
+    }
+    
+    .create-client-file-warpp {
+        .light-blue-container {
+            border-radius: 5px 5px 0px 0px;
+            margin-bottom: pxToVw(24);
         }
     }
