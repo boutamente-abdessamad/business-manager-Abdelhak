@@ -200,11 +200,11 @@
                 <!-- group buttons  -->
                 <div class="ba-group-buttons p-0">
                     <div class="dropdown">
-                        <a href="" class="btn ba-btn-success ba-btn-round me-3" id="invoice-pay_status_drop" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <a href="" class="btn ba-btn-success ba-btn-round me-3" id="invoice_pay_status_drop" data-mdb-toggle="dropdown" aria-expanded="false">
                             <span>Payée</span>
                             <i class="fa fa-angle-down dark-back-round" aria-hidden="true"></i>
                         </a>
-                        <div class="dropdown-menu ba-dropdown-items" aria-labelledby="invoice-pay_status_drop">
+                        <div class="dropdown-menu ba-dropdown-items" aria-labelledby="invoice_pay_status_drop">
                             <a class="dropdown-item ba-left-dote-success ba-left-dote-sm ba-left-dote ba-success-light-bg ba-color-green" href="#">Payée</a>
                             <a class="dropdown-item ba-left-dote-danger ba-left-dote-sm ba-left-dote ba-danger-light-bg ba-color-red" href="#">En retard</a>
                             <a class="dropdown-item ba-left-dote-warning ba-left-dote-sm ba-left-dote ba-warning-light-bg ba-color-orange" href="#">En attente </a>
@@ -217,7 +217,7 @@
                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu ba-dropdown-items" aria-labelledby="invoice_history_drop">
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="#" data-mdb-toggle="modal" data-mdb-target="#add_payment_modal">
                                 <img src="../../../public/assets/icons/gray-payement.svg" alt=""> Ajouter un paiement
                             </a>
                             <a class="dropdown-item" href="#">
@@ -458,7 +458,7 @@
                             <div class="ba-invoice-total-row">
                                 <div class="ba-invoice-total-label">
                                     <p>Total</p>
-                                    <a href="" class="ba-add-link" data-mdb-toggle="modal" data-mdb-target="#add_discount_modal"> + Ajouter une réduction </a>
+                                    <a href="" class="ba-add-link"> + Ajouter une réduction </a>
                                 </div>
                                 <p>0.00</p>
                             </div>
@@ -597,25 +597,100 @@
     <!--===============================================-->
     <!-- Modal -->
 
-    <!-- Ajouter une réduction -->
-    <div class="modal fade ba-modal-auto-size blue-light-modal" id="add_discount_modal" tabindex="-1" aria-labelledby="add_discount_modalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="add_discount_modalLabel">Ajouter une réduction</h5>
-                </div>
-                <div class="modal-body">
+    <!-- Modal -->
 
-                    <div class="side-text-input input-sufix" attr-sufix="%">
-                        <input type="text" class="ba-form-controll">
-                        <label>du sous-total de la facture</label>
+    <!-- Add payment -->
+    <div class="modal fade ba-light-modal" id="add_payment_modal" tabindex="-1" aria-labelledby="add_payment_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-mds">
+            <div class="modal-content">
+                <form>
+                    <!-- head  -->
+                    <div class="ba-modal-head">
+                        <h2>Ajouter un paiement</h2>
+                        <div class="ba-price-details">
+                            <h5>120.00 €</h5>
+                            <p>Remarquable</p>
+                        </div>
+                    </div>
+                    <!-- body  -->
+                    <div class="ba-modal-body">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <div class="ba-form-control ba-sm-control">
+                                        <input type="email" placeholder="120.00 €" id="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="ba-select-warpper ba-form-control-style  ba-sm-control w-100">
+                                    <select id="" class="selectpicker ba-select">
+                                        <option value="En espèces">En espèces</option>
+                                        <option value="En espèces">En espèces</option>
+                                        <option value="En espèces">En espèces</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <div class="ba-form-control ba-sm-control ba-fc-right-icon-date">
+                                        <input type="email" placeholder="01/05/2021" id="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <div class="ba-form-control ba-sm-control">
+                                        <input type="email" placeholder="Bulletin de versement" id="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12">
+                                <div class="ba-checkbox-default">
+                                    <label for="send_client_notif">
+                                        <span>
+                                            <input type="checkbox" name="send_client_notif" id="send_client_notif">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                        </span>
+                                        <p>Envoyer au client un e-mail de notification de paiement</p>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <!-- input  -->
+                                <a href="" class="btn ba-btn-default w-100 px-2">
+                                    <img src="../../../public/assets/icons/blue-plus.svg" alt="">
+                                    <span>Rajouter un nouveau mode de paiement</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- footer  -->
+                    <div class="ba-modal-footer justify-content-end gray-bt mt-4 pt-4">
+                        <button type="button" class="btn ba-btn-default me-3" data-mdb-dismiss="modal">
+                            <span>Annuler</span>
+                        </button>
+                        <button type="submit" class="btn ba-btn-success">
+                            <span>Enregistrer</span>
+                        </button>
+
                     </div>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn ba-btn-default ba-btn-sm" data-mdb-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn ba-btn-primary ba-btn-sm">Ajouter une réduction</button>
-                </div>
+
+                </form>
             </div>
         </div>
     </div>
