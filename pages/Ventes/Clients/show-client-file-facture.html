@@ -93,7 +93,7 @@
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                         <span>Mohamed Amine</span>
                         <img src="../../../public/assets/images/avatars/user-1.png" alt="">
-                      </button>
+                    </button>
                     <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="userProfileDropdownMenu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -313,7 +313,29 @@
 
 
                     <div class="col-8">
-                        <div class="ba-cart">
+                        <div class="ba-cart h-100">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="ba-chart-label-links justify-content-end mt-2 mb-2">
+                                        <a href="" class="ba-chart-label-link ba-left-dote ba-left-dote-sm ba-left-dote-primary">Chiffre
+                                            d’affaire du client</a>
+                                        <a href="" class="ba-chart-label-link ba-left-dote ba-left-dote-sm ba-left-dote-primary opacity-50">Total
+                                            dû / Total en retard</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="py-5">
+                                        <div style="height : 280px">
+                                            <canvas id="client_figure_bars"></canvas>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
@@ -394,8 +416,8 @@
             <div class="ba-main-tabs mt-5 mb-5">
 
                 <ul>
-                    <li class="active"><a href="" class="btn">Contact</a></li>
-                    <li><a href="" class="btn">Facture</a></li>
+                    <li><a href="" class="btn">Contact</a></li>
+                    <li class="active"><a href="" class="btn">Facture</a></li>
                     <li><a href="" class="btn">Devis</a></li>
                     <li><a href="" class="btn">Paiements</a></li>
                     <li><a href="" class="btn">Avoirs</a></li>
@@ -416,11 +438,13 @@
                                             <i class="fa fa-square"></i>
                                         </button>
                             </th>
-                            <th>Nom</th>
-                            <th>Prenom</th>
-                            <th>Fonction</th>
-                            <th>Téléphone</th>
-                            <th>Email</th>
+                            <th>Client</th>
+                            <th>N° de facture</th>
+                            <th>Date d’émission</th>
+                            <th>Date d’échéance</th>
+                            <th>Montant TTC </th>
+                            <th>Montant HT </th>
+                            <th>Statut</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -429,11 +453,15 @@
                         <tr>
 
                             <td></td>
-                            <td>Jazouli</td>
-                            <td>Mohamed</td>
-                            <td>Directeur</td>
-                            <td>+212 0 636 93 99</td>
-                            <td>contact@gmail.com</td>
+                            <td>Mohamed Jazouli</td>
+                            <td>F0259565</td>
+                            <td>02/08/2021</td>
+                            <td>02/08/2021</td>
+                            <td>1500 €</td>
+                            <td> 1200 €</td>
+                            <td>
+                                <span class="invoice-status ba-btn-round invoice-status-danger">En retard</span>
+                            </td>
                             <td>
                                 <div class="ba-user-profile-nav dropdown">
                                     <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -442,17 +470,17 @@
                                     <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown1">
                                         <li>
                                             <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                <img src="../../../public/assets/icons/gary-loop.svg" alt=""> Consulter
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                <img src="../../../public/assets/icons/gray-check-circle.svg" alt=""> Marquer comme payé
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                <img src="../../../public/assets/icons/gray-payment-options.svg" alt=""> Option de paiement
                                             </a>
                                         </li>
                                     </ul>
@@ -463,32 +491,35 @@
                         <!-- tr  -->
                         <!-- tr  -->
                         <tr>
-
                             <td></td>
-                            <td>Jazouli</td>
-                            <td>Mohamed</td>
-                            <td>Directeur</td>
-                            <td>+212 0 636 93 99</td>
-                            <td>contact@gmail.com</td>
+                            <td>Mohamed Jazouli</td>
+                            <td>F0259565</td>
+                            <td>02/08/2021</td>
+                            <td>02/08/2021</td>
+                            <td>1500 €</td>
+                            <td> 1200 €</td>
+                            <td>
+                                <span class="invoice-status ba-btn-round invoice-status-success">Payée</span>
+                            </td>
                             <td>
                                 <div class="ba-user-profile-nav dropdown">
-                                    <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
                                                 <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
                                             </button>
-                                    <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown1">
+                                    <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown2">
                                         <li>
                                             <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                <img src="../../../public/assets/icons/gary-loop.svg" alt=""> Consulter
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                <img src="../../../public/assets/icons/gray-check-circle.svg" alt=""> Marquer comme payé
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                <img src="../../../public/assets/icons/gray-payment-options.svg" alt=""> Option de paiement
                                             </a>
                                         </li>
                                     </ul>
@@ -501,17 +532,16 @@
                     </tbody>
                 </table>
 
-
                 <div class="datatable-footer">
 
                     <div class="ba-group-buttons p-0">
 
                         <a href="" class="btn ba-btn-default me-3">
-                                  Voir les clients archivés 
+                                   Voir les factures archivées
                                 </a>
 
                         <a href="" class="btn ba-btn-default">
-                                    Voir clients supprimés 
+                                    Voir les factures supprimées 
                                 </a>
 
                     </div>
@@ -564,104 +594,6 @@
     <!--===============================================-->
     <!-- Modal -->
 
-    <!-- Send mail -->
-    <div class="modal fade ba-light-modal" id="send_mail_modal" tabindex="-1" aria-labelledby="send_mail_modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <form>
-                    <!-- head  -->
-                    <div class="ba-modal-head">
-                        <h2>Vous allez envoyer la facture par mail</h2>
-                    </div>
-                    <!-- body  -->
-                    <div class="ba-modal-body">
-
-                        <div class="row">
-                            <div class="col-6">
-                                <!-- input  -->
-                                <div class="ba-form-warpp">
-                                    <label for="" class="ba-form-label">Distinataire*</label>
-                                    <div class="ba-form-control ba-sm-control">
-                                        <input type="email" placeholder="Nom/Prénom" id="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <!-- input  -->
-                                <div class="ba-form-warpp">
-                                    <label for="" class="ba-form-label">Email*</label>
-                                    <div class="ba-form-control ba-sm-control">
-                                        <input type="email" placeholder="mail@gmail.com" id="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <!-- input  -->
-                                <div class="ba-form-warpp">
-                                    <label for="" class="ba-form-label">Cc*</label>
-                                    <div class="ba-form-control ba-sm-control">
-                                        <input type="email" placeholder="mail@gmail.com" id="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <!-- input  -->
-                                <div class="ba-form-warpp">
-                                    <label for="" class="ba-form-label">Cci*</label>
-                                    <div class="ba-form-control ba-sm-control">
-                                        <input type="text" placeholder="mail@gmail.com" id="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <!-- input  -->
-                                <div class="ba-form-warpp">
-                                    <label for="" class="ba-form-label">Objet</label>
-                                    <div class="ba-form-control ba-sm-control">
-                                        <input type="text" placeholder="Objet" id="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <!-- input  -->
-                                <div class="ba-form-warpp">
-                                    <label for="" class="ba-form-label">Contenu</label>
-                                    <div class="ba-form-control ba-sm-control">
-                                        <!-- for more editor wysiwyg options check this link  -->
-                                        <!-- https://froala.com/wysiwyg-editor/docs/overview/ -->
-                                        <div id="editor_wysiwyg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- footer  -->
-                    <div class="ba-modal-footer">
-                        <div class="ba-checkbox-default me-3 w-50 mb-0">
-                            <label for="add_invoice_as_pdf">
-                                <span>
-                                    <input type="checkbox" name="add_invoice_as_pdf" id="add_invoice_as_pdf">
-                                    <i class="fa fa-check" aria-hidden="true"></i>
-                                </span>
-                                <p class="ba-opacity-75">Ajouter la facture en format PDF au mail </p>
-                            </label>
-                        </div>
-                        <button type="button" class="btn ba-btn-default me-3" data-mdb-dismiss="modal">
-                            <span>Annuler</span>
-                        </button>
-                        <button type="submit" class="btn ba-btn-primary">
-                            <img src="../../../public/assets/icons/light-send.svg" alt="">
-                            <span>Envoyer</span>
-                        </button>
-
-                    </div>
-
-
-                </form>
-            </div>
-        </div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap fontawsom JS -->
@@ -690,11 +622,16 @@
     <!-- sliders  -->
     <!-- x-editable -->
     <script src="../../../libs/x-editable/bootstrap-editable.min.js"></script>
+    <!-- circle-progress -->
+    <script src="../../../libs/circle-progress/circle-progress.min.js"></script>
+    <!-- chart js  -->
+    <script src="../../../libs/charts-js/chart.min.js"></script>
     <!-- editor wysiwyg -->
     <script src="../../../libs/froala_editor/froala_editor.pkgd.min.js"></script>
     <!-- uw scripts -->
     <script src="../../../public/dist/js/main.js"></script>
     <script src="../../../public/dist/js/instances.js"></script>
+    <script src="../../../public/dist/js/charts-instances.js"></script>
     <!-- end uw scripts -->
 </body>
 

@@ -1740,26 +1740,27 @@
             justify-content: center;
             border-radius: 50%;
         }
-        .ba-figures-content {
-            h2 {
-                font-family: Poppins;
-                font-style: normal;
-                font-weight: 500;
-                font-size: pxToVw(21);
-                line-height: pxToVw(31);
-                letter-spacing: 0.03em;
-                color: $blueText;
-                margin: 0;
-            }
-            p {
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: pxToVw(15);
-                line-height: pxToVw(19);
-                letter-spacing: 0.03em;
-                color: $blueOpacity;
-                margin: 0;
-            }
+    }
+    
+    .ba-figures-content {
+        h2 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: pxToVw(21);
+            line-height: pxToVw(31);
+            letter-spacing: 0.03em;
+            color: $blueText;
+            margin: 0;
+        }
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: pxToVw(15);
+            line-height: pxToVw(19);
+            letter-spacing: 0.03em;
+            color: $blueOpacity;
+            margin: 0;
         }
     }

@@ -18,6 +18,8 @@ $(document).ready(() => {
       });
     }
 
+    $('.ba-lg-circle-progress').circleProgress({});
+
    
 
       // select 

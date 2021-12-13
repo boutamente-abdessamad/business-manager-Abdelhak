@@ -3320,7 +3320,7 @@ a.editable-click:hover {
   border-radius: 50%;
 }
 
-.ba-figures-cart .ba-figures-content h2 {
+.ba-figures-content h2 {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -3331,7 +3331,7 @@ a.editable-click:hover {
   margin: 0;
 }
 
-.ba-figures-cart .ba-figures-content p {
+.ba-figures-content p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -3828,6 +3828,91 @@ ul.meanings-table li img {
   margin-right: calc(10 * 0.0651111111vw);
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.ba-lg-circle-progress-center-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ba-lg-circle-progress-center-text strong {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  width: 100%;
+  line-height: 40px;
+  font-size: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+}
+
+.ba-lg-circle-progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ba-chart-label-links a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #104CBA;
+}
+
+.ba-chart-label-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* ........... ./conmponents .............. */
