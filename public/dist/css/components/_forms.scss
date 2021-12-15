@@ -18,6 +18,13 @@
     }
     
     .ba-select-warpper {
+        &.mb-0 {
+            .bootstrap-select {
+                &>.dropdown-toggle {
+                    margin-bottom: 0;
+                }
+            }
+        }
         .bootstrap-select {
             &>.dropdown-toggle {
                 width: auto;
@@ -86,9 +93,25 @@
                 min-width: 100%;
             }
         }
+        &.w-auto {
+            .dropdown-toggle {
+                width: auto;
+            }
+            .dropdown.bootstrap-select.ba-select {
+                width: auto;
+            }
+            .dropdown .dropdown-menu {
+                min-width: auto;
+            }
+        }
         &.ba-sm-control {
             .dropdown-toggle {
                 height: pxToVw(39) !important;
+            }
+        }
+        &.ba-xs-control {
+            .dropdown-toggle {
+                height: pxToVw(26) !important;
             }
         }
         &.ba-form-control-style {

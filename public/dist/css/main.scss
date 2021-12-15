@@ -416,7 +416,7 @@ body {
                     font-style: normal;
                     font-weight: normal;
                     font-size: pxToVw(13);
-                    line-height: pxToVw(23);
+                    line-height: pxToVw(20);
                     /* identical to box height, or 177% */
                     color: $blueText;
                     margin-bottom: 0;
@@ -468,6 +468,62 @@ body {
             }
         }
     }
+}
+
+// artices 
+.ba-articels-infos-container {
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(43, 62, 98, 0.21);
+}
+
+.ba-cart.article-action-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .article-cart-icon {
+        width: pxToVw(60);
+        height: pxToVw(60);
+        background: #E7EDF8;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: pxToVw(23);
+            height: pxToVw(23);
+        }
+    }
+    @at-root {
+        a#{&} {
+            p {
+                color: $blue;
+            }
+        }
+    }
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: pxToVw(17);
+        line-height: pxToVw(20);
+        letter-spacing: 0.03em;
+        color: $blueText;
+        margin: 0;
+    }
+    h2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: pxToVw(27);
+        line-height: pxToVw(23);
+        text-align: right;
+        color: $blueText;
+        margin: 0;
+    }
+}
+
+.ba-submit-article-container {
+    margin-top: 130px;
 }
 
 
