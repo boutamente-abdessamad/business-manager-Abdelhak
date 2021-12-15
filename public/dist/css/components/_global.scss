@@ -36,6 +36,38 @@
         color: $blue;
     }
     
+    .ba-link {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: pxToVw(13);
+        display: inline-flex;
+        align-items: center;
+        line-height: pxToVw(15);
+        color: $blue;
+        span {
+            text-decoration: underline;
+        }
+        i {
+            text-decoration: none;
+            font-size: pxToVw(17);
+        }
+    }
+    
+    .ba-icon-lg {
+        width: pxToVw(62);
+        height: pxToVw(62);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .ba-icon-lg img {
+        width: pxToVw(27);
+        height: pxToVw(27);
+    }
+    
     .h-100vh {
         height: 100vh;
     }
@@ -157,6 +189,7 @@
                 width: auto;
                 font-family: Roboto;
                 font-style: normal;
+                padding: pxToVw(5) pxToVw(10);
                 font-weight: normal;
                 font-size: pxToVw(11);
                 line-height: pxToVw(27);
@@ -300,7 +333,7 @@
         justify-content: space-between;
         .ba-create-invoice-staps {
             width: 38.4307446%;
-            background: #F1F5FB;
+            background: $blueLightBg;
             border-radius: pxToVw(15);
             padding: pxToVw(24);
             .invoice-step-acourdion {
@@ -692,7 +725,7 @@
         }
         .ba-invoice-client {
             height: pxToVw(109);
-            background: #F1F5FB;
+            background: $blueLightBg;
             border-radius: pxToVw(7);
             display: inline-flex;
             align-items: center;
@@ -991,7 +1024,7 @@
     }
     
     .ba-invoice-payment-status-panel {
-        background: #F1F5FB;
+        background: $blueLightBg;
         border-radius: pxToVw(15);
         padding: pxToVw(24);
         .ba-invoice-payment-status-panel-header {
@@ -1274,7 +1307,7 @@
     }
     
     .light-blue-container {
-        background: #F1F5FB;
+        background: $blueLightBg;
         border-radius: pxToVw(15);
         padding: pxToVw(24);
     }
@@ -1362,10 +1395,41 @@
             border-radius: pxToVw(11);
             padding: pxToVw(50);
         }
+        &.ba-default-panel {
+            .ba-panel-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: calc(11 * 0.0651111111vw) calc(11 * 0.0651111111vw) 0px 0px;
+                border-bottom: 1px solid rgba(43, 62, 98, 0.21);
+                padding: 0;
+                padding-bottom: 30px;
+                margin-bottom: 35px;
+                >h2 {
+                    font-size: 21px;
+                    line-height: 25px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.03em;
+                    color: #2B3E62;
+                }
+            }
+            .ba-panel-body {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 0;
+            }
+        }
+        .ba-panel-footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
     }
     
     .invoice-attatchements {
-        background: #F1F5FB;
+        background: $blueLightBg;
         border: 1px dashed rgba(16, 76, 186, 0.37);
         box-sizing: border-box;
         border-radius: pxToVw(5);

@@ -88,7 +88,7 @@ body {
                 text-align: center;
                 letter-spacing: 0.03em;
                 padding: pxToVw(20) pxToVw(40);
-                color: rgba(43, 62, 98, 0.65);
+                color: $blueOpacity;
             }
             &.active {
                 a {
@@ -265,7 +265,7 @@ body {
                 line-height: pxToVw(23);
                 /* or 153% */
                 text-align: right;
-                color: rgba(43, 62, 98, 0.65);
+                color: $blueOpacity;
                 margin: pxToVw(15) 0px;
                 margin-bottom: pxToVw(40);
             }
@@ -416,7 +416,7 @@ body {
                     font-style: normal;
                     font-weight: normal;
                     font-size: pxToVw(13);
-                    line-height: pxToVw(23);
+                    line-height: pxToVw(20);
                     /* identical to box height, or 177% */
                     color: $blueText;
                     margin-bottom: 0;
@@ -468,6 +468,157 @@ body {
             }
         }
     }
+}
+
+// artices 
+.ba-articels-infos-container {
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(43, 62, 98, 0.21);
+}
+
+.ba-cart.article-action-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .article-cart-icon {
+        width: pxToVw(60);
+        height: pxToVw(60);
+        background: #E7EDF8;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: pxToVw(23);
+            height: pxToVw(23);
+        }
+    }
+    @at-root {
+        a#{&} {
+            p {
+                color: $blue;
+            }
+        }
+    }
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: pxToVw(17);
+        line-height: pxToVw(20);
+        letter-spacing: 0.03em;
+        color: $blueText;
+        margin: 0;
+    }
+    h2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: pxToVw(27);
+        line-height: pxToVw(23);
+        text-align: right;
+        color: $blueText;
+        margin: 0;
+    }
+}
+
+.ba-submit-article-container {
+    margin-top: pxToVw(130);
+}
+
+.import-excel-steps-warpp {
+    padding: pxToVw(30);
+    .import-excel-step {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: pxToVw(13);
+            line-height: pxToVw(19);
+            letter-spacing: 0.03em;
+            color: $blueOpacity;
+            margin: 0;
+            width: calc(100% - 92px);
+            span {
+                font-weight: bold;
+                font-size: 21px;
+                color: #104CBA;
+                margin-right: pxToVw(5);
+            }
+        }
+    }
+}
+
+.ba-download-excel-file {
+    background: #F4FDF5;
+    border: 1px dashed rgba(46, 125, 50, 0.37);
+    box-sizing: border-box;
+    border-radius: pxToVw(11);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: pxToVw(57) 0px;
+    margin-bottom: pxToVw(42);
+    span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: pxToVw(15);
+        line-height: pxToVw(21);
+        text-decoration-line: underline;
+        color: #2E7D32;
+        margin-top: pxToVw(15);
+    }
+}
+
+.ba-import-excel-file {
+    cursor: pointer;
+    border: 1px dashed $blue;
+    box-sizing: border-box;
+    border-radius: pxToVw(11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: pxToVw(63) 0;
+    img {
+        width: pxToVw(64);
+        height: pxToVw(64);
+        margin-bottom: pxToVw(48);
+    }
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: pxToVw(17);
+        line-height: pxToVw(20);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $blueText;
+        margin: 0;
+    }
+    span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: pxToVw(13);
+        line-height: pxToVw(21);
+        /* or 162% */
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $blueOpacity;
+        margin-bottom: pxToVw(25);
+    }
+}
+
+.ba-import-excel-warpp {
+    padding: pxToVw(70);
 }
 
 
