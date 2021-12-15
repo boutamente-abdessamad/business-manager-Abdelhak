@@ -250,6 +250,11 @@
   color: rgba(16, 76, 186, 0.09);
 }
 
+.ba-form-warpp .ba-form-control textarea {
+  padding: calc(10 * 0.0651111111vw) calc(20 * 0.0651111111vw);
+  text-indent: 0;
+}
+
 .ba-form-warpp .ba-form-control.ba-sm-control input,
 .ba-form-warpp .ba-form-control.ba-sm-control textarea {
   height: calc(39 * 0.0651111111vw);
