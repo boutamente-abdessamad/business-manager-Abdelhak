@@ -328,7 +328,7 @@
 
                                 <div class="col-12">
                                     <div class="py-5">
-                                        <div style="height : 280px">
+                                        <div class="client-figure-bar-chart">
                                             <canvas id="client_figure_bars"></canvas>
                                         </div>
                                     </div>
@@ -419,8 +419,8 @@
                     <li><a href="" class="btn">Contact</a></li>
                     <li><a href="" class="btn">Facture</a></li>
                     <li><a href="" class="btn">Devis</a></li>
-                    <li class="active"><a href="" class="btn">Paiements</a></li>
-                    <li><a href="" class="btn">Avoirs</a></li>
+                    <li><a href="" class="btn">Paiements</a></li>
+                    <li class="active"><a href="" class="btn">Avoirs</a></li>
                     <li><a href="" class="btn">Notes internes</a></li>
                     <li><a href="" class="btn">Relationship</a></li>
                 </ul>
@@ -438,10 +438,12 @@
                                             <i class="fa fa-square"></i>
                                         </button>
                             </th>
-                            <th>Date de paiement </th>
-                            <th>Montant du paiement </th>
-                            <th>Facture(s)</th>
-                            <th>Mode de paiement</th>
+                            <th>N° de l’avoir</th>
+                            <th>Date d’émission</th>
+                            <th>Date d’échéance</th>
+                            <th>Montant TTC </th>
+                            <th>Montant HT </th>
+                            <th>Statut</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -450,10 +452,14 @@
                         <tr>
 
                             <td></td>
-                            <td>02/08/2021</td>
-                            <td>1200 €</td>
                             <td>F0259565</td>
-                            <td>Virement / cheque / cash .. </td>
+                            <td>02/08/2021</td>
+                            <td>02/08/2021</td>
+                            <td>1500 €</td>
+                            <td> 1200 €</td>
+                            <td>
+                                <span class="invoice-status ba-btn-round invoice-status-danger">Expiré</span>
+                            </td>
                             <td>
                                 <div class="ba-user-profile-nav dropdown">
                                     <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -483,18 +489,21 @@
                         <!-- tr  -->
                         <!-- tr  -->
                         <tr>
-
                             <td></td>
-                            <td>02/08/2021</td>
-                            <td>1200 €</td>
                             <td>F0259565</td>
-                            <td>Virement / cheque / cash .. </td>
+                            <td>02/08/2021</td>
+                            <td>02/08/2021</td>
+                            <td>1500 €</td>
+                            <td> 1200 €</td>
+                            <td>
+                                <span class="invoice-status ba-btn-round invoice-status-success">En cours de validité</span>
+                            </td>
                             <td>
                                 <div class="ba-user-profile-nav dropdown">
-                                    <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
                                                 <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
                                             </button>
-                                    <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown1">
+                                    <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown2">
                                         <li>
                                             <a class="dropdown-item" href="#">
                                                 <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier

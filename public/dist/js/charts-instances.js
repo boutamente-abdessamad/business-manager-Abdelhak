@@ -56,20 +56,42 @@ $(document).ready(() => {
                     beginAtZero: true,
                     grid:{
                         display:false
+                    },
+                    ticks: {
+                        font: {
+                        family: "Poppins",
+                        style: "normal",
+                        weight: "normal",
+                        style: 12,
+                        }
                     }
                 },
                 x: {
                     grid:{
                         display:false
+                    },
+                     ticks: {
+                        font: {
+                        size: 12,
+                        family: "Poppins",
+                        style: "normal",
+                        weight: "normal",
+                        }
                     }
                 },
            
             },
             responsive: true,
-            maintainAspectRatio: false
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false,
+                },
+            },
         }
     });
-        
+
+
 
 
     } catch (e) {

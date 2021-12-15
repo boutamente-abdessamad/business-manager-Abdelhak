@@ -3342,6 +3342,10 @@ a.editable-click:hover {
   margin: 0;
 }
 
+.ba-cart.client-infos-cart {
+  padding: calc(50 * 0.0651111111vw);
+}
+
 /* tables  */
 /* tables  */
 /* pagination elements  */
@@ -3913,6 +3917,10 @@ ul.meanings-table li img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.client-figure-bar-chart {
+  height: calc(200 * 0.0651111111vw);
 }
 
 /* ........... ./conmponents .............. */
