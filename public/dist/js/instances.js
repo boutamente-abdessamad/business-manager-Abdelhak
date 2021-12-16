@@ -109,7 +109,44 @@ $(document).ready(() => {
     // sliders 
     // invoices-models-slider
 
-     let invoicesModelsSlider = $('.invoices-models-slider');
+    let purchasesInvoicesSlider = $('.purchases-invoices-slider');
+    if (purchasesInvoicesSlider.length) {
+      purchasesInvoicesSlider.slick({
+        focusOnSelect: true,
+        slidesToShow: 4,
+        dots: false,
+        autoplay: false,
+        speed: 1000,
+        autoplaySpeed: 3000,
+        // arrows: false,
+        swipe: true,
+        prevArrow: $('.invoices-models-prev'),
+        nextArrow: $('.invoices-models-next'),
+        infinite: true,
+        // swipeToSlide: true,
+        // responsive: [{
+        //     breakpoint: 1025,
+        //     settings: {
+        //       slidesToShow: 3,
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 769,
+        //     settings: {
+        //       slidesToShow: 2,
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 480,
+        //     settings: {
+        //       centerMode: true,
+        //       slidesToShow: 1,
+        //     }
+        //   }
+        // ]
+      });
+    }
+    let invoicesModelsSlider = $('.invoices-models-slider');
     if (invoicesModelsSlider.length) {
       invoicesModelsSlider.slick({
         focusOnSelect: true,

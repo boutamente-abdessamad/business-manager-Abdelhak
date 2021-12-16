@@ -1832,3 +1832,132 @@
     .ba-cart.client-infos-cart {
         padding: calc(50 * 0.0651111111vw);
     }
+    
+    // purchase-invoice
+    .purchase-invoice-item {
+        border-radius: pxToVw(15);
+        overflow: hidden;
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.11);
+        .purchase-invoice-head {
+            display: flex;
+            padding: pxToVw(20) pxToVw(15);
+            background-color: #FFFFFF;
+            img {
+                height: pxToVw(28);
+                width: 100%;
+            }
+        }
+        .purchase-invoice-body {
+            background-color: #FFFFFF;
+            padding: pxToVw(15) pxToVw(20);
+            .purchase-invoice-date {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: pxToVw(13);
+                line-height: pxToVw(23);
+                /* or 177% */
+                text-align: right;
+                color: rgba(43, 62, 98, 0.65);
+                margin: 0;
+            }
+            img {
+                height: pxToVw(20);
+                width: 100%;
+                margin-bottom: pxToVw(23);
+            }
+            .purchase-invoice-provider {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(13);
+                line-height: pxToVw(23);
+                align-items: center;
+                color: rgba(43, 62, 98, 0.65);
+                margin-bottom: 0;
+            }
+            .purchase-invoice-category {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(13);
+                line-height: pxToVw(23);
+                color: rgba(43, 62, 98, 0.65);
+                margin-bottom: 10px;
+            }
+            .purchase-invoice-total {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(21);
+                line-height: pxToVw(23);
+                text-align: right;
+                color: rgba(43, 62, 98, 0.65);
+                margin-bottom: pxToVw(13);
+            }
+        }
+        .purchase-invoice-footer {
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: pxToVw(15);
+                line-height: pxToVw(18);
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+                margin: 0;
+            }
+            .purchase-invoice-footer span {
+                background: rgba(229, 247, 239, 0.25);
+                border-radius: pxToVw(30);
+                display: inline-flex;
+                height: pxToVw(9);
+                width: auto;
+                flex: 1;
+                margin-left: pxToVw(10);
+                max-width: pxToVw(76);
+            }
+        }
+    }
+    
+    .purchases-invoices-slider {
+        /* the slides */
+        width: calc(100% - 80px);
+        .slick-slide {
+            margin: 0 10px;
+        }
+        /* the parent */
+        .slick-list {
+            margin: 0 -10px;
+        }
+    }
+    
+    .purchases-invoices-slider-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .purchases-invoices-slider-actions {
+        padding: 0px 0px;
+        width: 80px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button.btn-slider-arrow {
+            background: #FFFFFF;
+            border-radius: 5px;
+            height: 37px;
+            width: 37px;
+            color: #104CBA;
+            font-size: 26px;
+        }
+        button.btn-slider-arrow.prev {
+            margin-bottom: 23px;
+        }
+    }
