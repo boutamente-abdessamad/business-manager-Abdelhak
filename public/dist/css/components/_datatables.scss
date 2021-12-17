@@ -17,6 +17,9 @@
         tbody {
             tr {
                 td {
+                    &.dt-control {
+                        cursor: pointer;
+                    }
                     transition: .1s all cubic-bezier(0.65, 0.05, 0.36, 1);
                     font-weight: 500;
                     border-width: 1px;
@@ -294,6 +297,7 @@ table.dataTable {
         >tr.ba-invoice-form-tr {
             td {
                 padding: 0;
+                cursor: pointer;
             }
         }
         >tr {

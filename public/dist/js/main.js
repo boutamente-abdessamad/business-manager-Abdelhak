@@ -11,12 +11,12 @@ $(document).ready(() => {
         /* do your magic here*/
 
         // show invoice
-        $('.ba-invoice-trigger').on('click', function (e) {
+        $('body').on('click','.ba-invoice-trigger', function (e) {
             e.preventDefault();
             $(this).closest('.ba-invoice-viwer').addClass('in');
         });
         // hide invoice
-        $('.ba-invoice-trigger-close').on('click', function (e) {
+        $('body').on('click', '.ba-invoice-trigger-close',function (e) {
             e.preventDefault();
             $(this).closest('.ba-invoice-viwer').removeClass('in');
         });

@@ -37,6 +37,11 @@ $(document).ready(() => {
 
       // init plugins 
       initPlugins();
+    //   resize windows 
+    $(window).resize(() => {
+        // init plugins 
+         initPlugins();
+    });
 
     // global datatabele 
     if ($(".ba-datatable").length) {
@@ -150,6 +155,7 @@ $(document).ready(() => {
               row.child( template,'ba-invoice-form-tr' ).show();
               tr.addClass('shown');
           }
+          initPlugins();
       } );
         baDatatable.on('select deselect', function (e, dt, type, indexes) {
           if (type === 'row') {
