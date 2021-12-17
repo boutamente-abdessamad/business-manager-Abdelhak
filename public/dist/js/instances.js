@@ -120,8 +120,8 @@ $(document).ready(() => {
         autoplaySpeed: 3000,
         // arrows: false,
         swipe: true,
-        prevArrow: $('.invoices-models-prev'),
-        nextArrow: $('.invoices-models-next'),
+        prevArrow: $('.purchases-invoices-slider-actions .prev'),
+        nextArrow: $('.purchases-invoices-slider-actions .next'),
         infinite: true,
         // swipeToSlide: true,
         // responsive: [{
@@ -145,6 +145,7 @@ $(document).ready(() => {
         //   }
         // ]
       });
+      purchasesInvoicesSlider.show();
     }
     let invoicesModelsSlider = $('.invoices-models-slider');
     if (invoicesModelsSlider.length) {

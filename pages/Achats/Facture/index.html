@@ -217,7 +217,7 @@
                 <div class="ba-invoices-status-container">
 
                     <!-- ba-invoices-status-item  -->
-                    <a href="" class="ba-invoice-status-item-box ba-add-new-invoice">
+                    <a href="" class="ba-add-new-purchases-invoice">
 
                         <img src="../../../public/assets/icons/blue-plus.svg" alt="">
                         <span>Déposer une facture</span>
@@ -229,7 +229,7 @@
 
                         <div class="purchases-invoices-slider">
                             <!-- item  -->
-                            <div class="purchase-invoice-item ba-success-bg">
+                            <a href="" class="purchase-invoice-item ba-success-bg">
                                 <!-- head -->
                                 <div class="purchase-invoice-head">
                                     <img src="../../../public/assets/skeletons/invoice-haed.svg" alt="">
@@ -250,9 +250,9 @@
                                 </div>
 
 
-                            </div>
+                            </a>
                             <!-- item  -->
-                            <div class="purchase-invoice-item ba-danger-bg">
+                            <a href="" class="purchase-invoice-item ba-danger-bg">
                                 <!-- head -->
                                 <div class="purchase-invoice-head">
                                     <img src="../../../public/assets/skeletons/invoice-haed.svg" alt="">
@@ -273,9 +273,9 @@
                                 </div>
 
 
-                            </div>
+                            </a>
                             <!-- item  -->
-                            <div class="purchase-invoice-item ba-success-bg">
+                            <a href="" class="purchase-invoice-item ba-success-bg">
                                 <!-- head -->
                                 <div class="purchase-invoice-head">
                                     <img src="../../../public/assets/skeletons/invoice-haed.svg" alt="">
@@ -296,9 +296,9 @@
                                 </div>
 
 
-                            </div>
+                            </a>
                             <!-- item  -->
-                            <div class="purchase-invoice-item ba-warning-bg">
+                            <a href="" class="purchase-invoice-item ba-warning-bg">
                                 <!-- head -->
                                 <div class="purchase-invoice-head">
                                     <img src="../../../public/assets/skeletons/invoice-haed.svg" alt="">
@@ -319,7 +319,53 @@
                                 </div>
 
 
-                            </div>
+                            </a>
+                            <!-- item  -->
+                            <a href="" class="purchase-invoice-item ba-warning-bg">
+                                <!-- head -->
+                                <div class="purchase-invoice-head">
+                                    <img src="../../../public/assets/skeletons/invoice-haed.svg" alt="">
+                                </div>
+                                <!-- body -->
+                                <div class="purchase-invoice-body">
+                                    <p class="purchase-invoice-date">02/08/2021</p>
+                                    <img src="../../../public/assets/skeletons/invoice-body.svg" alt="">
+                                    <p class="purchase-invoice-provider">Fournisseur</p>
+                                    <p class="purchase-invoice-category">Catégorie</p>
+                                    <h2 class="purchase-invoice-total">50.00 €</h2>
+
+                                </div>
+                                <!-- footer -->
+                                <div class="purchase-invoice-footer">
+                                    <p>En attente</p>
+                                    <span></span>
+                                </div>
+
+
+                            </a>
+                            <!-- item  -->
+                            <a href="" class="purchase-invoice-item ba-warning-bg">
+                                <!-- head -->
+                                <div class="purchase-invoice-head">
+                                    <img src="../../../public/assets/skeletons/invoice-haed.svg" alt="">
+                                </div>
+                                <!-- body -->
+                                <div class="purchase-invoice-body">
+                                    <p class="purchase-invoice-date">02/08/2021</p>
+                                    <img src="../../../public/assets/skeletons/invoice-body.svg" alt="">
+                                    <p class="purchase-invoice-provider">Fournisseur</p>
+                                    <p class="purchase-invoice-category">Catégorie</p>
+                                    <h2 class="purchase-invoice-total">50.00 €</h2>
+
+                                </div>
+                                <!-- footer -->
+                                <div class="purchase-invoice-footer">
+                                    <p>En attente</p>
+                                    <span></span>
+                                </div>
+
+
+                            </a>
 
                         </div>
 
@@ -341,7 +387,7 @@
 
                 <!-- invices  -->
                 <div class="ba-block-title-ontainer gray-bb">
-                    <h3 class="block-title"><span class="title-figure">21</span> Notes de frais à catégoriser</h3>
+                    <h3 class="block-title"><span class="title-figure">21</span> Factures à catégoriser</h3>
                     <a href="" class="btn ba-btn-primary ba-btn-round ms-3">
                         <span>Catégoriser</span>
                         <img src="../../../public/assets/icons/blue-angle-right-bg-white.svg" alt="">
@@ -381,9 +427,13 @@
                                 </select>
                             </div>
 
-                            <button class="btn ba-btn-default">
+                            <button class="btn ba-btn-default me-3">
                                 <img src="../../../public/assets/icons/gray-export.svg" alt="">
                                 <span>Exporter</span>
+                            </button>
+                            <button class="btn ba-btn-default">
+                                <img  src="../../../public/assets/icons/gray-import.svg" alt="">
+                                <span>Importer</span>
                             </button>
 
                         </div>
@@ -416,12 +466,13 @@
                                             <i class="fa fa-square"></i>
                                         </button>
                                     </th>
-                                    <th>Client</th>
-                                    <th>N° de facture</th>
-                                    <th>Date d’émission</th>
-                                    <th>Date d’échéance</th>
-                                    <th>Montant TTC </th>
+                                    <th>Fournisseur</th>
+                                    <th>Réf</th>
+                                    <th>Catégorie</th>
+                                    <th>Date de facture</th>
+                                    <th>Date de paiement</th>
                                     <th>Montant HT </th>
+                                    <th>Montant TTC </th>
                                     <th>Statut</th>
                                     <th>Action</th>
                                 </tr>
@@ -433,12 +484,13 @@
                                     <td></td>
                                     <td>Mohamed Jazouli</td>
                                     <td>F0259565</td>
+                                    <td>xxxxxxxxxxxxx</td>
                                     <td>02/08/2021</td>
                                     <td>02/08/2021</td>
+                                    <td>1200 €</td>
                                     <td>1500 €</td>
-                                    <td> 1200 €</td>
                                     <td>
-                                        <span class="invoice-status ba-btn-round invoice-status-danger">En retard</span>
+                                        <span class="invoice-status ba-btn-round invoice-status-danger">En attente </span>
                                     </td>
                                     <td>
                                         <div class="ba-user-profile-nav dropdown">
@@ -467,17 +519,20 @@
 
                                 </tr>
                                 <!-- tr  -->
+
                                 <!-- tr  -->
                                 <tr>
+
                                     <td></td>
                                     <td>Mohamed Jazouli</td>
                                     <td>F0259565</td>
+                                    <td>xxxxxxxxxxxxx</td>
                                     <td>02/08/2021</td>
                                     <td>02/08/2021</td>
+                                    <td>1200 €</td>
                                     <td>1500 €</td>
-                                    <td> 1200 €</td>
                                     <td>
-                                        <span class="invoice-status ba-btn-round invoice-status-success">Payée</span>
+                                        <span class="invoice-status ba-btn-round invoice-status-warning">Payée partiellement</span>
                                     </td>
                                     <td>
                                         <div class="ba-user-profile-nav dropdown">
@@ -507,19 +562,34 @@
                                 </tr>
                                 <!-- tr  -->
 
+
                             </tbody>
                         </table>
+
+                        <div class="light-blue-container  text-end">
+
+                            <div class="total-row text-end">
+                                <label for="">Grand total HT</label>
+                                <h2>1500 €</h2>
+                            </div>
+
+                            <div class="total-row text-end">
+                                <label for="">Grand total TTC</label>
+                                <h2>1800 €</h2>
+                            </div>
+
+                        </div>
 
                         <div class="datatable-footer">
 
                             <div class="ba-group-buttons p-0">
 
-                                <a href="" class="btn ba-btn-default me-3">
-                                   Voir les factures archivées
+                                <a href="" class="btn ba-btn-default opacity-75 me-3">
+                                   Voir toutes les opérations archivées
                                 </a>
 
-                                <a href="" class="btn ba-btn-default">
-                                    Voir les factures supprimées 
+                                <a href="" class="btn ba-btn-default opacity-75">
+                                    Voir toutes les opérations supprimées
                                 </a>
 
                             </div>

@@ -10,6 +10,16 @@ $(document).ready(() => {
 
         /* do your magic here*/
 
+        // show invoice
+        $('.ba-invoice-trigger').on('click', function (e) {
+            e.preventDefault();
+            $(this).closest('.ba-invoice-viwer').addClass('in');
+        });
+        // hide invoice
+        $('.ba-invoice-trigger-close').on('click', function (e) {
+            e.preventDefault();
+            $(this).closest('.ba-invoice-viwer').removeClass('in');
+        });
         // sidebar toggle 
         $('.ba-sidebar-toggle').on('click', function (e) {
             e.preventDefault();
