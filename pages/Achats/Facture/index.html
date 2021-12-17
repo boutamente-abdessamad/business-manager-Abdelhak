@@ -458,7 +458,7 @@
                     <!-- datatable area  -->
                     <div class="ba-datatable-warpper">
 
-                        <table class="ba-datatable dataTable table table-bordered">
+                        <table class="ba-datatable-row-details dataTable table table-bordered">
                             <thead>
                                 <tr>
                                     <th>
@@ -482,13 +482,13 @@
                                 <tr>
 
                                     <td></td>
-                                    <td>Mohamed Jazouli</td>
-                                    <td>F0259565</td>
-                                    <td>xxxxxxxxxxxxx</td>
-                                    <td>02/08/2021</td>
-                                    <td>02/08/2021</td>
-                                    <td>1200 €</td>
-                                    <td>1500 €</td>
+                                    <td class="dt-control">Mohamed Jazouli</td>
+                                    <td class="dt-control">F0259565</td>
+                                    <td class="dt-control">xxxxxxxxxxxxx</td>
+                                    <td class="dt-control">02/08/2021</td>
+                                    <td class="dt-control">02/08/2021</td>
+                                    <td class="dt-control">1200 €</td>
+                                    <td class="dt-control">1500 €</td>
                                     <td>
                                         <span class="invoice-status ba-btn-round invoice-status-danger">En attente </span>
                                     </td>
@@ -524,13 +524,13 @@
                                 <tr>
 
                                     <td></td>
-                                    <td>Mohamed Jazouli</td>
-                                    <td>F0259565</td>
-                                    <td>xxxxxxxxxxxxx</td>
-                                    <td>02/08/2021</td>
-                                    <td>02/08/2021</td>
-                                    <td>1200 €</td>
-                                    <td>1500 €</td>
+                                    <td class="dt-control">Mohamed Jazouli</td>
+                                    <td class="dt-control">F0259565</td>
+                                    <td class="dt-control">xxxxxxxxxxxxx</td>
+                                    <td class="dt-control">02/08/2021</td>
+                                    <td class="dt-control">02/08/2021</td>
+                                    <td class="dt-control">1200 €</td>
+                                    <td class="dt-control">1500 €</td>
                                     <td>
                                         <span class="invoice-status ba-btn-round invoice-status-warning">Payée partiellement</span>
                                     </td>
@@ -646,6 +646,179 @@
     <!--===============================================-->
     <!--============== ./app root  ======================-->
     <!--===============================================-->
+
+    <!-- form template  -->
+    <template class="invoice-form-template">
+  <div class="ba-invoice-form ba-primary-light-bg">
+
+                <form>
+                    <!-- head  -->
+                    <div class="ba-invoice-form-head">
+
+                        <div class="ba-invoice-form-head-actions">
+
+                            <a href="" class="btn bt-brn-default ba-btn-circle bg-white me-3">
+                                <img class="ba-xs-img" src="../../../public/assets/icons/gray-edit.svg" alt="">
+                            </a>
+                            <a href="" class="btn bt-brn-default ba-btn-circle bg-white">
+                                <img class="ba-xs-img" src="../../../public/assets/icons/gray-delete.svg" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <!-- body  -->
+                    <div class="ba-invoice-form-body">
+
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Numéro de facture </label>
+                                    <div class="ba-form-control">
+                                        <input type="text" placeholder="Numéro de facture " id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Nom de la facture </label>
+                                    <div class="ba-form-control">
+                                        <input type="text" placeholder="Nom de la facture " id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="mb-5">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Fournisseur</label>
+                                    <div class="ba-form-control">
+                                        <input type="text" placeholder="Fournisseur" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <!-- input  -->
+                                <div class="ba-form-warpp  mb-0">
+                                    <label for="" class="ba-form-label">Catégorie</label>
+                                    <div class="ba-select-warpper w-100 mb-0  ba-form-control-style">
+                                        <select id="" class="selectpicker ba-select">
+                                            <option value="">Choisir la catégorie</option>
+                                            <option value="Cat 1">Cat 1</option>
+                                            <option value="Cat 1">Cat 1</option>
+                                            <option value="Cat 1">Cat 1</option>
+                                            <option value="Cat 1">Cat 1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Date de facture </label>
+                                    <div class="ba-form-control ba-fc-right-icon-date">
+                                        <input type="email" placeholder="Date de facture " id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Date de paiement</label>
+                                    <div class="ba-form-control ba-fc-right-icon-date">
+                                        <input type="email" placeholder="Date de paiement" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <!-- input  -->
+                                <div class="ba-form-warpp  mb-0">
+                                    <label for="" class="ba-form-label">Avoir/Remboursement</label>
+                                    <div class="ba-select-warpper w-100 mb-0  ba-form-control-style">
+                                        <select id="" class="selectpicker ba-select">
+                                            <option value="Oui">Oui</option>
+                                            <option value="Non">Non</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Montant HT</label>
+                                    <div class="ba-form-control">
+                                        <input type="text" placeholder="Montant HT" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Montant TTC</label>
+                                    <div class="ba-form-control">
+                                        <input type="email" placeholder="Montant TTC" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="mb-4">
+                            </div>
+                        </div>
+
+                        <a href="" class="ba-add-doc-link">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Document
+                        </a>
+                        <div class="col-12">
+                            <hr class="mb-3">
+                        </div>
+                    </div>
+
+                    <div class="ba-invoice-viwer">
+                        <a href="" class="btn ba-invoice-trigger-close">
+                            <img src="../../../public/assets/icons/gray-cross.svg" alt="">
+                        </a>
+                        <div class="col-12  text-center pt-4 pb-4">
+                            <a href="" class="ba-link ba-invoice-trigger">
+                                <span>Afficher la facture</span>
+                                <img src="../../../public/assets/icons/blue-invoice2.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="ba-invoice-viwer-actions">
+                            <ul>
+                                <li>
+                                    <a href="" class="btn ba-btn-default ba-btn-circle bg-white"><img class="ba-xs-img" src="../../../public/assets/icons/blue-download.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn ba-btn-default ba-btn-circle bg-white"><img class="ba-xs-img" src="../../../public/assets/icons/blue-delete.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn ba-btn-default ba-btn-circle bg-white"><img class="ba-xs-img" src="../../../public/assets/icons/blue-share.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn ba-btn-default ba-btn-circle bg-white"><img class="ba-xs-img" src="../../../public/assets/icons/blue-message.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ba-invoice-viwer-canvas">
+                            <object data="../../../public/assets/pdf/invoice.pdf" class="ba-pdf-object" type="application/pdf" width="100%">
+                            </object>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+    </template>
+    <!-- form template  -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap fontawsom JS -->

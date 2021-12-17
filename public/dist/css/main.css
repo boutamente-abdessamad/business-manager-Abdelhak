@@ -3150,6 +3150,9 @@ table.dataTable tbody th.select-checkbox:after {
 table.dataTable tbody > tr.selected {
   background-color: #3f51b51c;
 }
+table.dataTable tbody > tr.ba-invoice-form-tr td {
+  padding: 0;
+}
 table.dataTable tbody > tr > .selected {
   background-color: #3f51b51c;
 }

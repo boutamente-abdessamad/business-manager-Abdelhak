@@ -291,6 +291,11 @@ table.dataTable {
         >tr.selected {
             background-color: #3f51b51c;
         }
+        >tr.ba-invoice-form-tr {
+            td {
+                padding: 0;
+            }
+        }
         >tr {
             >.selected {
                 background-color: #3f51b51c;
