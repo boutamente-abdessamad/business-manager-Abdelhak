@@ -15,6 +15,20 @@ $(document).ready(() => {
             e.preventDefault();
             $(this).closest('.ba-invoice-viwer').addClass('in');
         });
+        $('body').on('click','.invoice-cart', function (e) {
+            e.preventDefault();
+             var template  = $('.invoice-form-template').html();
+             if ($(this).hasClass('in')) {
+                 $(this).closest('.invoices-grid-display-warpper').find('.ba-invoice-form').remove();
+                 $(this).closest('.invoices-grid-display-warpper').find('.invoice-cart').removeClass('in');
+             }else{
+                 $(this).closest('.invoices-grid-display-warpper').find('.ba-invoice-form').remove();
+                 $(this).closest('.row').after(template);
+                 $(this).closest('.invoices-grid-display-warpper').find('.invoice-cart').removeClass('in');
+                 $(this).addClass('in');
+             }
+              initPlugins();
+        });
         // hide invoice
         $('body').on('click', '.ba-invoice-trigger-close',function (e) {
             e.preventDefault();

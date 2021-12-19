@@ -386,6 +386,9 @@ body {
 // invoices grid display 
 .invoices-grid-display-warpper {
     margin-top: pxToVw(40);
+    .row:not(:last-child) {
+        margin-bottom: pxToVw(25);
+    }
     .invoice-cart {
         border: 1px solid #E7EDF8;
         box-sizing: border-box;
@@ -464,6 +467,20 @@ body {
                             background: #E7EDF8;
                         }
                     }
+                }
+            }
+        }
+        &.in {
+            background-color: $blueLightBg;
+            // head 
+            .invoice-cart-head {
+                .invoice-cart-ref {
+                    .invoice-icon {
+                        background: #FFFFFF;
+                    }
+                }
+                .ba-btn-circle {
+                    background: #FFFFFF;
                 }
             }
         }

@@ -63,21 +63,61 @@
             display: flex;
             height: 100%;
             align-items: center;
+            .fa {
+                color: #104CBA;
+                height: pxToVw(24);
+                width: pxToVw(24);
+                border-radius: 50%;
+                background-color: #FFFFFF;
+                display: inline-flex;
+                align-items: center;
+                margin-right: pxToVw(5);
+                justify-content: center;
+                font-size: pxToVw(12);
+            }
         }
         .dropdown-menu {
+            .bs-searchbox {
+                position: relative;
+                input {
+                    padding-right: pxToVw(20);
+                }
+                &::after {
+                    content: "";
+                    @include yAbsoluteCenter();
+                    right: pxToVw(20);
+                    width: pxToVw(12);
+                    height: pxToVw(12);
+                    background: url($iconsPath+'/gray-search.svg') no-repeat center;
+                    background-size: contain;
+                }
+            }
             li {
                 a {
+                    background: #F3F6FC;
+                    border-radius: 5px;
+                    margin: 5px 0;
+                    span.fa {
+                        color: #104CBA;
+                        height: pxToVw(24);
+                        width: pxToVw(24);
+                        border-radius: 50%;
+                        background-color: #FFFFFF;
+                        display: inline-flex;
+                        align-items: center;
+                        margin-right: pxToVw(5);
+                        justify-content: center;
+                        font-size: pxToVw(12);
+                    }
                     span.text {
                         display: inline-block;
                         font-family: Roboto;
                         font-style: normal;
-                        font-weight: 500;
-                        font-size: pxToVw(13);
-                        line-height: pxToVw(15);
-                        display: inline-flex;
+                        font-weight: normal;
+                        font-size: pxToVw(11);
+                        line-height: pxToVw(23);
                         align-items: center;
-                        letter-spacing: 1px;
-                        color: #000000;
+                        color: rgba(43, 62, 98, 0.65);
                     }
                 }
             }

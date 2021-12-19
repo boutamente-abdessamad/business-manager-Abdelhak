@@ -444,10 +444,10 @@
                                 <input type="text" name="date" placeholder="Rechercher par....." value="">
                             </div>
                             <div class="ba-display-mode">
-                                <a href="" class="active">
+                                <a href="">
                                     <img src="../../../public/assets/icons/gray-burger-menu.svg" alt="">
                                 </a>
-                                <a href="">
+                                <a href="" class="active">
                                     <img src="../../../public/assets/icons/gray-display-mode.svg" alt="">
                                 </a>
                             </div>
@@ -456,45 +456,25 @@
                     </div>
 
 
-                    <!-- datatable area  -->
-                    <div class="ba-datatable-warpper">
+                    <!-- grid display invoices  -->
+                    <div class="invoices-grid-display-warpper">
 
-                        <table class="ba-datatable-row-details dataTable table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <button id="baDataTableCheckAllButton" class="datatable-check">
-                                            <i class="fa fa-square"></i>
-                                        </button>
-                                    </th>
-                                    <th>Fournisseur</th>
-                                    <th>Réf</th>
-                                    <th>Catégorie</th>
-                                    <th>Date de facture</th>
-                                    <th>Date de paiement</th>
-                                    <th>Montant HT </th>
-                                    <th>Montant TTC </th>
-                                    <th>Statut</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- tr  -->
-                                <tr>
+                        <div class="row g-4">
 
-                                    <td></td>
-                                    <td class="dt-control">Mohamed Jazouli</td>
-                                    <td class="dt-control">F0259565</td>
-                                    <td class="dt-control">xxxxxxxxxxxxx</td>
-                                    <td class="dt-control">02/08/2021</td>
-                                    <td class="dt-control">02/08/2021</td>
-                                    <td class="dt-control">1200 €</td>
-                                    <td class="dt-control">1500 €</td>
-                                    <td>
-                                        <span class="invoice-status ba-btn-round invoice-status-danger">En attente
-                                        </span>
-                                    </td>
-                                    <td>
+                            <!-- col  -->
+                            <div class="col-12 col-md-6 col-lg-3">
+
+                                <!-- invoice-cart -->
+                                <div class="invoice-cart">
+                                    <!-- head  -->
+                                    <div class="invoice-cart-head">
+
+                                        <div class="invoice-cart-ref">
+                                            <div class="invoice-icon">
+                                                <img src="../../../public/assets/icons/blue-circle-user.svg" alt="">
+                                            </div>
+                                            <p>Mohamed Jazouli <br>F0259565</p>
+                                        </div>
                                         <div class="ba-user-profile-nav dropdown">
                                             <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
                                                 <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
@@ -517,27 +497,48 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </td>
 
-                                </tr>
-                                <!-- tr  -->
+                                    </div>
+                                    <!-- body  -->
+                                    <div class="invoice-cart-body">
+                                        <h4 class="invoice-cart-owner">Catégorie <span class="invoice-status ba-btn-round invoice-status-warning ms-2">Payée
+                                                partiellement</span></h4>
 
-                                <!-- tr  -->
-                                <tr>
+                                        <div class="invoice-cart-content">
 
-                                    <td></td>
-                                    <td class="dt-control">Mohamed Jazouli</td>
-                                    <td class="dt-control">F0259565</td>
-                                    <td class="dt-control">xxxxxxxxxxxxx</td>
-                                    <td class="dt-control">02/08/2021</td>
-                                    <td class="dt-control">02/08/2021</td>
-                                    <td class="dt-control">1200 €</td>
-                                    <td class="dt-control">1500 €</td>
-                                    <td>
-                                        <span class="invoice-status ba-btn-round invoice-status-warning">Payée
-                                            partiellement</span>
-                                    </td>
-                                    <td>
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>TTC 1500 €</li>
+                                            </ul>
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>HT 1200 €</li>
+                                            </ul>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- invoice-cart -->
+
+                            </div>
+
+                            <!-- col  -->
+                            <div class="col-12 col-md-6 col-lg-3">
+
+                                <!-- invoice-cart -->
+                                <div class="invoice-cart">
+                                    <!-- head  -->
+                                    <div class="invoice-cart-head">
+
+                                        <div class="invoice-cart-ref">
+                                            <div class="invoice-icon">
+                                                <img src="../../../public/assets/icons/blue-circle-user.svg" alt="">
+                                            </div>
+                                            <p>Mohamed Jazouli <br>F0259565</p>
+                                        </div>
                                         <div class="ba-user-profile-nav dropdown">
                                             <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
                                                 <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
@@ -560,78 +561,483 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </td>
 
-                                </tr>
-                                <!-- tr  -->
+                                    </div>
+                                    <!-- body  -->
+                                    <div class="invoice-cart-body">
+                                        <h4 class="invoice-cart-owner">Catégorie <span class="invoice-status ba-btn-round invoice-status-warning ms-2">Payée
+                                                partiellement</span></h4>
+
+                                        <div class="invoice-cart-content">
+
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>TTC 1500 €</li>
+                                            </ul>
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>HT 1200 €</li>
+                                            </ul>
+
+                                        </div>
 
 
-                            </tbody>
-                        </table>
+                                    </div>
 
-                        <div class="light-blue-container  text-end">
+                                </div>
+                                <!-- invoice-cart -->
 
-                            <div class="total-row text-end">
-                                <label for="">Grand total HT</label>
-                                <h2>1500 €</h2>
                             </div>
 
-                            <div class="total-row text-end">
-                                <label for="">Grand total TTC</label>
-                                <h2>1800 €</h2>
+                            <!-- col  -->
+                            <div class="col-12 col-md-6 col-lg-3">
+
+                                <!-- invoice-cart -->
+                                <div class="invoice-cart">
+                                    <!-- head  -->
+                                    <div class="invoice-cart-head">
+
+                                        <div class="invoice-cart-ref">
+                                            <div class="invoice-icon">
+                                                <img src="../../../public/assets/icons/blue-circle-user.svg" alt="">
+                                            </div>
+                                            <p>Mohamed Jazouli <br>F0259565</p>
+                                        </div>
+                                        <div class="ba-user-profile-nav dropdown">
+                                            <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown3" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown3">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <!-- body  -->
+                                    <div class="invoice-cart-body">
+                                        <h4 class="invoice-cart-owner">Catégorie <span class="invoice-status ba-btn-round invoice-status-warning ms-2">Payée
+                                                partiellement</span></h4>
+
+                                        <div class="invoice-cart-content">
+
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>TTC 1500 €</li>
+                                            </ul>
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>HT 1200 €</li>
+                                            </ul>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- invoice-cart -->
+
                             </div>
 
+                            <!-- col  -->
+                            <div class="col-12 col-md-6 col-lg-3">
+
+                                <!-- invoice-cart -->
+                                <div class="invoice-cart">
+                                    <!-- head  -->
+                                    <div class="invoice-cart-head">
+
+                                        <div class="invoice-cart-ref">
+                                            <div class="invoice-icon">
+                                                <img src="../../../public/assets/icons/blue-circle-user.svg" alt="">
+                                            </div>
+                                            <p>Mohamed Jazouli <br>F0259565</p>
+                                        </div>
+                                        <div class="ba-user-profile-nav dropdown">
+                                            <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown4" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown4">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <!-- body  -->
+                                    <div class="invoice-cart-body">
+                                        <h4 class="invoice-cart-owner">Catégorie <span class="invoice-status ba-btn-round invoice-status-warning ms-2">Payée
+                                                partiellement</span></h4>
+
+                                        <div class="invoice-cart-content">
+
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>TTC 1500 €</li>
+                                            </ul>
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>HT 1200 €</li>
+                                            </ul>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- invoice-cart -->
+
+                            </div>
                         </div>
+                        <div class="row g-4">
+                            <!-- col  -->
+                            <div class="col-12 col-md-6 col-lg-3">
 
-                        <div class="datatable-footer">
+                                <!-- invoice-cart -->
+                                <div class="invoice-cart">
+                                    <!-- head  -->
+                                    <div class="invoice-cart-head">
 
-                            <div class="ba-group-buttons p-0">
+                                        <div class="invoice-cart-ref">
+                                            <div class="invoice-icon">
+                                                <img src="../../../public/assets/icons/blue-circle-user.svg" alt="">
+                                            </div>
+                                            <p>Mohamed Jazouli <br>F0259565</p>
+                                        </div>
+                                        <div class="ba-user-profile-nav dropdown">
+                                            <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown5" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown5">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                <a href="" class="btn ba-btn-default opacity-75 me-3">
-                                    Voir toutes les opérations archivées
-                                </a>
+                                    </div>
+                                    <!-- body  -->
+                                    <div class="invoice-cart-body">
+                                        <h4 class="invoice-cart-owner">Catégorie <span class="invoice-status ba-btn-round invoice-status-warning ms-2">Payée
+                                                partiellement</span></h4>
 
-                                <a href="" class="btn ba-btn-default opacity-75">
-                                    Voir toutes les opérations supprimées
-                                </a>
+                                        <div class="invoice-cart-content">
+
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>TTC 1500 €</li>
+                                            </ul>
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>HT 1200 €</li>
+                                            </ul>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- invoice-cart -->
 
                             </div>
 
-                            <!-- pagination  -->
-                            <div class="elements-pagination">
-                                <!-- options  -->
-                                <div class="pagination-more-options ba-user-profile-nav dropdown">
-                                    <a href="" class="ep-more" type="button" id="paginationDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
-                                        Plus <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                    <div class="dropdown-menu ba-dropdown-items pagination-more-dropdown" aria-labelledby="paginationDropDown1">
-                                        <a class="dropdown-item" href="#">plus 1</a>
-                                        <a class="dropdown-item" href="#">plus 2</a>
-                                        <a class="dropdown-item" href="#">plus 3</a>
+                            <!-- col  -->
+                            <div class="col-12 col-md-6 col-lg-3">
+
+                                <!-- invoice-cart -->
+                                <div class="invoice-cart">
+                                    <!-- head  -->
+                                    <div class="invoice-cart-head">
+
+                                        <div class="invoice-cart-ref">
+                                            <div class="invoice-icon">
+                                                <img src="../../../public/assets/icons/blue-circle-user.svg" alt="">
+                                            </div>
+                                            <p>Mohamed Jazouli <br>F0259565</p>
+                                        </div>
+                                        <div class="ba-user-profile-nav dropdown">
+                                            <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown6" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown6">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
                                     </div>
-                                </div>
-                                <!-- page limit  -->
-                                <div class="pages-limit ba-user-profile-nav dropdown">
-                                    <a href="" class="ep-paged" type="button" id="paginationDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
-                                        10 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                    <div class="dropdown-menu ba-dropdown-items pagination-paged-dropdown" aria-labelledby="paginationDropDown2">
-                                        <a class="dropdown-item" href="#">20</a>
-                                        <a class="dropdown-item" href="#">50</a>
-                                        <a class="dropdown-item" href="#">100</a>
+                                    <!-- body  -->
+                                    <div class="invoice-cart-body">
+                                        <h4 class="invoice-cart-owner">Catégorie <span class="invoice-status ba-btn-round invoice-status-warning ms-2">Payée
+                                                partiellement</span></h4>
+
+                                        <div class="invoice-cart-content">
+
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>TTC 1500 €</li>
+                                            </ul>
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>HT 1200 €</li>
+                                            </ul>
+
+                                        </div>
+
+
                                     </div>
+
                                 </div>
-                                <!-- elements  -->
-                                <div class="ep-elements">
-                                    Eléments <span>1-6</span> / <span>1-6</span>
-                                    <a href="" class="ep-prev is-last"><i class="fa fa-angle-left"
-                                            aria-hidden="true"></i></a>
-                                    <a href="" class="ep-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                </div>
+                                <!-- invoice-cart -->
+
                             </div>
-                            <!-- pagination  -->
+
+                            <!-- col  -->
+                            <div class="col-12 col-md-6 col-lg-3">
+
+                                <!-- invoice-cart -->
+                                <div class="invoice-cart">
+                                    <!-- head  -->
+                                    <div class="invoice-cart-head">
+
+                                        <div class="invoice-cart-ref">
+                                            <div class="invoice-icon">
+                                                <img src="../../../public/assets/icons/blue-circle-user.svg" alt="">
+                                            </div>
+                                            <p>Mohamed Jazouli <br>F0259565</p>
+                                        </div>
+                                        <div class="ba-user-profile-nav dropdown">
+                                            <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown7" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown7">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <!-- body  -->
+                                    <div class="invoice-cart-body">
+                                        <h4 class="invoice-cart-owner">Catégorie <span class="invoice-status ba-btn-round invoice-status-warning ms-2">Payée
+                                                partiellement</span></h4>
+
+                                        <div class="invoice-cart-content">
+
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>TTC 1500 €</li>
+                                            </ul>
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>HT 1200 €</li>
+                                            </ul>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- invoice-cart -->
+
+                            </div>
+
+                            <!-- col  -->
+                            <div class="col-12 col-md-6 col-lg-3">
+
+                                <!-- invoice-cart -->
+                                <div class="invoice-cart">
+                                    <!-- head  -->
+                                    <div class="invoice-cart-head">
+
+                                        <div class="invoice-cart-ref">
+                                            <div class="invoice-icon">
+                                                <img src="../../../public/assets/icons/blue-circle-user.svg" alt="">
+                                            </div>
+                                            <p>Mohamed Jazouli <br>F0259565</p>
+                                        </div>
+                                        <div class="ba-user-profile-nav dropdown">
+                                            <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown8" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown8">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <!-- body  -->
+                                    <div class="invoice-cart-body">
+                                        <h4 class="invoice-cart-owner">Catégorie <span class="invoice-status ba-btn-round invoice-status-warning ms-2">Payée
+                                                partiellement</span></h4>
+
+                                        <div class="invoice-cart-content">
+
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>TTC 1500 €</li>
+                                            </ul>
+                                            <ul>
+                                                <li>02/08/2021</li>
+                                                <li>HT 1200 €</li>
+                                            </ul>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- invoice-cart -->
+
+                            </div>
+
                         </div>
 
                     </div>
-                    <!-- datatable area  -->
+                    <div class="light-blue-container  text-end mt-4">
+
+                        <div class="total-row text-end">
+                            <label for="">Grand total HT</label>
+                            <h2>1500 €</h2>
+                        </div>
+
+                        <div class="total-row text-end">
+                            <label for="">Grand total TTC</label>
+                            <h2>1800 €</h2>
+                        </div>
+
+                    </div>
+                    <!-- grid display invoices  -->
+                    <div class="datatable-footer">
+
+                        <div class="ba-group-buttons p-0">
+
+                            <a href="" class="btn ba-btn-default opacity-75 me-3">
+                                Voir toutes les opérations archivées
+                            </a>
+
+                            <a href="" class="btn ba-btn-default opacity-75">
+                                Voir toutes les opérations supprimées
+                            </a>
+
+                        </div>
+
+                        <!-- pagination  -->
+                        <div class="elements-pagination">
+                            <!-- options  -->
+                            <div class="pagination-more-options ba-user-profile-nav dropdown">
+                                <a href="" class="ep-more" type="button" id="paginationDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    Plus <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <div class="dropdown-menu ba-dropdown-items pagination-more-dropdown" aria-labelledby="paginationDropDown1">
+                                    <a class="dropdown-item" href="#">plus 1</a>
+                                    <a class="dropdown-item" href="#">plus 2</a>
+                                    <a class="dropdown-item" href="#">plus 3</a>
+                                </div>
+                            </div>
+                            <!-- page limit  -->
+                            <div class="pages-limit ba-user-profile-nav dropdown">
+                                <a href="" class="ep-paged" type="button" id="paginationDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    10 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <div class="dropdown-menu ba-dropdown-items pagination-paged-dropdown" aria-labelledby="paginationDropDown2">
+                                    <a class="dropdown-item" href="#">20</a>
+                                    <a class="dropdown-item" href="#">50</a>
+                                    <a class="dropdown-item" href="#">100</a>
+                                </div>
+                            </div>
+                            <!-- elements  -->
+                            <div class="ep-elements">
+                                Eléments <span>1-6</span> / <span>1-6</span>
+                                <a href="" class="ep-prev is-last"><i class="fa fa-angle-left"
+                                        aria-hidden="true"></i></a>
+                                <a href="" class="ep-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <!-- pagination  -->
+                    </div>
+
 
 
                 </div>

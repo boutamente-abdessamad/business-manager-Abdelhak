@@ -215,7 +215,7 @@ $(document).ready(() => {
         swipe: true,
         prevArrow: $('.purchases-invoices-slider-actions .prev'),
         nextArrow: $('.purchases-invoices-slider-actions .next'),
-        infinite: true,
+        infinite: false,
         // swipeToSlide: true,
         // responsive: [{
         //     breakpoint: 1025,
@@ -239,6 +239,44 @@ $(document).ready(() => {
         // ]
       });
       purchasesInvoicesSlider.show();
+    }
+    let suppliersSlider = $('.suppliers-slider');
+    if (suppliersSlider.length) {
+      suppliersSlider.slick({
+        focusOnSelect: true,
+        slidesToShow: 4,
+        dots: false,
+        autoplay: false,
+        speed: 1000,
+        autoplaySpeed: 3000,
+        arrows: true,
+        swipe: true,
+        prevArrow: $('.side-slider-actions .prev'),
+        nextArrow: $('.side-slider-actions .next'),
+        infinite: true,
+        // swipeToSlide: true,
+        // responsive: [{
+        //     breakpoint: 1025,
+        //     settings: {
+        //       slidesToShow: 3,
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 769,
+        //     settings: {
+        //       slidesToShow: 2,
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 480,
+        //     settings: {
+        //       centerMode: true,
+        //       slidesToShow: 1,
+        //     }
+        //   }
+        // ]
+      });
+      suppliersSlider.show();
     }
     let invoicesModelsSlider = $('.invoices-models-slider');
     if (invoicesModelsSlider.length) {
