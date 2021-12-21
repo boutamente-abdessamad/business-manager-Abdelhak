@@ -98,21 +98,6 @@
         font-weight: bold !important;
     }
     
-    .ba-user-profile-nav.dropdown {
-        display: flex;
-    }
-    
-    .close-toggle-top-right {
-        position: absolute;
-        top: pxToVw(-8);
-        right: pxToVw(-8);
-        cursor: pointer;
-        img {
-            width: pxToVw(20);
-            height: pxToVw(20);
-        }
-    }
-    
     .ba-link {
         font-family: Roboto;
         font-style: normal;

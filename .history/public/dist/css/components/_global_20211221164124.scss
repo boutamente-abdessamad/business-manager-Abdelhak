@@ -104,12 +104,12 @@
     
     .close-toggle-top-right {
         position: absolute;
-        top: pxToVw(-8);
-        right: pxToVw(-8);
+        top: -8px;
+        right: -8px;
         cursor: pointer;
         img {
-            width: pxToVw(20);
-            height: pxToVw(20);
+            width: 20px;
+            height: 20px;
         }
     }
     
