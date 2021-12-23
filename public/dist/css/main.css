@@ -1092,6 +1092,7 @@ a.ba-add-doc-link i {
 
 .close-toggle-top-right {
   position: absolute;
+  display: none;
   top: calc(-8 * 0.0651111111vw);
   right: calc(-8 * 0.0651111111vw);
   cursor: pointer;
@@ -1160,10 +1161,22 @@ a.ba-add-doc-link i {
   align-items: center;
   justify-content: center;
 }
-
 .ba-icon-lg img {
   width: calc(27 * 0.0651111111vw);
   height: calc(27 * 0.0651111111vw);
+}
+
+.ba-icon-md {
+  width: calc(36 * 0.0651111111vw);
+  height: calc(36 * 0.0651111111vw);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ba-icon-md img {
+  width: calc(16 * 0.0651111111vw);
+  height: calc(16 * 0.0651111111vw);
 }
 
 .h-100vh {
@@ -3354,6 +3367,111 @@ a.editable-click:hover {
 
 .datepicker-dropdown .datepicker-days {
   display: block;
+}
+
+.datepicker.datepicker-dropdown {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
+  border-radius: calc(11 * 0.0651111111vw);
+  padding: calc(8 * 0.0651111111vw) calc(24 * 0.0651111111vw);
+}
+.datepicker.datepicker-dropdown table .datepicker-switch {
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(14 * 0.0651111111vw);
+  line-height: calc(12 * 0.0651111111vw);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  padding-left: calc(20 * 0.0651111111vw);
+}
+.datepicker.datepicker-dropdown table .datepicker-switch::after {
+  content: "";
+  width: calc(15 * 0.0651111111vw);
+  height: calc(15 * 0.0651111111vw);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("../../../public/assets/icons/blue-date.svg") no-repeat center;
+  background-size: contain;
+  left: calc(8 * 0.0651111111vw);
+}
+.datepicker.datepicker-dropdown table tr th {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(14 * 0.0651111111vw);
+  line-height: calc(37 * 0.0651111111vw);
+  text-align: center;
+  color: rgba(43, 62, 98, 0.65);
+}
+.datepicker.datepicker-dropdown table tr td {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(30 * 0.0651111111vw);
+  align-items: center;
+  text-align: center;
+  color: #2B3E62;
+}
+.datepicker.datepicker-dropdown table tr td.active:hover, .datepicker.datepicker-dropdown table tr td.active:hover:hover, .datepicker.datepicker-dropdown table tr td.active.disabled:hover, .datepicker.datepicker-dropdown table tr td.active.disabled:hover:hover, .datepicker.datepicker-dropdown table tr td.active:active, .datepicker.datepicker-dropdown table tr td.active:hover:active, .datepicker.datepicker-dropdown table tr td.active.disabled:active, .datepicker.datepicker-dropdown table tr td.active.disabled:hover:active, .datepicker.datepicker-dropdown table tr td.active.active, .datepicker.datepicker-dropdown table tr td.active:hover.active, .datepicker.datepicker-dropdown table tr td.active.disabled.active, .datepicker.datepicker-dropdown table tr td.active.disabled:hover.active, .datepicker.datepicker-dropdown table tr td.active.disabled, .datepicker.datepicker-dropdown table tr td.active:hover.disabled, .datepicker.datepicker-dropdown table tr td.active.disabled.disabled, .datepicker.datepicker-dropdown table tr td.active.disabled:hover.disabled, .datepicker.datepicker-dropdown table tr td.active[disabled], .datepicker.datepicker-dropdown table tr td.active:hover[disabled], .datepicker.datepicker-dropdown table tr td.active.disabled[disabled], .datepicker.datepicker-dropdown table tr td.active.disabled:hover[disabled] {
+  color: #fff;
+  background-color: #0044cc;
+  background: #104CBA;
+  border-radius: 5px;
+}
+
+.reconcile-transaction-with-invoice-container {
+  background: #F3F6FC;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 5px 5px;
+  padding: calc(40 * 0.0651111111vw) calc(50 * 0.0651111111vw);
+}
+.reconcile-transaction-with-invoice-container .reconcile-transaction-with-invoice-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  padding-bottom: calc(25 * 0.0651111111vw);
+}
+.reconcile-transaction-with-invoice-container .reconcile-transaction-with-invoice-header h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(21 * 0.0651111111vw);
+  line-height: calc(31 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin: 0;
+}
+.reconcile-transaction-with-invoice-container .reconcile-transaction-with-invoice-header h5.rti-total {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(19 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  color: #2B3E62;
+  margin: 0;
+}
+.reconcile-transaction-with-invoice-container .reconcile-transaction-with-invoice-header h5.rti-total small {
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  margin-left: calc(5 * 0.0651111111vw);
+}
+
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+  display: inline-block;
+  right: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bootstrap-select .bs-ok-default::after {
+  border-color: #104CBA;
 }
 
 /* tables  */
