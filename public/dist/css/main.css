@@ -312,6 +312,9 @@
 .ba-select-warpper.ba-light-select .bootstrap-select > .dropdown-toggle {
   background-color: white;
 }
+.ba-select-warpper.ba-lg-select .bootstrap-select > .dropdown-toggle {
+  height: calc(60 * 0.0651111111vw);
+}
 
 .ba-form-controll {
   background: #FFFFFF;
@@ -1100,6 +1103,10 @@ a.ba-add-doc-link i {
 .close-toggle-top-right img {
   width: calc(20 * 0.0651111111vw);
   height: calc(20 * 0.0651111111vw);
+}
+
+.square-date-btn.in .close-toggle-top-right {
+  display: block;
 }
 
 .ba-link {
@@ -3425,10 +3432,34 @@ a.editable-click:hover {
 }
 
 .reconcile-transaction-with-invoice-container {
+  position: relative;
   background: #F3F6FC;
   box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.15);
   border-radius: 0px 0px 5px 5px;
   padding: calc(40 * 0.0651111111vw) calc(50 * 0.0651111111vw);
+}
+.reconcile-transaction-with-invoice-container .rti-close-trigger {
+  position: absolute;
+  right: calc(24 * 0.0651111111vw);
+  top: calc(20 * 0.0651111111vw);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.reconcile-transaction-with-invoice-container .rti-close-trigger img {
+  width: calc(20 * 0.0651111111vw);
+  height: calc(20 * 0.0651111111vw);
+}
+.reconcile-transaction-with-invoice-container .rti-form-input-title > h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin-top: calc(26 * 0.0651111111vw);
+  margin-bottom: calc(18 * 0.0651111111vw);
 }
 .reconcile-transaction-with-invoice-container .reconcile-transaction-with-invoice-header {
   display: flex;
@@ -3455,6 +3486,7 @@ a.editable-click:hover {
   line-height: calc(23 * 0.0651111111vw);
   color: #2B3E62;
   margin: 0;
+  padding-right: calc(50 * 0.0651111111vw);
 }
 .reconcile-transaction-with-invoice-container .reconcile-transaction-with-invoice-header h5.rti-total small {
   font-size: calc(13 * 0.0651111111vw);
@@ -3474,6 +3506,84 @@ a.editable-click:hover {
   border-color: #104CBA;
 }
 
+.reconcile-transaction-table {
+  margin-top: 26px;
+}
+.reconcile-transaction-table table {
+  width: 100%;
+  border: transparent;
+  border-top: 1px solid rgba(16, 76, 186, 0.28);
+}
+.reconcile-transaction-table table tr:not(:last-child) {
+  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+}
+.reconcile-transaction-table table tr td {
+  padding: calc(16 * 0.0651111111vw) calc(5 * 0.0651111111vw);
+}
+.reconcile-transaction-table table tr td p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
+  /* or 162% */
+  color: #2B3E62;
+  margin-bottom: 0;
+}
+.reconcile-transaction-table table tr td .rti-table-cat {
+  display: flex;
+  align-items: center;
+}
+.reconcile-transaction-table table tr td .rti-table-cat img {
+  width: calc(42 * 0.0651111111vw);
+  height: calc(60 * 0.0651111111vw);
+  margin-right: calc(25 * 0.0651111111vw);
+}
+.reconcile-transaction-table table tr td .rti-table-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rti-submit-btn {
+  min-height: calc(59 * 0.0651111111vw);
+}
+
+.ba-mounths-filter-container {
+  border-radius: 0px 0px 7px 7px;
+  margin-top: calc(20 * 0.0651111111vw);
+  padding: calc(20 * 0.0651111111vw) calc(25 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+.ba-mounths-filter-container.in {
+  display: block;
+}
+
+.ba-checked-chip input {
+  display: none;
+}
+.ba-checked-chip input:checked + .ba-ship {
+  border-color: #104CBA;
+  color: #104CBA;
+}
+
+.ba-ship.btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(15 * 0.0651111111vw);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  border: 1px solid rgba(16, 76, 186, 0.28);
+  border-radius: calc(30 * 0.0651111111vw);
+  padding: calc(7 * 0.0651111111vw) calc(20 * 0.0651111111vw);
+}
+
 /* tables  */
 /* tables  */
 /* pagination elements  */
@@ -3483,19 +3593,19 @@ a.editable-click:hover {
   margin: calc(15 * 0.0651111111vw);
   margin-top: calc(0 * 0.0651111111vw);
 }
-.ba-datatable-warpper table {
+.ba-datatable-warpper table.dataTable {
   border-spacing: 0px calc(15 * 0.0651111111vw);
   border: none;
   border-collapse: separate;
 }
-.ba-datatable-warpper table tbody tr {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr) {
   transition: 0.1s all cubic-bezier(0.65, 0.05, 0.36, 1);
   background: rgba(252, 252, 252, 0.5);
   mix-blend-mode: normal;
   mix-blend-mode: normal;
   border-radius: 0;
 }
-.ba-datatable-warpper table tbody tr td {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr) > td {
   transition: 0.1s all cubic-bezier(0.65, 0.05, 0.36, 1);
   font-weight: 500;
   border-width: 1px;
@@ -3513,38 +3623,38 @@ a.editable-click:hover {
   border-top: 1px solid rgba(16, 76, 186, 0.1) !important;
   border-bottom: 1px solid rgba(16, 76, 186, 0.1) !important;
 }
-.ba-datatable-warpper table tbody tr td.dt-control {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr) > td.dt-control {
   cursor: pointer;
 }
-.ba-datatable-warpper table tbody tr td:first-child {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr) > td:first-child {
   border-left: 1px solid rgba(16, 76, 186, 0.1) !important;
   border-top-left-radius: calc(5 * 0.0651111111vw);
   border-bottom-left-radius: calc(5 * 0.0651111111vw);
 }
-.ba-datatable-warpper table tbody tr td:last-child {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr) > td:last-child {
   border-bottom-right-radius: calc(5 * 0.0651111111vw);
   border-top-right-radius: calc(5 * 0.0651111111vw);
   border-right: 1px solid rgba(16, 76, 186, 0.1) !important;
 }
-.ba-datatable-warpper table tbody tr:hover {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr):hover {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1), 0px 5px 8px rgba(0, 0, 0, 0.07), 0px 1px 14px rgba(0, 0, 0, 0.06);
 }
-.ba-datatable-warpper table tbody tr:hover td {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr):hover td {
   background: #FFFFFF !important;
   border-bottom: 1px solid rgba(16, 76, 186, 0.37) !important;
   border-top: 1px solid rgba(16, 76, 186, 0.37) !important;
 }
-.ba-datatable-warpper table tbody tr:hover td:first-child {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr):hover td:first-child {
   border-left: 1px solid rgba(16, 76, 186, 0.37) !important;
 }
-.ba-datatable-warpper table tbody tr:hover td:last-child {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr):hover td:last-child {
   border-right: 1px solid rgba(16, 76, 186, 0.37) !important;
 }
-.ba-datatable-warpper table tbody tr.ba-datatable-row-title {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr).ba-datatable-row-title {
   border: none;
   box-shadow: none;
 }
-.ba-datatable-warpper table tbody tr.ba-datatable-row-title td {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr).ba-datatable-row-title td {
   pointer-events: none;
   width: 100%;
   padding: 7px 6px !important;
@@ -3559,24 +3669,24 @@ a.editable-click:hover {
   letter-spacing: 0.03em;
   color: #104CBA;
 }
-.ba-datatable-warpper table tbody tr.ba-datatable-row-title td::before {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr).ba-datatable-row-title td::before {
   display: none !important;
 }
-.ba-datatable-warpper table tbody tr.ba-datatable-row-title:hover {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr).ba-datatable-row-title:hover {
   box-shadow: none;
 }
-.ba-datatable-warpper table tbody tr.ba-datatable-row-title:hover td {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr).ba-datatable-row-title:hover td {
   background: #FFFFFF !important;
   border-bottom: none !important;
   border-top: none !important;
 }
-.ba-datatable-warpper table tbody tr.ba-datatable-row-title:hover td:first-child {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr).ba-datatable-row-title:hover td:first-child {
   border-left: none !important;
 }
-.ba-datatable-warpper table tbody tr.ba-datatable-row-title:hover td:last-child {
+.ba-datatable-warpper table.dataTable > tbody > tr:not(.ba-invoice-form-tr).ba-datatable-row-title:hover td:last-child {
   border-right: none !important;
 }
-.ba-datatable-warpper table tfoot tr td {
+.ba-datatable-warpper table.dataTable > tfoot tr td {
   border-width: 1px;
   font-family: Roboto;
   font-style: normal;
@@ -3599,7 +3709,7 @@ a.editable-click:hover {
   font-weight: normal;
   color: #373737;
 }
-.ba-datatable-warpper table thead tr th {
+.ba-datatable-warpper table.dataTable > thead tr th {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -3623,7 +3733,7 @@ table.table-hover tbody tr:hover {
   cursor: pointer;
 }
 
-.table-rowclick.ba-datatable-warpper tbody tr:hover {
+.table-rowclick.ba-datatable-warpper table.dataTable tbody tr:hover {
   cursor: pointer;
 }
 
@@ -3753,7 +3863,7 @@ table.dataTable tbody th.select-checkbox:after {
 table.dataTable tbody > tr.selected {
   background-color: #3f51b51c;
 }
-table.dataTable tbody > tr.ba-invoice-form-tr td {
+table.dataTable tbody > tr.ba-invoice-form-tr > td {
   padding: 0;
   cursor: pointer;
 }
@@ -3811,17 +3921,6 @@ table.dataTable tr.selected th.select-checkbox:after {
 }
 .datatable-check i.fa-square {
   color: transparent;
-}
-
-table td > a {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: calc(15 * 0.0651111111vw);
-  line-height: calc(22 * 0.0651111111vw);
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #373737;
 }
 
 .elements-pagination {
