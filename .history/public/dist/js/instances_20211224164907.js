@@ -12,19 +12,6 @@ var initPlugins = function () {
         mode: 'inline',
       });
     }
-    // date pieaker 
-    // more options 
-    // https://bootstrap-datepicker.readthedocs.io/en/latest/options.html
-    var datepicker = $('.ba-fc-right-icon-date input').datepicker({
-        maxViewMode: 2,
-        todayBtn: false,
-        language: "fr",
-        // locale: "fr",
-    }).on('show', function(e) {
-        // $('.close-toggle-top-right').show();
-    }).on('hide', function(e) {
-        // $('.close-toggle-top-right').hide();
-    });
 
     $('.ba-lg-circle-progress').circleProgress({});
 
@@ -222,7 +209,7 @@ $(document).ready(() => {
             "paging": false,
             "lengthChange": false,
             "searching": false,
-            "ordering": false,
+            "ordering": true,
             "info": false,
             "order": [[0, 'desc']],
             "responsive": true,
@@ -302,7 +289,19 @@ $(document).ready(() => {
       });
     }
    
-
+    // date pieaker 
+    // more options 
+    // https://bootstrap-datepicker.readthedocs.io/en/latest/options.html
+    var datepicker = $('.ba-calendar-btn').datepicker({
+        maxViewMode: 2,
+        todayBtn: false,
+        language: "fr",
+        // locale: "fr",
+    }).on('show', function(e) {
+        // $('.close-toggle-top-right').show();
+    }).on('hide', function(e) {
+        // $('.close-toggle-top-right').hide();
+    });
 
     $('.square-date-btn').click(function(e) {
         $(this).toggleClass('in');

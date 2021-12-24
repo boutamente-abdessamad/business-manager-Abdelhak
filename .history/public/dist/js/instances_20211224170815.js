@@ -12,7 +12,7 @@ var initPlugins = function () {
         mode: 'inline',
       });
     }
-    // date pieaker 
+        // date pieaker 
     // more options 
     // https://bootstrap-datepicker.readthedocs.io/en/latest/options.html
     var datepicker = $('.ba-fc-right-icon-date input').datepicker({

@@ -404,6 +404,10 @@
   padding: calc(10 * 0.0651111111vw) calc(20 * 0.0651111111vw);
   text-indent: 0;
 }
+.ba-form-warpp .ba-form-control.ba-form-control-light input,
+.ba-form-warpp .ba-form-control.ba-form-control-light textarea {
+  background-color: #FFFFFF;
+}
 .ba-form-warpp .ba-form-control.ba-sm-control input,
 .ba-form-warpp .ba-form-control.ba-sm-control textarea {
   height: calc(39 * 0.0651111111vw);
@@ -2473,6 +2477,11 @@ a.editable-click:hover {
   border-radius: calc(15 * 0.0651111111vw);
   padding: calc(24 * 0.0651111111vw);
 }
+.light-blue-container.lbc-in-table {
+  background: #E7EDF8;
+  border: 1px solid rgba(43, 62, 98, 0.21);
+  border-radius: calc(5 * 0.0651111111vw);
+}
 
 .ba-invoice-pay-cart-head-icon img {
   width: calc(27 * 0.0651111111vw);
@@ -3045,6 +3054,22 @@ a.editable-click:hover {
   padding: 0 calc(50 * 0.0651111111vw);
 }
 
+.ba-invoice-viwer-actions {
+  display: none;
+  padding: calc(47 * 0.0651111111vw) 0;
+}
+.ba-invoice-viwer-actions ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+.ba-invoice-viwer-actions ul li {
+  padding: 0 calc(10 * 0.0651111111vw);
+}
+
 .ba-invoice-viwer {
   position: relative;
 }
@@ -3057,21 +3082,6 @@ a.editable-click:hover {
 .ba-invoice-viwer .ba-invoice-trigger-close img {
   width: calc(15 * 0.0651111111vw);
   height: calc(15 * 0.0651111111vw);
-}
-.ba-invoice-viwer .ba-invoice-viwer-actions {
-  display: none;
-  padding: calc(47 * 0.0651111111vw) 0;
-}
-.ba-invoice-viwer .ba-invoice-viwer-actions ul {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  justify-content: center;
-}
-.ba-invoice-viwer .ba-invoice-viwer-actions ul li {
-  padding: 0 calc(10 * 0.0651111111vw);
 }
 .ba-invoice-viwer .ba-invoice-viwer-canvas {
   height: 0;

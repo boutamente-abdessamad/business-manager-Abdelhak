@@ -245,6 +245,12 @@
             }
         }
         .ba-form-control {
+            .ba-form-control-light {
+                input,
+                textarea {
+                    background-color: #FFFFFF;
+                }
+            }
             position: relative;
             input,
             textarea {
@@ -272,12 +278,6 @@
             textarea {
                 padding: pxToVw(10) pxToVw(20);
                 text-indent: 0;
-            }
-            &.ba-form-control-light {
-                input,
-                textarea {
-                    background-color: #FFFFFF;
-                }
             }
             &.ba-sm-control {
                 input,
