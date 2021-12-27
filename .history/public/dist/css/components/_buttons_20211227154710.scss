@@ -1,0 +1,290 @@
+// buttons 
+[class*="ba-btn-"] {
+    display: inline-flex;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: pxToVw(13);
+    line-height: pxToVw(15);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: pxToVw(12) pxToVw(25);
+    border-radius: 7px;
+    border: 1px solid transparent;
+    img {
+        width: pxToVw(13);
+        height: pxToVw(13);
+    }
+    &>img~span {
+        margin-left: pxToVw(10);
+    }
+    &>span~img {
+        margin-left: pxToVw(10);
+    }
+    &>span~i {
+        margin-left: pxToVw(10);
+    }
+    &>i~span {
+        margin-left: pxToVw(10);
+    }
+    i {
+        font-size: 19px;
+        &.dark-back-round {
+            background-color: #00000024;
+            border-radius: 50%;
+            width: pxToVw(20);
+            height: pxToVw(20);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.ba-btn-social {
+    border: 1px solid rgba(43, 62, 98, 0.21);
+    // justify-content: space-between;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: pxToVw(15);
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #2B3E62;
+    img {
+        width: pxToVw(29);
+        height: pxToVw(29);
+    }
+    &>img~span {
+        margin-left: pxToVw(72);
+    }
+    &>span~img {
+        margin-left: pxToVw(72);
+    }
+}
+
+.ba-btn-primary {
+    background-color: $blue;
+    color: #FFFFFF;
+    &:hover {
+        background-color: $blueHover;
+        color: #FFFFFF;
+    }
+}
+
+.ba-btn-success {
+    background-color: $green;
+    color: #FFFFFF;
+    &:hover {
+        background-color: $greenText;
+        color: #FFFFFF;
+    }
+}
+
+.ba-btn-danger {
+    background-color: $redBg;
+    color: #FFFFFF;
+    &:hover {
+        background-color: $redText;
+        color: #FFFFFF;
+    }
+}
+
+.ba-btn-secondary {
+    background-color: $secondaryBg;
+    color: $blueText;
+    &:hover {
+        background-color: $blueTextHover;
+        color: $blueText;
+    }
+}
+
+.ba-btn-default {
+    background-color: transparent;
+    color: $blueText;
+    border: 1px solid rgba(43, 62, 98, 0.25);
+    &:hover {
+        background-color: $blueTextHover;
+        color: $blueText;
+    }
+}
+
+.ba-btn-outline {
+    background-color: transparent;
+    &.ba-btn-outline-primary {
+        border: 2px solid $blue;
+        color: $blue;
+    }
+    &:hover {
+        background-color: $blue;
+        color: #FFFFFF;
+        img {
+            filter: invert(100%);
+        }
+    }
+}
+
+.ba-btn-round {
+    border-radius: pxToVw(100);
+}
+
+.ba-btn-circle {
+    width: pxToVw(36);
+    height: pxToVw(36);
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    img {
+        width: pxToVw(20);
+        height: pxToVw(20);
+    }
+    img.ba-xs-img {
+        width: pxToVw(13);
+        height: pxToVw(13);
+    }
+}
+
+.editable-submit {
+    padding: pxToVw(4) pxToVw(7);
+    background-color: $blue;
+    color: #FFFFFF;
+    &:hover {
+        background-color: $blueHover;
+        color: #FFFFFF;
+    }
+}
+
+.editable-cancel {
+    padding: pxToVw(4) pxToVw(7);
+    background-color: $secondaryBg;
+    color: $blueText;
+    &:hover {
+        background-color: $blueTextHover;
+        color: $blueText;
+    }
+}
+
+// excel button 
+.ba-excel-file-upload {
+    background: #F4FDF5;
+    border: 1px dashed rgba(46, 125, 50, 0.37);
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: pxToVw(15) pxToVw(20);
+    .ba-excel-file-text {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid rgba(46, 125, 50, 0.45);
+        margin-right: pxToVw(15);
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: pxToVw(13);
+            line-height: pxToVw(21);
+            /* or 162% */
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #2E7D32;
+            margin: 0 pxToVw(12);
+        }
+    }
+    .ba-excel-file-text {
+        img {
+            width: pxToVw(25);
+            height: pxToVw(28);
+        }
+    }
+    .ba-excel-file-icon {
+        display: flex;
+        align-items: center;
+        img {
+            height: pxToVw(14);
+            width: pxToVw(14);
+        }
+    }
+    &.ba-excel-file-lg {
+        padding: pxToVw(25) pxToVw(20);
+        justify-content: start;
+        .ba-excel-file-text {
+            border: none;
+            img {
+                width: pxToVw(35);
+                height: pxToVw(40);
+            }
+            p {
+                margin-left: 90px;
+            }
+        }
+    }
+}
+
+.no-records {
+    text-align: center;
+    >img {
+        width: pxToVw(105);
+        height: pxToVw(121);
+    }
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: pxToVw(21);
+        line-height: pxToVw(25);
+        margin-top: pxToVw(25);
+        margin-bottom: pxToVw(30);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: rgba(43, 62, 98, 0.45);
+    }
+}
+
+// switch
+label.ba-switch-slider {
+    input {
+        display: none;
+    }
+    background: rgba(231, 237, 248, 0.85);
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 15px;
+    width: 30px;
+    height: 15px;
+    position: relative;
+    &>span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.8s all cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+    &>span::after {
+        content: "";
+        transition: 0.8s all cubic-bezier(0.65, 0.05, 0.36, 1);
+        @include yAbsoluteCenter();
+        width: 12px;
+        height: 12px;
+        left: 0;
+        background: $blueTextHover;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.17);
+        border-radius: 50%;
+    }
+    &>input:checked+span::after {
+        left: unset;
+        right: 0;
+        background: #5DDDD3;
+    }
+}
