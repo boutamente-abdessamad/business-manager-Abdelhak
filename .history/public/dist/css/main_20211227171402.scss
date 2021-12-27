@@ -873,40 +873,6 @@ ba-dashboard-header-rightside {
     }
 }
 
-.ba-bank-chart-status {
-    margin-left: 5px;
-    p {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: pxToVw(12);
-        line-height: pxToVw(23);
-        letter-spacing: 0.03em;
-        color: $blueOpacity;
-        margin: 0;
-    }
-    h2 {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 600;
-        font-size: pxToVw(15);
-        line-height: pxToVw(23);
-        letter-spacing: 0.03em;
-        color: $blueText;
-        margin: 0;
-        span {
-            font-size: pxToVw(11);
-            line-height: pxToVw(21);
-            margin-left: pxToVw(5);
-        }
-    }
-}
-
-.cash-available-line-chart-warp {
-    width: 100%;
-    height: 330px;
-}
-
 
 /* ---------------------------------------------------------------------------- */
 

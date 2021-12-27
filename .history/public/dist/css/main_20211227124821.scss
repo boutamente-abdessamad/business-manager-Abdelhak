@@ -35,15 +35,15 @@
 
 /* ........... conmponents .............. */
 
-@import "./components/_variables.scss";
-@import "./components/_mixin.scss";
-@import "./components/_modals.scss";
-@import "./components/_forms.scss";
-@import "./components/_buttons.scss";
-@import "./components/_layout.scss";
-@import "./components/_global.scss";
-@import "./components/_datatables.scss";
-@import "./components/_charts.scss";
+@import "./components/variables";
+@import "./components/mixin";
+@import "./components/modals";
+@import "./components/forms";
+@import "./components/buttons";
+@import "./components/layout";
+@import "./components/global";
+@import "./components/datatables";
+@import "./components/charts";
 
 /* ........... ./conmponents .............. */
 
@@ -495,7 +495,9 @@ body {
 }
 
 .ba-cart.article-action-cart {
-    @include flexCenterBetween();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     .article-cart-icon {
         width: pxToVw(60);
         height: pxToVw(60);
@@ -545,7 +547,9 @@ body {
 .import-excel-steps-warpp {
     padding: pxToVw(30);
     .import-excel-step {
-        @include flexCenterBetween();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         p {
             font-family: Roboto;
             font-style: normal;
@@ -695,7 +699,9 @@ body {
             }
         }
     }
-    @include flexCenterBetween();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: pxToVw(25) pxToVw(20);
     .bank-action-cart-icon {
         width: pxToVw(60);
@@ -742,169 +748,28 @@ body {
     @include flexCenterBetween();
 }
 
-.ba-dashboard-body {
-    margin-top: pxToVw(45);
+.ba-dashboard-header-leftside {
+    display: flex;
 }
 
-.ba-dashboard-header-leftside,
-ba-dashboard-header-rightside {
-    display: flex;
+.ba-date-dropdown span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: rgba(16, 76, 186, 0.65);
+}
+
+.ba-date-dropdown i {
+    font-size: 17px;
+    color: rgba(16, 76, 186, 0.65);
 }
 
 .ba-date-dropdown {
     display: flex;
     align-items: center;
-    span {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: pxToVw(14);
-        line-height: pxToVw(23);
-        letter-spacing: 0.03em;
-        color: rgba(16, 76, 186, 0.65);
-    }
-    i {
-        font-size: pxToVw(17);
-        color: rgba(16, 76, 186, 0.65);
-    }
-}
-
-.ba-operations-cat {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: pxToVw(14);
-    line-height: pxToVw(23);
-    letter-spacing: 0.03em;
-    color: rgba(43, 62, 98, 0.65);
-    span {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: pxToVw(16);
-        line-height: pxToVw(23);
-        letter-spacing: 0.03em;
-        color: #104CBA;
-        margin-right: 5px;
-    }
-}
-
-.ba-dashboard-head-cart {
-    @include flexCenterBetween();
-    .ba-dashboard-head-content-cart {
-        display: flex;
-        align-items: center;
-        h5 {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 500;
-            font-size: pxToVw(17);
-            line-height: pxToVw(20);
-            letter-spacing: 0.03em;
-            color: $blueText;
-            margin: 0;
-        }
-    }
-    .ba-dashboard-head-cart-actions {
-        @include flexCenterBetween();
-    }
-}
-
-.ba-dashboard-cart {
-    padding: pxToVw(40);
-    padding-top: pxToVw(20);
-}
-
-.ba-dashboard-body-cart {
-    padding-top: 15px;
-}
-
-.ba-dash-figure {
-    border-radius: pxToVw(9);
-    padding: pxToVw(19);
-    .ba-dash-figure-title {
-        display: flex;
-        align-items: center;
-        img {
-            width: pxToVw(18);
-            height: pxToVw(28);
-            margin-right: pxToVw(5);
-        }
-        h2 {
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: bold;
-            font-size: pxToVw(23);
-            line-height: pxToVw(23);
-            color: $blueText;
-            margin: 0;
-        }
-    }
-    p {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: pxToVw(14);
-        line-height: pxToVw(15);
-        letter-spacing: 0.03em;
-        color: $blueOpacity;
-        margin-top: pxToVw(15);
-        margin-bottom: pxToVw(34);
-    }
-    .ba-progress-bar-warpp>label {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: pxToVw(15);
-        line-height: pxToVw(23);
-        color: $blueText;
-    }
-}
-
-.ba-btn-banks-drop {
-    border: 0.5px solid rgba(43, 62, 98, 0.25);
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 5px pxToVw(15);
-    img {
-        width: pxToVw(130);
-        height: pxToVw(34);
-        object-fit: cover;
-    }
-}
-
-.ba-bank-chart-status {
-    margin-left: 5px;
-    p {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: pxToVw(12);
-        line-height: pxToVw(23);
-        letter-spacing: 0.03em;
-        color: $blueOpacity;
-        margin: 0;
-    }
-    h2 {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 600;
-        font-size: pxToVw(15);
-        line-height: pxToVw(23);
-        letter-spacing: 0.03em;
-        color: $blueText;
-        margin: 0;
-        span {
-            font-size: pxToVw(11);
-            line-height: pxToVw(21);
-            margin-left: pxToVw(5);
-        }
-    }
-}
-
-.cash-available-line-chart-warp {
-    width: 100%;
-    height: 330px;
 }
 
 

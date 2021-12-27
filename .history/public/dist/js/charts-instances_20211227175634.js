@@ -108,7 +108,6 @@ $(document).ready(() => {
                     pointHitRadius: 30,
                     pointRadius: 5,
                     pointHoverRadius: 5,
-                    radius: 6 ,     
                     // pointBorderWidth: '20',
                     backgroundColor: "#E7EDF8",
                     pointBorderColor: "#FFFFFF",

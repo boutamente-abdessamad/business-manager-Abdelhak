@@ -254,10 +254,6 @@
         background-color: $secondaryBg !important;
     }
     
-    .ba-purple-bg {
-        background-color: $purple !important;
-    }
-    
     .ba-primary-light-bg {
         background-color: $blueLight !important;
     }
@@ -272,10 +268,6 @@
     
     .ba-warning-light-bg {
         background-color: $orangeOpacity !important;
-    }
-    
-    .ba-purple-light-bg {
-        background-color: $purpleOpacity !important;
     }
     
     // colors 
@@ -362,13 +354,6 @@
                     align-items: center;
                     margin-right: 5px;
                     justify-content: center;
-                }
-            }
-            .banks-drop-item {
-                img {
-                    width: pxToVw(130);
-                    height: pxToVw(34);
-                    object-fit: cover;
                 }
             }
         }

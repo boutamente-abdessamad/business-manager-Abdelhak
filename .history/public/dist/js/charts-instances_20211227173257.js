@@ -93,7 +93,8 @@ $(document).ready(() => {
         });
     }
     // bar chart client figure
-    if (document.getElementById('cash_available_line_chart')) {
+    if (document.getElementById('client_figure_bars')) {
+        console.log('in');
         const cash_available_line_chart_ctx = document.getElementById('cash_available_line_chart').getContext('2d');
         const cash_available_line_chart = new Chart(cash_available_line_chart_ctx, {
             type: 'line',
@@ -101,30 +102,41 @@ $(document).ready(() => {
                 labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'May','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                 datasets: [{
                     label: "Chiffre d’affaire du client",
-                    data: [1000, 800,600,400, 100, 0, 50,-100,-400,500, 300, 350],
-                    fill: false,
-                    borderColor: '#E7EDF8',
-                    borderJoinStyle: 'round',
-                    pointHitRadius: 30,
-                    pointRadius: 5,
-                    pointHoverRadius: 5,
-                    radius: 6 ,     
-                    // pointBorderWidth: '20',
-                    backgroundColor: "#E7EDF8",
-                    pointBorderColor: "#FFFFFF",
-                    // pointHoverBackgroundColor: "#55bae7",
-                    // pointHoverBorderColor: "#55bae7",
-                    tension: 0.1,
-                    pointBackgroundColor: function(context) {
-                        var index = context.dataIndex;
-                        var value = context.dataset.data[index];
-                        return value < 0 ? '#F8485E' : '#67DFD5';
-                    }
-                    
+                    data: [1000, 500, 100, 0, 50,-100, -500, -1000],
+                    backgroundColor: [
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                    ],
+                    borderColor: [
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                        '#E7EDF8',
+                    ],
+                    borderWidth: 0
                 }]
             },
             options: {
-
                 scales: {
                     y: {
                         beginAtZero: true,
@@ -155,7 +167,6 @@ $(document).ready(() => {
                     },
                
                 },
-                bezierCurve: false,
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {

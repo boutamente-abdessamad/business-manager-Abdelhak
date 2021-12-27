@@ -105,26 +105,17 @@ $(document).ready(() => {
                     fill: false,
                     borderColor: '#E7EDF8',
                     borderJoinStyle: 'round',
-                    pointHitRadius: 30,
-                    pointRadius: 5,
-                    pointHoverRadius: 5,
-                    radius: 6 ,     
-                    // pointBorderWidth: '20',
-                    backgroundColor: "#E7EDF8",
-                    pointBorderColor: "#FFFFFF",
-                    // pointHoverBackgroundColor: "#55bae7",
-                    // pointHoverBorderColor: "#55bae7",
-                    tension: 0.1,
-                    pointBackgroundColor: function(context) {
-                        var index = context.dataIndex;
-                        var value = context.dataset.data[index];
-                        return value < 0 ? '#F8485E' : '#67DFD5';
-                    }
+                    pointHitRadius: '30',
+                      backgroundColor: "#E7EDF8",
+   pointBackgroundColor: "#55bae7",
+   pointBorderColor: "#55bae7",
+   pointHoverBackgroundColor: "#55bae7",
+   pointHoverBorderColor: "#55bae7",
+                    tension: 0.1
                     
                 }]
             },
             options: {
-
                 scales: {
                     y: {
                         beginAtZero: true,
@@ -155,7 +146,6 @@ $(document).ready(() => {
                     },
                
                 },
-                bezierCurve: false,
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {

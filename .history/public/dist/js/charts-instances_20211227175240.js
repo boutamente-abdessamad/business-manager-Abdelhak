@@ -105,10 +105,9 @@ $(document).ready(() => {
                     fill: false,
                     borderColor: '#E7EDF8',
                     borderJoinStyle: 'round',
-                    pointHitRadius: 30,
-                    pointRadius: 5,
-                    pointHoverRadius: 5,
-                    radius: 6 ,     
+                    pointHitRadius: '30',
+                    pointRadius: 10,
+                    pointHoverRadius: 10,
                     // pointBorderWidth: '20',
                     backgroundColor: "#E7EDF8",
                     pointBorderColor: "#FFFFFF",
@@ -124,7 +123,6 @@ $(document).ready(() => {
                 }]
             },
             options: {
-
                 scales: {
                     y: {
                         beginAtZero: true,
@@ -155,7 +153,6 @@ $(document).ready(() => {
                     },
                
                 },
-                bezierCurve: false,
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
