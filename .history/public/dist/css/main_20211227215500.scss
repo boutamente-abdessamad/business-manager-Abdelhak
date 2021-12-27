@@ -362,7 +362,7 @@ body {
 }
 
 .ba-display-mode {
-    background: $blueLight;
+    background: #E7EDF8;
     border-radius: pxToVw(7);
     height: pxToVw(44);
     display: inline-flex;
@@ -390,7 +390,7 @@ body {
         margin-bottom: pxToVw(25);
     }
     .invoice-cart {
-        border: 1px solid $blueLight;
+        border: 1px solid #E7EDF8;
         box-sizing: border-box;
         box-shadow: 0px 2px 5px rgba(16, 76, 186, 0.15);
         border-radius: pxToVw(7);
@@ -406,7 +406,7 @@ body {
                 .invoice-icon {
                     width: pxToVw(36);
                     height: pxToVw(36);
-                    background: $blueLight;
+                    background: #E7EDF8;
                     border-radius: 50%;
                     @include flexCenterCenter();
                     img {
@@ -465,7 +465,7 @@ body {
                             border-radius: 50%;
                             left: 0;
                             display: block;
-                            background: $blueLight;
+                            background: #E7EDF8;
                         }
                     }
                 }
@@ -499,7 +499,7 @@ body {
     .article-cart-icon {
         width: pxToVw(60);
         height: pxToVw(60);
-        background: $blueLight;
+        background: #E7EDF8;
         display: flex;
         border-radius: 50%;
         align-items: center;
@@ -721,7 +721,7 @@ body {
                 font-size: pxToVw(17);
                 line-height: pxToVw(21);
                 letter-spacing: 0.03em;
-                color: $blueOpacity;
+                color: rgba(43, 62, 98, 0.65);
                 margin-bottom: pxToVw(5);
             }
             h5 {
@@ -761,11 +761,11 @@ ba-dashboard-header-rightside {
         font-size: pxToVw(14);
         line-height: pxToVw(23);
         letter-spacing: 0.03em;
-        color: $blueSky;
+        color: rgba(16, 76, 186, 0.65);
     }
     i {
         font-size: pxToVw(17);
-        color: $blueSky;
+        color: rgba(16, 76, 186, 0.65);
     }
 }
 
@@ -776,7 +776,7 @@ ba-dashboard-header-rightside {
     font-size: pxToVw(14);
     line-height: pxToVw(23);
     letter-spacing: 0.03em;
-    color: $blueOpacity;
+    color: rgba(43, 62, 98, 0.65);
     span {
         font-family: Roboto;
         font-style: normal;
@@ -908,7 +908,7 @@ ba-dashboard-header-rightside {
 }
 
 .ba-upcoming-deadlines-list {
-    max-height: pxToVw(295);
+    max-height: pxToVw(300);
     overflow: auto;
     padding-right: 20px;
     .ba-upcoming-deadline-item {
@@ -924,7 +924,7 @@ ba-dashboard-header-rightside {
             .ba-upcoming-deadline-date {
                 width: pxToVw(50);
                 height: pxToVw(50);
-                background: $blueLight;
+                background: #E7EDF8;
                 border-radius: pxToVw(11);
                 display: flex;
                 align-items: center;
@@ -965,35 +965,6 @@ ba-dashboard-header-rightside {
             height: pxToVw(25);
         }
     }
-}
-
-.chart-filters {
-    display: flex;
-    margin-right: pxToVw(50);
-    button {
-        &.active {
-            background: $greenLight;
-            color: $greenText;
-        }
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: pxToVw(13);
-        line-height: pxToVw(23);
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: $blueOpacity;
-        background: $blueLight;
-        border-radius: 5px;
-        padding: 1px pxToVw(10);
-        margin: 0 pxToVw(5);
-    }
-}
-
-.turnover-evolution-bar-chart-warp {
-    height: pxToVw(320);
 }
 
 

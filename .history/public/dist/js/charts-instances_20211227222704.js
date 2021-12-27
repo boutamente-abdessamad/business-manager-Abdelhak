@@ -173,24 +173,22 @@ $(document).ready(() => {
             label: 'Achats',
             data: [5427, 5243, 5514, 3933, 1326, 687, 1271, 1638,688,1502,528,1200],
             backgroundColor: '#FED198',
-            borderWidth: 8,
-            borderColor:"#FFFFFF",
-            // yAxisID: "y-axis-density"
-        };
+            borderWidth: 0,
+            yAxisID: "y-axis-density"
+            };
 
             var ventesData = {
-                label: 'Ventes',
-                data: [3427, 2243, 4514, 1933, 326, 1687, 271, 2638,2688,3502,5528,3200],
-                backgroundColor: '#5DDDD3',
-                borderWidth: 8,
-                borderColor:"#FFFFFF",
-                // yAxisID: "y-axis-gravity"
+            label: 'Ventes',
+            data: [3427, 2243, 4514, 1933, 326, 1687, 271, 2638,2688,3502,5528,3200],
+            backgroundColor: '#5DDDD3',
+            borderWidth: 0,
+            yAxisID: "y-axis-gravity"
             };
 
             var turnoverEvolutionYearsData = {
-                labels: ['01/2021', '02/2021', '03/2021', '04/2021', '05/2021', '06/2021','07/2021', '08/2021', '09/2021', '10/2021', '11/2021', '12/2021'],
-                datasets: [achatsData, ventesData]
-            };
+            labels: ['01/2021', '02/2021', '03/2021', '04/2021', '05/2021', '06/2021','07/2021', '08/2021', '09/2021', '10/2021', '11/2021', '12/2021'],
+            datasets: [achatsData, ventesData]
+        };
         const cash_available_line_chart = new Chart(turnover_evolution_bar_chart_ctx, {
             type: 'bar',
             data:turnoverEvolutionYearsData,

@@ -479,6 +479,10 @@
   border-radius: 7px;
   border: 1px solid transparent;
 }
+[class*=ba-btn-].btn-xs {
+  padding: calc(5 * 0.0651111111vw) calc(15 * 0.0651111111vw);
+  font-size: calc(11 * 0.0651111111vw);
+}
 [class*=ba-btn-] img {
   width: calc(13 * 0.0651111111vw);
   height: calc(13 * 0.0651111111vw);
@@ -576,6 +580,16 @@
 .ba-btn-default:hover {
   background-color: #1a479933;
   color: #2B3E62;
+}
+
+.ba-btn-warning {
+  background-color: rgba(247, 180, 34, 0.11);
+  color: #F7B422;
+  border: 1px solid rgba(43, 62, 98, 0.25);
+}
+.ba-btn-warning:hover {
+  background-color: rgba(247, 180, 34, 0.11);
+  color: #F7B422;
 }
 
 .ba-btn-outline {
@@ -1092,6 +1106,10 @@ main.ba-app-root .ba-main-cart {
   transform: rotate(180deg);
 }
 
+.ba-radius-0 {
+  border-radius: 0 !important;
+}
+
 a.ba-add-doc-link {
   font-family: Roboto;
   font-style: normal;
@@ -1273,6 +1291,10 @@ a.ba-add-doc-link i {
   background-color: #F1F5FB !important;
 }
 
+.ba-primary-sky-bg {
+  background-color: rgba(16, 76, 186, 0.65) !important;
+}
+
 .ba-default-bg {
   background-color: transparent !important;
 }
@@ -1313,12 +1335,20 @@ a.ba-add-doc-link i {
   color: #104CBA !important;
 }
 
+.ba-color-blue-sky {
+  color: rgba(16, 76, 186, 0.65) !important;
+}
+
 .ba-color-green {
   color: #50CB93 !important;
 }
 
 .ba-color-red {
   color: #F8485E !important;
+}
+
+.ba-color-purple {
+  color: #9F8FDC !important;
 }
 
 .ba-color-orange {
@@ -2526,6 +2556,18 @@ a.editable-click:hover {
   overflow: hidden;
 }
 .ba-progress-bar-warpp .ba-progress-bar-sm span {
+  border-radius: calc(20 * 0.0651111111vw);
+  display: block;
+  height: 100%;
+}
+.ba-progress-bar-warpp .ba-progress-bar-lg {
+  height: calc(14 * 0.0651111111vw);
+  width: 100%;
+  background: #E7EDF8;
+  border-radius: calc(20 * 0.0651111111vw);
+  overflow: hidden;
+}
+.ba-progress-bar-warpp .ba-progress-bar-lg span {
   border-radius: calc(20 * 0.0651111111vw);
   display: block;
   height: 100%;
@@ -3803,6 +3845,82 @@ span.quation-text {
   width: 100%;
 }
 
+.ba-taxes-items > h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  margin-bottom: 15px;
+}
+
+.ba-tax-box {
+  border-radius: 7px;
+  padding: 15px;
+}
+.ba-tax-box p,
+.ba-tax-box h5 {
+  font-family: Roboto;
+  font-style: normal;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  line-height: 17px;
+}
+.ba-tax-box p {
+  font-weight: normal;
+  color: rgba(43, 62, 98, 0.65);
+  margin-bottom: 5px;
+}
+.ba-tax-box h5 {
+  font-weight: 500;
+  color: #2B3E62;
+}
+
+.ba-tva-details {
+  margin-left: 50px;
+}
+.ba-tva-details p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  margin-bottom: 0;
+}
+.ba-tva-details h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin-bottom: 0;
+}
+
+.taxes-progress-labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+.taxes-progress-labels .taxes-progress-label label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: right;
+  color: #2B3E62;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
 /* tables  */
 /* tables  */
 /* pagination elements  */
@@ -4613,7 +4731,7 @@ body {
 }
 
 .ba-display-mode {
-  background: #E7EDF8;
+  background: rgba(16, 76, 186, 0.09);
   border-radius: calc(7 * 0.0651111111vw);
   height: calc(44 * 0.0651111111vw);
   display: inline-flex;
@@ -4640,7 +4758,7 @@ body {
   margin-bottom: calc(25 * 0.0651111111vw);
 }
 .invoices-grid-display-warpper .invoice-cart {
-  border: 1px solid #E7EDF8;
+  border: 1px solid rgba(16, 76, 186, 0.09);
   box-sizing: border-box;
   box-shadow: 0px 2px 5px rgba(16, 76, 186, 0.15);
   border-radius: calc(7 * 0.0651111111vw);
@@ -4661,7 +4779,7 @@ body {
 .invoices-grid-display-warpper .invoice-cart .invoice-cart-head .invoice-cart-ref .invoice-icon {
   width: calc(36 * 0.0651111111vw);
   height: calc(36 * 0.0651111111vw);
-  background: #E7EDF8;
+  background: rgba(16, 76, 186, 0.09);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -4726,7 +4844,7 @@ body {
   border-radius: 50%;
   left: 0;
   display: block;
-  background: #E7EDF8;
+  background: rgba(16, 76, 186, 0.09);
 }
 .invoices-grid-display-warpper .invoice-cart.in {
   background-color: #F1F5FB;
@@ -4739,7 +4857,7 @@ body {
 }
 
 .ba-articels-infos-container {
-  padding-bottom: 50px;
+  padding-bottom: calc(50 * 0.0651111111vw);
   border-bottom: 1px solid rgba(43, 62, 98, 0.21);
 }
 
@@ -4752,7 +4870,7 @@ body {
 .ba-cart.article-action-cart .article-cart-icon {
   width: calc(60 * 0.0651111111vw);
   height: calc(60 * 0.0651111111vw);
-  background: #E7EDF8;
+  background: rgba(16, 76, 186, 0.09);
   display: flex;
   border-radius: 50%;
   align-items: center;
@@ -5140,7 +5258,94 @@ ba-dashboard-header-rightside {
 
 .cash-available-line-chart-warp {
   width: 100%;
-  height: 330px;
+  height: calc(280 * 0.0651111111vw);
+}
+
+.ba-upcoming-deadlines-list {
+  max-height: calc(295 * 0.0651111111vw);
+  overflow: auto;
+  padding-right: 20px;
+}
+.ba-upcoming-deadlines-list .ba-upcoming-deadline-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(16, 76, 186, 0.15);
+  margin-bottom: calc(12 * 0.0651111111vw);
+  padding-bottom: calc(12 * 0.0651111111vw);
+}
+.ba-upcoming-deadlines-list .ba-upcoming-deadline-item .ba-upcoming-deadline-content {
+  display: flex;
+  align-items: center;
+}
+.ba-upcoming-deadlines-list .ba-upcoming-deadline-item .ba-upcoming-deadline-content .ba-upcoming-deadline-date {
+  width: calc(50 * 0.0651111111vw);
+  height: calc(50 * 0.0651111111vw);
+  background: rgba(16, 76, 186, 0.09);
+  border-radius: calc(11 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(17 * 0.0651111111vw);
+  text-align: center;
+  margin-right: calc(13 * 0.0651111111vw);
+  color: #2B3E62;
+}
+.ba-upcoming-deadlines-list .ba-upcoming-deadline-item .ba-upcoming-deadline-content .ba-upcoming-deadline-details p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(17 * 0.0651111111vw);
+  margin-bottom: 0;
+}
+.ba-upcoming-deadlines-list .ba-upcoming-deadline-item .ba-upcoming-deadline-content .ba-upcoming-deadline-details h5 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  color: #2B3E62;
+  margin: 0;
+}
+.ba-upcoming-deadlines-list .ba-upcoming-deadline-item .ba-upcoming-deadline-action img {
+  width: calc(25 * 0.0651111111vw);
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: calc(25 * 0.0651111111vw);
+}
+
+.chart-filters {
+  display: flex;
+  margin-right: calc(50 * 0.0651111111vw);
+}
+.chart-filters button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  background: rgba(16, 76, 186, 0.09);
+  border-radius: 5px;
+  padding: 1px calc(10 * 0.0651111111vw);
+  margin: 0 calc(5 * 0.0651111111vw);
+}
+.chart-filters button.active {
+  background: rgba(42, 181, 125, 0.09);
+  color: #32BA7C;
+}
+
+.turnover-evolution-bar-chart-warp {
+  height: calc(320 * 0.0651111111vw);
 }
 
 /* ---------------------------------------------------------------------------- */

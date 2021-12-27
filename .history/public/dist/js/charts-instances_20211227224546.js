@@ -173,7 +173,7 @@ $(document).ready(() => {
             label: 'Achats',
             data: [5427, 5243, 5514, 3933, 1326, 687, 1271, 1638,688,1502,528,1200],
             backgroundColor: '#FED198',
-            borderWidth: 8,
+            borderWidth: 10,
             borderColor:"#FFFFFF",
             // yAxisID: "y-axis-density"
         };
@@ -182,8 +182,8 @@ $(document).ready(() => {
                 label: 'Ventes',
                 data: [3427, 2243, 4514, 1933, 326, 1687, 271, 2638,2688,3502,5528,3200],
                 backgroundColor: '#5DDDD3',
-                borderWidth: 8,
-                borderColor:"#FFFFFF",
+                 borderWidth: 10,
+            borderColor:"#FFFFFF",
                 // yAxisID: "y-axis-gravity"
             };
 

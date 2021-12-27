@@ -58,10 +58,6 @@
        transform: rotate(180deg);
    }
    
-   .ba-radius-0 {
-       border-radius: 0 !important;
-   }
-   
    a.ba-add-doc-link {
        font-family: Roboto;
        font-style: normal;
@@ -244,10 +240,6 @@
    
    .ba-primary-light-bg {
        background-color: $blueLightBg !important;
-   }
-   
-   .ba-primary-sky-bg {
-       background-color: $blueSky !important;
    }
    
    .ba-default-bg {
@@ -1481,18 +1473,6 @@
        }
        .ba-progress-bar-sm {
            height: pxToVw(5);
-           width: 100%;
-           background: #E7EDF8;
-           border-radius: pxToVw(20);
-           overflow: hidden;
-           span {
-               border-radius: pxToVw(20);
-               display: block;
-               height: 100%;
-           }
-       }
-       .ba-progress-bar-lg {
-           height: pxToVw(14);
            width: 100%;
            background: #E7EDF8;
            border-radius: pxToVw(20);
@@ -2801,7 +2781,6 @@
        font-weight: 500;
        font-size: 15px;
        line-height: 15px;
-       margin-bottom: 15px;
    }
    
    .ba-tax-box {
@@ -2812,63 +2791,16 @@
            font-family: Roboto;
            font-style: normal;
            margin: 0;
-           font-size: 12px;
+           font-size: 13px;
            letter-spacing: 0.03em;
            line-height: 17px;
        }
        p {
            font-weight: normal;
            color: $blueOpacity;
-           margin-bottom: 5px;
        }
        h5 {
            font-weight: 500;
            color: $blueText;
-       }
-   }
-   
-   .ba-tva-details {
-       margin-left: 50px;
-       p {
-           font-family: Roboto;
-           font-style: normal;
-           font-weight: normal;
-           font-size: 14px;
-           line-height: 21px;
-           letter-spacing: 0.03em;
-           color: rgba(43, 62, 98, 0.65);
-           margin-bottom: 0;
-       }
-       h4 {
-           font-family: Roboto;
-           font-style: normal;
-           font-weight: 500;
-           font-size: 14px;
-           line-height: 21px;
-           display: flex;
-           align-items: center;
-           letter-spacing: 0.03em;
-           color: #2B3E62;
-           margin-bottom: 0;
-       }
-   }
-   
-   .taxes-progress-labels {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       margin-top: 26px;
-       .taxes-progress-label {
-           label {
-               font-family: Poppins;
-               font-style: normal;
-               font-weight: 500;
-               font-size: 14px;
-               line-height: 23px;
-               text-align: right;
-               color: #2B3E62;
-               margin-bottom: 0;
-               margin-left: 10px;
-           }
        }
    }

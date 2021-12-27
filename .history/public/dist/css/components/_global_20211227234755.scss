@@ -246,10 +246,6 @@
        background-color: $blueLightBg !important;
    }
    
-   .ba-primary-sky-bg {
-       background-color: $blueSky !important;
-   }
-   
    .ba-default-bg {
        background-color: transparent !important;
    }
@@ -2828,7 +2824,7 @@
    }
    
    .ba-tva-details {
-       margin-left: 50px;
+       margin-left: 20px;
        p {
            font-family: Roboto;
            font-style: normal;
@@ -2850,25 +2846,5 @@
            letter-spacing: 0.03em;
            color: #2B3E62;
            margin-bottom: 0;
-       }
-   }
-   
-   .taxes-progress-labels {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       margin-top: 26px;
-       .taxes-progress-label {
-           label {
-               font-family: Poppins;
-               font-style: normal;
-               font-weight: 500;
-               font-size: 14px;
-               line-height: 23px;
-               text-align: right;
-               color: #2B3E62;
-               margin-bottom: 0;
-               margin-left: 10px;
-           }
        }
    }
