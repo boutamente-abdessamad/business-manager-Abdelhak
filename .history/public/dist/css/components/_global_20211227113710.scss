@@ -369,12 +369,6 @@
         border-radius: pxToVw(11);
         padding: pxToVw(15);
     }
-    
-    .ba-bordred-cart {
-        border: 1px solid rgba(43, 62, 98, 0.21);
-        padding: pxToVw(30);
-        border-radius: 11px;
-    }
     /* daterangepicker */
     
     .daterangepicker {
@@ -2633,8 +2627,15 @@
         }
     }
     
+    .ba-bordred-cart {
+        border: 1px solid rgba(43, 62, 98, 0.21);
+        padding: pxToVw(30);
+        border-radius: 11px;
+    }
+    
     .declare-cash-flow-form-header {
         padding: pxToVw(24);
+        ;
         margin-bottom: pxToVw(24);
         h3 {
             font-family: Roboto;
@@ -2642,58 +2643,10 @@
             font-weight: bold;
             font-size: pxToVw(25);
             line-height: pxToVw(33);
+            /* or 132% */
             text-align: center;
             letter-spacing: 0.03em;
             color: #2B3E62;
             margin-bottom: 0;
-        }
-    }
-    
-    .declarez-operation-form {
-        padding: pxToVw(60);
-        &>h2 {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: pxToVw(33);
-            line-height: pxToVw(39);
-            letter-spacing: 0.03em;
-            color: #2B3E62;
-            margin-bottom: pxToVw(30);
-        }
-    }
-    
-    .declarez-operation-form-content {
-        border-radius: 0px 11px 11px 0px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        padding: pxToVw(60);
-        p {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: pxToVw(15);
-            line-height: pxToVw(25);
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #FFFFFF;
-            margin: 0;
-        }
-        span {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: pxToVw(37);
-            line-height: pxToVw(43);
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.47);
-            margin-bottom: pxToVw(20);
-        }
-        img {
-            height: pxToVw(220);
-            width: 100%;
         }
     }
