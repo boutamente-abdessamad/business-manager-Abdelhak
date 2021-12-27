@@ -275,10 +275,6 @@
         color: $blue !important;
     }
     
-    .color-blue-sky {
-        color: $blueSky !important;
-    }
-    
     .ba-color-green {
         color: $green !important;
     }
@@ -2655,15 +2651,4 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: #104CBA;
-    }
-    
-    .delete-division-btn {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    
-    .division-item {
-        position: relative;
-        padding-top: pxToVw(32);
     }

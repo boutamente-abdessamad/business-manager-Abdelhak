@@ -241,9 +241,8 @@
                             <img src="../../../public/assets/icons/light-plus.svg" alt=""> <span>Importer des
                                 opérations</span>
                         </a>
-                        <a href="" class="btn ba-btn-primary ba-btn-round" data-mdb-toggle="modal" data-mdb-target="#add_bank_modal">
-                            <img src="../../../public/assets/icons/light-plus.svg" alt=""> <span>Ajouter un compte
-                                bancaire</span>
+                        <a href="" class="btn ba-btn-primary ba-btn-round" data-mdb-toggle="modal" data-mdb-target="#add_annotation_modal">
+                            <img src="../../../public/assets/icons/light-plus.svg" alt=""> <span>Ajouter une annotation automatique</span>
                         </a>
 
                     </div>
@@ -864,6 +863,7 @@
                         </div>
                     </div>
 
+                    
 
                 </div>
 
@@ -875,6 +875,72 @@
     </template>
     <!-- form template  -->
     <!-- form template  -->
+    <!-- Send mail -->
+    <div class="modal fade ba-light-modal" id="add_annotation_modal" tabindex="-1" aria-labelledby="add_annotation_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form>
+                    <!-- head  -->
+                    <div class="ba-modal-head ba-primary-bg">
+                        <h2 class="ba-lg-title">Ajouter une annotation automatique</h2>
+
+                        <a href="" class="ba-modal-close" data-mdb-dismiss="modal">
+                            <img src="../../../public/assets/icons/gray-cross.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- body  -->
+                    <div class="ba-modal-body">
+                        <form>
+                            <div class="row">
+
+                                <div class="col-7">
+
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Mots-clés * </label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Mots-clés *" id="">
+                                        </div>
+                                    </div>
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Tiers * </label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Tiers *" id="">
+                                        </div>
+                                    </div>
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Type * </label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Type *" id="">
+                                        </div>
+                                    </div>
+                                    <button class="btn ba-btn-success" type="submit">
+                                        Enregistrer
+                                    </button>
+
+                                </div>
+                                <div class="col-5">
+                                    <div class="ba-annotation-modal-content">
+
+                                        <span class="quation-text"></span>
+                                        <p>Créer une annotation pour vos opérations les plus fréquentes en les liant à un tiers. </p>
+                                        <hr>
+                                        <img src="../../../public/assets/icons/blue-check-doc.svg" alt="">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap fontawsom JS -->

@@ -193,8 +193,8 @@
             <div class="ba-main-tabs">
 
                 <ul>
-                    <li class="active"><a href="" class="btn">Banque</a></li>
-                    <li><a href="" class="btn">Caisse</a></li>
+                    <li><a href="" class="btn">Banque</a></li>
+                    <li class="active"><a href="" class="btn">Caisse</a></li>
                 </ul>
 
             </div>
@@ -238,12 +238,7 @@
                     <div class="ba-group-buttons justify-content-end">
 
                         <a href="" class="btn ba-btn-primary ba-btn-round me-3">
-                            <img src="../../../public/assets/icons/light-plus.svg" alt=""> <span>Importer des
-                                opérations</span>
-                        </a>
-                        <a href="" class="btn ba-btn-primary ba-btn-round" data-mdb-toggle="modal" data-mdb-target="#add_bank_modal">
-                            <img src="../../../public/assets/icons/light-plus.svg" alt=""> <span>Ajouter un compte
-                                bancaire</span>
+                            <img src="../../../public/assets/icons/light-plus.svg" alt=""> <span>Déclarer une opération en espèces</span>
                         </a>
 
                     </div>
@@ -379,35 +374,22 @@
                                         </button>
                                     </th>
                                     <th>Date</th>
-                                    <th>Désignation</th>
+                                    <th>Catégorie</th>
                                     <th>Réf facture</th>
                                     <th>Tiers</th>
-                                    <th>Catégorie</th>
                                     <th>Montant</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- tr  -->
-                                <tr class="ba-datatable-row-title">
-                                    <td colspan="8">Août 2021</td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                </tr>
                                 <tr>
 
                                     <td></td>
-                                    <td class="dt-control">01/10/2021</td>
+                                    <td class="dt-control"> <span class="color-blue-sky ba-ui-bold ">Octobre</span> 01/10/2021</td>
                                     <td class="dt-control">Lydec ref : 045875</td>
-                                    <td class="dt-control"><a href="" class="ba-link">58746 – c’est à annoter</a></td>
-                                    <td class="dt-control"><a href="" class="ba-link">Ajouter un tiers</a></td>
-                                    <td class="dt-control">xxxxxxxxxxxxxxxxx</td>
-                                    <td class="dt-control ba-color-green"> 700 DHS</td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir la facture</a></td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir le tiers </a></td>
+                                    <td class="dt-control">700 DHS</td>
                                     <td>
                                         <div class="ba-user-profile-nav dropdown">
                                             <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -440,12 +422,11 @@
                                 <tr>
 
                                     <td></td>
-                                    <td class="dt-control">01/10/2021</td>
+                                    <td class="dt-control"> <span class="color-blue-sky ba-ui-bold ">Octobre</span> 01/10/2021</td>
                                     <td class="dt-control">Lydec ref : 045875</td>
-                                    <td class="dt-control"><a href="" class="ba-link">58746 – c’est à annoter</a></td>
-                                    <td class="dt-control"><a href="" class="ba-link">Ajouter un tiers</a></td>
-                                    <td class="dt-control">xxxxxxxxxxxxxxxxx</td>
-                                    <td class="dt-control ba-color-red">- 700 DHS</td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir la facture</a></td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir le tiers </a></td>
+                                    <td class="dt-control">700 DHS</td>
                                     <td>
                                         <div class="ba-user-profile-nav dropdown">
                                             <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -477,12 +458,11 @@
                                 <tr>
 
                                     <td></td>
-                                    <td class="dt-control">01/10/2021</td>
+                                    <td class="dt-control"> <span class="color-blue-sky ba-ui-bold ">Octobre</span> 01/10/2021</td>
                                     <td class="dt-control">Lydec ref : 045875</td>
-                                    <td class="dt-control"><a href="" class="ba-link">58746 – c’est à annoter</a></td>
-                                    <td class="dt-control"><a href="" class="ba-link">Ajouter un tiers</a></td>
-                                    <td class="dt-control">xxxxxxxxxxxxxxxxx</td>
-                                    <td class="dt-control ba-color-green"> 700 DHS</td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir la facture</a></td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir le tiers </a></td>
+                                    <td class="dt-control">700 DHS</td>
                                     <td>
                                         <div class="ba-user-profile-nav dropdown">
                                             <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown3" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -510,51 +490,14 @@
 
                                 </tr>
                                 <!-- tr  -->
-                                <!-- tr  -->
-                                <tr class="ba-datatable-row-title">
-                                    <td colspan="8">
-                                        <div class="light-blue-container lbc-in-table  text-end">
-                                            <div class="total-row text-end">
-                                                <label for="">Grand total HT</label>
-                                                <h2>1500 €</h2>
-                                            </div>
-
-                                            <div class="total-row text-end">
-
-                                                <h2>1800 €</h2>
-                                            </div>
-
-                                        </div>
-                                    </td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                </tr>
-                                <!-- tr  -->
-                                <tr class="ba-datatable-row-title">
-                                    <td colspan="8">Juillet 2021</td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                    <td class="d-none"></td>
-                                </tr>
-                                <!-- tr  -->
                                 <tr>
 
                                     <td></td>
-                                    <td class="dt-control">01/10/2021</td>
+                                    <td class="dt-control"> <span class="color-blue-sky ba-ui-bold ">Octobre</span> 01/10/2021</td>
                                     <td class="dt-control">Lydec ref : 045875</td>
-                                    <td class="dt-control"><a href="" class="ba-link">58746 – c’est à annoter</a></td>
-                                    <td class="dt-control"><a href="" class="ba-link">Ajouter un tiers</a></td>
-                                    <td class="dt-control">xxxxxxxxxxxxxxxxx</td>
-                                    <td class="dt-control ba-color-red">- 700 DHS</td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir la facture</a></td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir le tiers </a></td>
+                                    <td class="dt-control">700 DHS</td>
                                     <td>
                                         <div class="ba-user-profile-nav dropdown">
                                             <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown4" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -586,12 +529,11 @@
                                 <tr>
 
                                     <td></td>
-                                    <td class="dt-control">01/10/2021</td>
+                                    <td class="dt-control"> <span class="color-blue-sky ba-ui-bold ">Octobre</span> 01/10/2021</td>
                                     <td class="dt-control">Lydec ref : 045875</td>
-                                    <td class="dt-control"><a href="" class="ba-link">58746 – c’est à annoter</a></td>
-                                    <td class="dt-control"><a href="" class="ba-link">Ajouter un tiers</a></td>
-                                    <td class="dt-control">xxxxxxxxxxxxxxxxx</td>
-                                    <td class="dt-control ba-color-red">- 700 DHS</td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir la facture</a></td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir le tiers </a></td>
+                                    <td class="dt-control">700 DHS</td>
                                     <td>
                                         <div class="ba-user-profile-nav dropdown">
                                             <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown5" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -623,12 +565,11 @@
                                 <tr>
 
                                     <td></td>
-                                    <td class="dt-control">01/10/2021</td>
+                                    <td class="dt-control"> <span class="color-blue-sky ba-ui-bold ">Octobre</span> 01/10/2021</td>
                                     <td class="dt-control">Lydec ref : 045875</td>
-                                    <td class="dt-control"><a href="" class="ba-link">58746 – c’est à annoter</a></td>
-                                    <td class="dt-control"><a href="" class="ba-link">Ajouter un tiers</a></td>
-                                    <td class="dt-control">xxxxxxxxxxxxxxxxx</td>
-                                    <td class="dt-control ba-color-red">- 700 DHS</td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir la facture</a></td>
+                                    <td class="dt-control"><a href="" class="ba-link">Choisir le tiers </a></td>
+                                    <td class="dt-control">700 DHS</td>
                                     <td>
                                         <div class="ba-user-profile-nav dropdown">
                                             <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown6" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -660,7 +601,18 @@
 
                             </tbody>
                         </table>
+                        <div class="light-blue-container lbc-in-table  text-end">
+                            <div class="total-row text-end">
+                                <label for="">Grand total HT</label>
+                                <h2>1500 €</h2>
+                            </div>
 
+                            <div class="total-row text-end">
+
+                                <h2>1800 €</h2>
+                            </div>
+
+                        </div>
 
                         <div class="datatable-footer">
 
@@ -743,8 +695,8 @@
                                 <a href="" class="btn ba-btn-default ba-btn-circle bg-white"><img class="ba-xs-img"
                                         src="../../../public/assets/icons/blue-delete.svg" alt=""></a>
                             </li>
-                            <li>
-                                <a href="" class="btn ba-btn-default ba-btn-circle bg-white"><img class="ba-xs-img"
+                             <li>
+                                <a href="" class="btn ba-btn-default ba-btn-circle bg-white opiration-form-step-trigger"  data-step=".division-step"><img class="ba-xs-img"
                                         src="../../../public/assets/icons/blue-share.svg" alt=""></a>
                             </li>
                             <li>
@@ -768,7 +720,7 @@
                     <div class="opiration-form-steps">
                          <div class="opiration-form-step edit-step d-block">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-6">
                                 <!-- input  -->
                                     <div class="ba-form-warpp  mb-0">
                                         <label for="" class="ba-form-label">Tiers</label>
@@ -783,33 +735,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                <!-- input  -->
-                                    <div class="ba-form-warpp  mb-0">
+                                <div class="col-6">
+                                      <!-- input  -->
+                                    <div class="ba-form-warpp">
                                         <label for="" class="ba-form-label">Réf facture</label>
-                                        <div class="ba-select-warpper w-100 mb-0  ba-form-control-style">
-                                            <select id="" class="selectpicker ba-select">
-                                                <option value="">58746 – c’est à annoter</option>
-                                                <option value="58746 – c’est à annoter">58746 – c’est à annoter</option>
-                                                <option value="58746 – c’est à annoter">58746 – c’est à annoter</option>
-                                                <option value="58746 – c’est à annoter">58746 – c’est à annoter</option>
-                                                <option value="58746 – c’est à annoter">58746 – c’est à annoter</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                <!-- input  -->
-                                    <div class="ba-form-warpp  mb-0">
-                                        <label for="" class="ba-form-label">Catégorie</label>
-                                        <div class="ba-select-warpper w-100 mb-0  ba-form-control-style">
-                                            <select id="" class="selectpicker ba-select">
-                                                <option  data-icon="fa fa-th-large" value="">Choisir la catégorie</option>
-                                                <option  data-icon="fa fa-th-large" value="xxxxxxxxxxxxxx">xxxxxxxxxxxxxx</option>
-                                                <option  data-icon="fa fa-th-large" value="xxxxxxxxxxxxxx">xxxxxxxxxxxxxx</option>
-                                                <option  data-icon="fa fa-th-large" value="xxxxxxxxxxxxxx">xxxxxxxxxxxxxx</option>
-                                                <option  data-icon="fa fa-th-large" value="xxxxxxxxxxxxxx">xxxxxxxxxxxxxx</option>
-                                            </select>
+                                        <div class="ba-form-control">
+                                            <input type="email" placeholder="Réf facture" id="">
                                         </div>
                                     </div>
                                 </div>
@@ -828,11 +759,17 @@
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <!-- input  -->
-                                    <div class="ba-form-warpp">
-                                        <label for="" class="ba-form-label">Désignation</label>
-                                        <div class="ba-form-control">
-                                            <input type="text" placeholder="Désignation" id="">
+                                <!-- input  -->
+                                    <div class="ba-form-warpp  mb-0">
+                                        <label for="" class="ba-form-label">Catégorie</label>
+                                        <div class="ba-select-warpper w-100 mb-0  ba-form-control-style">
+                                            <select id="" class="selectpicker ba-select">
+                                                <option  data-icon="fa fa-th-large" value="">Choisir la catégorie</option>
+                                                <option  data-icon="fa fa-th-large" value="xxxxxxxxxxxxxx">xxxxxxxxxxxxxx</option>
+                                                <option  data-icon="fa fa-th-large" value="xxxxxxxxxxxxxx">xxxxxxxxxxxxxx</option>
+                                                <option  data-icon="fa fa-th-large" value="xxxxxxxxxxxxxx">xxxxxxxxxxxxxx</option>
+                                                <option  data-icon="fa fa-th-large" value="xxxxxxxxxxxxxx">xxxxxxxxxxxxxx</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -864,6 +801,7 @@
                         </div>
                     </div>
 
+                    
 
                 </div>
 

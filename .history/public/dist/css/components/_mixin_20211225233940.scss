@@ -1,0 +1,61 @@
+/* ............... mixin ................ */
+
+// flex 
+@mixin flexCenterCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexCenterBetween() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin inlineFlexCenterCenter() {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin inlineFlexCenterBetween() {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin yAbsoluteCenter() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin normalText($color) {
+    @if expression($color) {
+        color: $color;
+    }
+    @else {
+        color: $blue;
+    }
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: pxToVw(13);
+    line-height: pxToVw(23);
+}
+
+@function pxToVw($px) {
+    $value: calc(#{$px} * 0.063em);
+    @return $value;
+}

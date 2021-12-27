@@ -65,7 +65,6 @@ $(document).ready(() => {
         $('body').on('click','.opiration-form-step-trigger', function (e) {
             e.preventDefault();
             $(this).closest('ul>li>a').removeClass('active');
-            $('.opiration-form-step-trigger').removeClass('active');
             $(this).addClass('active');
             let step = '.opiration-form-step'+ $(this).attr('data-step');
             $('.opiration-form-steps').find('.opiration-form-step').removeClass('d-block');

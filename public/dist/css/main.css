@@ -1266,6 +1266,10 @@ a.ba-add-doc-link i {
   color: #104CBA !important;
 }
 
+.color-blue-sky {
+  color: rgba(16, 76, 186, 0.65) !important;
+}
+
 .ba-color-green {
   color: #50CB93 !important;
 }
@@ -3069,6 +3073,19 @@ a.editable-click:hover {
 .ba-invoice-viwer-actions ul li {
   padding: 0 calc(10 * 0.0651111111vw);
 }
+.ba-invoice-viwer-actions ul li a.active {
+  background-color: #104CBA !important;
+}
+.ba-invoice-viwer-actions ul li a.active img {
+  filter: contrast(0) brightness(10);
+}
+
+.opiration-form-step-trigger.active {
+  background-color: #104CBA !important;
+}
+.opiration-form-step-trigger.active img {
+  filter: contrast(0) brightness(10);
+}
 
 .ba-invoice-viwer {
   position: relative;
@@ -3592,6 +3609,60 @@ a.editable-click:hover {
   border: 1px solid rgba(16, 76, 186, 0.28);
   border-radius: calc(30 * 0.0651111111vw);
   padding: calc(7 * 0.0651111111vw) calc(20 * 0.0651111111vw);
+}
+
+.opiration-form-step {
+  display: none;
+}
+
+.ba-annotation-modal-content {
+  background: #F4F7FC;
+  border-radius: calc(9 * 0.0651111111vw);
+  padding: calc(30 * 0.0651111111vw);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.ba-annotation-modal-content p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(25 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  padding-bottom: calc(20 * 0.0651111111vw);
+  margin-bottom: calc(20 * 0.0651111111vw);
+  border-bottom: 1px solid rgba(16, 76, 186, 0.15);
+}
+.ba-annotation-modal-content img {
+  width: calc(84 * 0.0651111111vw);
+  height: calc(91 * 0.0651111111vw);
+}
+
+span.quation-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(27 * 0.0651111111vw);
+  line-height: calc(32 * 0.0651111111vw);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #104CBA;
+}
+
+.delete-division-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.division-item {
+  position: relative;
+  padding-top: calc(32 * 0.0651111111vw);
 }
 
 /* tables  */
