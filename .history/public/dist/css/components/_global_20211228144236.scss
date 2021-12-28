@@ -82,21 +82,20 @@
     */
    
     ::-webkit-scrollbar-track {
-       background: #F3F6FC;
+       background: #FFFFFF;
+       border: 0.5px solid rgba(16, 76, 186, 0.45);
+       box-sizing: border-box;
+       box-shadow: 0px 2px 3px rgba(16, 76, 186, 0.21);
        border-radius: 15px;
    }
    
     ::-webkit-scrollbar {
        width: 10px;
        background-color: #F5F5F5;
-       border-radius: 15px;
    }
    
     ::-webkit-scrollbar-thumb {
-       background: #FFFFFF;
-       border: 0.5px solid rgba(16, 76, 186, 0.45);
-       box-sizing: border-box;
-       box-shadow: 0px 2px 3px rgba(16, 76, 186, 0.21);
+       background: #F3F6FC;
        border-radius: 15px;
    }
    

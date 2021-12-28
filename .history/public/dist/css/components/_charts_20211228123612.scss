@@ -9,14 +9,14 @@
         left: 0;
         right: 0;
         width: 100%;
-        line-height: pxToVw(40);
-        font-size: pxToVw(30);
+        line-height: 40px;
+        font-size: 30px;
         justify-content: center;
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
-        font-size: pxToVw(21);
-        line-height: pxToVw(31);
+        font-size: 21px;
+        line-height: 31px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -33,8 +33,8 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: pxToVw(13);
-    line-height: pxToVw(15);
+    font-size: 13px;
+    line-height: 15px;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
@@ -52,7 +52,7 @@
 }
 
 .expenses-doughnut-chart {
-    height: pxToVw(210)
+    height: pxToVw(190)
 }
 
 .turnover-evolution-bar-chart-warp {
@@ -115,51 +115,5 @@
         border-radius: 5px;
         padding: 1px pxToVw(10);
         margin: 0 pxToVw(5);
-    }
-}
-
-.expenses-doughnut-chart-legend-list {
-    padding-right: pxToVw(15);
-    margin-top: pxToVw(40);
-    max-height: pxToVw(76);
-    overflow: auto;
-    .expenses-doughnut-chart-legend-item {
-        border-bottom: 1px solid rgba(43, 62, 98, 0.21);
-        padding-bottom: pxToVw(10);
-        margin-bottom: pxToVw(10);
-        @include flexCenterBetween();
-        .expenses-doughnut-chart-legend-item-percent {
-            display: flex;
-            align-items: center;
-            span {
-                width: pxToVw(9);
-                height: pxToVw(9);
-                display: block;
-            }
-            p {
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: 500;
-                font-size: pxToVw(12);
-                line-height: pxToVw(15);
-                letter-spacing: 0.03em;
-                margin: 0;
-                margin-left: 5px;
-            }
-        }
-        .expenses-doughnut-chart-legend-item-label {
-            @include flexCenterBetween();
-            width: calc(100% - 63px);
-            p {
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: pxToVw(12);
-                line-height: pxToVw(17);
-                letter-spacing: 0.03em;
-                color: rgba(43, 62, 98, 0.65);
-                margin: 0;
-            }
-        }
     }
 }

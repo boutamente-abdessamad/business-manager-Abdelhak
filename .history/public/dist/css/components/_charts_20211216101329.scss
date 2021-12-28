@@ -1,0 +1,52 @@
+// charts styles 
+.ba-lg-circle-progress-center-text {
+    position: relative;
+    @include flexCenterCenter();
+    strong {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        width: 100%;
+        line-height: 40px;
+        font-size: 30px;
+        justify-content: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 31px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: rgba(43, 62, 98, 0.65);
+    }
+}
+
+.ba-lg-circle-progress-container {
+    @include flexCenterCenter();
+}
+
+.ba-chart-label-links a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: $blue;
+}
+
+.ba-chart-label-links {
+    display: flex;
+    align-items: center;
+}
+
+.client-figure-bar-chart {
+    height: pxToVw(200)
+}

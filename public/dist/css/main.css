@@ -1130,20 +1130,22 @@ a.ba-add-doc-link i {
  *  STYLE 16
  */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: #F5F5F5;
-  border-radius: 10px;
+  background: #F3F6FC;
+  border-radius: 15px;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #F5F5F5;
+  border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #FFF;
-  background-image: -webkit-linear-gradient(top, #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #104CBA 100%);
+  background: #FFFFFF;
+  border: 0.5px solid rgba(16, 76, 186, 0.45);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 3px rgba(16, 76, 186, 0.21);
+  border-radius: 15px;
 }
 
 .ba-ui-bold {
@@ -1252,15 +1254,15 @@ a.ba-add-doc-link i {
 }
 
 .gray-bb {
-  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  border-bottom: 1px solid rgba(43, 62, 98, 0.65);
 }
 
 .gray-bt {
-  border-top: 1px solid rgba(16, 76, 186, 0.28);
+  border-top: 1px solid rgba(43, 62, 98, 0.65);
 }
 
 .gray-br {
-  border-right: 1px solid rgba(16, 76, 186, 0.28);
+  border-right: 1px solid rgba(43, 62, 98, 0.65);
 }
 
 .ba-opacity-25 {
@@ -1418,8 +1420,8 @@ input:focus-visible {
 }
 .dropdown .dropdown-menu.ba-dropdown-items .dropdown-item span.fa {
   color: #104CBA;
-  height: 24px;
-  width: 24px;
+  height: calc(24 * 0.0651111111vw);
+  width: calc(24 * 0.0651111111vw);
   border-radius: 50%;
   background-color: #FFFFFF;
   display: inline-flex;
@@ -2136,7 +2138,7 @@ a.ba-cart-header-back .back-link-icon {
   width: 50%;
 }
 .ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row.final-total-box {
-  border: 1px solid rgba(16, 76, 186, 0.28);
+  border: 1px solid rgba(43, 62, 98, 0.65);
   box-sizing: border-box;
   border-radius: calc(5 * 0.0651111111vw);
   padding: calc(17 * 0.0651111111vw) calc(40 * 0.0651111111vw);
@@ -2293,7 +2295,7 @@ a.editable-click:hover {
   padding: calc(24 * 0.0651111111vw);
 }
 .ba-invoice-payment-status-panel .ba-invoice-payment-status-panel-header {
-  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  border-bottom: 1px solid rgba(43, 62, 98, 0.65);
   padding-bottom: calc(24 * 0.0651111111vw);
   margin-bottom: calc(24 * 0.0651111111vw);
 }
@@ -2669,8 +2671,8 @@ a.editable-click:hover {
   border-radius: calc(11 * 0.0651111111vw) calc(11 * 0.0651111111vw) 0px 0px;
   border-bottom: 1px solid rgba(43, 62, 98, 0.21);
   padding: 0;
-  padding-bottom: 30px;
-  margin-bottom: 35px;
+  padding-bottom: calc(30 * 0.0651111111vw);
+  margin-bottom: calc(35 * 0.0651111111vw);
 }
 .ba-panel.ba-default-panel .ba-panel-head > h2 {
   font-size: calc(23 * 0.0651111111vw);
@@ -2689,7 +2691,7 @@ a.editable-click:hover {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 20px;
+  margin-top: calc(20 * 0.0651111111vw);
 }
 
 .invoice-attatchements {
@@ -3087,7 +3089,7 @@ a.editable-click:hover {
 .ba-invoices-status-container .ba-add-new-purchases-invoice {
   margin-right: calc(20 * 0.0651111111vw);
   background: #FFFFFF;
-  box-shadow: 0px 2px 7px rgba(16, 76, 186, 0.28);
+  box-shadow: 0px 2px 7px rgba(43, 62, 98, 0.65);
   border-radius: calc(15 * 0.0651111111vw);
   display: flex;
   justify-content: center;
@@ -3237,7 +3239,7 @@ a.editable-click:hover {
   margin-top: calc(16 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: rgba(43, 62, 98, 0.65);
-  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  border-bottom: 1px solid rgba(43, 62, 98, 0.65);
 }
 .suppliers-slider-container .suppliers-slider .supplier-item h2 {
   font-family: Roboto;
@@ -3283,7 +3285,7 @@ a.editable-click:hover {
   min-height: calc(225 * 0.0651111111vw);
   margin-right: 10px;
   background: #FFFFFF;
-  box-shadow: 0px 2px 7px rgba(16, 76, 186, 0.28);
+  box-shadow: 0px 2px 7px rgba(43, 62, 98, 0.65);
   border-radius: calc(15 * 0.0651111111vw);
   display: flex;
   justify-content: center;
@@ -3576,7 +3578,7 @@ a.editable-click:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  border-bottom: 1px solid rgba(43, 62, 98, 0.65);
   padding-bottom: calc(25 * 0.0651111111vw);
 }
 .reconcile-transaction-with-invoice-container .reconcile-transaction-with-invoice-header h2 {
@@ -3618,15 +3620,15 @@ a.editable-click:hover {
 }
 
 .reconcile-transaction-table {
-  margin-top: 26px;
+  margin-top: calc(26 * 0.0651111111vw);
 }
 .reconcile-transaction-table table {
   width: 100%;
   border: transparent;
-  border-top: 1px solid rgba(16, 76, 186, 0.28);
+  border-top: 1px solid rgba(43, 62, 98, 0.65);
 }
 .reconcile-transaction-table table tr:not(:last-child) {
-  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  border-bottom: 1px solid rgba(43, 62, 98, 0.65);
 }
 .reconcile-transaction-table table tr td {
   padding: calc(16 * 0.0651111111vw) calc(5 * 0.0651111111vw);
@@ -3690,7 +3692,7 @@ a.editable-click:hover {
   text-align: center;
   letter-spacing: 0.03em;
   color: #2B3E62;
-  border: 1px solid rgba(16, 76, 186, 0.28);
+  border: 1px solid rgba(43, 62, 98, 0.65);
   border-radius: calc(30 * 0.0651111111vw);
   padding: calc(7 * 0.0651111111vw) calc(20 * 0.0651111111vw);
 }
@@ -3849,23 +3851,23 @@ span.quation-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 15px;
-  margin-bottom: 15px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(15 * 0.0651111111vw);
+  margin-bottom: calc(15 * 0.0651111111vw);
 }
 
 .ba-tax-box {
-  border-radius: 7px;
-  padding: 15px;
+  border-radius: calc(7 * 0.0651111111vw);
+  padding: calc(15 * 0.0651111111vw);
 }
 .ba-tax-box p,
 .ba-tax-box h5 {
   font-family: Roboto;
   font-style: normal;
   margin: 0;
-  font-size: 12px;
+  font-size: calc(12 * 0.0651111111vw);
   letter-spacing: 0.03em;
-  line-height: 17px;
+  line-height: calc(17 * 0.0651111111vw);
 }
 .ba-tax-box p {
   font-weight: normal;
@@ -3878,14 +3880,14 @@ span.quation-text {
 }
 
 .ba-tva-details {
-  margin-left: 50px;
+  margin-left: calc(50 * 0.0651111111vw);
 }
 .ba-tva-details p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: calc(14 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: rgba(43, 62, 98, 0.65);
   margin-bottom: 0;
@@ -3894,8 +3896,8 @@ span.quation-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: calc(14 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -3907,18 +3909,18 @@ span.quation-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 26px;
+  margin-top: calc(26 * 0.0651111111vw);
 }
 .taxes-progress-labels .taxes-progress-label label {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 23px;
+  font-size: calc(14 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
   text-align: right;
   color: #2B3E62;
   margin-bottom: 0;
-  margin-left: 10px;
+  margin-left: calc(10 * 0.0651111111vw);
 }
 
 /* tables  */
@@ -4376,14 +4378,14 @@ ul.meanings-table li img {
   left: 0;
   right: 0;
   width: 100%;
-  line-height: 40px;
-  font-size: 30px;
+  line-height: calc(40 * 0.0651111111vw);
+  font-size: calc(30 * 0.0651111111vw);
   justify-content: center;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 21px;
-  line-height: 31px;
+  font-size: calc(21 * 0.0651111111vw);
+  line-height: calc(31 * 0.0651111111vw);
   display: flex;
   align-items: center;
   text-align: center;
@@ -4402,8 +4404,8 @@ ul.meanings-table li img {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(15 * 0.0651111111vw);
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -4419,6 +4421,125 @@ ul.meanings-table li img {
 
 .client-figure-bar-chart {
   height: calc(200 * 0.0651111111vw);
+}
+
+.expenses-doughnut-chart {
+  height: calc(210 * 0.0651111111vw);
+}
+
+.turnover-evolution-bar-chart-warp {
+  height: calc(320 * 0.0651111111vw);
+}
+
+.ba-bank-chart-status {
+  margin-left: 5px;
+}
+.ba-bank-chart-status p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  margin: 0;
+}
+.ba-bank-chart-status h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin: 0;
+}
+.ba-bank-chart-status h2 span {
+  font-size: calc(11 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
+  margin-left: calc(5 * 0.0651111111vw);
+}
+
+.cash-available-line-chart-warp {
+  width: 100%;
+  height: calc(280 * 0.0651111111vw);
+}
+
+.chart-filters {
+  display: flex;
+  margin-right: calc(50 * 0.0651111111vw);
+}
+.chart-filters button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  background: rgba(16, 76, 186, 0.09);
+  border-radius: 5px;
+  padding: 1px calc(10 * 0.0651111111vw);
+  margin: 0 calc(5 * 0.0651111111vw);
+}
+.chart-filters button.active {
+  background: rgba(42, 181, 125, 0.09);
+  color: #32BA7C;
+}
+
+.expenses-doughnut-chart-legend-list {
+  padding-right: calc(15 * 0.0651111111vw);
+  margin-top: calc(40 * 0.0651111111vw);
+  max-height: calc(76 * 0.0651111111vw);
+  overflow: auto;
+}
+.expenses-doughnut-chart-legend-list .expenses-doughnut-chart-legend-item {
+  border-bottom: 1px solid rgba(43, 62, 98, 0.21);
+  padding-bottom: calc(10 * 0.0651111111vw);
+  margin-bottom: calc(10 * 0.0651111111vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.expenses-doughnut-chart-legend-list .expenses-doughnut-chart-legend-item .expenses-doughnut-chart-legend-item-percent {
+  display: flex;
+  align-items: center;
+}
+.expenses-doughnut-chart-legend-list .expenses-doughnut-chart-legend-item .expenses-doughnut-chart-legend-item-percent span {
+  width: calc(9 * 0.0651111111vw);
+  height: calc(9 * 0.0651111111vw);
+  display: block;
+}
+.expenses-doughnut-chart-legend-list .expenses-doughnut-chart-legend-item .expenses-doughnut-chart-legend-item-percent p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(15 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-left: 5px;
+}
+.expenses-doughnut-chart-legend-list .expenses-doughnut-chart-legend-item .expenses-doughnut-chart-legend-item-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: calc(100% - 63px);
+}
+.expenses-doughnut-chart-legend-list .expenses-doughnut-chart-legend-item .expenses-doughnut-chart-legend-item-label p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(17 * 0.0651111111vw);
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  margin: 0;
 }
 
 /* ........... ./conmponents .............. */
@@ -5227,40 +5348,6 @@ ba-dashboard-header-rightside {
      object-fit: cover;
 }
 
-.ba-bank-chart-status {
-  margin-left: 5px;
-}
-.ba-bank-chart-status p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: calc(12 * 0.0651111111vw);
-  line-height: calc(23 * 0.0651111111vw);
-  letter-spacing: 0.03em;
-  color: rgba(43, 62, 98, 0.65);
-  margin: 0;
-}
-.ba-bank-chart-status h2 {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: calc(15 * 0.0651111111vw);
-  line-height: calc(23 * 0.0651111111vw);
-  letter-spacing: 0.03em;
-  color: #2B3E62;
-  margin: 0;
-}
-.ba-bank-chart-status h2 span {
-  font-size: calc(11 * 0.0651111111vw);
-  line-height: calc(21 * 0.0651111111vw);
-  margin-left: calc(5 * 0.0651111111vw);
-}
-
-.cash-available-line-chart-warp {
-  width: 100%;
-  height: calc(280 * 0.0651111111vw);
-}
-
 .ba-upcoming-deadlines-list {
   max-height: calc(295 * 0.0651111111vw);
   overflow: auto;
@@ -5317,35 +5404,6 @@ ba-dashboard-header-rightside {
   -o-object-fit: contain;
      object-fit: contain;
   height: calc(25 * 0.0651111111vw);
-}
-
-.chart-filters {
-  display: flex;
-  margin-right: calc(50 * 0.0651111111vw);
-}
-.chart-filters button {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: calc(13 * 0.0651111111vw);
-  line-height: calc(23 * 0.0651111111vw);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: rgba(43, 62, 98, 0.65);
-  background: rgba(16, 76, 186, 0.09);
-  border-radius: 5px;
-  padding: 1px calc(10 * 0.0651111111vw);
-  margin: 0 calc(5 * 0.0651111111vw);
-}
-.chart-filters button.active {
-  background: rgba(42, 181, 125, 0.09);
-  color: #32BA7C;
-}
-
-.turnover-evolution-bar-chart-warp {
-  height: calc(320 * 0.0651111111vw);
 }
 
 /* ---------------------------------------------------------------------------- */

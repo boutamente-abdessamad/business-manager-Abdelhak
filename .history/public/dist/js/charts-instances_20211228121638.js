@@ -246,20 +246,19 @@ $(document).ready(() => {
             datasets: [
                 {
                     label: 'fournisseur de matières premières',
-                    data: [10,30,60],
-                    backgroundColor: [
-                        '#ED847E',
-                        '#FED198',
-                        '#737CD2',
-                    ],
-                    borderColor: [
-                        '#ED847E',
-                        '#FED198',
-                        '#737CD2',
-                    ],
-                    borderWidth:0
+                    data: 60,
+                    backgroundColor: '#737CD2',
                 },
-               
+                {
+                    label: 'loyer',
+                    data: 10,
+                    backgroundColor: '#ED847E',
+                },
+                {
+                    label: 'les salaires',
+                    data: 30,
+                    backgroundColor: '#FED198',
+                }
             ]
         };
 
@@ -269,12 +268,10 @@ $(document).ready(() => {
             data:expenses_doughnut_chart_data,
             options: {
                 responsive: true,
-                cutout: 75, 
-                borderRadius: 0, 
                 maintainAspectRatio: false,
                 plugins: {
                     legend: {
-                        display: false,
+                        display: true,
                     },
                 },
             }

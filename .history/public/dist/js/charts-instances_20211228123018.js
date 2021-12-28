@@ -257,7 +257,7 @@ $(document).ready(() => {
                         '#FED198',
                         '#737CD2',
                     ],
-                    borderWidth:0
+                    borderWidth: 5
                 },
                
             ]
@@ -269,8 +269,8 @@ $(document).ready(() => {
             data:expenses_doughnut_chart_data,
             options: {
                 responsive: true,
-                cutout: 75, 
-                borderRadius: 0, 
+                cutout: 125, 
+                radius: 0, 
                 maintainAspectRatio: false,
                 plugins: {
                     legend: {

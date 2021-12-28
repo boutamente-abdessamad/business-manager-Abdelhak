@@ -246,20 +246,19 @@ $(document).ready(() => {
             datasets: [
                 {
                     label: 'fournisseur de matières premières',
-                    data: [10,30,60],
-                    backgroundColor: [
-                        '#ED847E',
-                        '#FED198',
-                        '#737CD2',
-                    ],
-                    borderColor: [
-                        '#ED847E',
-                        '#FED198',
-                        '#737CD2',
-                    ],
-                    borderWidth:0
+                    data: 60,
+                    backgroundColor: '#737CD2',
                 },
-               
+                {
+                    label: 'loyer',
+                    data: 10,
+                    backgroundColor: '#ED847E',
+                },
+                {
+                    label: 'les salaires',
+                    data: 30,
+                    backgroundColor: '#FED198',
+                }
             ]
         };
 
@@ -268,13 +267,43 @@ $(document).ready(() => {
             type: 'doughnut',
             data:expenses_doughnut_chart_data,
             options: {
+
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid:{
+                            display:false
+                        },
+                        ticks: {
+                            font: {
+                            family: "Poppins",
+                            style: "normal",
+                            weight: "normal",
+                            style: 12,
+                            }
+                        }
+                    },
+                    x: {
+                        grid:{
+                            display:false
+                        },
+                         ticks: {
+                            font: {
+                            size: 12,
+                            family: "Poppins",
+                            style: "normal",
+                            weight: "normal",
+                            }
+                        }
+                    },
+               
+                },
+                bezierCurve: false,
                 responsive: true,
-                cutout: 75, 
-                borderRadius: 0, 
                 maintainAspectRatio: false,
                 plugins: {
                     legend: {
-                        display: false,
+                        display: true,
                     },
                 },
             }
