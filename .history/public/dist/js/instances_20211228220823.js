@@ -133,7 +133,6 @@ var initPlugins = function () {
         prevArrow: $('.colors-slider-prev'),
         nextArrow: $('.colors-slider-next'),
       });
-    }
     let baPeriodSlider = $('.ba-period-slider');
     if (baPeriodSlider.length && !$(baPeriodSlider).hasClass('slick-initialized')) {
       baPeriodSlider.slick({
@@ -145,7 +144,6 @@ var initPlugins = function () {
         prevArrow: $('.ba-period-btn.prev'),
         nextArrow: $('.ba-period-btn.next'),
       });
-      baPeriodSlider.show();
     }
 }
 

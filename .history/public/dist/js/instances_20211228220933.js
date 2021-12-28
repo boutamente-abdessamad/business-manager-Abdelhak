@@ -145,7 +145,6 @@ var initPlugins = function () {
         prevArrow: $('.ba-period-btn.prev'),
         nextArrow: $('.ba-period-btn.next'),
       });
-      baPeriodSlider.show();
     }
 }
 
