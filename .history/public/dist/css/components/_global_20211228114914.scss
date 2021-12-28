@@ -206,15 +206,15 @@
    }
    
    .gray-bb {
-       border-bottom: 1px solid $blueOpacity;
+       border-bottom: 1px solid rgba(16, 76, 186, 0.28);
    }
    
    .gray-bt {
-       border-top: 1px solid $blueOpacity;
+       border-top: 1px solid rgba(16, 76, 186, 0.28);
    }
    
    .gray-br {
-       border-right: 1px solid $blueOpacity;
+       border-right: 1px solid rgba(16, 76, 186, 0.28);
    }
    
    .ba-opacity-25 {
@@ -369,7 +369,7 @@
                    margin-right: pxToVw(8);
                }
                span.fa {
-                   color: $blue;
+                   color: #104CBA;
                    height: pxToVw(24);
                    width: pxToVw(24);
                    border-radius: 50%;
@@ -1057,7 +1057,7 @@
                    width: 50%;
                }
                &.final-total-box {
-                   border: 1px solid $blueOpacity;
+                   border: 1px solid rgba(16, 76, 186, 0.28);
                    box-sizing: border-box;
                    border-radius: pxToVw(5);
                    padding: pxToVw(17) pxToVw(40);
@@ -1215,7 +1215,7 @@
        border-radius: pxToVw(15);
        padding: pxToVw(24);
        .ba-invoice-payment-status-panel-header {
-           border-bottom: 1px solid $blueOpacity;
+           border-bottom: 1px solid rgba(16, 76, 186, 0.28);
            padding-bottom: pxToVw(24);
            margin-bottom: pxToVw(24);
            h3 {
@@ -2024,7 +2024,7 @@
        .ba-add-new-purchases-invoice {
            margin-right: calc(20 * 0.0651111111vw);
            background: #FFFFFF;
-           box-shadow: 0px 2px 7px $blueOpacity;
+           box-shadow: 0px 2px 7px rgba(16, 76, 186, 0.28);
            border-radius: pxToVw(15);
            @include flexCenterCenter();
            flex-direction: column;
@@ -2167,7 +2167,7 @@
                    margin-top: pxToVw(16);
                    letter-spacing: 0.03em;
                    color: $blueOpacity;
-                   border-bottom: 1px solid $blueOpacity;
+                   border-bottom: 1px solid rgba(16, 76, 186, 0.28);
                }
                h2 {
                    font-family: Roboto;
@@ -2214,7 +2214,7 @@
        min-height: pxToVw(225);
        margin-right: 10px;
        background: #FFFFFF;
-       box-shadow: 0px 2px 7px $blueOpacity;
+       box-shadow: 0px 2px 7px rgba(16, 76, 186, 0.28);
        border-radius: pxToVw(15);
        @include flexCenterCenter();
        flex-direction: column;
@@ -2483,7 +2483,7 @@
                    &.active.disabled:hover[disabled] {
                        color: #fff;
                        background-color: #0044cc;
-                       background: $blue;
+                       background: #104CBA;
                        border-radius: 5px;
                    }
                }
@@ -2524,7 +2524,7 @@
            display: flex;
            align-items: center;
            justify-content: space-between;
-           border-bottom: 1px solid $blueOpacity;
+           border-bottom: 1px solid rgba(16, 76, 186, 0.28);
            padding-bottom: pxToVw(25);
            h2 {
                font-family: Roboto;
@@ -2569,10 +2569,10 @@
        table {
            width: 100%;
            border: transparent;
-           border-top: 1px solid $blueOpacity;
+           border-top: 1px solid rgba(16, 76, 186, 0.28);
            tr {
                &:not(:last-child) {
-                   border-bottom: 1px solid $blueOpacity;
+                   border-bottom: 1px solid rgba(16, 76, 186, 0.28);
                }
                td {
                    padding: pxToVw(16) pxToVw(5);
@@ -2641,7 +2641,7 @@
        text-align: center;
        letter-spacing: 0.03em;
        color: $blueText;
-       border: 1px solid $blueOpacity;
+       border: 1px solid rgba(16, 76, 186, 0.28);
        border-radius: pxToVw(30);
        padding: pxToVw(7) pxToVw(20);
    }
@@ -2686,7 +2686,7 @@
        line-height: pxToVw(32);
        text-align: center;
        letter-spacing: 0.03em;
-       color: $blue;
+       color: #104CBA;
    }
    
    .delete-division-btn {
@@ -2721,7 +2721,7 @@
            text-align: center;
            letter-spacing: 0.03em;
            text-decoration-line: underline;
-           color: $blue;
+           color: #104CBA;
            margin-top: pxToVw(15);
        }
        img {
@@ -2836,7 +2836,7 @@
            font-size: pxToVw(14);
            line-height: pxToVw(21);
            letter-spacing: 0.03em;
-           color: $blueOpacity;
+           color: rgba(43, 62, 98, 0.65);
            margin-bottom: 0;
        }
        h4 {
@@ -2848,7 +2848,7 @@
            display: flex;
            align-items: center;
            letter-spacing: 0.03em;
-           color: $blueText;
+           color: #2B3E62;
            margin-bottom: 0;
        }
    }
@@ -2866,7 +2866,7 @@
                font-size: pxToVw(14);
                line-height: pxToVw(23);
                text-align: right;
-               color: $blueText;
+               color: #2B3E62;
                margin-bottom: 0;
                margin-left: pxToVw(10);
            }
