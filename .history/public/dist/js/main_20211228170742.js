@@ -48,7 +48,7 @@ $(document).ready(() => {
         $('.ba-cart-menu-tabs>ul>li>a').on('click', function (e) {
             e.preventDefault();
             $(this).closest('li').addClass('active').siblings().removeClass('active');
-            let item = '.ba-cart-tab-item'+$(this).closest('li').attr('data-tab');
+            let item = 'ba-cart-tab-item'+$(this).closest('li').attr('data-tab');
             $('.ba-cart-body-tabs').find(item).addClass('active').siblings().removeClass('active');
         });
         // accordion toggle 

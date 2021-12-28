@@ -1254,15 +1254,15 @@ a.ba-add-doc-link i {
 }
 
 .gray-bb {
-  border-bottom: 1px solid rgba(43, 62, 98, 0.65);
+  border-bottom: 1px solid rgba(16, 76, 186, 0.09);
 }
 
 .gray-bt {
-  border-top: 1px solid rgba(43, 62, 98, 0.65);
+  border-top: 1px solid rgba(16, 76, 186, 0.09);
 }
 
 .gray-br {
-  border-right: 1px solid rgba(43, 62, 98, 0.65);
+  border-right: 1px solid rgba(16, 76, 186, 0.09);
 }
 
 .ba-opacity-25 {
@@ -3923,6 +3923,76 @@ span.quation-text {
   margin-left: calc(10 * 0.0651111111vw);
 }
 
+.ba-cart-menu-tabs {
+  width: calc(100% - 60px);
+  position: relative;
+}
+.ba-cart-menu-tabs::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: rgba(16, 76, 186, 0.09);
+  border-radius: 5px;
+  z-index: 1;
+}
+.ba-cart-menu-tabs ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.ba-cart-menu-tabs ul li a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+}
+.ba-cart-menu-tabs ul li.active a {
+  color: rgba(16, 76, 186, 0.65);
+}
+.ba-cart-menu-tabs ul li.active a::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: rgba(16, 76, 186, 0.65);
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.top-clients-filters {
+  display: flex;
+  align-items: center;
+}
+
+.top-lients-table {
+  margin-top: calc(45 * 0.0651111111vw);
+}
+
+.ba-cart-body-tabs {
+  position: relative;
+}
+.ba-cart-body-tabs .ba-cart-tab-item {
+  display: none;
+}
+.ba-cart-body-tabs .ba-cart-tab-item.active {
+  display: block;
+}
+
 /* tables  */
 /* tables  */
 /* pagination elements  */
@@ -4362,6 +4432,26 @@ ul.meanings-table li img {
   margin-right: calc(10 * 0.0651111111vw);
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.top-lients-table table th {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(15 * 0.0651111111vw);
+  color: #2B3E62;
+  padding: calc(12 * 0.0651111111vw) 2px;
+}
+
+.top-lients-table table td {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  color: rgba(43, 62, 98, 0.65);
+  padding: calc(10 * 0.0651111111vw) 2px;
 }
 
 .ba-lg-circle-progress-center-text {

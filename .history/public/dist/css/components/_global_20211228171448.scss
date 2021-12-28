@@ -2943,8 +2943,11 @@
        position: relative;
        .ba-cart-tab-item {
            display: none;
+           transition: $baTransition;
+           opacity: 0;
            &.active {
                display: block;
+               opacity: 1;
            }
        }
    }

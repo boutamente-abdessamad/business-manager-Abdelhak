@@ -2942,9 +2942,17 @@
    .ba-cart-body-tabs {
        position: relative;
        .ba-cart-tab-item {
-           display: none;
+           //    display: none;
+           transition: $baTransition;
+           opacity: 0;
+           visibility: hidden;
+           height: 0;
+           max-height: 0;
            &.active {
-               display: block;
+               visibility: visible;
+               opacity: 1;
+               height: auto;
+               max-height: 1200px;
            }
        }
    }

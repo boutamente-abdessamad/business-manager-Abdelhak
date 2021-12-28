@@ -208,15 +208,15 @@
    }
    
    .gray-bb {
-       border-bottom: 1px solid $blueLight;
+       border-bottom: 1px solid $blueOpacity;
    }
    
    .gray-bt {
-       border-top: 1px solid $blueLight;
+       border-top: 1px solid $blueOpacity;
    }
    
    .gray-br {
-       border-right: 1px solid $blueLight;
+       border-right: 1px solid $blueOpacity;
    }
    
    .ba-opacity-25 {
@@ -2885,9 +2885,8 @@
            position: absolute;
            left: 0;
            bottom: 0px;
-           background: $blueLight;
+           background: $blueOpacity;
            border-radius: 5px;
-           z-index: 1;
        }
        ul {
            display: flex;
@@ -2922,29 +2921,9 @@
                            bottom: 0px;
                            background: $blueSky;
                            border-radius: 5px;
-                           z-index: 2;
                        }
                    }
                }
-           }
-       }
-   }
-   
-   .top-clients-filters {
-       display: flex;
-       align-items: center;
-   }
-   
-   .top-lients-table {
-       margin-top: pxToVw(45);
-   }
-   
-   .ba-cart-body-tabs {
-       position: relative;
-       .ba-cart-tab-item {
-           display: none;
-           &.active {
-               display: block;
            }
        }
    }

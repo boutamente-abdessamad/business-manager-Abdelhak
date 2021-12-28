@@ -2934,17 +2934,3 @@
        display: flex;
        align-items: center;
    }
-   
-   .top-lients-table {
-       margin-top: pxToVw(45);
-   }
-   
-   .ba-cart-body-tabs {
-       position: relative;
-       .ba-cart-tab-item {
-           display: none;
-           &.active {
-               display: block;
-           }
-       }
-   }

@@ -208,15 +208,15 @@
    }
    
    .gray-bb {
-       border-bottom: 1px solid $blueLight;
+       border-bottom: 1px solid $blueOpacity;
    }
    
    .gray-bt {
-       border-top: 1px solid $blueLight;
+       border-top: 1px solid $blueOpacity;
    }
    
    .gray-br {
-       border-right: 1px solid $blueLight;
+       border-right: 1px solid $blueOpacity;
    }
    
    .ba-opacity-25 {
@@ -2885,9 +2885,8 @@
            position: absolute;
            left: 0;
            bottom: 0px;
-           background: $blueLight;
+           background: rgba(16, 76, 186, 0.15);
            border-radius: 5px;
-           z-index: 1;
        }
        ul {
            display: flex;
@@ -2902,49 +2901,14 @@
                    font-weight: 500;
                    font-size: 14px;
                    line-height: 28px;
-                   position: relative;
+                   /* or 162% */
                    display: flex;
                    align-items: center;
                    padding-top: 10px;
                    padding-bottom: 15px;
                    letter-spacing: 0.03em;
-                   color: $blueOpacity;
+                   color: rgba(43, 62, 98, 0.65);
                }
-               &.active {
-                   a {
-                       color: $blueSky;
-                       &::after {
-                           content: "";
-                           height: 3px;
-                           width: 100%;
-                           position: absolute;
-                           left: 0;
-                           bottom: 0px;
-                           background: $blueSky;
-                           border-radius: 5px;
-                           z-index: 2;
-                       }
-                   }
-               }
-           }
-       }
-   }
-   
-   .top-clients-filters {
-       display: flex;
-       align-items: center;
-   }
-   
-   .top-lients-table {
-       margin-top: pxToVw(45);
-   }
-   
-   .ba-cart-body-tabs {
-       position: relative;
-       .ba-cart-tab-item {
-           display: none;
-           &.active {
-               display: block;
            }
        }
    }

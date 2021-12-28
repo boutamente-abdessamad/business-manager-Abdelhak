@@ -208,15 +208,15 @@
    }
    
    .gray-bb {
-       border-bottom: 1px solid $blueLight;
+       border-bottom: 1px solid $blueOpacity;
    }
    
    .gray-bt {
-       border-top: 1px solid $blueLight;
+       border-top: 1px solid $blueOpacity;
    }
    
    .gray-br {
-       border-right: 1px solid $blueLight;
+       border-right: 1px solid $blueOpacity;
    }
    
    .ba-opacity-25 {
@@ -2908,7 +2908,7 @@
                    padding-top: 10px;
                    padding-bottom: 15px;
                    letter-spacing: 0.03em;
-                   color: $blueOpacity;
+                   color: $blueLight;
                }
                &.active {
                    a {
@@ -2926,25 +2926,6 @@
                        }
                    }
                }
-           }
-       }
-   }
-   
-   .top-clients-filters {
-       display: flex;
-       align-items: center;
-   }
-   
-   .top-lients-table {
-       margin-top: pxToVw(45);
-   }
-   
-   .ba-cart-body-tabs {
-       position: relative;
-       .ba-cart-tab-item {
-           display: none;
-           &.active {
-               display: block;
            }
        }
    }
