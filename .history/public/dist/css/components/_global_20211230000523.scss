@@ -3351,8 +3351,7 @@ a.btn.ba-period-btn i {
         align-items: center;
         color: $blueText;
         margin-right: 3px;
-        margin-bottom: 0;
-        transition: $baTransition;
+        margin-bottom: 0 transition: $baTransition;
     }
     .day-content {
         p {

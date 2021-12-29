@@ -1720,7 +1720,7 @@
                     if (item.tagName !== 'OPTGROUP') {
                         addOption(item, {});
                     } else {
-                        addOptgroup(startIndex, selectOptions);
+                        addOptgroup(index, selectOptions);
                     }
                 }
 

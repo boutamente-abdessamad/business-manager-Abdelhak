@@ -23,7 +23,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 23px;
-        line-height: pxToVw(27);
+        line-height: 27px;
         letter-spacing: 0.03em;
         color: $blueText;
         margin: 0;
@@ -3340,7 +3340,6 @@ a.btn.ba-period-btn i {
     height: pxToVw(91);
     margin: 0 5px;
     border-bottom: 4px solid $blueSky;
-    transition: $baTransition;
     &>h2 {
         font-family: Poppins;
         font-style: normal;
@@ -3351,8 +3350,7 @@ a.btn.ba-period-btn i {
         align-items: center;
         color: $blueText;
         margin-right: 3px;
-        margin-bottom: 0;
-        transition: $baTransition;
+        margin-bottom: 0
     }
     .day-content {
         p {
@@ -3363,7 +3361,6 @@ a.btn.ba-period-btn i {
             line-height: pxToVw(17);
             color: $blueOpacity;
             margin: 0;
-            transition: $baTransition;
         }
         span {
             font-family: Roboto;
@@ -3374,11 +3371,9 @@ a.btn.ba-period-btn i {
             display: flex;
             align-items: center;
             color: $blueText;
-            transition: $baTransition;
         }
     }
-    &.active,
-    &:hover {
+    &.active {
         background: $blue;
         &>h2 {
             color: #FFFFFF;
@@ -3417,60 +3412,28 @@ a.btn.ba-period-btn i {
 }
 
 a.ba-add-new-time-btn {
-    background: $greenTbg;
-    border: 2px dashed $green;
+    background: rgba(80, 203, 147, 0.11);
+    border: 2px dashed $greenLight;
     box-sizing: border-box;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: pxToVw(24);
-    padding: pxToVw(31) pxToVw(10);
+    margin-top: 24px;
+    padding: 31px 10px;
     span {
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: pxToVw(17);
-        line-height: pxToVw(20);
+        font-size: 17px;
+        line-height: 20px;
         letter-spacing: 0.03em;
         text-decoration-line: underline;
-        color: $green;
-        margin-left: pxToVw(10);
+        color: $greenLight;
+        margin-left: 10px;
     }
     img {
-        width: pxToVw(20);
-        height: pxToVw(20);
-    }
-}
-
-.ba-zone-empty {
-    border: 1px solid rgba(16, 76, 186, 0.15);
-    box-sizing: border-box;
-    border-radius: 7px;
-    margin-top: pxToVw(27);
-    padding: pxToVw(67) 0px;
-    text-align: center;
-    img {
-        width: pxToVw(413);
-        height: pxToVw(342);
-    }
-}
-
-.ba-input-increment-lg {
-    display: flex;
-    align-items: flex-end;
-    .ba-form-warpp {
-        margin-bottom: 0;
-        padding: 0 pxToVw(10);
-        label {
-            font-size: pxToVw(13);
-            margin-bottom: pxToVw(5);
-        }
-    }
-    .btn {
-        align-self: flex-end;
-        height: pxToVw(49);
-        font-size: pxToVw(18);
-        padding: 0 pxToVw(20);
+        width: 20px;
+        height: 20px;
     }
 }
