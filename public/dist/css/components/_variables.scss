@@ -1,5 +1,6 @@
 $iconsPath: "../../../public/assets/icons";
 // colors 
+// blue 
 $blue: #104CBA;
 $blueHover: #1A4799;
 $blueText: #2B3E62;
@@ -7,23 +8,27 @@ $blueTextHover: #1a479933;
 $blueOpacity: rgba(43, 62, 98, 0.65);
 $blueSky: rgba(16, 76, 186, 0.65);
 $blueSkyLight: rgba(55, 196, 250, 0.11);
-;
 $blueLightBg: #F1F5FB;
+$blueLight: rgba(16, 76, 186, 0.09);
+// red 
 $redText: #E86161;
 $redBg: #F8485E;
 $red: #F8485E;
 $redTbg: rgba(253, 98, 94, 0.15);
+$redLight: rgba(253, 98, 94, 0.09);
+// Green 
 $green: #50CB93;
 $greenTbg: rgba(42, 181, 125, 0.15);
 $greenText: #32BA7C;
+$greenLight: rgba(42, 181, 125, 0.09);
+// Gray 
 $secondaryBg: #F1F1F1;
+$grayOpacity: rgba(43, 62, 98, 0.45);
+// orange 
 $orange: #F7B422;
 $orangeOpacity: rgba(247, 180, 34, 0.11);
+// purple
 $purple: #9F8FDC;
 $purpleOpacity: rgba(159, 143, 220, 0.09);
-// light colors 
-$blueLight: rgba(16, 76, 186, 0.09);
-$redLight: rgba(253, 98, 94, 0.09);
-$greenLight: rgba(42, 181, 125, 0.09);
 // transitions 
 $baTransition: .3s all cubic-bezier(0.65, 0.05, 0.36, 1);

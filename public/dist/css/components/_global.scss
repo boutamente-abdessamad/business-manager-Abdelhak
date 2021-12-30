@@ -17,6 +17,15 @@
     border-bottom: 1px solid rgba(43, 62, 98, 0.21);
 }
 
+.ba-status-icon {
+    height: pxToVw(20);
+    width: pxToVw(20);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: pxToVw(12);
+}
+
 .ba-page-head-title {
     h3 {
         font-family: Roboto;
@@ -59,6 +68,33 @@
     margin: pxToVw(30) 0px;
 }
 
+.sm-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.md-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    margin: 0;
+}
+
+.lg-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    margin: 0;
+}
+
 .gray-global-text {
     font-family: Roboto;
     font-style: normal;
@@ -83,6 +119,10 @@
 
 .ba-radius-0 {
     border-radius: 0 !important;
+}
+
+.ba-radius-50 {
+    border-radius: 50% !important;
 }
 
 a.ba-add-doc-link {
@@ -333,6 +373,10 @@ a.ba-add-doc-link {
 // colors 
 .ba-color-blue {
     color: $blue !important;
+}
+
+.ba-color-light-gray {
+    color: $grayOpacity !important;
 }
 
 .ba-color-blue-sky {
@@ -3473,4 +3517,21 @@ a.ba-add-new-time-btn {
         font-size: pxToVw(18);
         padding: 0 pxToVw(20);
     }
+}
+
+.separated-gray-table {
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    tr {
+        border-radius: 5px;
+        background: rgba(245, 248, 253, 0.37);
+        outline: 2px solid #E7EDF8;
+        td {
+            vertical-align: middle;
+        }
+    }
+}
+
+.time-list {
+    margin-top: pxToVw(15);
 }
