@@ -21,6 +21,10 @@
         padding: pxToVw(5) pxToVw(15);
         font-size: pxToVw(11);
     }
+    &.btn-lg {
+        padding: pxToVw(16) pxToVw(20);
+        font-size: pxToVw(15);
+    }
     img {
         width: pxToVw(13);
         height: pxToVw(13);

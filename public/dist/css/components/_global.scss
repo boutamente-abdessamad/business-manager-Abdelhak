@@ -3366,6 +3366,7 @@ a.btn.ba-period-btn i {
     }
 }
 
+.ba-calendar-weeks,
 .ba-calendar-days {
     display: flex;
     align-items: center;
@@ -3433,6 +3434,52 @@ a.btn.ba-period-btn i {
             }
         }
         span {
+            color: #FFFFFF;
+        }
+    }
+}
+
+.week-box {
+    background: $blueLightBg;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: pxToVw(91);
+    margin: 0 5px;
+    border-bottom: 4px solid $blueSky;
+    transition: $baTransition;
+    &>h2 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 37px;
+        text-align: center;
+        color: $blueText;
+        margin-right: 3px;
+        margin-bottom: 0;
+        transition: $baTransition;
+    }
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: pxToVw(13);
+        line-height: pxToVw(17);
+        color: $blueOpacity;
+        margin: 0;
+        transition: $baTransition;
+    }
+    &.active,
+    &:hover {
+        background: $blue;
+        h2 {
+            color: #FFFFFF;
+        }
+        p {
             color: #FFFFFF;
         }
     }

@@ -1,0 +1,28 @@
+// full calendar style
+.calendar-container {
+    // .fc-theme-standard {
+    //     .fc-scrollgrid {
+    //         table {
+    //             border: none;
+    //         }
+    //     }
+    // }
+    .fc-scrollgrid-section-body,
+    .fc-scrollgrid-section-footer {
+        table {
+            border-spacing: 4px;
+            border: none;
+            border-collapse: separate;
+            .fc-daygrid-day-frame {
+                background: #F3F6FC;
+                border-radius: 9px;
+                padding: 15px;
+                .fc-daygrid-day-top {
+                    display: flex;
+                    flex-direction: unset;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}

@@ -490,6 +490,10 @@
   padding: calc(5 * 0.0651111111vw) calc(15 * 0.0651111111vw);
   font-size: calc(11 * 0.0651111111vw);
 }
+[class*=ba-btn-].btn-lg {
+  padding: calc(16 * 0.0651111111vw) calc(20 * 0.0651111111vw);
+  font-size: calc(15 * 0.0651111111vw);
+}
 [class*=ba-btn-] img {
   width: calc(13 * 0.0651111111vw);
   height: calc(13 * 0.0651111111vw);
@@ -4402,6 +4406,7 @@ a.btn.ba-period-btn i {
   color: #104CBA;
 }
 
+.ba-calendar-weeks,
 .ba-calendar-days {
   display: flex;
   align-items: center;
@@ -4466,6 +4471,51 @@ a.btn.ba-period-btn i {
   color: #FFFFFF;
 }
 .day-box.active span, .day-box:hover span {
+  color: #FFFFFF;
+}
+
+.week-box {
+  background: #F1F5FB;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(91 * 0.0651111111vw);
+  margin: 0 5px;
+  border-bottom: 4px solid rgba(16, 76, 186, 0.65);
+  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.week-box > h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 37px;
+  text-align: center;
+  color: #2B3E62;
+  margin-right: 3px;
+  margin-bottom: 0;
+  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.week-box p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(17 * 0.0651111111vw);
+  color: rgba(43, 62, 98, 0.65);
+  margin: 0;
+  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.week-box.active, .week-box:hover {
+  background: #104CBA;
+}
+.week-box.active h2, .week-box:hover h2 {
+  color: #FFFFFF;
+}
+.week-box.active p, .week-box:hover p {
   color: #FFFFFF;
 }
 
@@ -5205,6 +5255,25 @@ ul.meanings-table li img {
   letter-spacing: 0.03em;
   color: rgba(43, 62, 98, 0.65);
   margin: 0;
+}
+
+.calendar-container .fc-scrollgrid-section-body table,
+.calendar-container .fc-scrollgrid-section-footer table {
+  border-spacing: 4px;
+  border: none;
+  border-collapse: separate;
+}
+.calendar-container .fc-scrollgrid-section-body table .fc-daygrid-day-frame,
+.calendar-container .fc-scrollgrid-section-footer table .fc-daygrid-day-frame {
+  background: #F3F6FC;
+  border-radius: 9px;
+  padding: 15px;
+}
+.calendar-container .fc-scrollgrid-section-body table .fc-daygrid-day-frame .fc-daygrid-day-top,
+.calendar-container .fc-scrollgrid-section-footer table .fc-daygrid-day-frame .fc-daygrid-day-top {
+  display: flex;
+  flex-direction: unset;
+  justify-content: flex-start;
 }
 
 /* ........... ./conmponents .............. */
