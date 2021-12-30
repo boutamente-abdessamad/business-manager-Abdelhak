@@ -7,22 +7,257 @@
     //         }
     //     }
     // }
-    .fc-scrollgrid-section-body,
-    .fc-scrollgrid-section-footer {
-        table {
-            border-spacing: 4px;
+    .fc {
+        .fc-daygrid-event-harness {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+        .fc-daygrid-body-unbalanced {
+            .fc-daygrid-day-events {
+                position: relative;
+                min-height: 2em;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+            }
+        }
+        .fc-col-header-cell-cushion {
+            display: inline-block;
+            padding: 2px 4px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: pxToVw(13);
+            line-height: pxToVw(47);
+            text-align: center;
+            color: $blueText;
+        }
+        .fc-scrollgrid-liquid {
             border: none;
-            border-collapse: separate;
-            .fc-daygrid-day-frame {
-                background: #F3F6FC;
-                border-radius: 9px;
-                padding: 15px;
-                .fc-daygrid-day-top {
-                    display: flex;
-                    flex-direction: unset;
-                    justify-content: flex-start;
+            tr,
+            td,
+            th {
+                border: none;
+            }
+        }
+        .fc-scrollgrid-section-body,
+        .fc-scrollgrid-section-footer {
+            table {
+                border-spacing: 4px;
+                border: none;
+                border-collapse: separate;
+                .fc-daygrid-day-frame {
+                    height: pxToVw(112);
+                    background: #F3F6FC;
+                    border-radius: 9px;
+                    padding: 0;
+                    .fc-daygrid-day-top {
+                        display: flex;
+                        flex-direction: unset;
+                        justify-content: flex-start;
+                    }
+                    .fc-daygrid-day-number {
+                        position: relative;
+                        z-index: 4;
+                        padding: 0;
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: pxToVw(17);
+                        line-height: pxToVw(28);
+                        text-align: center;
+                        color: rgba(43, 62, 98, 0.45);
+                    }
                 }
             }
         }
+    }
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: space-between;
+    &>.fc {
+        width: calc(100% - 195px);
+    }
+    .ba-calendar-custom-cols {
+        margin-top: 76px;
+        .ba-calendar-custom-cols-head {
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+            justify-content: flex-end;
+            padding-bottom: pxToVw(15);
+            p {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(15);
+                line-height: pxToVw(17);
+                display: flex;
+                align-items: center;
+                color: $blueText;
+                margin: 0;
+                margin-right: pxToVw(15);
+            }
+            h2 {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(21);
+                line-height: pxToVw(26);
+                display: flex;
+                align-items: center;
+                text-align: right;
+                color: $blueText;
+                margin: 0;
+            }
+        }
+        .ba-calendar-custom-col {
+            width: 193px;
+            height: pxToVw(112);
+            background: rgba(241, 241, 241, 0.7);
+            border-radius: 9px;
+            margin: pxToVw(4);
+            padding: pxToVw(15);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            p {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(13);
+                line-height: pxToVw(17);
+                display: flex;
+                align-items: center;
+                text-align: right;
+                color: rgba(43, 62, 98, 0.45);
+                margin: 0;
+            }
+            h3 {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(19);
+                line-height: pxToVw(37);
+                display: flex;
+                align-items: center;
+                text-align: right;
+                color: $blueText;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.fc-daygrid-day-frame {
+    position: relative;
+    .ba-add-event-btn {
+        border-radius: 9px;
+        cursor: pointer;
+        background: #EEFAF4;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: $baTransition;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        justify-content: center;
+        .ba-add-event-btn img {
+            width: 33px;
+            height: 33px;
+        }
+    }
+    &:hover {
+        .ba-add-event-btn {
+            opacity: 1;
+            pointer-events: all;
+            visibility: visible;
+        }
+    }
+    .ba-event-box {
+        border-radius: 9px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 12px;
+        height: 100%;
+        span.ba-left-dote {
+            margin-left: auto;
+            &::after {
+                left: unset;
+                right: 0;
+            }
+        }
+        .event-content {
+            display: flex;
+            justify-content: space-between;
+            h3 {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 21px;
+                position: relative;
+                line-height: 17px;
+                z-index: 9;
+                margin: 0;
+                span {
+                    font-size: 13px;
+                    line-height: 17px;
+                    margin-left: 5px;
+                }
+            }
+            p {
+                z-index: 9;
+                position: relative;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 21px;
+                text-align: right;
+                color: rgba(43, 62, 98, 0.65);
+                margin: 0;
+            }
+        }
+    }
+}
+
+.fc-h-event {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    .fc-event-main {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        color: #fff;
     }
 }

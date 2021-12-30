@@ -5257,23 +5257,253 @@ ul.meanings-table li img {
   margin: 0;
 }
 
-.calendar-container .fc-scrollgrid-section-body table,
-.calendar-container .fc-scrollgrid-section-footer table {
+.calendar-container .fc .fc-daygrid-event-harness {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.calendar-container .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+  position: relative;
+  min-height: 2em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.calendar-container .fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(47 * 0.0651111111vw);
+  text-align: center;
+  color: #2B3E62;
+}
+.calendar-container .fc .fc-scrollgrid-liquid {
+  border: none;
+}
+.calendar-container .fc .fc-scrollgrid-liquid tr,
+.calendar-container .fc .fc-scrollgrid-liquid td,
+.calendar-container .fc .fc-scrollgrid-liquid th {
+  border: none;
+}
+.calendar-container .fc .fc-scrollgrid-section-body table,
+.calendar-container .fc .fc-scrollgrid-section-footer table {
   border-spacing: 4px;
   border: none;
   border-collapse: separate;
 }
-.calendar-container .fc-scrollgrid-section-body table .fc-daygrid-day-frame,
-.calendar-container .fc-scrollgrid-section-footer table .fc-daygrid-day-frame {
+.calendar-container .fc .fc-scrollgrid-section-body table .fc-daygrid-day-frame,
+.calendar-container .fc .fc-scrollgrid-section-footer table .fc-daygrid-day-frame {
+  height: calc(112 * 0.0651111111vw);
   background: #F3F6FC;
   border-radius: 9px;
-  padding: 15px;
+  padding: 0;
 }
-.calendar-container .fc-scrollgrid-section-body table .fc-daygrid-day-frame .fc-daygrid-day-top,
-.calendar-container .fc-scrollgrid-section-footer table .fc-daygrid-day-frame .fc-daygrid-day-top {
+.calendar-container .fc .fc-scrollgrid-section-body table .fc-daygrid-day-frame .fc-daygrid-day-top,
+.calendar-container .fc .fc-scrollgrid-section-footer table .fc-daygrid-day-frame .fc-daygrid-day-top {
   display: flex;
   flex-direction: unset;
   justify-content: flex-start;
+}
+.calendar-container .fc .fc-scrollgrid-section-body table .fc-daygrid-day-frame .fc-daygrid-day-number,
+.calendar-container .fc .fc-scrollgrid-section-footer table .fc-daygrid-day-frame .fc-daygrid-day-number {
+  position: relative;
+  z-index: 4;
+  padding: 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(17 * 0.0651111111vw);
+  line-height: calc(28 * 0.0651111111vw);
+  text-align: center;
+  color: rgba(43, 62, 98, 0.45);
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: space-between;
+}
+.calendar-container > .fc {
+  width: calc(100% - 195px);
+}
+.calendar-container .ba-calendar-custom-cols {
+  margin-top: 76px;
+}
+.calendar-container .ba-calendar-custom-cols .ba-calendar-custom-cols-head {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  justify-content: flex-end;
+  padding-bottom: calc(15 * 0.0651111111vw);
+}
+.calendar-container .ba-calendar-custom-cols .ba-calendar-custom-cols-head p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(17 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  color: #2B3E62;
+  margin: 0;
+  margin-right: calc(15 * 0.0651111111vw);
+}
+.calendar-container .ba-calendar-custom-cols .ba-calendar-custom-cols-head h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(21 * 0.0651111111vw);
+  line-height: calc(26 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #2B3E62;
+  margin: 0;
+}
+.calendar-container .ba-calendar-custom-cols .ba-calendar-custom-col {
+  width: 193px;
+  height: calc(112 * 0.0651111111vw);
+  background: rgba(241, 241, 241, 0.7);
+  border-radius: 9px;
+  margin: calc(4 * 0.0651111111vw);
+  padding: calc(15 * 0.0651111111vw);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.calendar-container .ba-calendar-custom-cols .ba-calendar-custom-col p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(17 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: rgba(43, 62, 98, 0.45);
+  margin: 0;
+}
+.calendar-container .ba-calendar-custom-cols .ba-calendar-custom-col h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(19 * 0.0651111111vw);
+  line-height: calc(37 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #2B3E62;
+  margin: 0;
+}
+
+.fc-daygrid-day-frame {
+  position: relative;
+}
+.fc-daygrid-day-frame .ba-add-event-btn {
+  border-radius: 9px;
+  cursor: pointer;
+  background: #EEFAF4;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  justify-content: center;
+}
+.fc-daygrid-day-frame .ba-add-event-btn .ba-add-event-btn img {
+  width: 33px;
+  height: 33px;
+}
+.fc-daygrid-day-frame:hover .ba-add-event-btn {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+.fc-daygrid-day-frame .ba-event-box {
+  border-radius: 9px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 12px;
+  height: 100%;
+}
+.fc-daygrid-day-frame .ba-event-box span.ba-left-dote {
+  margin-left: auto;
+}
+.fc-daygrid-day-frame .ba-event-box span.ba-left-dote::after {
+  left: unset;
+  right: 0;
+}
+.fc-daygrid-day-frame .ba-event-box .event-content {
+  display: flex;
+  justify-content: space-between;
+}
+.fc-daygrid-day-frame .ba-event-box .event-content h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  position: relative;
+  line-height: 17px;
+  z-index: 9;
+  margin: 0;
+}
+.fc-daygrid-day-frame .ba-event-box .event-content h3 span {
+  font-size: 13px;
+  line-height: 17px;
+  margin-left: 5px;
+}
+.fc-daygrid-day-frame .ba-event-box .event-content p {
+  z-index: 9;
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: right;
+  color: rgba(43, 62, 98, 0.65);
+  margin: 0;
+}
+
+.fc-h-event {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+.fc-h-event .fc-event-main {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  color: #fff;
 }
 
 /* ........... ./conmponents .............. */

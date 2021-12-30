@@ -98,7 +98,7 @@
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                         <span>Mohamed Amine</span>
                         <img src="../../../public/assets/images/avatars/user-1.png" alt="">
-                      </button>
+                    </button>
                     <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="userProfileDropdownMenu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -237,7 +237,7 @@
                             </div>
 
                             <div class="ba-calendar-current-date">
-                                <button class="btn ba-btn-default border-0 btn-date-toggle"> 
+                                <button class="btn ba-btn-default border-0 btn-date-toggle">
                                     <span>Décembre 2021</span>
                                     <img src="../../../public/assets/icons/blue-date.svg" alt="">
                                 </button>
@@ -266,6 +266,36 @@
 
                     <div id="ba_months_calendar"></div>
 
+                    <div class="ba-calendar-custom-cols">
+
+                        <div class="ba-calendar-custom-cols-head">
+                            <p>Le total</p>
+                            <h2>28.00</h2>
+                        </div>
+
+                        <div class="ba-calendar-custom-col">
+                            <p>1 - 7 Novembre</p>
+                            <h3>28.00</h3>
+                        </div>
+                        <div class="ba-calendar-custom-col">
+                            <p>1 - 7 Novembre</p>
+                            <h3>28.00</h3>
+                        </div>
+                        <div class="ba-calendar-custom-col">
+                            <p>1 - 7 Novembre</p>
+                            <h3>28.00</h3>
+                        </div>
+                        <div class="ba-calendar-custom-col">
+                            <p>1 - 7 Novembre</p>
+                            <h3>28.00</h3>
+                        </div>
+                        <div class="ba-calendar-custom-col">
+                            <p>1 - 7 Novembre</p>
+                            <h3>28.00</h3>
+                        </div>
+
+                    </div>
+
                 </div>
                 <!-- calendar  -->
 
@@ -284,7 +314,17 @@
     <!--============== ./app root  ======================-->
     <!--===============================================-->
 
-
+    <template class="event-template">
+        <div class="ba-event-box ba-success-light-bg"> <span class="ba-left-dote-success ba-left-dote"></span>
+            <div class="event-content">
+                <h3 class="ba-color-green">3<span>taches</span></h3>
+                <p>7.00</p>
+            </div>
+        </div>
+    </template>
+    <template class="add-event-template">
+        <a class="ba-add-event-btn"><img src="../../../public/assets/icons/green-circle-plus.svg" alt=""></a>
+    </template>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap fontawsom JS -->
     <script src="../../../libs/jquery/jquery-3.3.1.slim.min.js"></script>
