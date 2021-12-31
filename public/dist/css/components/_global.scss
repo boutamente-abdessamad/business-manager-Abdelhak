@@ -3639,3 +3639,13 @@ a.ba-add-new-time-btn {
     padding: 0;
     margin-right: pxToVw(20);
 }
+
+.ba-user-dropdown-selected {
+    display: flex;
+    align-items: center;
+    background: #F3F6FC;
+    border-radius: 5px;
+    min-width: 278px;
+    padding: 6px 20px;
+    justify-content: space-between;
+}

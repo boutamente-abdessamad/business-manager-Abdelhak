@@ -4670,6 +4670,16 @@ a.ba-add-new-time-btn img {
   margin-right: calc(20 * 0.0651111111vw);
 }
 
+.ba-user-dropdown-selected {
+  display: flex;
+  align-items: center;
+  background: #F3F6FC;
+  border-radius: 5px;
+  min-width: 278px;
+  padding: 6px 20px;
+  justify-content: space-between;
+}
+
 /* tables  */
 /* tables  */
 /* pagination elements  */

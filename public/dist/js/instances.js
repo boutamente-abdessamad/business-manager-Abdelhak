@@ -12,6 +12,15 @@ var initPlugins = function() {
             mode: 'inline',
         });
     }
+    // semantic dropdown
+    if ($.fn.dropdown) {
+        console.log('in');
+        $('.ui.dropdown')
+        .dropdown({
+          on: 'click'
+        })
+      ;
+    }
     // date pieaker 
     // more options 
     // https://bootstrap-datepicker.readthedocs.io/en/latest/options.html
