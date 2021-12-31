@@ -7,7 +7,77 @@
     //         }
     //     }
     // }
+    margin-top: 50px;
     .fc {
+        .fc-header-toolbar {
+            width: calc(100% + 195px);
+            .fc-toolbar-title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(21);
+                line-height: pxToVw(25);
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.03em;
+                color: $blueText;
+                position: relative;
+                &::after {
+                    content: "";
+                    background-image: url($iconsPath + '/blue-date.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: pxToVw(20);
+                    width: pxToVw(20);
+                    @include yAbsoluteCenter();
+                    right: pxToVw(-25);
+                }
+            }
+            .fc-toolbar-chunk:first-child {
+                display: flex;
+                align-items: center;
+                .fc-button-group {
+                    button {
+                        background: transparent;
+                        border: none;
+                        padding: 0 0;
+                        span {
+                            color: #a4adbc;
+                        }
+                    }
+                }
+            }
+            .fc-toolbar-chunk:last-child {
+                .fc-button-group {
+                    background: rgba(231, 237, 248, 0.63);
+                    border-radius: 5px;
+                    padding: calc(6 * 0.0651111111vw);
+                    button {
+                        margin: 0 pxToVw(15);
+                        border: none;
+                        border-radius: 5px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: pxToVw(13);
+                        line-height: pxToVw(15);
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: 0.03em;
+                        color: $blueOpacity;
+                        background-color: transparent;
+                        &.fc-button-active {
+                            color: #104CBA;
+                            background: #FFFFFF;
+                            box-shadow: 0px 2px 5px rgba(44, 81, 149, 0.21);
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
         .fc-daygrid-event-harness {
             position: absolute;
             left: 0;
@@ -55,7 +125,7 @@
                     height: pxToVw(112);
                     background: #F3F6FC;
                     border-radius: 9px;
-                    padding: 0;
+                    padding: 0 10px;
                     .fc-daygrid-day-top {
                         display: flex;
                         flex-direction: unset;
@@ -86,7 +156,7 @@
         width: calc(100% - 195px);
     }
     .ba-calendar-custom-cols {
-        margin-top: 76px;
+        margin-top: 10px;
         .ba-calendar-custom-cols-head {
             display: flex;
             align-items: center;
@@ -219,14 +289,14 @@
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 21px;
+                font-size: pxToVw(21);
                 position: relative;
-                line-height: 17px;
+                line-height: pxToVw(17);
                 z-index: 9;
                 margin: 0;
                 span {
-                    font-size: 13px;
-                    line-height: 17px;
+                    font-size: pxToVw(13);
+                    line-height: pxToVw(17);
                     margin-left: 5px;
                 }
             }
@@ -236,10 +306,10 @@
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 15px;
-                line-height: 21px;
+                font-size: pxToVw(15);
+                line-height: pxToVw(21);
                 text-align: right;
-                color: rgba(43, 62, 98, 0.65);
+                color: $blueOpacity;
                 margin: 0;
             }
         }
@@ -259,5 +329,28 @@
         top: 0;
         left: 0;
         color: #fff;
+    }
+}
+
+.ba-calendar-footer {
+    background: $blueLight;
+    border-radius: 9px;
+    padding: pxToVw(13) pxToVw(15);
+    margin-top: 5px;
+    h5 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: pxToVw(19);
+        line-height: pxToVw(37);
+        /* or 195% */
+        text-align: right;
+        color: $blueText;
+        margin: 0;
+        span {
+            font-size: pxToVw(23);
+            line-height: pxToVw(37);
+            font-weight: bold;
+        }
     }
 }

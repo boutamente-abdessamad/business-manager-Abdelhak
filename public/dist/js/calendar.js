@@ -27,10 +27,31 @@ $(document).ready(() => {
                         start: '2021-12-06',
                          backgroundColor : 'rgba(101, 208, 159, 0.11)',
                          borderColor  : 'rgba(101, 208, 159, 0.11)'
+                        },
+                        {
+                        title: 'My Event',
+                        start: '2021-12-31',
+                         backgroundColor : 'rgba(101, 208, 159, 0.11)',
+                         borderColor  : 'rgba(101, 208, 159, 0.11)'
                         }
                         // other events here
                     ],
-                });
+                    customButtons: {
+                        myCustomButton: {
+                        text: 'custom!',
+                        click: function() {
+                            alert('clicked the custom button!');
+                        }
+                        }
+                    },
+                    headerToolbar: false
+
+                    // headerToolbar: {
+                    //         left: 'prev,next title',
+                    //         // dayGridMonth,timeGridWeek,timeGridDay
+                    //         right: 'dayGridMonth,listWeek'
+                    //     }
+                    });
                 calendar.render();
             }
 

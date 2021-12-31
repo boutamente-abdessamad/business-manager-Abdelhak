@@ -31,7 +31,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: 23px;
+        font-size: pxToVw(23);
         line-height: pxToVw(27);
         letter-spacing: 0.03em;
         color: $blueText;
@@ -42,7 +42,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 13px;
-        line-height: 18px;
+        line-height: pxToVw(18);
         letter-spacing: 0.03em;
         color: $blueOpacity;
         margin: 0;
@@ -73,7 +73,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 11px;
-    line-height: 18px;
+    line-height: pxToVw(18);
     margin: 0;
 }
 
@@ -82,7 +82,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
-    line-height: 23px;
+    line-height: pxToVw(23);
     margin: 0;
 }
 
@@ -91,7 +91,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 19px;
-    line-height: 23px;
+    line-height: pxToVw(23);
     margin: 0;
 }
 
@@ -3159,7 +3159,7 @@ a.btn.ba-period-btn i {
         font-style: normal;
         font-weight: 500;
         font-size: pxToVw(15);
-        line-height: 18px;
+        line-height: pxToVw(18);
         text-transform: uppercase;
         color: $blueText;
         margin-bottom: pxToVw(8);
@@ -3283,7 +3283,7 @@ a.btn.ba-period-btn i {
     align-items: center;
     margin-bottom: 30px;
     .ba-single-comptable-doc-title-content {
-        margin-left: 15px;
+        margin-left: pxToVw(15);
         h3 {
             font-family: Roboto;
             font-style: normal;
@@ -3455,8 +3455,8 @@ a.btn.ba-period-btn i {
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
-        font-size: 23px;
-        line-height: 37px;
+        font-size: pxToVw(23);
+        line-height: pxToVw(37);
         text-align: center;
         color: $blueText;
         margin-right: 3px;
@@ -3568,7 +3568,7 @@ a.ba-add-new-time-btn {
 
 .separated-gray-table {
     border-collapse: separate;
-    border-spacing: 0px 15px;
+    border-spacing: 0px pxToVw(15);
     tr {
         border-radius: 5px;
         background: rgba(245, 248, 253, 0.37);
@@ -3581,4 +3581,61 @@ a.ba-add-new-time-btn {
 
 .time-list {
     margin-top: pxToVw(15);
+}
+
+.list-item-datetime {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: pxToVw(15);
+    line-height: pxToVw(18);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: $blue;
+    margin-bottom: 10px;
+    img {
+        margin: 0 pxToVw(10);
+        width: pxToVw(17);
+        height: pxToVw(17);
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.calendar-center-header-content {
+    display: flex;
+    align-items: center;
+}
+
+.ba-menu-links {
+    li {
+        a {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: pxToVw(12);
+            line-height: pxToVw(14);
+            padding: 0 pxToVw(14);
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $blueOpacity;
+        }
+        &.active {
+            a {
+                text-decoration-line: underline;
+                color: $blue;
+            }
+        }
+    }
+}
+
+.ba-menu-links {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    margin-right: pxToVw(20);
 }

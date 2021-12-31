@@ -1087,7 +1087,7 @@ main.ba-app-root .ba-main-cart {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 23px;
+  font-size: calc(23 * 0.0651111111vw);
   line-height: calc(27 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: #2B3E62;
@@ -1098,7 +1098,7 @@ main.ba-app-root .ba-main-cart {
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
-  line-height: 18px;
+  line-height: calc(18 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: rgba(43, 62, 98, 0.65);
   margin: 0;
@@ -1130,7 +1130,7 @@ main.ba-app-root .ba-main-cart {
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
-  line-height: 18px;
+  line-height: calc(18 * 0.0651111111vw);
   margin: 0;
 }
 
@@ -1139,7 +1139,7 @@ main.ba-app-root .ba-main-cart {
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 23px;
+  line-height: calc(23 * 0.0651111111vw);
   margin: 0;
 }
 
@@ -1148,7 +1148,7 @@ main.ba-app-root .ba-main-cart {
   font-style: normal;
   font-weight: 500;
   font-size: 19px;
-  line-height: 23px;
+  line-height: calc(23 * 0.0651111111vw);
   margin: 0;
 }
 
@@ -4204,7 +4204,7 @@ a.btn.ba-period-btn i {
   font-style: normal;
   font-weight: 500;
   font-size: calc(15 * 0.0651111111vw);
-  line-height: 18px;
+  line-height: calc(18 * 0.0651111111vw);
   text-transform: uppercase;
   color: #2B3E62;
   margin-bottom: calc(8 * 0.0651111111vw);
@@ -4327,7 +4327,7 @@ a.btn.ba-period-btn i {
   margin-bottom: 30px;
 }
 .ba-single-comptable-doc-title .ba-single-comptable-doc-title-content {
-  margin-left: 15px;
+  margin-left: calc(15 * 0.0651111111vw);
 }
 .ba-single-comptable-doc-title .ba-single-comptable-doc-title-content h3 {
   font-family: Roboto;
@@ -4491,8 +4491,8 @@ a.btn.ba-period-btn i {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 23px;
-  line-height: 37px;
+  font-size: calc(23 * 0.0651111111vw);
+  line-height: calc(37 * 0.0651111111vw);
   text-align: center;
   color: #2B3E62;
   margin-right: 3px;
@@ -4603,7 +4603,7 @@ a.ba-add-new-time-btn img {
 
 .separated-gray-table {
   border-collapse: separate;
-  border-spacing: 0px 15px;
+  border-spacing: 0px calc(15 * 0.0651111111vw);
 }
 .separated-gray-table tr {
   border-radius: 5px;
@@ -4616,6 +4616,58 @@ a.ba-add-new-time-btn img {
 
 .time-list {
   margin-top: calc(15 * 0.0651111111vw);
+}
+
+.list-item-datetime {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #104CBA;
+  margin-bottom: 10px;
+}
+.list-item-datetime img {
+  margin: 0 calc(10 * 0.0651111111vw);
+  width: calc(17 * 0.0651111111vw);
+  height: calc(17 * 0.0651111111vw);
+}
+.list-item-datetime img:first-child {
+  margin-left: 0;
+}
+
+.calendar-center-header-content {
+  display: flex;
+  align-items: center;
+}
+
+.ba-menu-links li a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(12 * 0.0651111111vw);
+  line-height: calc(14 * 0.0651111111vw);
+  padding: 0 calc(14 * 0.0651111111vw);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+}
+.ba-menu-links li.active a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #104CBA;
+}
+
+.ba-menu-links {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin-right: calc(20 * 0.0651111111vw);
 }
 
 /* tables  */
@@ -5257,6 +5309,76 @@ ul.meanings-table li img {
   margin: 0;
 }
 
+.calendar-container {
+  margin-top: 50px;
+}
+.calendar-container .fc .fc-header-toolbar {
+  width: calc(100% + 195px);
+}
+.calendar-container .fc .fc-header-toolbar .fc-toolbar-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(21 * 0.0651111111vw);
+  line-height: calc(25 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  position: relative;
+}
+.calendar-container .fc .fc-header-toolbar .fc-toolbar-title::after {
+  content: "";
+  background-image: url("../../../public/assets/icons/blue-date.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(20 * 0.0651111111vw);
+  width: calc(20 * 0.0651111111vw);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc(-25 * 0.0651111111vw);
+}
+.calendar-container .fc .fc-header-toolbar .fc-toolbar-chunk:first-child {
+  display: flex;
+  align-items: center;
+}
+.calendar-container .fc .fc-header-toolbar .fc-toolbar-chunk:first-child .fc-button-group button {
+  background: transparent;
+  border: none;
+  padding: 0 0;
+}
+.calendar-container .fc .fc-header-toolbar .fc-toolbar-chunk:first-child .fc-button-group button span {
+  color: #a4adbc;
+}
+.calendar-container .fc .fc-header-toolbar .fc-toolbar-chunk:last-child .fc-button-group {
+  background: rgba(231, 237, 248, 0.63);
+  border-radius: 5px;
+  padding: calc(6 * 0.0651111111vw);
+}
+.calendar-container .fc .fc-header-toolbar .fc-toolbar-chunk:last-child .fc-button-group button {
+  margin: 0 calc(15 * 0.0651111111vw);
+  border: none;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(15 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(43, 62, 98, 0.65);
+  background-color: transparent;
+}
+.calendar-container .fc .fc-header-toolbar .fc-toolbar-chunk:last-child .fc-button-group button.fc-button-active {
+  color: #104CBA;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(44, 81, 149, 0.21);
+  border-radius: 5px;
+}
 .calendar-container .fc .fc-daygrid-event-harness {
   position: absolute;
   left: 0;
@@ -5303,7 +5425,7 @@ ul.meanings-table li img {
   height: calc(112 * 0.0651111111vw);
   background: #F3F6FC;
   border-radius: 9px;
-  padding: 0;
+  padding: 0 10px;
 }
 .calendar-container .fc .fc-scrollgrid-section-body table .fc-daygrid-day-frame .fc-daygrid-day-top,
 .calendar-container .fc .fc-scrollgrid-section-footer table .fc-daygrid-day-frame .fc-daygrid-day-top {
@@ -5333,7 +5455,7 @@ ul.meanings-table li img {
   width: calc(100% - 195px);
 }
 .calendar-container .ba-calendar-custom-cols {
-  margin-top: 76px;
+  margin-top: 10px;
 }
 .calendar-container .ba-calendar-custom-cols .ba-calendar-custom-cols-head {
   display: flex;
@@ -5466,15 +5588,15 @@ ul.meanings-table li img {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 21px;
+  font-size: calc(21 * 0.0651111111vw);
   position: relative;
-  line-height: 17px;
+  line-height: calc(17 * 0.0651111111vw);
   z-index: 9;
   margin: 0;
 }
 .fc-daygrid-day-frame .ba-event-box .event-content h3 span {
-  font-size: 13px;
-  line-height: 17px;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(17 * 0.0651111111vw);
   margin-left: 5px;
 }
 .fc-daygrid-day-frame .ba-event-box .event-content p {
@@ -5483,8 +5605,8 @@ ul.meanings-table li img {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(21 * 0.0651111111vw);
   text-align: right;
   color: rgba(43, 62, 98, 0.65);
   margin: 0;
@@ -5504,6 +5626,29 @@ ul.meanings-table li img {
   top: 0;
   left: 0;
   color: #fff;
+}
+
+.ba-calendar-footer {
+  background: rgba(16, 76, 186, 0.09);
+  border-radius: 9px;
+  padding: calc(13 * 0.0651111111vw) calc(15 * 0.0651111111vw);
+  margin-top: 5px;
+}
+.ba-calendar-footer h5 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(19 * 0.0651111111vw);
+  line-height: calc(37 * 0.0651111111vw);
+  /* or 195% */
+  text-align: right;
+  color: #2B3E62;
+  margin: 0;
+}
+.ba-calendar-footer h5 span {
+  font-size: calc(23 * 0.0651111111vw);
+  line-height: calc(37 * 0.0651111111vw);
+  font-weight: bold;
 }
 
 /* ........... ./conmponents .............. */
