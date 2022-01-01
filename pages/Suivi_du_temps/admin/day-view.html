@@ -205,55 +205,68 @@
 
                 <!-- group buttons  -->
                 <div class="ba-group-buttons p-0">
-                    <div class="ui dropdown">
-                        <input type="hidden" name="filters">
-                        <div class="ba-user-dropdown-selected">
-                            <div class="ba-comment-user ba-purple-bg">
-                                S
+                    <div class="ba-semantic-dropdown-warpp">
+                        <label class="md-text ba-color-blue d-block ms-2">
+                            vous consultez le calendrier de
+                        </label>
+                        <div class="ui dropdown ba-semantic-dropdown">
+                            <input type="hidden" name="filters">
+                            <div class="ba-user-dropdown-item">
+                                <div class="ba-user-dropdown-content">
+                                    <div class="ba-comment-user ba-purple-bg text-white me-2">
+                                        S
+                                    </div>
+                                    <div class="ba-user-meta">
+                                        <p class="md-text">Simohamed Alami</p>
+                                        <p class="sm-text ba-color-gray-light">UX Consultant</p>
+                                    </div>
+                                </div>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
                             </div>
-                            <div class="ba-user-meta">
-                                <p class="md-text">Simohamed Alami</p>
-                                <p class="sm-text">UX Consultant</p>
-                            </div>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </div>
-                        <div class="menu">
-                            <div class="ui icon search input">
-                                <i class="search icon"></i>
-                                <input type="text" placeholder="Search tags...">
-                            </div>
-                            <div class="scrolling menu">
-                                <div class="item" data-value="important">
-                                    <div class="ui red empty circular label"></div>
-                                    Important
+                            <div class="menu ba-semantic-dropdown-menu">
+                                <div class="ui icon search input">
+                                    <i class="search icon"></i>
+                                    <input type="text" placeholder="Search tags...">
                                 </div>
-                                <div class="item" data-value="announcement">
-                                    <div class="ui blue empty circular label"></div>
-                                    Announcement
-                                </div>
-                                <div class="item" data-value="cannotfix">
-                                    <div class="ui black empty circular label"></div>
-                                    Cannot Fix
-                                </div>
-                                <div class="item" data-value="news">
-                                    <div class="ui purple empty circular label"></div>
-                                    News
-                                </div>
-                                <div class="item" data-value="enhancement">
-                                    <div class="ui orange empty circular label"></div>
-                                    Enhancement
-                                </div>
-                                <div class="item" data-value="off-topic">
-                                    <div class="ui yellow empty circular label"></div>
-                                    Off Topic
-                                </div>
-                                <div class="item" data-value="interesting">
-                                    <div class="ui pink empty circular label"></div>
-                                    Interesting
-                                </div>
-                                <div class="item" data-value="discussion">
-                                    <div class="ui green empty circular label"></div>
-                                    Discussion
+                                <div class="scrolling menu">
+                                    <!-- item  -->
+                                    <div class="ba-user-dropdown-item item" data-value="Hajar Ben jaloun">
+                                        <div class="ba-user-dropdown-content">
+                                            <div class="ba-comment-user ba-success-bg text-white me-2">
+                                                H
+                                            </div>
+                                            <div class="ba-user-meta">
+                                                <p class="md-text">Hajar Ben jaloun</p>
+                                                <p class="sm-text ba-color-gray-light">UX Consultant</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item  -->
+                                    <div class="ba-user-dropdown-item item" data-value="Simohamed Alami">
+                                        <div class="ba-user-dropdown-content">
+                                            <div class="ba-comment-user ba-warning-bg text-white me-2">
+                                                S
+                                            </div>
+                                            <div class="ba-user-meta">
+                                                <p class="md-text">Simohamed Alami</p>
+                                                <p class="sm-text ba-color-gray-light">UX Consultant</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item  -->
+                                    <div class="ba-user-dropdown-item item" data-value="Zakaria Alami">
+                                        <div class="ba-user-dropdown-content">
+                                            <div class="ba-comment-user ba-danger-bg text-white me-2">
+                                                Z
+                                            </div>
+                                            <div class="ba-user-meta">
+                                                <p class="md-text">Zakaria Alami</p>
+                                                <p class="sm-text ba-color-gray-light">UX Consultant</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>

@@ -1450,6 +1450,10 @@ a.ba-add-doc-link i {
   color: #F7B422 !important;
 }
 
+.ba-color-gray-light {
+  color: rgba(43, 62, 98, 0.45) !important;
+}
+
 input:focus-visible {
   outline: #104CBA auto 1px;
 }
@@ -4670,14 +4674,55 @@ a.ba-add-new-time-btn img {
   margin-right: calc(20 * 0.0651111111vw);
 }
 
-.ba-user-dropdown-selected {
+.ba-user-dropdown-item {
   display: flex;
   align-items: center;
   background: #F3F6FC;
   border-radius: 5px;
   min-width: 278px;
-  padding: 6px 20px;
+  padding: 10px 20px;
   justify-content: space-between;
+  margin: 5px 5px;
+}
+.ba-user-dropdown-item .ba-user-dropdown-content {
+  display: flex;
+  align-items: center;
+}
+.ba-user-dropdown-item .ba-user-dropdown-content p {
+  line-height: calc(17 * 0.0651111111vw);
+}
+.ba-user-dropdown-item i {
+  font-size: calc(20 * 0.0651111111vw);
+}
+
+.ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
+  border-radius: 7px;
+  border: none;
+}
+.ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu .scrolling.menu {
+  border-top: none;
+  border-radius: 7px !important;
+}
+.ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu .ui.icon.input {
+  margin: 6px 6px;
+}
+.ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu .ui.icon.input > input {
+  padding-right: 2.67143em !important;
+  border: 1px solid rgba(16, 76, 186, 0.15);
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(16, 76, 186, 0.45);
+  height: 40px;
 }
 
 /* tables  */

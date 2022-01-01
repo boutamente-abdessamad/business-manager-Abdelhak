@@ -399,6 +399,10 @@ a.ba-add-doc-link {
     color: $orange !important;
 }
 
+.ba-color-gray-light {
+    color: $grayOpacity !important;
+}
+
 input {
     &:focus-visible {
         outline: $blue auto 1px;
@@ -3640,12 +3644,55 @@ a.ba-add-new-time-btn {
     margin-right: pxToVw(20);
 }
 
-.ba-user-dropdown-selected {
+.ba-user-dropdown-item {
     display: flex;
     align-items: center;
     background: #F3F6FC;
     border-radius: 5px;
     min-width: 278px;
-    padding: 6px 20px;
+    padding: 10px 20px;
     justify-content: space-between;
+    margin: 5px 5px;
+    .ba-user-dropdown-content {
+        display: flex;
+        align-items: center;
+        p {
+            line-height: pxToVw(17);
+        }
+    }
+    i {
+        font-size: pxToVw(20);
+    }
+}
+
+.ba-semantic-dropdown.ui.dropdown {
+    .ba-semantic-dropdown-menu {
+        background: #FFFFFF;
+        box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
+        border-radius: 7px;
+        border: none;
+        .scrolling.menu {
+            border-top: none;
+            border-radius: 7px!important;
+        }
+        .ui.icon.input {
+            margin: 6px 6px;
+            >input {
+                padding-right: 2.67143em !important;
+                border: 1px solid rgba(16, 76, 186, 0.15);
+                box-sizing: border-box;
+                border-radius: 5px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 13px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.03em;
+                color: rgba(16, 76, 186, 0.45);
+                height: 40px;
+            }
+        }
+    }
 }
