@@ -296,8 +296,8 @@
                     <div class="ba-main-tabs ba-noborder">
 
                         <ul>
-                            <li class="active"><a href="" class="btn">Membres</a></li>
-                            <li><a href="" class="btn">Suivi du temps</a></li>
+                            <li><a href="" class="btn">Membres</a></li>
+                            <li class="active"><a href="" class="btn">Suivi du temps</a></li>
                             <li><a href="" class="btn">Facture</a></li>
                             <li><a href="" class="btn">Devis</a></li>
                             <li><a href="" class="btn">Note de frais</a></li>
@@ -316,9 +316,9 @@
 
                     <div class="datatable-filters-leftside">
                         <div class="ba-d-f-center">
-                            <p class="md-text me-2">Membres</p>
+                            <p class="md-text me-2">Tâches</p>
                             <div class="btn ba-btn-secondary ba-btn-circle">
-                                <span class="ba-color-blue">0</span>
+                                <span class="ba-color-blue">04</span>
                             </div>
                         </div>
                     </div>
@@ -355,260 +355,178 @@
                         <div class="filter-input right-icon input-search me-3">
                             <input type="text" name="date" placeholder="Rechercher par....." value="">
                         </div>
-                        <a href="" class="btn ba-btn-outline ba-btn-outline-primary" data-mdb-toggle="modal" data-mdb-target="#add_user_modal">
-                            <span>Ajouter un membre</span>
-                            <img src="../../public/assets/icons/blue-plus.svg" alt="">
-                        </a>
 
                     </div>
 
                 </div>
 
                 <!-- membres -->
-                <div class="ba-membres-warpp">
-                    <div class="row">
-                        <!-- col  -->
-                        <div class="col-3">
+                <div class="ba-time-tracking-warpp">
+                    <!--  times list  -->
+                    <div class="time-list">
 
-                            <div class="ba-cart ba-member-cart">
+                        <table class="table separated-gray-table table-responsive">
+                            <!-- tr  -->
+                            <tr>
+                                <td class="ps-3 pe-0">
+                                    <div class="member-profile-infos sm-member-profile">
+                                        <div class="member-profile-avatar">
+                                            <img src="../../public/assets/images/avatars/user-1.png" alt="">
+                                        </div>
+                                        <div class="member-meta">
+                                            <h5>Samira tazi</h5>
+                                            <p>UX Consultant</p>
+                                        </div>
 
-                                <div class="ba-member-switcher">
-                                    <label for="check8" class="ba-switch-slider crown-icon">
-                                    <input type="checkbox" name="" id="check8">
-                                    <span></span>
-                                </label>
-                                </div>
-
-                                <div class="member-profile-infos mt-4">
-                                    <div class="member-profile-avatar">
-                                        <img src="../../public/assets/images/avatars/user-1.png" alt="">
                                     </div>
-                                    <div class="member-meta">
-                                        <h5>Samira tazi</h5>
-                                        <p>UX Consultant</p>
-                                        <a href="mail:hajarbenjaloune@gmail.com">hajarbenjaloune@gmail.com</a>
+                                </td>
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Tâche <span class="ba-status-icon ba-sm ba-radius-50 ba-success-bg text-white">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </span></p>
+                                    <p class="md-text">Rédiger une proposition de projet</p>
+                                </td>
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Aujourd’hui</p>
+                                    <p class="md-text">08:00 - 15:00 <span class="ba-color-green">(07:00)</span></p>
+                                </td>
+
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Description</p>
+                                    <p class="md-text">Le Lorem Ipsum est le faux ....</p>
+                                </td>
+                                <td>
+                                    <span class="ba-status ba-btn- ba-status-success">Facturé</span>
+                                </td>
+                                <td>
+                                    <a href="" class="btn ba-btn-default ba-primary-light-bg border-0 ba-blue-light-bg ba-btn-circle">
+                                        <img class="ba-xs-img" src="../../../public/assets/icons/blue-date.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <!-- tr  -->
+                            <!-- tr  -->
+                            <tr>
+                                <td class="ps-3 pe-0">
+                                    <div class="member-profile-infos sm-member-profile">
+                                        <div class="member-profile-avatar">
+                                            <img src="../../public/assets/images/avatars/user-1.png" alt="">
+                                        </div>
+                                        <div class="member-meta">
+                                            <h5>Samira tazi</h5>
+                                            <p>UX Consultant</p>
+                                        </div>
+
                                     </div>
+                                </td>
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Tâche <span class="ba-status-icon ba-sm ba-radius-50 ba-success-bg text-white">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </span></p>
+                                    <p class="md-text">Rédiger une proposition de projet</p>
+                                </td>
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Aujourd’hui</p>
+                                    <p class="md-text">08:00 - 15:00 <span class="ba-color-green">(07:00)</span></p>
+                                </td>
 
-                                </div>
-
-                                <ul class="ba-member-figures">
-                                    <li>
-                                        <p>Projets</p>
-                                        <h4>02</h4>
-                                    </li>
-                                    <li>
-                                        <p>Heures</p>
-                                        <h4>11</h4>
-                                    </li>
-                                    <li>
-                                        <p>Tâches</p>
-                                        <h4>95</h4>
-                                    </li>
-                                    <li>
-                                        <p>Taux de coût</p>
-                                        <h4>10 €</h4>
-                                    </li>
-                                </ul>
-
-                                <div class="ba-member-cart-footer">
-
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle me-2">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-eye.svg" alt="">
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Description</p>
+                                    <p class="md-text">Le Lorem Ipsum est le faux ....</p>
+                                </td>
+                                <td>
+                                    <span class="ba-status ba-btn- ba-status-success">Facturé</span>
+                                </td>
+                                <td>
+                                    <a href="" class="btn ba-btn-default ba-primary-light-bg border-0 ba-blue-light-bg ba-btn-circle">
+                                        <img class="ba-xs-img" src="../../../public/assets/icons/blue-date.svg" alt="">
                                     </a>
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle me-2">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-delete.svg" alt="">
-                                    </a>
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-date.svg" alt="">
-                                    </a>
+                                </td>
+                            </tr>
+                            <!-- tr  -->
+                            <!-- tr  -->
+                            <tr>
+                                <td class="ps-3 pe-0">
+                                    <div class="member-profile-infos sm-member-profile">
+                                        <div class="member-profile-avatar">
+                                            <img src="../../public/assets/images/avatars/user-1.png" alt="">
+                                        </div>
+                                        <div class="member-meta">
+                                            <h5>Samira tazi</h5>
+                                            <p>UX Consultant</p>
+                                        </div>
 
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- col  -->
-                        <div class="col-3">
-
-                            <div class="ba-cart ba-member-cart">
-
-                                <div class="ba-member-switcher">
-                                    <label for="check1" class="ba-switch-slider crown-icon">
-                                    <input type="checkbox" name="" id="check1">
-                                    <span></span>
-                                </label>
-                                </div>
-
-                                <div class="member-profile-infos mt-4">
-                                    <div class="member-profile-avatar">
-                                        <img src="../../public/assets/images/avatars/user-1.png" alt="">
                                     </div>
-                                    <div class="member-meta">
-                                        <h5>Samira tazi</h5>
-                                        <p>UX Consultant</p>
-                                        <a href="mail:hajarbenjaloune@gmail.com">hajarbenjaloune@gmail.com</a>
+                                </td>
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Tâche <span class="ba-status-icon ba-sm ba-radius-50 ba-success-bg text-white">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </span></p>
+                                    <p class="md-text">Rédiger une proposition de projet</p>
+                                </td>
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Aujourd’hui</p>
+                                    <p class="md-text">08:00 - 15:00 <span class="ba-color-green">(07:00)</span></p>
+                                </td>
+
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Description</p>
+                                    <p class="md-text">Le Lorem Ipsum est le faux ....</p>
+                                </td>
+                                <td>
+                                    <span class="ba-status ba-btn- ba-status-success">Facturé</span>
+                                </td>
+                                <td>
+                                    <a href="" class="btn ba-btn-default ba-primary-light-bg border-0 ba-blue-light-bg ba-btn-circle">
+                                        <img class="ba-xs-img" src="../../../public/assets/icons/blue-date.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <!-- tr  -->
+                            <!-- tr  -->
+                            <tr>
+                                <td class="ps-3 pe-0">
+                                    <div class="member-profile-infos sm-member-profile">
+                                        <div class="member-profile-avatar">
+                                            <img src="../../public/assets/images/avatars/user-1.png" alt="">
+                                        </div>
+                                        <div class="member-meta">
+                                            <h5>Samira tazi</h5>
+                                            <p>UX Consultant</p>
+                                        </div>
+
                                     </div>
+                                </td>
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Tâche <span class="ba-status-icon ba-sm ba-radius-50 ba-success-bg text-white">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </span></p>
+                                    <p class="md-text">Rédiger une proposition de projet</p>
+                                </td>
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Aujourd’hui</p>
+                                    <p class="md-text">08:00 - 15:00 <span class="ba-color-green">(07:00)</span></p>
+                                </td>
 
-                                </div>
-
-                                <ul class="ba-member-figures">
-                                    <li>
-                                        <p>Projets</p>
-                                        <h4>02</h4>
-                                    </li>
-                                    <li>
-                                        <p>Heures</p>
-                                        <h4>11</h4>
-                                    </li>
-                                    <li>
-                                        <p>Tâches</p>
-                                        <h4>95</h4>
-                                    </li>
-                                    <li>
-                                        <p>Taux de coût</p>
-                                        <h4>10 €</h4>
-                                    </li>
-                                </ul>
-
-                                <div class="ba-member-cart-footer">
-
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle me-2">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-eye.svg" alt="">
+                                <td>
+                                    <p class="sm-text ba-color-light-gray ">Description</p>
+                                    <p class="md-text">Le Lorem Ipsum est le faux ....</p>
+                                </td>
+                                <td>
+                                    <span class="ba-status ba-btn- ba-status-success">Facturé</span>
+                                </td>
+                                <td>
+                                    <a href="" class="btn ba-btn-default ba-primary-light-bg border-0 ba-blue-light-bg ba-btn-circle">
+                                        <img class="ba-xs-img" src="../../../public/assets/icons/blue-date.svg" alt="">
                                     </a>
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle me-2">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-delete.svg" alt="">
-                                    </a>
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-date.svg" alt="">
-                                    </a>
+                                </td>
+                            </tr>
+                            <!-- tr  -->
 
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- col  -->
-                        <div class="col-3">
-
-                            <div class="ba-cart ba-member-cart">
-
-                                <div class="ba-member-switcher">
-                                    <label for="check2" class="ba-switch-slider crown-icon">
-                                    <input type="checkbox" name="" id="check2">
-                                    <span></span>
-                                </label>
-                                </div>
-
-                                <div class="member-profile-infos mt-4">
-                                    <div class="member-profile-avatar">
-                                        <img src="../../public/assets/images/avatars/user-1.png" alt="">
-                                    </div>
-                                    <div class="member-meta">
-                                        <h5>Samira tazi</h5>
-                                        <p>UX Consultant</p>
-                                        <a href="mail:hajarbenjaloune@gmail.com">hajarbenjaloune@gmail.com</a>
-                                    </div>
-
-                                </div>
-
-                                <ul class="ba-member-figures">
-                                    <li>
-                                        <p>Projets</p>
-                                        <h4>02</h4>
-                                    </li>
-                                    <li>
-                                        <p>Heures</p>
-                                        <h4>11</h4>
-                                    </li>
-                                    <li>
-                                        <p>Tâches</p>
-                                        <h4>95</h4>
-                                    </li>
-                                    <li>
-                                        <p>Taux de coût</p>
-                                        <h4>10 €</h4>
-                                    </li>
-                                </ul>
-
-                                <div class="ba-member-cart-footer">
-
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle me-2">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-eye.svg" alt="">
-                                    </a>
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle me-2">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-delete.svg" alt="">
-                                    </a>
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-date.svg" alt="">
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- col  -->
-                        <div class="col-3">
-
-                            <div class="ba-cart ba-member-cart">
-
-                                <div class="ba-member-switcher">
-                                    <label for="check3" class="ba-switch-slider crown-icon">
-                                    <input type="checkbox" name="" id="check3">
-                                    <span></span>
-                                </label>
-                                </div>
-
-                                <div class="member-profile-infos mt-4">
-                                    <div class="member-profile-avatar">
-                                        <img src="../../public/assets/images/avatars/user-1.png" alt="">
-                                    </div>
-                                    <div class="member-meta">
-                                        <h5>Samira tazi</h5>
-                                        <p>UX Consultant</p>
-                                        <a href="mail:hajarbenjaloune@gmail.com">hajarbenjaloune@gmail.com</a>
-                                    </div>
-
-                                </div>
-
-                                <ul class="ba-member-figures">
-                                    <li>
-                                        <p>Projets</p>
-                                        <h4>02</h4>
-                                    </li>
-                                    <li>
-                                        <p>Heures</p>
-                                        <h4>11</h4>
-                                    </li>
-                                    <li>
-                                        <p>Tâches</p>
-                                        <h4>95</h4>
-                                    </li>
-                                    <li>
-                                        <p>Taux de coût</p>
-                                        <h4>10 €</h4>
-                                    </li>
-                                </ul>
-
-                                <div class="ba-member-cart-footer">
-
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle me-2">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-eye.svg" alt="">
-                                    </a>
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle me-2">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-delete.svg" alt="">
-                                    </a>
-                                    <a href="" class="btn btn-xs ba-btn-secondary ba-btn-circle">
-                                        <img class="ba-xs-img" src="../../public/assets/icons/blue-date.svg" alt="">
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
+                        </table>
 
                     </div>
+                    <!--  times list  -->
                 </div>
                 <!-- membres -->
 

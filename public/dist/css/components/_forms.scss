@@ -305,8 +305,8 @@
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 15px;
-                line-height: 16px;
+                font-size: pxToVw(15);
+                line-height: pxToVw(16);
                 letter-spacing: 0.03em;
                 color: $blueText;
             }
@@ -352,20 +352,20 @@
             border: 1px solid rgba(16, 76, 186, 0.15);
             box-sizing: border-box;
             border-radius: 5px;
-            min-height: 49px;
+            min-height: pxToVw(49);
             .text {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 13px;
-                line-height: 21px;
+                font-size: pxToVw(13);
+                line-height: pxToVw(21);
                 /* or 162% */
                 align-items: center;
                 letter-spacing: 0.03em;
                 color: rgba(43, 62, 98, 0.65) !important;
                 margin: 0 !important;
                 height: 100%;
-                padding-left: 14px !important;
+                padding-left: pxToVw(14) !important;
                 display: flex !important;
             }
             .search {
@@ -384,11 +384,11 @@
                 background: #FFFFFF;
                 border: 1px solid rgba(43, 62, 98, 0.21);
                 box-sizing: border-box;
-                border-radius: 100px;
+                border-radius: pxToVw(100);
                 position: relative;
                 z-index: 99;
-                padding: 3px 4px;
-                padding-right: 30px;
+                padding: pxToVw(3);
+                padding-right: pxToVw(30);
                 &~.text {
                     display: none !important;
                 }
@@ -396,9 +396,10 @@
                     display: flex;
                     align-items: center;
                     .ba-comment-user {
-                        font-size: calc(12 * 0.0651111111vw);
-                        width: calc(30 * 0.0651111111vw);
-                        height: calc(30 * 0.0651111111vw);
+                        font-size: pxToVw(12);
+                        ;
+                        width: pxToVw(30);
+                        height: pxToVw(30);
                     }
                     .ba-user-meta {
                         .sm-text {
@@ -409,7 +410,7 @@
                 i.delete.icon {
                     /* float: right; */
                     position: absolute;
-                    right: 7px;
+                    right: pxToVw(7);
                     top: 50%;
                     transform: translateY(-50%);
                 }

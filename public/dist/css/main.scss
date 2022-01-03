@@ -455,7 +455,7 @@ body {
                     margin: 0;
                     padding: 0;
                     li {
-                        padding-left: 14px;
+                        padding-left: pxToVw(14);
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: normal;
@@ -565,7 +565,7 @@ body {
             span {
                 font-weight: bold;
                 font-size: pxToVw(21);
-                color: #104CBA;
+                color: $blue;
                 margin-right: pxToVw(5);
             }
         }
@@ -790,7 +790,7 @@ ba-dashboard-header-rightside {
         font-size: pxToVw(16);
         line-height: pxToVw(23);
         letter-spacing: 0.03em;
-        color: #104CBA;
+        color: $blue;
         margin-right: 5px;
     }
 }
@@ -822,7 +822,7 @@ ba-dashboard-header-rightside {
 }
 
 .ba-dashboard-body-cart {
-    padding-top: 15px;
+    padding-top: pxToVw(15);
 }
 
 .ba-dash-figure {
@@ -882,7 +882,7 @@ ba-dashboard-header-rightside {
 .ba-upcoming-deadlines-list {
     max-height: pxToVw(295);
     overflow: auto;
-    padding-right: 20px;
+    padding-right: pxToVw(20);
     .ba-upcoming-deadline-item {
         display: flex;
         align-items: center;

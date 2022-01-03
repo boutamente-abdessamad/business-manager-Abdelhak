@@ -7,7 +7,7 @@
     //         }
     //     }
     // }
-    margin-top: 50px;
+    margin-top: pxToVw(50);
     .fc {
         .fc-header-toolbar {
             width: calc(100% + 195px);
@@ -249,8 +249,8 @@
         height: 100%;
         justify-content: center;
         .ba-add-event-btn img {
-            width: 33px;
-            height: 33px;
+            width: pxToVw(33);
+            height: pxToVw(33);
         }
     }
     &:hover {
