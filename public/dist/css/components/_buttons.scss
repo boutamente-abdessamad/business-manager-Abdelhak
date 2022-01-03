@@ -116,6 +116,15 @@
     }
 }
 
+.ba-btn-purple {
+    background-color: $purple;
+    color: #FFFFFF;
+    &:hover {
+        background-color: $purpleDark;
+        color: #FFFFFF;
+    }
+}
+
 .ba-btn-default {
     background-color: transparent;
     color: $blueText;

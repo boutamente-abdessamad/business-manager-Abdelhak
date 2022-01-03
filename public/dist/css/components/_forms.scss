@@ -300,6 +300,16 @@
             &.ba-fc-right-icon-date::after {
                 background-image: url($iconsPath + '/blue-dark-date.svg');
             }
+            &.ba-fc-right-icon-currency::after {
+                content: attr(data-currency);
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                color: $blueText;
+            }
             textarea {
                 height: pxToVw(90);
             }

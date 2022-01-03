@@ -98,6 +98,11 @@
                 letter-spacing: 0.03em;
                 color: $blueText;
                 margin: 0;
+                &.ba-md-title {
+                    font-weight: bold;
+                    font-size: pxToVw(23);
+                    line-height: pxToVw(27);
+                }
                 &.ba-lg-title {
                     font-weight: bold;
                     font-size: pxToVw(33);
@@ -106,8 +111,8 @@
             }
             .ba-modal-close {
                 img {
-                    width: pxToVw(25);
-                    height: pxToVw(25);
+                    width: pxToVw(20);
+                    height: pxToVw(20);
                 }
             }
         }
