@@ -89,6 +89,26 @@
     }
 }
 
+.ba-btn-primary-fluorescent {
+    background-color: $blueFluorescent;
+    color: #FFFFFF;
+    border: 1px solid $blueFluorescent;
+    &:hover {
+        background-color: $blueFluorescent;
+        color: #FFFFFF;
+    }
+}
+
+.ba-btn-primary-sky {
+    background-color: $blueSky;
+    color: #FFFFFF;
+    border: 1px solid $blueSky;
+    &:hover {
+        background-color: $blue;
+        color: #FFFFFF;
+    }
+}
+
 .ba-btn-success {
     background-color: $green;
     color: #FFFFFF;
@@ -142,16 +162,6 @@
     &:hover {
         background-color: $orangeOpacity;
         color: $orange;
-    }
-}
-
-.ba-btn-blue-fluorescent {
-    background-color: $blueFluorescent;
-    color: #FFFFFF;
-    border: 1px solid $blueFluorescent;
-    &:hover {
-        background-color: $blueFluorescent;
-        color: #FFFFFF;
     }
 }
 

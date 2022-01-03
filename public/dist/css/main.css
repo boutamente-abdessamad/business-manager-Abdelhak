@@ -96,6 +96,7 @@
   box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
 }
 .ba-light-modal .ba-modal-head {
+  position: relative;
   padding-bottom: calc(15 * 0.0651111111vw);
   border-bottom: 1px solid rgba(43, 62, 98, 0.12);
   margin-bottom: calc(25 * 0.0651111111vw);
@@ -103,6 +104,10 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.ba-light-modal .ba-modal-head a.ba-modal-close {
+  position: absolute;
+  right: 0;
 }
 .ba-light-modal .ba-modal-head h2 {
   font-family: Roboto;
@@ -639,6 +644,26 @@
   color: #FFFFFF;
 }
 
+.ba-btn-primary-fluorescent {
+  background-color: #5DDDD3;
+  color: #FFFFFF;
+  border: 1px solid #5DDDD3;
+}
+.ba-btn-primary-fluorescent:hover {
+  background-color: #5DDDD3;
+  color: #FFFFFF;
+}
+
+.ba-btn-primary-sky {
+  background-color: #0093EB;
+  color: #FFFFFF;
+  border: 1px solid #0093EB;
+}
+.ba-btn-primary-sky:hover {
+  background-color: #104CBA;
+  color: #FFFFFF;
+}
+
 .ba-btn-success {
   background-color: #50CB93;
   color: #FFFFFF;
@@ -693,16 +718,6 @@
 .ba-btn-warning:hover {
   background-color: rgba(247, 180, 34, 0.11);
   color: #F7B422;
-}
-
-.ba-btn-blue-fluorescent {
-  background-color: #5DDDD3;
-  color: #FFFFFF;
-  border: 1px solid #5DDDD3;
-}
-.ba-btn-blue-fluorescent:hover {
-  background-color: #5DDDD3;
-  color: #FFFFFF;
 }
 
 .ba-btn-outline {
@@ -1522,7 +1537,7 @@ a.ba-add-doc-link i {
 }
 
 .ba-primary-sky-bg {
-  background-color: rgba(16, 76, 186, 0.65) !important;
+  background-color: #0093EB !important;
 }
 
 .ba-primary-sky-light-bg {
@@ -1574,7 +1589,7 @@ a.ba-add-doc-link i {
 }
 
 .ba-color-blue-sky {
-  color: rgba(16, 76, 186, 0.65) !important;
+  color: #0093EB !important;
 }
 
 .ba-color-green {
@@ -2754,7 +2769,7 @@ a.editable-click:hover {
   background: #104CBA;
 }
 .ba-left-dote.ba-left-dote-primary-sky:after {
-  background: rgba(16, 76, 186, 0.65);
+  background: #0093EB;
 }
 .ba-left-dote.ba-left-dote-warning:after {
   background: #F7B422;
@@ -4230,7 +4245,7 @@ span.quation-text {
   color: rgba(43, 62, 98, 0.65);
 }
 .ba-cart-menu-tabs ul li.active a {
-  color: rgba(16, 76, 186, 0.65);
+  color: #0093EB;
 }
 .ba-cart-menu-tabs ul li.active a::after {
   content: "";
@@ -4239,7 +4254,7 @@ span.quation-text {
   position: absolute;
   left: 0;
   bottom: 0px;
-  background: rgba(16, 76, 186, 0.65);
+  background: #0093EB;
   border-radius: 5px;
   z-index: 2;
 }
@@ -4354,7 +4369,7 @@ a.btn.ba-period-btn i {
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: rgba(16, 76, 186, 0.65);
+  color: #0093EB;
   margin: 0;
 }
 
@@ -4592,7 +4607,7 @@ a.btn.ba-period-btn i {
   justify-content: center;
   height: calc(91 * 0.0651111111vw);
   margin: 0 5px;
-  border-bottom: 4px solid rgba(16, 76, 186, 0.65);
+  border-bottom: 4px solid #0093EB;
   transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .day-box > h2 {
@@ -4652,7 +4667,7 @@ a.btn.ba-period-btn i {
   justify-content: center;
   height: calc(91 * 0.0651111111vw);
   margin: 0 5px;
-  border-bottom: 4px solid rgba(16, 76, 186, 0.65);
+  border-bottom: 4px solid #0093EB;
   transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .week-box > h2 {
@@ -5107,7 +5122,7 @@ a.ba-add-new-time-btn img {
   line-height: calc(18 * 0.0651111111vw);
   /* or 177% */
   text-align: right;
-  color: rgba(16, 76, 186, 0.65);
+  color: #0093EB;
   margin: 0;
   margin-bottom: calc(10 * 0.0651111111vw);
 }
@@ -5159,6 +5174,23 @@ a.ba-add-new-time-btn img {
 
 .ba-project-invoice-warpp {
   margin-top: calc(53 * 0.0651111111vw);
+}
+
+.ba-profile-picture-box {
+  width: 93px;
+  position: relative;
+  height: 99px;
+  margin: 30px auto;
+}
+.ba-profile-picture-box .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.ba-profile-picture-box img.ba-profile-picture {
+  width: 93px;
+  height: 93px;
+  border-radius: 50%;
 }
 
 /* tables  */
@@ -6833,11 +6865,11 @@ ba-dashboard-header-rightside {
   font-size: calc(14 * 0.0651111111vw);
   line-height: calc(23 * 0.0651111111vw);
   letter-spacing: 0.03em;
-  color: rgba(16, 76, 186, 0.65);
+  color: #0093EB;
 }
 .ba-date-dropdown i {
   font-size: calc(17 * 0.0651111111vw);
-  color: rgba(16, 76, 186, 0.65);
+  color: #0093EB;
 }
 
 .ba-operations-cat {

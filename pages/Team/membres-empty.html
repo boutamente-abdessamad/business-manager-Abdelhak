@@ -35,7 +35,7 @@
     <!-- editor wysiwyg -->
     <link rel="stylesheet" href="../../libs/froala_editor/froala_editor.pkgd.min.css">
     <!-- semantic ui  -->
-    <link rel="stylesheet" type="text/css" class="ui" href="../../../libs/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="../../libs/semantic/semantic.min.css">
     <!-- x-editable -->
     <link rel="stylesheet" href="../../public/dist/css/main.css">
     <!-- end skin style  -->
@@ -94,7 +94,7 @@
                     <button class="btn ba-user-profile-nav-toggle" type="button" id="userProfileDropdownMenu" data-mdb-toggle="dropdown" aria-expanded="false">
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                         <span>Mohamed Amine</span>
-                        <img src="../../public/assets/images/avatars/user-1.png" alt="">
+                        <img src="../../public/assets/images/avatars/user-6.png" alt="">
                       </button>
                     <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="userProfileDropdownMenu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -193,25 +193,15 @@
             <!-- header actions  -->
             <div class="ba-cart-header-actions gray-bb pb-4">
 
-                <div class="ba-d-f-center">
-                    <div class="ba-icon-lg ba-primary-light-bg me-3">
-                        <img src="../../public/assets/icons/blue-pack.svg" alt="">
-                    </div>
-                    <div class="ba-page-head-title">
-                        <h3>Projets site web</h3>
-                        <p>21 nov. 2021 - 27 nov. 2021</p>
-                    </div>
+                <div class="ba-page-head-title">
+                    <h3>Membes</h3>
                 </div>
 
                 <!-- group buttons  -->
                 <div class="ba-group-buttons p-0">
-                    <a href="" class="btn ba-btn-primary-fluorescent ba-btn-round me-3">
-                        <span>Dupliquer</span>
-                        <img src="../../public/assets/icons/light-duplicate.svg" alt="">
-                    </a>
-                    <a href="" class="btn ba-btn-purple ba-btn-round">
-                        <span>Modifier</span>
-                        <img src="../../public/assets/icons/light-edit.svg" alt="">
+                    <a href="" class="btn ba-btn-primary-sky ba-btn-round me-3" data-mdb-toggle="modal" data-mdb-target="#add_user_modal">
+                        <span>Ajouter un Membre</span>
+                        <img src="../../public/assets/icons/light-plus.svg" alt="">
                     </a>
                 </div>
                 <!-- group buttons  -->
@@ -219,99 +209,11 @@
             </div>
             <!-- header actions  -->
 
-            <div class="light-blue-container ba-radius-5 p-3">
 
-                <div class="ba-cart ba-project-client-cart">
-
-                    <div class="row align-items-center">
-
-                        <div class="col-4">
-                            <div class="ba-pc-cart-col gray-br">
-                                <div class="ba-user-profile">
-                                    <div class="ba-comment-user ba-purple-bg text-white me-2">
-                                        S
-                                    </div>
-                                    <div class="ba-user-meta">
-                                        <h5>Client ALAMI</h5>
-                                        <p>client.alami@gmail.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-8">
-
-                            <div class="row  align-items-center">
-
-                                <div class="col-2">
-                                    <div class="ba-pc-cart-col  gray-br">
-                                        <p class="gray-global-text ba-ui-bold">Facturable</p>
-                                        <h3 class="lg-text"> Oui</h3>
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <div class="ba-pc-cart-col  gray-br">
-                                        <div class="ba-d-f-center mb-2">
-                                            <img class="me-2 xs-img" src="../../public/assets/icons/blue-calculator.svg" alt="">
-                                            <p class="md-text d-flex me-3"><span class="ba-ui-bold ba-color-purple">300 / </span> <span class="gray-global-text">1000 €</span></p>
-                                            <span class="ba-status  ba-btn- status-sm  ba-status-danger  ba-radius-5">13 € restants</span>
-                                        </div>
-                                        <div class="ba-progress-bar-warpp d-flex align-items-center">
-                                            <span class="sm-text ba-color-red">30%</span>
-                                            <div class="ba-progress-bar-md ba-secondary-bg ms-1">
-                                                <span style="width: 30%;" class="ba-danger-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <div class="ba-pc-cart-col">
-                                        <div class="ba-d-f-center mb-2">
-                                            <img class="me-2 xs-img" src="../../public/assets/icons/blue-timer.svg" alt="">
-                                            <p class="md-text d-flex me-3"><span class="ba-ui-bold ba-color-purple">32 / </span><span class="gray-global-text">45 Heurs</span></p>
-                                            <span class="ba-status  ba-btn- status-sm  ba-status-success ba-radius-5">13 jours restants</span>
-                                        </div>
-                                        <div class="ba-progress-bar-warpp d-flex align-items-center">
-                                            <span class="sm-text ba-color-green">70%</span>
-                                            <div class="ba-progress-bar-md ba-secondary-bg ms-1">
-                                                <span style="width: 70%;" class="ba-success-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
 
             <!-- show-area  -->
             <div class="show-area pb-5">
-                <div class="ba-d-f-center justify-content-between gray-bb my-5">
-                    <!-- tabs  -->
-                    <div class="ba-main-tabs ba-noborder">
 
-                        <ul>
-                            <li class="active"><a href="" class="btn">Membres</a></li>
-                            <li><a href="" class="btn">Suivi du temps</a></li>
-                            <li><a href="" class="btn">Facture</a></li>
-                            <li><a href="" class="btn">Devis</a></li>
-                            <li><a href="" class="btn">Note de frais</a></li>
-                            <li><a href="" class="btn">Rapports</a></li>
-                        </ul>
-
-                    </div>
-                    <a href="java" class="ba-date-between date-range">
-                        <p> 15 nov. 2021 - 21 Dec. 2021</p>
-                        <img src="../../public/assets/icons/blue-date.svg" alt="">
-                    </a>
-                    <!-- tabs  -->
-
-                </div>
                 <div class="datatable-filters-container">
 
                     <div class="datatable-filters-leftside">
@@ -329,7 +231,7 @@
                         <!-- user profile  -->
                         <div class="ba-user-profile-nav dropdown">
                             <button class="btn ba-btn-default me-3" type="button" id="orderByDropdown" data-mdb-toggle="dropdown" aria-expanded="false">
-                                    <img src="../../../public/assets/icons/gray-options.svg" alt="">
+                                    <img src="../../public/assets/icons/gray-options.svg" alt="">
                                     <span>Trier par</span>
                                 </button>
                             <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="orderByDropdown">
@@ -348,33 +250,31 @@
                         </div>
 
                         <button class="btn ba-btn-default me-3">
-                                <img src="../../../public/assets/icons/gray-export.svg" alt="">
+                                <img src="../../public/assets/icons/gray-export.svg" alt="">
                                 <span>Exporter</span>
                             </button>
 
                         <div class="filter-input right-icon input-search me-3">
                             <input type="text" name="date" placeholder="Rechercher par....." value="">
                         </div>
-                        <a href="" class="btn ba-btn-outline ba-btn-outline-primary" data-mdb-toggle="modal" data-mdb-target="#add_user_modal">
-                            <span>Ajouter un membre</span>
-                            <img src="../../public/assets/icons/blue-plus.svg" alt="">
-                        </a>
 
                     </div>
 
                 </div>
 
-
-                <div class="ba-no-record">
-
-                    <img src="../../public/assets/illustrations/no-record.svg" alt="">
-
-                    <a href="" class="btn ba-btn-success" data-mdb-toggle="modal" data-mdb-target="#add_user_modal">
-                        <span>Ajouter un membre</span>
-                        <img src="../../public/assets/icons/light-plus.svg" alt="">
-                    </a>
-
+                <!-- membres -->
+                <div class="ba-membres-warpp">
+                    <!-- zone empty  -->
+                    <div class="ba-zone-empty">
+                        <img src="../../public/assets/illustrations/team.svg" alt="">
+                        <a href="" class="btn ba-link ba-ui-bold d-block" data-mdb-toggle="modal" data-mdb-target="#add_user_modal">
+                            <span>Ajouter un membre</span>
+                            <i class="fa fa-plus ms-2" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <!-- zone empty  -->
                 </div>
+                <!-- membres -->
 
             </div>
             <!-- show-area  -->
@@ -395,11 +295,11 @@
             <div class="modal-content">
                 <form>
                     <!-- head  -->
-                    <div class="ba-modal-head py-3">
-                        <h2 class="ba-md-title">Ajouter un membre</h2>
+                    <div class="ba-modal-head py-4 justify-content-center">
+                        <h2 class="ba-md-title text-center ba-md-title">Ajouter un membre</h2>
 
                         <a href="" class="ba-modal-close" data-mdb-dismiss="modal">
-                            <img src="../../../public/assets/icons/gray-cross.svg" alt="">
+                            <img src="../../public/assets/icons/gray-cross.svg" alt="">
                         </a>
                     </div>
                     <!-- body  -->
@@ -407,95 +307,131 @@
 
                         <form>
 
-                            <div class="row align-items-center">
-
-                                <div class="col-7">
-                                    <div class="ba-semantic-tag-dropdown-warpp ba-form-warpp">
-                                        <label>
-                                            vous consultez le calendrier de
-                                        </label>
-                                        <div class="ui fluid multiple search selection dropdown">
-                                            <input type="hidden" name="country">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">Select Country</div>
-                                            <div class="menu">
-                                                <!-- item  -->
-                                                <div class="ba-user-dropdown-item item" data-value="Hajar Ben jaloun">
-                                                    <div class="ba-user-dropdown-content">
-                                                        <div class="ba-comment-user ba-success-bg text-white me-2">
-                                                            H
-                                                        </div>
-                                                        <div class="ba-user-meta">
-                                                            <p class="md-text">Hajar Ben jaloun</p>
-                                                            <p class="sm-text ba-color-gray-light">UX Consultant</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- item  -->
-                                                <div class="ba-user-dropdown-item item" data-value="Simohamed Alami">
-                                                    <div class="ba-user-dropdown-content">
-                                                        <div class="ba-comment-user ba-warning-bg text-white me-2">
-                                                            S
-                                                        </div>
-                                                        <div class="ba-user-meta">
-                                                            <p class="md-text">Simohamed Alami</p>
-                                                            <p class="sm-text ba-color-gray-light">UX Consultant</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- item  -->
-                                                <div class="ba-user-dropdown-item item" data-value="Zakaria Alami">
-                                                    <div class="ba-user-dropdown-content">
-                                                        <div class="ba-comment-user ba-danger-bg text-white me-2">
-                                                            Z
-                                                        </div>
-                                                        <div class="ba-user-meta">
-                                                            <p class="md-text">Zakaria Alami</p>
-                                                            <p class="sm-text ba-color-gray-light">UX Consultant</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- item  -->
-                                                <div class="ba-user-dropdown-item item" data-value="Simohamed Alami">
-                                                    <div class="ba-user-dropdown-content">
-                                                        <div class="ba-comment-user ba-warning-bg text-white me-2">
-                                                            S
-                                                        </div>
-                                                        <div class="ba-user-meta">
-                                                            <p class="md-text">Simohamed Alami</p>
-                                                            <p class="sm-text ba-color-gray-light">UX Consultant</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- item  -->
-                                                <div class="ba-user-dropdown-item item" data-value="Zakaria Alami">
-                                                    <div class="ba-user-dropdown-content">
-                                                        <div class="ba-comment-user ba-danger-bg text-white me-2">
-                                                            Z
-                                                        </div>
-                                                        <div class="ba-user-meta">
-                                                            <p class="md-text">Zakaria Alami</p>
-                                                            <p class="sm-text ba-color-gray-light">UX Consultant</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
+                            <div class="ba-profile-picture-box">
+                                <img class="ba-profile-picture" src="../../public/assets/images/avatars/no-one.svg" alt="">
+                                <label for="ba_upload_profile_pic" class="btn ba-btn-primary ba-btn-circle">
+                                    <input type="file" class="d-none" name="" id="ba_upload_profile_pic">
+                                    <img src="../../public/assets/icons/light-add-picture.svg" alt="">
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
                                     <!-- input  -->
                                     <div class="ba-form-warpp">
-                                        <label for="" class="ba-form-label">Coût horraire</label>
-                                        <div class="ba-form-control ba-fc-right-icon-currency" data-currency="€">
-                                            <input type="text" placeholder="Coût horraire" id="">
+                                        <label for="" class="ba-form-label">Nom de famille</label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Nom de famille" id="">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-2">
-                                    <p class="sm-text gray-global-text">Par heure</p>
+                                <div class="col-6">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Prénom</label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Prénom" id="">
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="col-6">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Email</label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Email" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Téléphone</label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Téléphone" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Adresse e-mail</label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Adresse e-mail" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="row align-items-center">
+                                        <div class="col-8">
+                                            <!-- input  -->
+                                            <div class="ba-form-warpp">
+                                                <label for="" class="ba-form-label">Coût horraire</label>
+                                                <div class="ba-form-control ba-fc-right-icon-currency" data-currency="€">
+                                                    <input type="text" placeholder="Coût horraire" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="sm-text gray-global-text">Par heure</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Fonction</label>
+                                        <div class="ba-select-warpper w-100 mb-0  ba-form-control-style ">
+                                            <select id="" class="selectpicker ba-select">
+                                                <option value="Fonction">Fonction </option>
+                                                <option value="Fonction">Fonction </option>
+                                                <option value="Fonction">Fonction </option>
+                                                <option value="Fonction">Fonction </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Departement</label>
+                                        <div class="ba-select-warpper w-100 mb-0  ba-form-control-style ">
+                                            <select id="" class="selectpicker ba-select">
+                                                <option value="Departement">Departement </option>
+                                                <option value="Departement">Departement </option>
+                                                <option value="Departement">Departement </option>
+                                                <option value="Departement">Departement </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Ville</label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Ville" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Pays</label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Pays" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp">
+                                        <label for="" class="ba-form-label">Code postal</label>
+                                        <div class="ba-form-control">
+                                            <input type="text" placeholder="Code postal" id="">
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </form>
@@ -507,7 +443,7 @@
                             <span>Annuler</span>
                         </button>
                         <button type="submit" class="btn ba-btn-success">
-                                <span>Enregistrer</span>
+                                <span>Ajouter</span>
                         </button>
 
                     </div>
@@ -556,7 +492,7 @@
     <!-- editor wysiwyg -->
     <script src="../../libs/froala_editor/froala_editor.pkgd.min.js"></script>
     <!-- semantic ui  -->
-    <script src="../../../libs/semantic/semantic.min.js"></script>
+    <script src="../../libs/semantic/semantic.min.js"></script>
     <!-- uw scripts -->
     <script src="../../public/dist/js/main.js"></script>
     <script src="../../public/dist/js/instances.js"></script>

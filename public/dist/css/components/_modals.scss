@@ -84,10 +84,15 @@
             box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
         }
         .ba-modal-head {
+            position: relative;
             padding-bottom: pxToVw(15);
             border-bottom: 1px solid rgba(43, 62, 98, 0.12);
             margin-bottom: pxToVw(25);
             @include flexCenterBetween();
+            a.ba-modal-close {
+                position: absolute;
+                right: 0;
+            }
             h2 {
                 font-family: Roboto;
                 font-style: normal;

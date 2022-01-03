@@ -4021,3 +4021,20 @@ a.ba-add-new-time-btn {
 .ba-project-invoice-warpp {
     margin-top: pxToVw(53);
 }
+
+.ba-profile-picture-box {
+    width: 93px;
+    position: relative;
+    height: 99px;
+    margin: 30px auto;
+    .btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    img.ba-profile-picture {
+        width: 93px;
+        height: 93px;
+        border-radius: 50%;
+    }
+}
