@@ -345,3 +345,74 @@
         height: pxToVw(235);
         width: 100%;
     }
+    
+    .ba-semantic-tag-dropdown-warpp {
+        .ui.fluid {
+            background: rgba(245, 248, 253, 0.65);
+            border: 1px solid rgba(16, 76, 186, 0.15);
+            box-sizing: border-box;
+            border-radius: 5px;
+            min-height: 49px;
+            .text {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 21px;
+                /* or 162% */
+                align-items: center;
+                letter-spacing: 0.03em;
+                color: rgba(43, 62, 98, 0.65) !important;
+                margin: 0 !important;
+                height: 100%;
+                padding-left: 14px !important;
+                display: flex !important;
+            }
+            .search {
+                height: 100%;
+                margin: 0 !important;
+            }
+            .dropdown.icon {
+                top: 50%;
+                transform: translateY(-50%);
+                float: right;
+                color: rgba(43, 62, 98, 0.65);
+                padding: 0;
+                margin: 0;
+            }
+            a.ui.label {
+                background: #FFFFFF;
+                border: 1px solid rgba(43, 62, 98, 0.21);
+                box-sizing: border-box;
+                border-radius: 100px;
+                position: relative;
+                z-index: 99;
+                padding: 3px 4px;
+                padding-right: 30px;
+                &~.text {
+                    display: none !important;
+                }
+                .ba-user-dropdown-content {
+                    display: flex;
+                    align-items: center;
+                    .ba-comment-user {
+                        font-size: calc(12 * 0.0651111111vw);
+                        width: calc(30 * 0.0651111111vw);
+                        height: calc(30 * 0.0651111111vw);
+                    }
+                    .ba-user-meta {
+                        .sm-text {
+                            display: none;
+                        }
+                    }
+                }
+                i.delete.icon {
+                    /* float: right; */
+                    position: absolute;
+                    right: 7px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }

@@ -81,6 +81,7 @@
     .ba-light-modal {
         .modal-content {
             padding: pxToVw(15) pxToVw(30);
+            box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
         }
         .ba-modal-head {
             padding-bottom: pxToVw(15);
