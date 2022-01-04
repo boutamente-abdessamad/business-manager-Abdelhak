@@ -2929,6 +2929,15 @@ a.editable-click:hover {
   border-radius: 50%;
 }
 
+.ba-setting-block-head {
+  background: #F1F5FB;
+  border-radius: 9px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* tables  */
 /* tables  */
 /* pagination elements  */
@@ -3973,6 +3982,16 @@ body {
   border-radius: 5px;
   right: 0;
   display: block;
+}
+.ba-main-tabs.ba-setting ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.ba-main-tabs.ba-setting ul li a {
+  padding: calc(20 * 0.0651111111vw) calc(20 * 0.0651111111vw);
 }
 
 .ba-group-buttons {
