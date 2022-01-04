@@ -187,7 +187,7 @@
         <div class="ba-main-cart h-100vh">
 
 
-            <div class="row h-100 align-items-center">
+            <div class="row h-100 align-items-center g-5">
 
                 <div class="col-4 text-center">
                     <a href="" class="btn ba-btn-success" data-mdb-toggle="modal" data-mdb-target="#alert1_modal">Alert 1 click here</a>
@@ -196,10 +196,11 @@
                     <a href="" class="btn ba-btn-primary" data-mdb-toggle="modal" data-mdb-target="#alert2_modal">Alert 2 click here</a>
                 </div>
                 <div class="col-4 text-center">
-                    <a href="" class="btn ba-btn-success" data-mdb-toggle="modal" data-mdb-target="#alert3_modal">Alert 3 click here</a>
+                    <a href="" class="btn ba-btn-purple" data-mdb-toggle="modal" data-mdb-target="#alert3_modal">Alert 3 click here</a>
                 </div>
-
-
+                <div class="col-4 text-center">
+                    <a href="" class="btn ba-btn-danger" data-mdb-toggle="modal" data-mdb-target="#alert4_modal">Alert 4 Envoyer les informations</a>
+                </div>
 
 
             </div>
@@ -251,6 +252,31 @@
                     </div>
                     <h2>Merci !</h2>
                     <p>Votre email a bien été <br> envoyé </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade ba-modal-alert" id="alert4_modal" tabindex="-1" aria-labelledby="alert4_modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="ba-alert ba-alert-danger">
+                    <div class="bar-alert-icon">
+                        <img src="../public/assets/icons/red-password.svg" alt="">
+                    </div>
+                    <h2>Envoyer les informations de<br> connexion ? </h2>
+                    <p> <img src="../public/assets/icons/gray-send-mail.svg" alt=""> simo***@gmail.com</p>
+                    <form class="row g-2 w-100 mt-5">
+                        <div class="col-6">
+                            <button class="w-100 btn ba-btn-default justify-content-center">
+                                Non
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button class="w-100 btn ba-btn-danger justify-content-center">
+                                Oui
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

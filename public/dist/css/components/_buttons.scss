@@ -28,6 +28,10 @@
     img {
         width: pxToVw(13);
         height: pxToVw(13);
+        &.lg-img {
+            width: pxToVw(18);
+            height: pxToVw(18);
+        }
     }
     &>img~span {
         margin-left: pxToVw(10);

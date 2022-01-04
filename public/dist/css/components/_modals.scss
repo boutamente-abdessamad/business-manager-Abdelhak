@@ -47,21 +47,34 @@
             letter-spacing: 0.03em;
             color: $blueText;
             margin: 0;
+            img {
+                margin-right: pxToVw(10);
+                width: pxToVw(36);
+                height: pxToVw(18px);
+            }
         }
         &.ba-alert-primary {
             h2 {
-                color: #737CD2;
+                color: $purple;
             }
             .bar-alert-icon {
-                background: rgba(115, 124, 210, 0.15);
+                background: $purpleOpacity;
             }
         }
         &.ba-alert-success {
             h2 {
-                color: #50CB93;
-                .bar-alert-icon {
-                    background: rgba(80, 203, 147, 0.15);
-                }
+                color: $green;
+            }
+            .bar-alert-icon {
+                background: $greenTbg;
+            }
+        }
+        &.ba-alert-danger {
+            h2 {
+                color: $red;
+            }
+            .bar-alert-icon {
+                background: $redTbg;
             }
         }
     }
@@ -158,5 +171,5 @@
     .ba-add-time-modal .modal-content {
         box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
         border-radius: 11px;
-        padding: 40px;
+        padding: pxToVw(40);
     }
