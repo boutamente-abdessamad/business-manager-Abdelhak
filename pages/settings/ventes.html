@@ -195,9 +195,9 @@
             <div class="ba-main-tabs ba-setting">
 
                 <ul>
-                    <li class="active"><a href="" class="btn">Informations</a></li>
+                    <li><a href="" class="btn">Informations</a></li>
                     <li><a href="" class="btn">Notifications</a></li>
-                    <li><a href="" class="btn">Achats</a></li>
+                    <li class="active"><a href="" class="btn">Achats</a></li>
                     <li><a href="" class="btn">Ventes</a></li>
                     <li><a href="" class="btn">Email et templates</a></li>
                     <li><a href="" class="btn">Equipe</a></li>
@@ -208,222 +208,142 @@
 
             </div>
 
+
             <div class="ba-setting-block-head mt-5">
 
                 <div class="ba-d-f-center">
                     <div class="ba-icon-md bg-white me-3">
-                        <img src="../../public/assets/icons/blue-circle-user.svg" alt="">
+                        <img src="../../public/assets/icons/blue-customize.svg" alt="">
                     </div>
-                    <h2 class="lg-text">Mon compte</h2>
+                    <h2 class="lg-text">Style de facture</h2>
                 </div>
 
             </div>
+            <form>
+                <div class="ba-settings-invoice-style">
+                    <div class="row">
 
-            <div class="ba-outline-container mt-5">
+                        <div class="col-3">
 
-                <div class="row align-items-center">
+                            <label class="dotted-upload-zone" for="upload_logo_invoice">
+                            <p>Faites glaiser votre <br> logo ici ou </p>
+                            <input type="file" name="" id="upload_logo_invoice">
+                            <a href="">Selectionner un fichier</a>
+                        </label>
+                        </div>
 
-                    <div class="col-6">
-                        <div class="ba-d-f-center">
-                            <div class="ba-mpc-profile me-3 ">
-                                <div class="ba-profile-picture-box m-0 ui-crown ui-crown-bottom-right">
-                                    <img class="ba-profile-picture" src="../../public/assets/images/avatars/user-2.png" alt="">
+                        <div class="col-4">
+                            <!-- input  -->
+                            <div class="ba-form-warpp mb-0">
+                                <label for="" class="ba-form-label">Choisissez un police</label>
+                                <div class="ba-form-control">
+                                    <input type="text" placeholder="Choisissez un police" id="">
                                 </div>
                             </div>
-                            <div class="ba-mpc-meta">
-                                <h2>Abdssamad Jazouli</h2>
-                                <p>Propriétaire du compte</p>
+                        </div>
+
+                        <div class="col-5">
+                            <div class="ba-form-warpp mb-0">
+                                <label class="ba-form-label mb-3">Choisissez une couleur de theme</label>
+                                <!-- invoices models slider  -->
+                                <div class="ba-colors-slider-warpper">
+                                    <div class="ba-colors-slider">
+                                        <label for="color2" class="color-check-box">
+                                        <input type="checkbox" name="color" id="color2">
+                                        <span style="background-color: #51D297;"></span>
+                                    </label>
+                                        <label for="color3" class="color-check-box">
+                                        <input type="checkbox" name="color" id="color3">
+                                        <span style="background-color: #FFC02E;"></span>
+                                    </label>
+                                        <label for="color4" class="color-check-box">
+                                        <input type="checkbox" name="color" id="color4">
+                                        <span style="background-color: #EC8C6A;"></span>
+                                    </label>
+                                        <label for="color5" class="color-check-box">
+                                        <input type="checkbox" name="color" id="color5">
+                                        <span style="background-color: #9F8FDC;"></span>
+                                    </label>
+                                        <label for="color6" class="color-check-box">
+                                        <input type="checkbox" name="color" id="color6">
+                                        <span style="background-color: #E86161;"></span>
+                                    </label>
+                                        <label for="color7" class="color-check-box">
+                                        <span style="background-color: #EC6DA0;"></span>
+                                        <input type="checkbox" name="color" id="color7">
+                                    </label>
+                                        <label for="color8" class="color-check-box">
+                                        <input type="checkbox" name="color" id="color8">
+                                        <span style="background-color: #EC6DA0;"></span>
+                                    </label>
+                                        <label for="color9" class="color-check-box">
+                                        <input type="checkbox" name="color" id="color9">
+                                        <span style="background-color: #71B2CC;"></span>
+                                    </label>
+                                    </div>
+                                    <a href="" class="ba-add-color">
+                                        <img src="../../public/assets/icons/blue-plus.svg" alt="">
+                                    </a>
+                                    <div class="ba-slider-angles">
+                                        <a href="" class="ba-angle-slide-left btn colors-slider-prev">
+                                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="" class="ba-angle-slide-right btn colors-slider-next">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <a href="" class="lg-text ba-color-blue-sky">abadsamajazouli@gmail.com</a>
-                    </div>
-                    <div class="col-2 text-end">
-                        <a href="" class="btn ba-btn-primary px-3">
-                            <img class="text-end lg-img" src="../../public/assets/icons/light-edit.svg" alt="">
-                        </a>
-                    </div>
 
+                    </div>
                 </div>
 
-            </div>
 
-            <div class="ba-setting-block-head mt-5">
-
-                <div class="ba-d-f-center">
-                    <div class="ba-icon-md bg-white me-3">
-                        <img src="../../public/assets/icons/blue-pack.svg" alt="">
-                    </div>
-                    <h2 class="lg-text">Entreprise</h2>
-                </div>
-
-            </div>
-
-            <div class="mt-5">
-                <form>
+                <div class="light-blue-container ba-radius-5 ba-invoice-styles-container">
 
                     <div class="row">
 
-                        <div class="col-6">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Raison sociale</label>
-                                <div class="ba-form-control">
-                                    <input type="text" placeholder="Raison sociale" id="">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-6">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Statut juridique</label>
-                                <div class="ba-form-control">
-                                    <input type="text" placeholder="Statut juridique" id="">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-12">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Adresse</label>
-                                <div class="ba-form-control">
-                                    <input type="text" placeholder="Adresse" id="">
-                                </div>
-                            </div>
-
+                        <div class="col-4">
+                            <label for="model_1" class="invoice-style-model">
+                                <input type="checkbox" class="d-none" name="" id="model_1">
+                                <img src="../../public/assets/illustrations/invoice-style-model.svg" alt="">
+                                <span style="background-color:#E7EDF8"></span>
+                            </label>
+                            <p class="invoice-style-model-name">Classique</p>
                         </div>
                         <div class="col-4">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Code postal</label>
-                                <div class="ba-form-control">
-                                    <input type="text" placeholder="Code postal" id="">
-                                </div>
-                            </div>
-
+                            <label for="model_2" class="invoice-style-model">
+                                <input type="checkbox" class="d-none" name="" id="model_2">
+                                <img src="../../public/assets/illustrations/invoice-style-model.svg" alt="">
+                                <span style="background-color:#FED198"></span>
+                            </label>
+                            <p class="invoice-style-model-name">Détaillée</p>
                         </div>
                         <div class="col-4">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Ville</label>
-                                <div class="ba-form-control">
-                                    <input type="text" placeholder="Ville" id="">
-                                </div>
-                            </div>
-
+                            <label for="model_3" class="invoice-style-model">
+                                <input type="checkbox" class="d-none" name="" id="model_3">
+                                <img src="../../public/assets/illustrations/invoice-style-model.svg" alt="">
+                                <span style="background-color:#737CD2"></span>
+                            </label>
+                            <p class="invoice-style-model-name">Personnalisée</p>
                         </div>
-                        <div class="col-4">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Pays</label>
-                                <div class="ba-select-warpper w-100 mb-0  ba-form-control-style ">
-                                    <select id="" class="selectpicker ba-select">
-                                    <option value="Pays">Pays </option>
-                                    <option value="Pays">Pays </option>
-                                    <option value="Pays">Pays </option>
-                                    <option value="Pays">Pays </option>
-                                </select>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-4">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">ICE</label>
-                                <div class="ba-form-control">
-                                    <input type="text" placeholder="ICE" id="">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-4">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">RC</label>
-                                <div class="ba-form-control">
-                                    <input type="text" placeholder="RC" id="">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-4">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Identifiant fiscal</label>
-                                <div class="ba-form-control">
-                                    <input type="text" placeholder="Identifiant fiscal" id="">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-4">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Capital social</label>
-                                <div class="ba-form-control">
-                                    <input type="text" placeholder="Capital social" id="">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-4">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Régime de TVA</label>
-                                <div class="ba-select-warpper w-100 mb-0  ba-form-control-style ">
-                                    <select id="" class="selectpicker ba-select">
-                                    <option value="Débit">Débit </option>
-                                    <option value="Encaissement">Encaissement </option>
-                                </select>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-4">
-
-                            <!-- input  -->
-                            <div class="ba-form-warpp">
-                                <label for="" class="ba-form-label">Périodicité TVA</label>
-                                <div class="ba-select-warpper w-100 mb-0  ba-form-control-style ">
-                                    <select id="" class="selectpicker ba-select">
-                                    <option value="Mensuel">Mensuel </option>
-                                    <option value="Trimestriel">Trimestriel </option>
-                                </select>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-12 text-end">
-                            <button type="button" class="btn ba-btn-default me-2">
-                            <span>Annuler</span>
-                        </button>
-                            <button type="submit" class="btn ba-btn-success">
-                                <span>Enregistrer</span>
-                        </button>
-                        </div>
-
 
                     </div>
 
-                </form>
-            </div>
 
 
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn ba-btn-success">
+                                <span>Enregistrer</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
 
 
         </div>

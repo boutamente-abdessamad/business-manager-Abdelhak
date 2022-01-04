@@ -183,6 +183,10 @@ a.ba-add-doc-link {
     font-weight: bold !important;
 }
 
+.ba-ui-normal {
+    font-weight: normal !important;
+}
+
 .ba-user-profile-nav.dropdown {
     display: flex;
 }
@@ -900,6 +904,19 @@ a.ba-cart-header-back {
     padding: pxToVw(15) 0px;
     h5 {
         @include normalText($blueText);
+        margin-bottom: 0;
+    }
+}
+
+.ba-block-desc {
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: pxToVw(17);
+        line-height: pxToVw(29);
+        letter-spacing: 0.03em;
+        color: $blueText;
         margin-bottom: 0;
     }
 }
@@ -1703,13 +1720,60 @@ a.editable-click:hover {
         height: pxToVw(21);
         border-radius: 50%;
     }
+    &.ui-crown-bottom-right {
+        &::after {
+            left: auto;
+            right: 5px;
+            top: auto;
+            bottom: 10px;
+        }
+    }
 }
 
 .ba-setting-block-head {
     background: #F1F5FB;
     border-radius: 9px;
-    padding: 20px;
+    padding: pxToVw(20);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.ba-outline-container {
+    border: 1px solid $blueLight;
+    border-radius: 5px;
+    padding: pxToVw(30);
+}
+
+.ba-underline-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #104CBA;
+    border-bottom: 1px solid rgba(16, 76, 186, 0.65);
+    margin-bottom: 30px;
+}
+
+a.ba-add-color {
+    width: pxToVw(27);
+    height: pxToVw(27);
+    border-radius: 50%;
+    display: flex;
+    border: 2px solid #104CBA;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 12px;
+    }
+}
+
+.ba-settings-invoice-style {
+    .ba-colors-slider-warpper .ba-colors-slider {
+        width: calc(100% - 120px);
+    }
 }
