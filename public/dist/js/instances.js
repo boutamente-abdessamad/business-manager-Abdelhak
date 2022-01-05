@@ -61,6 +61,11 @@ var initPlugins = function() {
             codeMirror: false,
             tabSize: 4
         })
+    // editor wysiwyg
+    var editor2 = new FroalaEditor('.editor-wysiwyg', {
+            codeMirror: false,
+            tabSize: 4
+        })
         // daterangepicker
     if ($('.date-range').length) {
         $('.date-range').daterangepicker({

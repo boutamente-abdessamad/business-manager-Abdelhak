@@ -247,6 +247,7 @@
         .ba-form-control {
             position: relative;
             input,
+            select,
             textarea {
                 background: rgba(245, 248, 253, 0.65);
                 border: 1px solid rgba(16, 76, 186, 0.15);
@@ -268,6 +269,9 @@
                  ::placeholder {
                     color: $blueLight;
                 }
+            }
+            select {
+                padding-right: pxToVw(0);
             }
             textarea {
                 padding: pxToVw(10) pxToVw(20);

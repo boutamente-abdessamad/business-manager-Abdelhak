@@ -239,7 +239,7 @@
                                         <input type="text" class="bg-white" placeholder="Client20223.9955@domain.com" id="">
                                     </div>
                                 </div>
-                                <button type="submit" class="btn ba-btn-primary p-3">
+                                <button type="button" class="btn ba-btn-primary p-3" data-mdb-toggle="modal" data-mdb-target="#add_mail_modal">
                                     <img class="lg-img" src="../../public/assets/icons/light-edit.svg" alt="">
                                 </button>
                             </div>
@@ -262,7 +262,85 @@
 
             </div>
 
+            <div class="ba-outline-container mt-5">
 
+                <div class="row my-4 justify-content-center">
+                    <div class="col-10">
+
+                        <div class="row g-5">
+                            <div class="col-4">
+
+                                <a href="" class="ba-link md-link" data-mdb-toggle="modal" data-mdb-target="#invoice_modal">
+                                    <span>Nouvelle facture </span>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <p class="gray-global-text">Informe le client qu'une nouvelle facture a été envoyée </p>
+
+                            </div>
+                            <div class="col-4">
+
+                                <a href="" class="ba-link md-link" data-mdb-toggle="modal" data-mdb-target="#relance_paiement_modal">
+                                    <span>Paiement de facture </span>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <p class="gray-global-text">Informe le client que le paiement a bien été reçu </p>
+
+                            </div>
+                            <div class="col-4">
+
+                                <a href="" class="ba-link md-link">
+                                    <span>Nouveau devis </span>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <p class="gray-global-text">Informe le client qu'un nouveau devis à été envoyé </p>
+
+                            </div>
+                            <div class="col-4">
+
+                                <a href="" class="ba-link md-link">
+                                    <span>Nouvelle facture </span>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <p class="gray-global-text">Relance le client lorsqu'une facture est échue</p>
+
+                            </div>
+                            <div class="col-4">
+
+                                <a href="" class="ba-link md-link">
+                                    <span>Nouvelle facture </span>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <p class="gray-global-text">informe le client qu'une nouvelle facture récurrente à été envoyée</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="ba-setting-block-head mt-5">
+
+                <div class="ba-d-f-center">
+                    <div class="ba-icon-md bg-white me-3">
+                        <img src="../../public/assets/icons/blue-message.svg" alt="">
+                    </div>
+                    <h2 class="lg-text">Signature d'email </h2>
+                </div>
+
+            </div>
+            <div class="row mt-5">
+
+                <div class="col-12">
+
+                    <div id="editor_wysiwyg"></div>
+
+                </div>
+
+
+            </div>
         </div>
         <!-- cart  -->
 
@@ -272,7 +350,271 @@
     <!--===============================================-->
     <!--============== ./app root  ======================-->
     <!--===============================================-->
+    <!-- Modal -->
+    <div class="modal fade ba-light-modal" id="add_mail_modal" data-mdb-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="add_mail_modalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form>
+                    <!-- head  -->
+                    <div class="ba-modal-head py-3">
+                        <h2>Un autre email</h2>
 
+                        <a href="" class="ba-modal-close" data-mdb-dismiss="modal">
+                            <img src="../../../public/assets/icons/gray-cross.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- body  -->
+                    <div class="ba-modal-body">
+                        <p class="md-text mb-5">Les réponses aux emails envoyés à une adresse email spécifique :</p>
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <div class="ba-form-control ba-fc-right-icon-currency" data-currency="€">
+                                        <input type="text" placeholder="Saisissez un email de répenses" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ba-checkbox-default">
+                                    <label for="vente_check_2">
+                                        <span>
+                                            <input type="checkbox" name="vente_check_2" id="vente_check_2">
+                                            <i class="fa fa-square" aria-hidden="true"></i>
+                                        </span>
+                                        <p>Utiliser l’email de l’adminitrateur</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- footer  -->
+                    <div class="ba-modal-footer gray-bt justify-content-end py-4">
+                        <button type="button" class="btn ba-btn-default me-2" data-mdb-dismiss="modal">
+                            <span>Annuler</span>
+                        </button>
+                        <button type="submit" class="btn ba-btn-success">
+                                <span>Enregistrer</span>
+                        </button>
+
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <div class="modal fade ba-light-modal ba-primary-modal" id="invoice_modal" tabindex="-1" aria-labelledby="invoice_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form>
+                    <!-- head  -->
+                    <div class="ba-modal-head  py-4 justify-content-center">
+                        <h2>Nouvelle facture</h2>
+
+                        <a href="" class="ba-modal-close" data-mdb-dismiss="modal">
+                            <img src="../../../public/assets/icons/gray-cross.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- body  -->
+                    <div class="ba-modal-body">
+                        <p class="gray-global-text">Personnalisez l'e-mail que vos clients recevront avec chaque nouvelle facture que vous envoyez.</p>
+                        <div class="row mt-2">
+
+                            <div class="col-12">
+                                <div class="ba-tags">
+
+                                    <a href="" class="btn ba-tag">
+                                            @Nom de l entreprise
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Numero de facture
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Date D'échéance
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Montant de facture
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Montant de facture
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Nom de l entreprise
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Nom de l entreprise
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Nom de l entreprise
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Nom de l entreprise
+                                        </a>
+                                    <a href="" class="btn ba-add-tag">
+                                        <img src="../../public/assets/icons/blue-plus.svg" alt="">
+                                    </a>
+
+                                </div>
+                            </div>
+                            <!-- input  -->
+                            <div class="ba-form-warpp">
+                                <label for="" class="ba-form-label">Sujet</label>
+                                <div class="ba-form-control">
+                                    <input type="text" placeholder="Sujet" id="">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Corps</label>
+                                    <div class="editor-wysiwyg"></div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="ba-modal-footer gray-bt justify-content-end py-4">
+                        <button type="button" class="btn ba-btn-default me-2" data-mdb-dismiss="modal">
+                            <span>Annuler</span>
+                        </button>
+                        <button type="submit" class="btn ba-btn-success">
+                                <span>Enregistrer</span>
+                        </button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade ba-light-modal ba-primary-modal" id="relance_paiement_modal" tabindex="-1" aria-labelledby="relance_paiement_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form>
+                    <!-- head  -->
+                    <div class="ba-modal-head  py-4 justify-content-center">
+                        <h2>Relance de paiement </h2>
+
+                        <a href="" class="ba-modal-close" data-mdb-dismiss="modal">
+                            <img src="../../../public/assets/icons/gray-cross.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- body  -->
+                    <div class="ba-modal-body">
+                        <p class="gray-global-text">Personnalisez l'e-mail que vos clients recevront avec chaque nouvelle facture que vous envoyez.</p>
+                        <!-- tabs  -->
+                        <div class="ba-main-tabs ba-setting">
+
+                            <ul>
+                                <li class="active"><a href="" class="btn">Rappel 1</a></li>
+                                <li><a href="" class="btn">Rappel 2</a></li>
+                                <li><a href="" class="btn">Rappel 3</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="ba-outline-container mt-4">
+
+                            <div class="row align-items-center">
+
+                                <div class="col-3">
+                                    <div class="ba-d-f-center">
+                                        <div class="ba-form-warpp me-2 mb-0">
+                                            <div class="ba-form-control">
+                                                <input type="text" placeholder="05" id="">
+                                            </div>
+                                        </div>
+                                        <p class="gray-global-text">Jours</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="ba-d-f-center">
+                                        <div class="ba-form-warpp mb-0 me-2 w-50">
+                                            <div class="ba-form-control">
+                                                <select>
+                                                        <option value="Aprés">Aprés</option>
+                                                        <option value="Aprés">Aprés</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                        <p class="gray-global-text">Date d'échéance</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="ba-d-f-center justify-content-end">
+                                        <p class="gray-global-text me-2">Activer le rappel</p>
+                                        <label for="check1" class="ba-switch-slider">
+                                                <input type="checkbox" name="" id="check1">
+                                                <span></span>
+                                            </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+
+                            <div class="col-12">
+                                <div class="ba-tags">
+
+                                    <a href="" class="btn ba-tag">
+                                            @Nom de l entreprise
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Numero de facture
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Date D'échéance
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Montant de facture
+                                        </a>
+                                    <a href="" class="btn ba-tag">
+                                            @Montant de facture
+                                        </a>
+
+                                </div>
+                            </div>
+                            <!-- input  -->
+                            <div class="ba-form-warpp">
+                                <label for="" class="ba-form-label">Sujet</label>
+                                <div class="ba-form-control">
+                                    <input type="text" placeholder="Sujet" id="">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Corps</label>
+                                    <div class="editor-wysiwyg"></div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="ba-modal-footer gray-bt justify-content-end py-4">
+                        <button type="button" class="btn ba-btn-default me-2" data-mdb-dismiss="modal">
+                            <span>Annuler</span>
+                        </button>
+                        <button type="submit" class="btn ba-btn-success">
+                                <span>Enregistrer</span>
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap fontawsom JS -->

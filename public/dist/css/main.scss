@@ -3386,7 +3386,7 @@ a.ba-add-new-time-btn {
 }
 
 .ba-edit-member-profile-cart {
-    border: 1px solid rgba(16, 76, 186, 0.21);
+    border: 1px solid $blueLight;
     box-sizing: border-box;
     border-radius: 5px;
     padding: pxToVw(35);
@@ -3414,21 +3414,21 @@ a.ba-add-new-time-btn {
 }
 
 .ba-edit-member-profile-form {
-    border: 1px solid rgba(16, 76, 186, 0.21);
+    border: 1px solid $blueLight;
     border-radius: 5px;
     padding: pxToVw(50);
     margin-top: pxToVw(25);
 }
 
 .ba-settings-invoice-style {
-    margin-top: 40px;
+    margin-top: pxToVw(40);
     &>.row {
-        margin: 0 -75px;
+        margin: 0 pxToVw(-75);
         align-items: center;
         >[class*="col-"] {
-            padding: 0 75px;
+            padding: 0 pxToVw(75);
             &:not(:last-child) {
-                border-right: 1px solid rgba(16, 76, 186, 0.21);
+                border-right: 1px solid $blueLight;
             }
         }
     }
@@ -3446,7 +3446,7 @@ a.ba-add-new-time-btn {
         bottom: 0;
         left: 0;
         right: 0;
-        height: 25px;
+        height: pxToVw(25);
         width: 100%;
         z-index: 99;
         display: block;
@@ -3455,7 +3455,7 @@ a.ba-add-new-time-btn {
         border: 1px solid #E5E5E5;
         box-sizing: border-box;
         box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.11);
-        border-radius: 15px;
+        border-radius: pxToVw(15);
         position: relative;
         overflow: hidden;
         width: 100%;
@@ -3467,23 +3467,23 @@ a.ba-add-new-time-btn {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: pxToVw(15);
+    line-height: pxToVw(22);
     text-align: center;
     letter-spacing: 0.03em;
     color: #2B3E62;
-    margin-top: 15px;
+    margin-top: pxToVw(15);
     margin-bottom: 0;
 }
 
 .ba-invoice-styles-container {
-    padding: 60px;
-    margin-top: 40px;
+    padding: pxToVw(60);
+    margin-top: pxToVw(40);
     >.row {
-        margin: 0 -40px;
+        margin: 0 pxToVw(-40);
         align-items: center;
         >[class*="col-"] {
-            padding: 0 40px;
+            padding: 0 pxToVw(40);
         }
     }
 }
@@ -3493,11 +3493,11 @@ a.ba-add-new-time-btn {
     box-sizing: border-box;
     box-shadow: 0px 2px 5px rgba(16, 76, 186, 0.15);
     border-radius: 7px;
-    padding: 20px 30px;
+    padding: pxToVw(20) pxToVw(30);
     height: 100%;
     .ba-export-selection-cart-head {
         border-bottom: 1px solid rgba(16, 76, 186, 0.28);
-        margin-bottom: 30px;
+        margin-bottom: pxToVw(30);
     }
 }
 

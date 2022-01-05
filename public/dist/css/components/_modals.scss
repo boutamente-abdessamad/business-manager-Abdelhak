@@ -95,6 +95,7 @@
         .modal-content {
             padding: pxToVw(15) pxToVw(30);
             box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
+            overflow: hidden;
         }
         .ba-modal-head {
             position: relative;
@@ -139,6 +140,33 @@
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
+        }
+        &.ba-primary-modal {
+            .modal-content {
+                padding: 0;
+            }
+            .ba-modal-head {
+                background-color: $blue;
+                padding: pxToVw(15) pxToVw(30);
+                h2 {
+                    color: #FFFFFF;
+                }
+                .ba-modal-close {
+                    right: 15px;
+                    img {
+                        filter: brightness(10);
+                    }
+                }
+            }
+            .ba-modal-body {
+                padding: pxToVw(15) pxToVw(30);
+            }
+            .ba-modal-footer {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                padding: pxToVw(15) pxToVw(30);
+            }
         }
     }
     
