@@ -925,7 +925,7 @@ a.ba-cart-header-back {
 .ba-colors-slider-warpper {
     @include flexCenterBetween();
     .ba-colors-slider {
-        width: calc(100% - 70px);
+        width: calc(100% - 90px);
         /* the slides */
         .slick-slide {
             margin: 0 pxToVw(8);

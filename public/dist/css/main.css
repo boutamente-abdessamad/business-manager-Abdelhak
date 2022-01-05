@@ -2165,7 +2165,7 @@ a.ba-cart-header-back .back-link-icon {
   flex-wrap: wrap;
 }
 .ba-colors-slider-warpper .ba-colors-slider {
-  width: calc(100% - 70px);
+  width: calc(100% - 90px);
   /* the slides */
   /* the parent */
 }
@@ -6948,7 +6948,7 @@ a.ba-add-new-time-btn img {
 .ba-date-between img {
   width: calc(19 * 0.0651111111vw);
   height: calc(19 * 0.0651111111vw);
-  margin-left: 5px;
+  margin-left: calc(10 * 0.0651111111vw);
 }
 .ba-date-between p {
   font-family: Roboto;
@@ -7328,6 +7328,19 @@ a.ba-add-new-time-btn img {
 }
 .ba-invoice-styles-container > .row > [class*=col-] {
   padding: 0 40px;
+}
+
+.ba-export-selection-cart {
+  border: 1px solid #E7EDF8;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px rgba(16, 76, 186, 0.15);
+  border-radius: 7px;
+  padding: 20px 30px;
+  height: 100%;
+}
+.ba-export-selection-cart .ba-export-selection-cart-head {
+  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  margin-bottom: 30px;
 }
 
 /* ---------------------------------------------------------------------------- */

@@ -3095,7 +3095,7 @@ a.ba-add-new-time-btn {
     img {
         width: pxToVw(19);
         height: pxToVw(19);
-        margin-left: 5px;
+        margin-left: pxToVw(10);
     }
     p {
         font-family: Roboto;
@@ -3485,6 +3485,19 @@ a.ba-add-new-time-btn {
         >[class*="col-"] {
             padding: 0 40px;
         }
+    }
+}
+
+.ba-export-selection-cart {
+    border: 1px solid #E7EDF8;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(16, 76, 186, 0.15);
+    border-radius: 7px;
+    padding: 20px 30px;
+    height: 100%;
+    .ba-export-selection-cart-head {
+        border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+        margin-bottom: 30px;
     }
 }
 
