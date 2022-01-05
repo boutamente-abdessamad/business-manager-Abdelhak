@@ -292,13 +292,37 @@
                 content: "";
                 width: pxToVw(17);
                 height: pxToVw(17);
-                opacity: .21;
+                opacity: .4;
                 background-size: contain;
                 @include yAbsoluteCenter();
                 right: pxToVw(16);
             }
+            &[class*="ba-fc-left-icon-"] {
+                input {
+                    text-indent: pxToVw(50);
+                }
+            }
+            &[class*="ba-fc-left-icon-"]::after {
+                content: "";
+                width: pxToVw(17);
+                height: pxToVw(17);
+                opacity: .4;
+                background-size: contain;
+                @include yAbsoluteCenter();
+                left: pxToVw(16);
+            }
+            &[class*="ba-fc-left-icon-border"]::before {
+                content: "";
+                height: pxToVw(25);
+                border-right: 2px solid rgba(16, 76, 186, 0.15);
+                @include yAbsoluteCenter();
+                left: pxToVw(40);
+            }
             &.ba-fc-right-icon-date::after {
                 background-image: url($iconsPath + '/blue-dark-date.svg');
+            }
+            &.ba-fc-left-icon-user::after {
+                background-image: url($iconsPath + '/blue-user-bar.svg');
             }
             &.ba-fc-right-icon-currency::after {
                 content: attr(data-currency);

@@ -447,15 +447,41 @@
   content: "";
   width: calc(17 * 0.0651111111vw);
   height: calc(17 * 0.0651111111vw);
-  opacity: 0.21;
+  opacity: 0.4;
   background-size: contain;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: calc(16 * 0.0651111111vw);
 }
+.ba-form-warpp .ba-form-control[class*=ba-fc-left-icon-] input {
+  text-indent: calc(50 * 0.0651111111vw);
+}
+.ba-form-warpp .ba-form-control[class*=ba-fc-left-icon-]::after {
+  content: "";
+  width: calc(17 * 0.0651111111vw);
+  height: calc(17 * 0.0651111111vw);
+  opacity: 0.4;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(16 * 0.0651111111vw);
+}
+.ba-form-warpp .ba-form-control[class*=ba-fc-left-icon-border]::before {
+  content: "";
+  height: calc(25 * 0.0651111111vw);
+  border-right: 2px solid rgba(16, 76, 186, 0.15);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(40 * 0.0651111111vw);
+}
 .ba-form-warpp .ba-form-control.ba-fc-right-icon-date::after {
   background-image: url("../../../public/assets/icons/blue-dark-date.svg");
+}
+.ba-form-warpp .ba-form-control.ba-fc-left-icon-user::after {
+  background-image: url("../../../public/assets/icons/blue-user-bar.svg");
 }
 .ba-form-warpp .ba-form-control.ba-fc-right-icon-currency::after {
   content: attr(data-currency);
