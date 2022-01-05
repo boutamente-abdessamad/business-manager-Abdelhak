@@ -1721,6 +1721,7 @@ input:focus-visible {
 }
 .dropdown .dropdown-menu {
   min-width: auto;
+  padding: 5px;
 }
 
 .ba-cart {
