@@ -317,7 +317,7 @@ body {
 .filter-input {
     max-width: pxToVw(224);
     position: relative;
-    height: pxToVw(44);
+    height: pxToVw(49);
     &.left-icon {
         input {
             text-indent: pxToVw(50);
@@ -354,7 +354,7 @@ body {
         border: 1px solid rgba(43, 62, 98, 0.25);
         box-sizing: border-box;
         border-radius: pxToVw(7);
-        height: pxToVw(44);
+        height: pxToVw(49);
         min-width: pxToVw(224);
         font-family: Roboto;
         font-style: normal;
@@ -369,11 +369,12 @@ body {
 
 .datatable-filters-leftside {
     display: flex;
-    align-items: center;
+    // align-items: center;
 }
 
 .datatable-filters-container {
-    @include flexCenterBetween();
+    display: flex;
+    justify-content: space-between;
 }
 
 .datatable-filters-rightside {

@@ -45,7 +45,13 @@ $(document).ready(() => {
             $('body').toggleClass('ba-sidebar-open');
         });
         // tabs
-        $('.ba-cart-menu-tabs>ul>li>a').on('click', function (e) {
+        $('body').on('click','.ba-cart-menu-tabs>ul>li>a', function (e) {
+            e.preventDefault();
+            $(this).closest('li').addClass('active').siblings().removeClass('active');
+            let item = '.ba-cart-tab-item'+$(this).closest('li').attr('data-tab');
+            $('.ba-cart-body-tabs').find(item).addClass('active').siblings().removeClass('active');
+        });
+        $('body').on('click','.ba-main-tabs>ul>li>a', function (e) {
             e.preventDefault();
             $(this).closest('li').addClass('active').siblings().removeClass('active');
             let item = '.ba-cart-tab-item'+$(this).closest('li').attr('data-tab');

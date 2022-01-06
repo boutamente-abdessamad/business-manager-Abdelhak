@@ -55,6 +55,14 @@
         }
         &.ba-alert-primary {
             h2 {
+                color: $blue;
+            }
+            .bar-alert-icon {
+                background: $blueLightBg;
+            }
+        }
+        &.ba-alert-purple {
+            h2 {
                 color: $purple;
             }
             .bar-alert-icon {
@@ -189,6 +197,11 @@
         @media (min-width: 992px) {
             .modal-md {
                 max-width: pxToVw(600);
+            }
+        }
+        @media (min-width: 700px) {
+            .modal-mdx {
+                max-width: pxToVw(520);
             }
         }
         .modal-mds {

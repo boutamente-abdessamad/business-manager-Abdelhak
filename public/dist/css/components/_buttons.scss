@@ -346,12 +346,24 @@ label.ba-switch-slider {
     }
     &>input:checked+span::after {
         left: 16px;
-        background: #5DDDD3;
+        background: $blueFluorescent;
     }
     &.crown-icon>input:checked+span::after {
         background: url($iconsPath+'/light-crown.svg'), #FBB429;
         background-repeat: no-repeat;
         background-size: 63%;
         background-position: center;
+    }
+    &.lg {
+        width: 43px;
+        height: pxToVw(23);
+        &>span::after {
+            width: 18px;
+            height: 18px;
+        }
+        &>input:checked+span::after {
+            left: 19px;
+            background: $green;
+        }
     }
 }

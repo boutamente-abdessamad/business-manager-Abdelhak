@@ -342,6 +342,20 @@
                 height: pxToVw(90);
             }
         }
+        .ba-form-double-control {
+            display: flex;
+            input {
+                &:first-child {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-right: none;
+                }
+                &:last-child {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
     }
     
     .ba-form-infos {
