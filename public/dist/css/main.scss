@@ -171,7 +171,7 @@ body {
             content: "";
             @include yAbsoluteCenter();
             position: absolute;
-            border-right: 1px solid rgba(16, 76, 186, 0.28);
+            border-right: 1px solid $blueLight;
             right: 0;
             height: pxToVw(55);
         }
@@ -419,7 +419,7 @@ body {
         .invoice-cart-head {
             @include flexCenterBetween();
             padding-bottom: pxToVw(10);
-            border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+            border-bottom: 1px solid $blueLight;
             .invoice-cart-ref {
                 display: flex;
                 align-items: center;
@@ -3471,7 +3471,7 @@ a.ba-add-new-time-btn {
     line-height: pxToVw(22);
     text-align: center;
     letter-spacing: 0.03em;
-    color: #2B3E62;
+    color: $blueText;
     margin-top: pxToVw(15);
     margin-bottom: 0;
 }
@@ -3496,8 +3496,68 @@ a.ba-add-new-time-btn {
     padding: pxToVw(20) pxToVw(30);
     height: 100%;
     .ba-export-selection-cart-head {
-        border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+        border-bottom: 1px solid $blueLight;
         margin-bottom: pxToVw(30);
+    }
+}
+
+.ba-plan-table table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    thead {
+        tr {
+            vertical-align: middle;
+            background: $blueLightened;
+            th {
+                &:first-child {
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
+                &:last-child {
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: pxToVw(13);
+                line-height: pxToVw(15);
+                color: #FFFFFF;
+            }
+        }
+    }
+    tbody {
+        tr {
+            outline: 1px solid $blueLight;
+            border-radius: 3px;
+            vertical-align: middle;
+            td {
+                &:first-child {
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
+                &:last-child {
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: pxToVw(13);
+                line-height: pxToVw(23);
+                color: $blueText;
+                vertical-align: middle;
+                padding-top: pxToVw(8);
+                padding-bottom: pxToVw(8);
+            }
+        }
+    }
+}
+
+.ba-offer-type-icon {
+    img {
+        width: pxToVw(70);
+        height: pxToVw(70);
     }
 }
 

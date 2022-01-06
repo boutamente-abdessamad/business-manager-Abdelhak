@@ -3106,6 +3106,38 @@ a.ba-add-color img {
   height: calc(13 * 0.0651111111vw);
 }
 
+.ba-plan-comptable-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ba-plan-comptable-menu ul li:not(:last-child) {
+  margin-bottom: calc(8 * 0.0651111111vw);
+}
+.ba-plan-comptable-menu ul li a {
+  border: 1px solid rgba(16, 76, 186, 0.09);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: calc(16 * 0.0651111111vw) calc(27 * 0.0651111111vw);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(18 * 0.0651111111vw);
+  display: flex;
+  align-items: center;
+  color: rgba(16, 76, 186, 0.65);
+  transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.ba-plan-comptable-menu ul li a:hover {
+  background: rgba(16, 76, 186, 0.65);
+  color: #FFFFFF;
+}
+.ba-plan-comptable-menu ul li.active a {
+  background: rgba(16, 76, 186, 0.65);
+  color: #FFFFFF;
+}
+
 /* tables  */
 /* tables  */
 /* pagination elements  */
@@ -4206,7 +4238,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  border-right: 1px solid rgba(16, 76, 186, 0.28);
+  border-right: 1px solid rgba(16, 76, 186, 0.09);
   right: 0;
   height: calc(55 * 0.0651111111vw);
 }
@@ -4449,7 +4481,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: calc(10 * 0.0651111111vw);
-  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  border-bottom: 1px solid rgba(16, 76, 186, 0.09);
 }
 .invoices-grid-display-warpper .invoice-cart .invoice-cart-head .invoice-cart-ref {
   display: flex;
@@ -7449,8 +7481,62 @@ a.ba-add-new-time-btn img {
   height: 100%;
 }
 .ba-export-selection-cart .ba-export-selection-cart-head {
-  border-bottom: 1px solid rgba(16, 76, 186, 0.28);
+  border-bottom: 1px solid rgba(16, 76, 186, 0.09);
   margin-bottom: calc(30 * 0.0651111111vw);
+}
+
+.ba-plan-table table {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+.ba-plan-table table thead tr {
+  vertical-align: middle;
+  background: rgba(16, 76, 186, 0.65);
+}
+.ba-plan-table table thead tr th {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(15 * 0.0651111111vw);
+  color: #FFFFFF;
+}
+.ba-plan-table table thead tr th:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.ba-plan-table table thead tr th:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.ba-plan-table table tbody tr {
+  outline: 1px solid rgba(16, 76, 186, 0.09);
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.ba-plan-table table tbody tr td {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(23 * 0.0651111111vw);
+  color: #2B3E62;
+  vertical-align: middle;
+  padding-top: calc(8 * 0.0651111111vw);
+  padding-bottom: calc(8 * 0.0651111111vw);
+}
+.ba-plan-table table tbody tr td:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.ba-plan-table table tbody tr td:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.ba-offer-type-icon img {
+  width: calc(70 * 0.0651111111vw);
+  height: calc(70 * 0.0651111111vw);
 }
 
 /* ---------------------------------------------------------------------------- */

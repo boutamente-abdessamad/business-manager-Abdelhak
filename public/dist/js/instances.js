@@ -14,7 +14,6 @@ var initPlugins = function() {
     }
     // semantic dropdown
     if ($.fn.dropdown) {
-        console.log('in');
         $('.ui.dropdown')
         .dropdown({
           on: 'click'

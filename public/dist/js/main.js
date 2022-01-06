@@ -78,6 +78,11 @@ $(document).ready(() => {
             $('.opiration-form-steps').find('.opiration-form-step').removeClass('d-block');
             $('.opiration-form-steps').find(step).addClass('d-block');
         });
+        // plan-comptable-check-all
+        $('.plan-comptable-check-all').on('change', function (e) {
+            e.preventDefault();
+            $(this).closest('table').find('tbody>tr>td input[type=checkbox]').prop('checked', $(this).is(':checked'));
+        });
 
         
 
