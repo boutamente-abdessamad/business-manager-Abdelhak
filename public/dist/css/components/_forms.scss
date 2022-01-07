@@ -233,6 +233,10 @@
             letter-spacing: 0.03em;
             color: $blueText;
             margin-bottom: pxToVw(10);
+            &.sm {
+                font-size: pxToVw(13);
+                line-height: pxToVw(16);
+            }
         }
         .dropdown-toggle {
             background: rgba(245, 248, 253, 0.65);
@@ -268,6 +272,13 @@
                 color: $blueText;
                  ::placeholder {
                     color: $blueLight;
+                }
+            }
+            &.xs-controll {
+                input,
+                select,
+                textarea {
+                    height: pxToVw(33);
                 }
             }
             select {

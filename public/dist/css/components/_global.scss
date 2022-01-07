@@ -1922,3 +1922,11 @@ a.ba-next-step {
     padding-top: pxToVw(30);
     margin-top: pxToVw(30);
 }
+
+.ba-payment-total {
+    display: flex;
+    justify-content: space-between;
+    .ba-payment-total-figure {
+        text-align: right;
+    }
+}

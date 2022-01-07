@@ -184,6 +184,31 @@
   padding: calc(15 * 0.0651111111vw) calc(30 * 0.0651111111vw);
 }
 
+.ba-primary-light-modal .ba-modal-head {
+  padding: 20px 35px;
+}
+.ba-primary-light-modal .ba-modal-head h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+  margin: 0;
+}
+.ba-primary-light-modal .modal-content .ba-modal-core {
+  background: #F3F6FC;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 7px 7px;
+  padding: 35px;
+}
+.ba-primary-light-modal .ba-modal-footer {
+  border-top: 1px solid rgba(43, 62, 98, 0.21);
+  padding-top: 24px;
+  margin-top: 24px;
+}
+
 @media (min-width: 1480px) {
   .modal .modal-xl {
     max-width: 1420px;
@@ -422,6 +447,10 @@
   color: #2B3E62;
   margin-bottom: calc(10 * 0.0651111111vw);
 }
+.ba-form-warpp label.sm {
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(16 * 0.0651111111vw);
+}
 .ba-form-warpp .dropdown-toggle {
   background: rgba(245, 248, 253, 0.65);
 }
@@ -466,6 +495,11 @@
 .ba-form-warpp .ba-form-control select ::placeholder,
 .ba-form-warpp .ba-form-control textarea ::placeholder {
   color: rgba(16, 76, 186, 0.09);
+}
+.ba-form-warpp .ba-form-control.xs-controll input,
+.ba-form-warpp .ba-form-control.xs-controll select,
+.ba-form-warpp .ba-form-control.xs-controll textarea {
+  height: calc(33 * 0.0651111111vw);
 }
 .ba-form-warpp .ba-form-control select {
   padding-right: calc(0 * 0.0651111111vw);
@@ -668,6 +702,12 @@
 [class*=ba-btn-].btn-xs {
   padding: calc(5 * 0.0651111111vw) calc(15 * 0.0651111111vw);
   font-size: calc(11 * 0.0651111111vw);
+  border-radius: 3px;
+}
+[class*=ba-btn-].btn-md {
+  padding: calc(8 * 0.0651111111vw) calc(20 * 0.0651111111vw);
+  font-size: calc(12 * 0.0651111111vw);
+  border-radius: 5px;
 }
 [class*=ba-btn-].btn-lg {
   padding: calc(16 * 0.0651111111vw) calc(20 * 0.0651111111vw);
@@ -3257,6 +3297,14 @@ a.ba-next-step i {
   border-top: 1px solid rgba(43, 62, 98, 0.25);
   padding-top: calc(30 * 0.0651111111vw);
   margin-top: calc(30 * 0.0651111111vw);
+}
+
+.ba-payment-total {
+  display: flex;
+  justify-content: space-between;
+}
+.ba-payment-total .ba-payment-total-figure {
+  text-align: right;
 }
 
 /* tables  */
