@@ -25,7 +25,7 @@
                     border-width: 1px;
                     padding: 0px pxToVw(17);
                     vertical-align: middle;
-                    height: pxToVw(83);
+                    height: pxToVw(70);
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: normal;
@@ -116,7 +116,7 @@
                     line-height: pxToVw(23);
                     padding: 0px pxToVw(17);
                     vertical-align: middle;
-                    height: pxToVw(83);
+                    height: pxToVw(70);
                     color: #000000;
                     border-width: 1px;
                     font-size: pxToVw(16);
@@ -151,8 +151,8 @@
         }
     }
     padding-top: pxToVw(15);
-    margin: pxToVw(15);
-    margin-top: pxToVw(0);
+    // margin: pxToVw(15);
+    // margin-top: pxToVw(0);
 }
 
 table.ba-datatable-warpper {
@@ -481,7 +481,7 @@ a.is-last {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: pxToVw(30) 0px;
+    padding-top: pxToVw(30);
 }
 
 ul.meanings-table {

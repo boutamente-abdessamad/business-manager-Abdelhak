@@ -101,12 +101,13 @@ var initPlugins = function() {
             slidesToShow: 4,
             dots: false,
             autoplay: false,
+            variableWidth: true,
             speed: 1000,
             autoplaySpeed: 3000,
             // arrows: false,
             swipe: true,
-            prevArrow: $('.purchases-invoices-slider-actions .prev'),
-            nextArrow: $('.purchases-invoices-slider-actions .next'),
+            prevArrow: $('.side-slider-actions .prev'),
+            nextArrow: $('.side-slider-actions .next'),
             infinite: false,
         });
         purchasesInvoicesSlider.show();

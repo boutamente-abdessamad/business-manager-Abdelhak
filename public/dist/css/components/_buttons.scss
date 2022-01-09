@@ -8,13 +8,13 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: pxToVw(13);
+    font-size: pxToVw(11);
     line-height: pxToVw(15);
     align-items: center;
     align-self: center;
     text-align: center;
     letter-spacing: 0.03em;
-    padding: pxToVw(12) pxToVw(25);
+    padding: pxToVw(9) pxToVw(17);
     border-radius: 7px;
     border: 1px solid transparent;
     &.btn-xs {
@@ -26,8 +26,8 @@
         font-size: pxToVw(15);
     }
     img {
-        width: pxToVw(13);
-        height: pxToVw(13);
+        width: pxToVw(11);
+        height: pxToVw(11);
         &.lg-img {
             width: pxToVw(18);
             height: pxToVw(18);
@@ -189,8 +189,8 @@
 }
 
 .ba-btn-circle {
-    width: pxToVw(36);
-    height: pxToVw(36);
+    width: pxToVw(36) !important;
+    height: pxToVw(36) !important;
     justify-content: center;
     padding: 0;
     border-radius: 50%;

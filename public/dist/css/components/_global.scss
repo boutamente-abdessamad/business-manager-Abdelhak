@@ -1391,8 +1391,8 @@ a.editable-click:hover {
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: pxToVw(31);
-            line-height: pxToVw(36);
+            font-size: pxToVw(27);
+            line-height: pxToVw(29);
             display: flex;
             align-items: center;
             letter-spacing: 0.03em;
@@ -1698,7 +1698,7 @@ a.editable-click:hover {
 .light-blue-container {
     background: $blueLightBg;
     border-radius: pxToVw(15);
-    padding: pxToVw(24);
+    padding: pxToVw(15);
     &.lbc-in-table {
         background: #E7EDF8;
         border: 1px solid rgba(43, 62, 98, 0.21);

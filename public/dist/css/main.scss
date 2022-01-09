@@ -132,22 +132,36 @@ body {
     }
 }
 
+.ba-app-root {
+    &>.ba-main-cart {
+        .ba-main-tabs {
+            ul {
+                li {
+                    a {
+                        padding-top: pxToVw(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
 // ba-group-buttons
 .ba-group-buttons {
     display: flex;
-    padding: pxToVw(45) 0px;
+    padding: pxToVw(25) 0px;
 }
 
 // ba-statistics-numbers
 .ba-statistics-numbers {
     @include flexCenterBetween();
-    margin-top: pxToVw(37);
+    margin-top: pxToVw(25);
     h2 {
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
-        font-size: pxToVw(45);
-        line-height: pxToVw(67);
+        font-size: pxToVw(43);
+        line-height: pxToVw(50);
         text-align: center;
         letter-spacing: 0.03em;
         color: $blue;
@@ -181,9 +195,9 @@ body {
 // invoices-status
 .ba-invoices-status-container {
     background: #F1F5FB;
-    margin-top: pxToVw(63);
+    margin-top: pxToVw(40);
     border-radius: pxToVw(15);
-    padding: pxToVw(30);
+    padding: pxToVw(18);
     display: flex;
     align-items: center;
     .ba-invoice-status-item-box {
@@ -209,10 +223,10 @@ body {
             }
         }
         &:not(:last-child) {
-            margin-right: pxToVw(60);
+            margin-right: pxToVw(25);
         }
-        height: pxToVw(278);
-        min-width: pxToVw(198);
+        height: pxToVw(245);
+        min-width: pxToVw(175);
         background-color: #FFFFFF;
         box-sizing: border-box;
         border-radius: pxToVw(15);
@@ -269,7 +283,7 @@ body {
         }
         .ba-invoice-status-item {
             background: #FFFFFF;
-            padding: pxToVw(20);
+            padding: pxToVw(15);
             border-radius: pxToVw(15);
             z-index: 1;
             .ba-invoice-status-skeleton {
@@ -282,13 +296,12 @@ body {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
-                font-size: pxToVw(15);
+                font-size: pxToVw(13);
                 line-height: pxToVw(23);
-                /* or 153% */
                 text-align: right;
                 color: $blueOpacity;
                 margin: pxToVw(15) 0px;
-                margin-bottom: pxToVw(40);
+                margin-bottom: pxToVw(17);
             }
             .ba-invoice-status {
                 @include flexCenter();
@@ -296,7 +309,7 @@ body {
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: pxToVw(15);
+                    font-size: pxToVw(13);
                     line-height: pxToVw(18);
                     letter-spacing: 0.03em;
                     margin-bottom: 0;
@@ -305,7 +318,7 @@ body {
                     display: inline-flex;
                     margin-left: pxToVw(10);
                     border-radius: pxToVw(30);
-                    height: pxToVw(9);
+                    height: pxToVw(7);
                     width: pxToVw(76);
                 }
             }
@@ -317,7 +330,7 @@ body {
 .filter-input {
     max-width: pxToVw(224);
     position: relative;
-    height: pxToVw(49);
+    height: pxToVw(40);
     &.left-icon {
         input {
             text-indent: pxToVw(50);
@@ -354,7 +367,7 @@ body {
         border: 1px solid rgba(43, 62, 98, 0.25);
         box-sizing: border-box;
         border-radius: pxToVw(7);
-        height: pxToVw(49);
+        height: pxToVw(40);
         min-width: pxToVw(224);
         font-family: Roboto;
         font-style: normal;
@@ -375,6 +388,9 @@ body {
 .datatable-filters-container {
     display: flex;
     justify-content: space-between;
+    button {
+        height: 100%;
+    }
 }
 
 .datatable-filters-rightside {
@@ -384,8 +400,8 @@ body {
 
 .ba-display-mode {
     background: $blueLight;
-    border-radius: pxToVw(7);
-    height: pxToVw(44);
+    border-radius: pxToVw(5);
+    height: pxToVw(40);
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -396,10 +412,10 @@ body {
             box-shadow: 0px 2px 7px rgba(43, 62, 98, 0.25);
         }
         border-radius: pxToVw(7);
-        padding: pxToVw(9) pxToVw(14);
+        padding: pxToVw(5) pxToVw(10);
         img {
-            width: pxToVw(24);
-            height: pxToVw(24);
+            width: pxToVw(17);
+            height: pxToVw(17);
         }
     }
 }
@@ -1388,15 +1404,15 @@ ba-dashboard-header-rightside {
             font-family: Roboto;
             font-style: normal;
             font-weight: 500;
-            font-size: pxToVw(21);
+            font-size: pxToVw(17);
             line-height: pxToVw(23);
             text-align: right;
             color: $blueOpacity;
-            margin-bottom: pxToVw(13);
+            margin-bottom: pxToVw(0);
         }
     }
     .purchase-invoice-footer {
-        padding: 16px pxToVw(20);
+        padding: pxToVw(10) pxToVw(20);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1404,13 +1420,13 @@ ba-dashboard-header-rightside {
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: pxToVw(15);
+            font-size: pxToVw(13);
             line-height: pxToVw(18);
             letter-spacing: 0.03em;
             color: #FFFFFF;
             margin: 0;
         }
-        .purchase-invoice-footer span {
+        span {
             background: rgba(229, 247, 239, 0.25);
             border-radius: pxToVw(30);
             display: inline-flex;
@@ -1440,13 +1456,13 @@ ba-dashboard-header-rightside {
     .ba-add-new-purchases-invoice {
         margin-right: calc(20 * 0.0651111111vw);
         background: #FFFFFF;
-        box-shadow: 0px 2px 7px $blueOpacity;
+        box-shadow: 0px 2px 7px $blueLight;
         border-radius: pxToVw(15);
         @include flexCenterCenter();
         flex-direction: column;
         // flex: 1;
-        width: pxToVw(200);
-        min-height: pxToVw(306);
+        min-width: pxToVw(198);
+        min-height: pxToVw(280);
         img {
             width: pxToVw(25);
             height: pxToVw(25);

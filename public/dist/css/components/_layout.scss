@@ -3,7 +3,7 @@
 header.ba-header {
     background: $blue;
     padding: 0 pxToVw(30);
-    height: pxToVw(90);
+    height: pxToVw(60);
     // nav 
     nav.ba-navbar {
         @include flexCenterBetween();
@@ -16,7 +16,7 @@ header.ba-header {
             font-family: Ropa Sans;
             font-style: normal;
             font-weight: normal;
-            font-size: pxToVw(19);
+            font-size: pxToVw(15);
             line-height: pxToVw(20);
             letter-spacing: 0.03em;
             color: #FFFFFF;
@@ -26,26 +26,26 @@ header.ba-header {
             @include flexCenter();
         }
         a.ba-nav-logo img {
-            width: pxToVw(33);
-            height: pxToVw(33);
+            width: pxToVw(23);
+            height: pxToVw(23);
         }
         a.ba-nav-site-link {
             background: $blueHover;
             border-radius: 100px;
-            height: pxToVw(43);
+            height: pxToVw(32);
             @include flexCenter();
-            padding: 0 pxToVw(13);
+            padding: 0 pxToVw(20);
         }
         a.ba-nav-site-link img {
-            width: pxToVw(21);
-            height: pxToVw(21);
+            width: pxToVw(17);
+            height: pxToVw(17);
         }
         a.ba-nav-site-link span {
             font-family: Roboto;
             font-style: normal;
             font-weight: 500;
             font-size: pxToVw(13);
-            line-height: pxToVw(15);
+            line-height: pxToVw(11);
             letter-spacing: 0.03em;
             color: #FFFFFF;
             margin-left: pxToVw(15);
@@ -59,18 +59,18 @@ header.ba-header {
                 @include yAbsoluteCenter();
                 background: url($iconsPath+ '/light-search.svg') no-repeat center;
                 background-size: contain;
-                width: pxToVw(20);
-                height: pxToVw(20);
+                width: pxToVw(17);
+                height: pxToVw(17);
             }
             input {
-                height: pxToVw(43);
+                height: pxToVw(32);
                 background: rgba(246, 246, 249, 0.2);
                 border-radius: 100px;
                 border: none;
                 font-family: Roboto;
                 font-style: normal;
                 outline: none;
-                font-weight: 500;
+                font-weight: 400;
                 font-size: pxToVw(13);
                 line-height: pxToVw(15);
                 width: auto;
@@ -107,7 +107,7 @@ header.ba-header {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
-                font-size: pxToVw(15);
+                font-size: pxToVw(13);
                 line-height: pxToVw(24);
                 color: #FFFFFF;
                 margin-left: pxToVw(10);
@@ -120,15 +120,15 @@ header.ba-header {
                 color: #FFFFFF;
             }
             img {
-                width: pxToVw(46);
-                height: pxToVw(46);
+                width: pxToVw(32);
+                height: pxToVw(32);
             }
         }
         a.ba-sidebar-toggle {
             margin: 0 pxToVw(60);
             img {
-                width: pxToVw(26);
-                height: pxToVw(26);
+                width: pxToVw(19);
+                height: pxToVw(19);
             }
         }
     }
@@ -153,23 +153,24 @@ header.ba-header {
     0px 2px 16px 1px rgba(0, 0, 0, 0.06);
     border-radius: 0px pxToVw(15) pxToVw(15) 0px;
     position: absolute;
-    top: pxToVw(90);
+    top: pxToVw(60);
     left: 0;
     height: auto;
-    padding: pxToVw(22);
-    width: pxToVw(100);
+    padding: pxToVw(18);
+    width: pxToVw(85);
+    padding-top: 0;
     .ba-sidebar-toggle {
-        margin: pxToVw(60) auto;
+        margin: pxToVw(30) auto;
         @include flexCenterCenter();
-        width: pxToVw(32);
-        height: pxToVw(32);
+        width: pxToVw(25);
+        height: pxToVw(25);
         background: #E7EDF8;
         border-radius: 50%;
         color: $blue;
         font-size: pxToVw(21);
         i {
             transition: .1s all cubic-bezier(0.65, 0.05, 0.36, 1);
-            font-size: pxToVw(22);
+            font-size: pxToVw(17);
             color: $blue;
         }
     }
@@ -207,10 +208,11 @@ header.ba-header {
                 opacity: 0.82;
                 @include flexCenter();
                 justify-content: center;
+                margin: 0 auto;
                 margin-bottom: pxToVw(25);
                 border-radius: 50%;
-                width: pxToVw(56);
-                height: pxToVw(56);
+                width: pxToVw(38);
+                height: pxToVw(38);
                 overflow: hidden;
                 span {
                     transition: .1s all cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -219,7 +221,7 @@ header.ba-header {
                     overflow: hidden;
                     font-style: normal;
                     font-weight: 500;
-                    font-size: pxToVw(15);
+                    font-size: pxToVw(13);
                     line-height: pxToVw(18);
                     text-align: center;
                     letter-spacing: 0.03em;
@@ -229,8 +231,8 @@ header.ba-header {
                     display: none;
                 }
                 img {
-                    width: pxToVw(23);
-                    height: pxToVw(23);
+                    width: pxToVw(17);
+                    height: pxToVw(17);
                 }
             }
         }
@@ -247,7 +249,7 @@ body.ba-sidebar-open {
                 padding-left: pxToVw(17);
                 width: 100%;
                 @include flexCenter();
-                padding: pxToVw(18) pxToVw(17);
+                padding: pxToVw(0) pxToVw(17);
                 span {
                     opacity: 1;
                     display: block;
@@ -267,10 +269,10 @@ body.ba-sidebar-open {
 
 // main app 
 main.ba-app-root {
-    padding: pxToVw(51);
-    padding-left: pxToVw(151);
+    padding: pxToVw(20);
+    padding-left: pxToVw(110);
     .ba-main-cart {
-        padding: pxToVw(55);
+        padding: pxToVw(40) pxToVw(50);
         background: #FFFFFF;
         box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1), 0px 7px 10px rgba(0, 0, 0, 0.07), 0px 2px 16px rgba(0, 0, 0, 0.06);
         border-radius: pxToVw(15);
