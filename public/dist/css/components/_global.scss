@@ -380,6 +380,10 @@ a.ba-add-doc-link {
     background-color: $blueSkyLight !important;
 }
 
+.ba-primary-fluorescent-bg {
+    background-color: $blueFluorescent !important;
+}
+
 .ba-default-bg {
     background-color: transparent !important;
 }
@@ -427,6 +431,10 @@ a.ba-add-doc-link {
 
 .ba-color-blue-sky {
     color: $blueSky !important;
+}
+
+.ba-color-blue-fluorescent {
+    color: $blueFluorescent !important;
 }
 
 .ba-color-green {
@@ -1766,6 +1774,7 @@ a.editable-click:hover {
     border: 1px solid $blueLight;
     border-radius: 5px;
     padding: pxToVw(30);
+    position: relative;
 }
 
 .ba-underline-title {
@@ -1778,7 +1787,7 @@ a.editable-click:hover {
     align-items: center;
     color: $blue;
     border-bottom: 1px solid $blueLight;
-    margin-bottom: 30px;
+    margin-bottom: pxToVw(30);
 }
 
 a.ba-add-color {
@@ -1882,19 +1891,42 @@ a.ba-next-step {
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: 13px;
+        font-size: pxToVw(13);
         line-height: 15px;
         letter-spacing: 0.05em;
-        margin-right: 10px;
+        margin-right: pxToVw(10);
         text-decoration-line: underline;
     }
     i {
-        width: 29px;
-        height: 29px;
+        width: pxToVw(29);
+        height: pxToVw(29);
         border-radius: 50%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-size: 20px;
+        font-size: pxToVw(20);
+    }
+}
+
+.ba-top-right {
+    position: absolute;
+    top: pxToVw(10);
+    right: pxToVw(10);
+}
+
+.ba-profile-statistiques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(43, 62, 98, 0.25);
+    padding-top: pxToVw(30);
+    margin-top: pxToVw(30);
+}
+
+.ba-payment-total {
+    display: flex;
+    justify-content: space-between;
+    .ba-payment-total-figure {
+        text-align: right;
     }
 }

@@ -3578,6 +3578,91 @@ a.ba-add-new-time-btn {
     }
 }
 
+.ba-auth-root {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: #FFFFFF;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 57.57%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: url($assetsPath+ '/illustrations/login-bg.svg') no-repeat, #FFFFFF;
+        background-size: cover;
+        background-position: right;
+    }
+    .ba-auth-box {
+        position: relative;
+        z-index: 1;
+        width: 42.43%;
+        background-color: #FFFFFF;
+        text-align: center;
+        padding-left: pxToVw(120);
+        padding-right: pxToVw(120);
+        justify-content: center;
+        .ba-auth-user-meta {
+            margin-bottom: 20px;
+            img {
+                width: pxToVw(97);
+                height: pxToVw(97);
+                border: 2px solid #FFFFFF;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: pxToVw(23);
+                line-height: pxToVw(21);
+                letter-spacing: 0.03em;
+                color: $blue;
+            }
+            p {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: pxToVw(13);
+                line-height: pxToVw(21);
+                letter-spacing: 0.03em;
+                color: $blueOpacity;
+                margin-bottom: 0;
+            }
+        }
+        form.ba-auth-form {
+            .btn[type="submit"] {
+                width: 100%;
+                justify-content: center;
+                margin-top: pxToVw(30);
+                padding: pxToVw(16) pxToVw(25);
+            }
+        }
+        .ba-auth-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ba-auth-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: pxToVw(100);
+        }
+        &.ba-register {
+            .ba-auth-footer {
+                position: absolute;
+                bottom: pxToVw(-75);
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
 
 /* ---------------------------------------------------------------------------- */
 

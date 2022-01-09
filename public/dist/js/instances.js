@@ -188,7 +188,9 @@ $(document).ready(() => {
             // init plugins 
             initPlugins();
         });
-
+        $(window).on('shown.mdb.modal', function() { 
+            initPlugins();
+        });
         // global datatabele 
         if ($(".ba-datatable").length) {
             let baDatatable = $(".ba-datatable").DataTable({

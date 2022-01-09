@@ -207,6 +207,15 @@
                 <div class="col-4 text-center">
                     <a href="" class="btn ba-btn-outline ba-btn-outline-primary" data-mdb-toggle="modal" data-mdb-target="#alert6_modal">Alert 5 Sélectionnez des fichiers</a>
                 </div>
+                <div class="col-4 text-center">
+                    <a href="" class="btn ba-btn-primary-fluorescent" data-mdb-toggle="modal" data-mdb-target="#alert7_modal">Demander un acompte</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="" class="btn ba-btn-primary-sky" data-mdb-toggle="modal" data-mdb-target="#alert8_modal">Ajouter une réduction</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="" class="btn ba-btn-secondary" data-mdb-toggle="modal" data-mdb-target="#alert9_modal">Ajouter un échéancier de paiement</a>
+                </div>
 
 
             </div>
@@ -337,6 +346,256 @@
         </div>
     </div>
 
+
+    <div class="modal fade ba-primary-light-modal" id="alert7_modal" tabindex="-1" aria-labelledby="alert7_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <!-- head  -->
+                <div class="ba-modal-head">
+                    <h2>Demander un acompte</h2>
+                </div>
+                <div class="ba-modal-core">
+                    <form>
+                        <!-- body  -->
+                        <div class="ba-modal-body">
+
+                            <div class="row">
+
+                                <div class="col-6">
+                                    <div class="ba-checkbox-default">
+                                        <label for="acomte_check_1">
+                                            <span>
+                                                <input type="checkbox" name="acomte_check_1" id="acomte_check_1">
+                                                <i class="fa fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <p>Montant forfaitaire</p>
+                                        </label>
+                                    </div>
+
+                                    <div class="row align-items-center g-0">
+
+                                        <div class="col-5">
+                                            <!-- input  -->
+                                            <div class="ba-form-warpp mb-0">
+                                                <div class="ba-form-control ba-fc-right-icon-currency xs-controll" data-currency="€">
+                                                    <input type="text" class="bg-white" placeholder="0" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <p class="gray-global-text ms-2">de la valeur de la facture</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <div class="ba-checkbox-default">
+                                        <label for="acomte_check_2">
+                                            <span>
+                                                <input type="checkbox" name="acomte_check_2" id="acomte_check_2">
+                                                <i class="fa fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <p>Pourcentages</p>
+                                        </label>
+                                    </div>
+
+                                    <div class="row align-items-center g-0">
+
+                                        <div class="col-5">
+                                            <!-- input  -->
+                                            <div class="ba-form-warpp mb-0">
+                                                <div class="ba-form-control ba-fc-right-icon-currency xs-controll" data-currency="%">
+                                                    <input type="text" placeholder="0" class="bg-white" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <p class="gray-global-text  ms-2">de la valeur de la facture</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="ba-modal-footer">
+                            <button class="btn ba-btn-default btn-md me-3" data-dismiss="modal">Annuler</button>
+                            <button class="btn ba-btn-primary btn-md">Ajouter un acompte</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade ba-primary-light-modal" id="alert8_modal" tabindex="-1" aria-labelledby="alert7_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <!-- head  -->
+                <div class="ba-modal-head">
+                    <h2>Ajouter une réduction</h2>
+                </div>
+                <div class="ba-modal-core">
+                    <form>
+                        <!-- body  -->
+                        <div class="ba-modal-body">
+
+                            <div class="row align-items-center g-0">
+
+                                <div class="col-3">
+                                    <!-- input  -->
+                                    <div class="ba-form-warpp mb-0">
+                                        <div class="ba-form-control ba-fc-right-icon-currency xs-controll" data-currency="%">
+                                            <input type="text" class="bg-white" placeholder="0" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <p class="gray-global-text ms-2">du sous-total de la facture</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="ba-modal-footer">
+                            <button class="btn ba-btn-default btn-md me-3" data-dismiss="modal">Annuler</button>
+                            <button class="btn ba-btn-primary btn-md">Ajouter une réduction</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade ba-primary-light-modal" id="alert9_modal" tabindex="-1" aria-labelledby="alert7_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <!-- head  -->
+                <div class="ba-modal-head">
+                    <h2>Ajouter un échéancier de paiement</h2>
+                </div>
+                <div class="ba-modal-core">
+                    <form>
+                        <!-- body  -->
+                        <div class="ba-modal-body">
+
+                            <div class="row">
+
+                                <div class="col-6">
+                                    <div class="ba-checkbox-default">
+                                        <label for="hour_check_1">
+                                            <span>
+                                                <input type="checkbox" name="hour_check_1" id="hour_check_1">
+                                                <i class="fa fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <p>Pourcentages</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="ba-checkbox-default">
+                                        <label for="hour_check_2">
+                                            <span>
+                                                <input type="checkbox" name="hour_check_2" id="hour_check_2">
+                                                <i class="fa fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <p>Pourcentages</p>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="ba-peyment-items my-4">
+                                <!-- item  -->
+                                <div class="payment-item mb-4">
+                                    <div class="row justify-content-between align-items-center">
+
+                                        <div class="col-4">
+                                            <!-- input  -->
+                                            <div class="ba-form-warpp mb-0">
+                                                <label for="" class="ba-form-label sm">Paiement ( 2 de 1 )</label>
+                                                <div class="ba-form-control ba-fc-right-icon-currency xs-controll" data-currency="%">
+                                                    <input type="text" class="bg-white" placeholder="0" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <!-- input  -->
+                                            <div class="ba-form-warpp mb-0">
+                                                <label for="" class="ba-form-label sm">Date D'échéance</label>
+                                                <div class="ba-form-control ba-fc-right-icon-date xs-controll">
+                                                    <input type="text" class="bg-white" placeholder="30/08/2021" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <a href="" class="btn ba-btn- mt-4 p-0">
+                                                <img class="lg-img" src="../public/assets/icons/gray-delete.svg" alt="">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- item  -->
+                                <div class="payment-item mb-4">
+                                    <div class="row justify-content-between align-items-center">
+
+                                        <div class="col-4">
+                                            <!-- input  -->
+                                            <div class="ba-form-warpp mb-0">
+                                                <label for="" class="ba-form-label sm">Paiement ( 2 de 1 )</label>
+                                                <div class="ba-form-control ba-fc-right-icon-currency xs-controll" data-currency="%">
+                                                    <input type="text" class="bg-white" placeholder="0" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <!-- input  -->
+                                            <div class="ba-form-warpp mb-0">
+                                                <label for="" class="ba-form-label sm">Date D'échéance</label>
+                                                <div class="ba-form-control ba-fc-right-icon-date xs-controll">
+                                                    <input type="text" class="bg-white" placeholder="30/08/2021" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <a href="" class="btn ba-btn- mt-4 p-0">
+                                                <img class="lg-img" src="../public/assets/icons/gray-delete.svg" alt="">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <a href="" class="full-dotted-link text-black">
+                                + Ajouter un autre paiement
+                            </a>
+
+                            <div class="ba-payment-total">
+                                <label class="lg-text">Le total</label>
+
+                                <div class="ba-payment-total-figure">
+                                    <h2 class="lg-text"> 0%</h2>
+                                    <p class="gray-global-text">100 % restants</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ba-modal-footer">
+                            <button class="btn ba-btn-default btn-md me-3" data-dismiss="modal">Annuler</button>
+                            <button class="btn ba-btn-primary btn-md">Ajouter un horaire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Modal -->
