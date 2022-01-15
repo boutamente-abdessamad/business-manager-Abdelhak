@@ -56,6 +56,11 @@
 }
 
 @function pxToVw($px) {
-    $value: calc(#{$px} * 0.0651111111vw);
+    $value: calc(#{$px} * #{$uiUnit});
+    @return $value;
+}
+
+@function pxToVwMobile($px) {
+    $value: calc(#{$px} * #{$uiUnitMobile});
     @return $value;
 }
