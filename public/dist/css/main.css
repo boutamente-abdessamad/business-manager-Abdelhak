@@ -4174,6 +4174,7 @@ a.ba-next-step i {
 
   .ba-cart-header-actions {
     margin-bottom: calc(40 * 0.25vw);
+    flex-wrap: wrap;
   }
 
   a.ba-cart-header-back {
@@ -5443,14 +5444,14 @@ ul.meanings-table li img {
     margin-top: calc(-4 * 0.25vw);
     font-size: calc(21 * 0.25vw);
     top: calc(31 * 0.25vw);
-    left: calc(19 * 0.25vw);
+    left: calc(25 * 0.25vw);
     margin-left: calc(-4 * 0.25vw);
   }
   table.dataTable tr.selected th.select-checkbox:after {
     margin-top: calc(-4 * 0.25vw);
     font-size: calc(24 * 0.25vw);
     top: calc(18 * 0.25vw);
-    left: calc(29 * 0.25vw);
+    left: calc(30 * 0.25vw);
     margin-left: calc(-4 * 0.25vw);
   }
 
@@ -9805,6 +9806,10 @@ a.ba-add-new-time-btn img {
 }
 
 @media (max-width: 480px) {
+  .show-area {
+    overflow-x: hidden;
+  }
+
   .ba-main-tabs {
     position: relative;
     padding-top: calc(40 * 0.25vw);
@@ -9875,6 +9880,17 @@ a.ba-add-new-time-btn img {
     justify-content: center;
     text-align: center;
     margin-right: 0 !important;
+  }
+
+  .ba-cart-header-actions .ba-group-buttons .btn {
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0 !important;
+  }
+  .ba-cart-header-actions .ba-group-buttons .dropdown {
+    width: 100%;
   }
 
   .ba-invoices-status-container {
@@ -10198,11 +10214,14 @@ a.ba-add-new-time-btn img {
   }
 
   .ba-submit-article-container {
-    margin-top: calc(130 * 0.25vw);
+    margin-top: calc(40 * 0.25vw);
   }
 
   .import-excel-steps-warpp {
-    padding: calc(30 * 0.25vw);
+    padding: calc(15 * 0.25vw);
+  }
+  .import-excel-steps-warpp .import-excel-step {
+    margin-bottom: 15px;
   }
   .import-excel-steps-warpp .import-excel-step p {
     font-size: calc(13 * 0.25vw);
@@ -10255,7 +10274,7 @@ a.ba-add-new-time-btn img {
   }
 
   .ba-import-excel-warpp {
-    padding: calc(70 * 0.25vw);
+    padding: calc(0 * 0.25vw);
   }
 
   .bank-action-cart {

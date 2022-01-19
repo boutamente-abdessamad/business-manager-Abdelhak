@@ -1,5 +1,8 @@
 // mobile 
 @media (max-width: 480px) {
+    .show-area {
+        overflow-x: hidden;
+    }
     // main nav 
     .ba-main-tabs {
         position: relative;
@@ -83,6 +86,20 @@
                 justify-content: center;
                 text-align: center;
                 margin-right: 0 !important;
+            }
+        }
+    }
+    .ba-cart-header-actions {
+        .ba-group-buttons {
+            .btn {
+                width: 100%;
+                margin-bottom: 15px;
+                justify-content: center;
+                text-align: center;
+                margin-right: 0 !important;
+            }
+            .dropdown {
+                width: 100%;
             }
         }
     }
@@ -410,10 +427,13 @@
         }
     }
     .ba-submit-article-container {
-        margin-top: pxToVwMobile(130);
+        margin-top: pxToVwMobile(40);
     }
     .import-excel-steps-warpp {
-        padding: pxToVwMobile(30);
+        padding: pxToVwMobile(15);
+        .import-excel-step {
+            margin-bottom: 15px;
+        }
         .import-excel-step {
             p {
                 font-size: pxToVwMobile(13);
@@ -464,7 +484,7 @@
         }
     }
     .ba-import-excel-warpp {
-        padding: pxToVwMobile(70);
+        padding: pxToVwMobile(0);
     }
     // bank 
     .bank-action-cart {

@@ -250,6 +250,7 @@
     // ba-cart-header-actions 
     .ba-cart-header-actions {
         margin-bottom: pxToVwMobile(40);
+        flex-wrap: wrap;
     }
     // ba-cart-header-back
     a.ba-cart-header-back {
