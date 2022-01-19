@@ -15,10 +15,9 @@ var initPlugins = function() {
     // semantic dropdown
     if ($.fn.dropdown) {
         $('.ui.dropdown')
-        .dropdown({
-          on: 'click'
-        })
-      ;
+            .dropdown({
+                on: 'click'
+            });
     }
     // date pieaker 
     // more options 
@@ -60,7 +59,7 @@ var initPlugins = function() {
             codeMirror: false,
             tabSize: 4
         })
-    // editor wysiwyg
+        // editor wysiwyg
     var editor2 = new FroalaEditor('.editor-wysiwyg', {
             codeMirror: false,
             tabSize: 4
@@ -88,6 +87,13 @@ var initPlugins = function() {
             prevArrow: $('.side-slider-actions .doc-prev'),
             nextArrow: $('.side-slider-actions .doc-next'),
             infinite: false,
+            responsive: [{
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }]
         });
         setTimeout(function() {
                 baUploadedDocsSlider.slick('resize');
@@ -109,6 +115,14 @@ var initPlugins = function() {
             prevArrow: $('.side-slider-actions .prev'),
             nextArrow: $('.side-slider-actions .next'),
             infinite: false,
+            responsive: [{
+                breakpoint: 480,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
         });
         purchasesInvoicesSlider.show();
     }
@@ -126,6 +140,13 @@ var initPlugins = function() {
             prevArrow: $('.side-slider-actions .prev'),
             nextArrow: $('.side-slider-actions .next'),
             infinite: true,
+            responsive: [{
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }]
         });
         suppliersSlider.show();
     }
@@ -143,6 +164,13 @@ var initPlugins = function() {
             prevArrow: $('.invoices-models-prev'),
             nextArrow: $('.invoices-models-next'),
             infinite: true,
+            responsive: [{
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }]
         });
     }
     let baColorsSlider = $('.ba-colors-slider');
@@ -188,7 +216,7 @@ $(document).ready(() => {
             // init plugins 
             initPlugins();
         });
-        $(window).on('shown.mdb.modal', function() { 
+        $(window).on('shown.mdb.modal', function() {
             initPlugins();
         });
         // global datatabele 

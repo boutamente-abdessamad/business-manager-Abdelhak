@@ -51,8 +51,8 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: pxToVw(13);
-    line-height: pxToVw(23);
+    font-size: 13px;
+    line-height: 23px;
 }
 
 @function pxToVw($px) {

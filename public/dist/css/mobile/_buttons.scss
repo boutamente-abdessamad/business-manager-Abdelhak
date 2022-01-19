@@ -1,0 +1,155 @@
+// mobile 
+@media (max-width: 480px) {
+    // buttons 
+    [class*="ba-btn-"] {
+        font-size: pxToVwMobile(13);
+        line-height: pxToVwMobile(15);
+        padding: pxToVwMobile(12) pxToVwMobile(17);
+        border-radius: 7px;
+        &.btn-xs {
+            padding: pxToVwMobile(5) pxToVwMobile(15);
+            font-size: pxToVwMobile(11);
+        }
+        &.btn-md {
+            padding: pxToVwMobile(8) pxToVwMobile(20);
+            font-size: pxToVwMobile(12);
+            border-radius: 5px;
+        }
+        &.btn-lg {
+            padding: pxToVwMobile(16) pxToVwMobile(20);
+            font-size: pxToVwMobile(15);
+        }
+        img {
+            width: pxToVwMobile(11);
+            height: pxToVwMobile(11);
+            &.lg-img {
+                width: pxToVwMobile(18);
+                height: pxToVwMobile(18);
+            }
+        }
+        &>img~span {
+            margin-left: pxToVwMobile(10);
+        }
+        &>span~img {
+            margin-left: pxToVwMobile(10);
+        }
+        &>span~i {
+            margin-left: pxToVwMobile(10);
+        }
+        &>i~span {
+            margin-left: pxToVwMobile(10);
+        }
+        i {
+            font-size: 19px;
+            &.dark-back-round {
+                width: pxToVwMobile(20);
+                height: pxToVwMobile(20);
+            }
+        }
+    }
+    .ba-btn-round {
+        border-radius: pxToVw(100);
+    }
+    button.btn.ba-connexion-btn {
+        padding: pxToVwMobile(8) pxToVwMobile(15);
+        padding-right: pxToVwMobile(25);
+        span {
+            font-size: pxToVwMobile(13);
+            line-height: pxToVwMobile(21);
+        }
+        img {
+            width: pxToVwMobile(20);
+            height: pxToVwMobile(20);
+        }
+    }
+    .ba-btn-social {
+        font-size: pxToVwMobile(15);
+        line-height: 18px;
+        img {
+            width: pxToVwMobile(29);
+            height: pxToVwMobile(29);
+        }
+        &>img~span {
+            margin-left: pxToVwMobile(72);
+        }
+        &>span~img {
+            margin-left: pxToVwMobile(72);
+        }
+    }
+    .ba-btn-circle {
+        width: pxToVwMobile(36) !important;
+        height: pxToVwMobile(36) !important;
+        border-radius: 50%;
+        .btn-xs {
+            width: pxToVwMobile(28);
+            height: pxToVwMobile(28);
+        }
+        img {
+            width: pxToVwMobile(20);
+            height: pxToVwMobile(20);
+        }
+        img.ba-xs-img {
+            width: pxToVwMobile(13);
+            height: pxToVwMobile(13);
+        }
+    }
+    .editable-submit {
+        padding: pxToVwMobile(4) pxToVwMobile(7);
+    }
+    .editable-cancel {
+        padding: pxToVwMobile(4) pxToVwMobile(7);
+    }
+    // excel button 
+    .ba-excel-file-upload {
+        padding: pxToVwMobile(15) pxToVwMobile(20);
+        .ba-excel-file-text {
+            margin-right: pxToVwMobile(15);
+            p {
+                font-size: pxToVwMobile(13);
+                line-height: pxToVwMobile(21);
+                margin: 0 pxToVwMobile(12);
+            }
+        }
+        .ba-excel-file-text {
+            img {
+                width: pxToVwMobile(25);
+                height: pxToVwMobile(28);
+            }
+        }
+        .ba-excel-file-icon {
+            img {
+                height: pxToVwMobile(14);
+                width: pxToVwMobile(14);
+            }
+        }
+        &.ba-excel-file-lg {
+            padding: pxToVwMobile(25) pxToVwMobile(20);
+            .ba-excel-file-text {
+                img {
+                    width: pxToVwMobile(35);
+                    height: pxToVwMobile(40);
+                }
+                p {
+                    margin-left: 90px;
+                }
+            }
+        }
+    }
+    .no-records {
+        >img {
+            width: pxToVwMobile(105);
+            height: pxToVwMobile(121);
+        }
+        p {
+            font-size: pxToVwMobile(21);
+            line-height: pxToVwMobile(25);
+            margin-top: pxToVwMobile(25);
+            margin-bottom: pxToVwMobile(30);
+        }
+    }
+    // switch
+    label.ba-switch-slider {
+        border-radius: pxToVwMobile(15);
+        height: pxToVwMobile(15);
+    }
+}

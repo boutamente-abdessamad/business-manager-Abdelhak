@@ -74,7 +74,7 @@
             height: 100%;
             align-items: center;
             .fa {
-                color: #104CBA;
+                color: $blue;
                 height: pxToVw(24);
                 width: pxToVw(24);
                 border-radius: 50%;
@@ -108,7 +108,7 @@
                     border-radius: 5px;
                     margin: 5px 0;
                     span.fa {
-                        color: #104CBA;
+                        color: $blue;
                         height: pxToVw(24);
                         width: pxToVw(24);
                         border-radius: 50%;
@@ -472,4 +472,4 @@
     }
     
     // mobile 
-    @media (max-width: 480px) {}
+    @import "../mobile/forms.scss";

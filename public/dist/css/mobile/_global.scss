@@ -1,0 +1,918 @@
+/* ........... Global elements ............. */
+
+@media (max-width: 480px) {
+    // block-title
+    .ba-block-title-ontainer {
+        margin-top: pxToVwMobile(20);
+        padding-bottom: pxToVwMobile(10);
+    }
+    .ba-back-hr::after {
+        width: 45%;
+    }
+    .ba-status-icon {
+        height: pxToVwMobile(20);
+        width: pxToVwMobile(20);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: pxToVwMobile(12);
+        &.ba-sm {
+            height: pxToVwMobile(12);
+            width: pxToVwMobile(12);
+            font-size: pxToVwMobile(8);
+        }
+    }
+    .ba-status {
+        padding: 2px pxToVwMobile(15);
+        &.status-sm {
+            font-size: pxToVwMobile(12);
+            padding: 2px pxToVwMobile(12);
+            line-height: pxToVwMobile(18);
+        }
+    }
+    .ba-status-icon {
+        height: pxToVwMobile(20);
+        width: pxToVwMobile(20);
+        font-size: pxToVwMobile(12);
+        &.ba-sm {
+            height: pxToVwMobile(12);
+            width: pxToVwMobile(12);
+            font-size: pxToVwMobile(8);
+        }
+    }
+    .ba-page-head-title {
+        h3 {
+            font-size: pxToVwMobile(23);
+            line-height: pxToVwMobile(27);
+        }
+        p {
+            font-size: pxToVwMobile(13);
+            line-height: pxToVwMobile(18);
+        }
+    }
+    .xs-img {
+        width: pxToVwMobile(21);
+        height: pxToVwMobile(21);
+    }
+    .ba-back-hr::before {
+        width: 45%;
+    }
+    .block-title {
+        font-size: pxToVwMobile(21) !important;
+        line-height: pxToVwMobile(25) !important;
+        margin: pxToVwMobile(30) 0px;
+    }
+    .sm-text {
+        font-size: 11px !important;
+        line-height: pxToVwMobile(18) !important;
+    }
+    .md-text {
+        font-size: 13px !important;
+        line-height: pxToVwMobile(20) !important;
+    }
+    .lg-text {
+        font-size: 19px !important;
+        line-height: pxToVwMobile(23) !important;
+    }
+    .gray-global-text {
+        font-size: pxToVwMobile(13)!important;
+        line-height: pxToVwMobile(20)!important;
+    }
+    .block-title span {
+        font-size: pxToVwMobile(27);
+        line-height: pxToVwMobile(32);
+    }
+    a.ba-add-doc-link {
+        font-size: pxToVwMobile(13);
+        line-height: pxToVwMobile(15);
+        i {
+            font-size: pxToVwMobile(21);
+            margin-right: pxToVwMobile(10);
+        }
+    }
+    /*
+    *  STYLE 16
+    */
+     ::-webkit-scrollbar-track {
+        border-radius: pxToVwMobile(15);
+    }
+     ::-webkit-scrollbar {
+        width: pxToVwMobile(10);
+        border-radius: pxToVwMobile(15);
+    }
+    .close-toggle-top-right {
+        top: pxToVwMobile(-8);
+        right: pxToVwMobile(-8);
+        cursor: pointer;
+        img {
+            width: pxToVwMobile(20);
+            height: pxToVwMobile(20);
+        }
+    }
+    .ba-link {
+        font-size: pxToVwMobile(13);
+        line-height: pxToVwMobile(15);
+        i {
+            font-size: pxToVwMobile(17);
+        }
+        &.md-link {
+            font-size: pxToVwMobile(17);
+            line-height: pxToVwMobile(28);
+            i {
+                font-size: pxToVwMobile(22);
+            }
+        }
+        img {
+            width: pxToVwMobile(23);
+            height: pxToVwMobile(23);
+        }
+        &>span~img {
+            margin-left: pxToVwMobile(10);
+        }
+        &>img~span {
+            margin-right: pxToVwMobile(10);
+        }
+        &>span~i {
+            margin-left: pxToVwMobile(10);
+        }
+        &>i~span {
+            margin-right: pxToVwMobile(10);
+        }
+    }
+    .total-row {
+        label {
+            font-size: pxToVwMobile(15);
+            line-height: pxToVwMobile(23);
+            margin-right: pxToVwMobile(30);
+        }
+        h2 {
+            font-size: pxToVwMobile(19);
+            line-height: pxToVwMobile(23);
+        }
+    }
+    .ba-icon-xl {
+        width: pxToVwMobile(95);
+        height: pxToVwMobile(95);
+        img {
+            width: pxToVwMobile(39);
+            height: pxToVwMobile(39);
+        }
+    }
+    .ba-icon-lg {
+        width: pxToVwMobile(62);
+        height: pxToVwMobile(62);
+        img {
+            width: pxToVwMobile(27);
+            height: pxToVwMobile(27);
+        }
+    }
+    .ba-icon-md {
+        width: pxToVwMobile(36);
+        height: pxToVwMobile(36);
+        img {
+            width: pxToVwMobile(16);
+            height: pxToVwMobile(16);
+        }
+    }
+    .dropdown {
+        .dropdown-menu.ba-dropdown-items {
+            box-shadow: 0px 3px 11px #00000029;
+            .dropdown-item {
+                padding: pxToVwMobile(5) pxToVwMobile(10);
+                font-size: pxToVwMobile(11);
+                line-height: pxToVwMobile(27);
+                img {
+                    width: pxToVwMobile(17);
+                    height: pxToVwMobile(17);
+                    margin-right: pxToVwMobile(8);
+                }
+                span.fa {
+                    height: pxToVwMobile(24);
+                    width: pxToVwMobile(24);
+                }
+            }
+            .banks-drop-item {
+                img {
+                    width: pxToVwMobile(130);
+                    height: pxToVwMobile(34);
+                    object-fit: cover;
+                }
+            }
+        }
+        .dropdown-menu {
+            min-width: auto;
+            padding: 5px;
+        }
+    }
+    // cart
+    .ba-cart {
+        border-radius: pxToVwMobile(11);
+        padding: pxToVwMobile(15);
+    }
+    /* daterangepicker */
+    .daterangepicker {
+        .calendar-table {
+            th {
+                font-size: pxToVwMobile(13);
+                line-height: pxToVwMobile(16);
+            }
+            table {
+                >thead {
+                    >tr {
+                        th {
+                            font-size: pxToVwMobile(15);
+                            line-height: pxToVwMobile(24);
+                            padding-bottom: pxToVwMobile(15);
+                        }
+                    }
+                }
+            }
+            td {
+                font-size: pxToVwMobile(13);
+                line-height: pxToVwMobile(16);
+                width: pxToVwMobile(30);
+                height: pxToVwMobile(40);
+            }
+        }
+        border-radius: pxToVwMobile(5);
+        width: pxToVwMobile(600);
+        padding:pxToVwMobile(15);
+        .drp-calendar {
+            max-width: 50%;
+            width: 50%;
+        }
+        &.show-calendar {
+            .drp-buttons {
+                display: none !important;
+            }
+        }
+    }
+    // ba-cart-header-actions 
+    .ba-cart-header-actions {
+        margin-bottom: pxToVwMobile(40);
+    }
+    // ba-cart-header-back
+    a.ba-cart-header-back {
+        font-size: pxToVwMobile(17);
+        line-height: pxToVwMobile(20);
+        .back-link-icon {
+            width: pxToVwMobile(45);
+            height: pxToVwMobile(45);
+            margin-right: pxToVwMobile(15);
+        }
+    }
+    // create invoice 
+    .ba-create-invoice-warpper {
+        .ba-create-invoice-staps {
+            width: 38.4307446%;
+            border-radius: pxToVwMobile(15);
+            padding: pxToVwMobile(24);
+            .invoice-step-acourdion {
+                &:not(:last-child) {
+                    margin-bottom: pxToVwMobile(25);
+                }
+                border-radius: pxToVwMobile(15);
+                .ba-accordion-header {
+                    border-top-right-radius: calc(15 * 0.0651111111vw);
+                    border-top-left-radius: calc(15 * 0.0651111111vw);
+                    padding: pxToVwMobile(30);
+                    .ba-accordion-header-title {
+                        .ba-accordion-header-title-icon {
+                            img {
+                                width: pxToVwMobile(27);
+                                height: pxToVwMobile(27);
+                            }
+                            width: pxToVwMobile(62);
+                            height: pxToVwMobile(62);
+                            border-radius: pxToVwMobile(100);
+                        }
+                        span {
+                            font-size: pxToVwMobile(15);
+                            line-height: pxToVwMobile(25);
+                            margin-left: pxToVwMobile(20);
+                        }
+                    }
+                    .ba-accordion-header-toggle img {
+                        width: pxToVwMobile(23);
+                        height: pxToVwMobile(23);
+                    }
+                }
+                .ba-accordion-body {
+                    padding: 0 pxToVwMobile(30);
+                    .ba-accordion-body-content {
+                        .ba-invoice-infos {
+                            padding-bottom: pxToVwMobile(15);
+                            margin-bottom: pxToVwMobile(15);
+                            .ba-invoice-infos-list {
+                                ul {
+                                    margin-bottom: pxToVwMobile(10);
+                                }
+                                a.invoice-all-details-link {
+                                    i {
+                                        margin-left: pxToVwMobile(15);
+                                        font-size: pxToVwMobile(21);
+                                    }
+                                }
+                            }
+                        }
+                        .ba-invoice-collapse-head {
+                            .ba-invoice-collapse-head-icon {
+                                i {
+                                    font-size: pxToVwMobile(22);
+                                }
+                            }
+                        }
+                        .send-reminde-warpper {
+                            margin: pxToVwMobile(20) 0px;
+                            input.ba-form-controll {
+                                max-width: pxToVwMobile(65);
+                                margin: 0 pxToVwMobile(20);
+                            }
+                        }
+                        .send-deadline-warpper {
+                            p {
+                                margin-left: pxToVwMobile(15);
+                            }
+                        }
+                    }
+                }
+                &.in {
+                    .ba-accordion-body {
+                        padding: pxToVwMobile(30);
+                        max-height: pxToVwMobile(1000);
+                    }
+                }
+            }
+        }
+    }
+    .ba-checkbox-default {
+        margin: pxToVwMobile(15) 0px;
+        label {
+            p {
+                @include normalText($blueText);
+                line-height: 18px;
+                margin-bottom: 0;
+            }
+            span {
+                min-width: pxToVwMobile(25);
+                width: pxToVwMobile(25);
+                height: pxToVwMobile(25);
+                border-radius: pxToVwMobile(5);
+                margin-right: pxToVwMobile(15);
+                i {
+                    font-size: pxToVwMobile(11);
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    .full-dotted-link {
+        width: 100%;
+        height: pxToVwMobile(45);
+        font-size: pxToVwMobile(11);
+        line-height: pxToVwMobile(13);
+        margin: pxToVwMobile(30) 0px;
+        img {
+            width: pxToVwMobile(11);
+            height: pxToVwMobile(11);
+            margin-right: pxToVwMobile(15);
+        }
+    }
+    // ba-slider-angles
+    .ba-slider-angles {
+        a {
+            margin: 0 6px;
+            i {
+                font-size: pxToVwMobile(27);
+            }
+        }
+    }
+    .invoices-models-slider {
+        margin: pxToVwMobile(20) 0px;
+        .invoices-models-slider-item img {
+            height: pxToVwMobile(240);
+        }
+        /* the slides */
+        .slick-slide {
+            margin: 0 pxToVwMobile(15);
+        }
+        /* the parent */
+        .slick-list {
+            margin: 0 pxToVwMobile(-15);
+        }
+    }
+    .block-head-title {
+        padding: pxToVwMobile(15) 0px;
+    }
+    .ba-block-desc {
+        p {
+            font-size: pxToVwMobile(17);
+            line-height: pxToVwMobile(29);
+        }
+    }
+    // ba-colors-slider
+    .ba-colors-slider-warpper {
+        .ba-colors-slider {
+            width: calc(100% - 90px);
+            /* the slides */
+            .slick-slide {
+                margin: 0 pxToVwMobile(8);
+            }
+            /* the parent */
+            .slick-list {
+                margin: 0 -8px;
+            }
+        }
+        .ba-slider-angles {
+            width: pxToVwMobile(70);
+        }
+        .color-check-box {
+            span {
+                width: pxToVwMobile(27) !important;
+                height: pxToVwMobile(27) !important;
+            }
+        }
+    }
+    .editableform .form-control {
+        height: pxToVwMobile(43);
+    }
+    .paylent-ways {
+        img {
+            width: pxToVwMobile(195);
+            height: pxToVwMobile(70);
+        }
+    }
+    // editable-link
+    .editable-link {
+        font-size: pxToVwMobile(12);
+        line-height: pxToVwMobile(24);
+    }
+    .editable-date::after {
+        right: pxToVwMobile(-20);
+        width: pxToVwMobile(11);
+        height: pxToVwMobile(11);
+    }
+    // dotted-upload 
+    .dotted-upload-zone {
+        border-radius: pxToVwMobile(7);
+        padding: pxToVwMobile(30);
+        cursor: pointer;
+        &>img {
+            width: pxToVwMobile(30);
+            height: pxToVwMobile(35);
+            margin-bottom: pxToVwMobile(30);
+        }
+        p,
+        a {
+            font-size: pxToVwMobile(10);
+            line-height: pxToVwMobile(17);
+        }
+    }
+    // create-invoice-main 
+    .ba-create-invoice-main {
+        padding: pxToVwMobile(40);
+        .ba-invoice-label {
+            font-size: pxToVwMobile(12);
+            line-height: pxToVwMobile(24);
+        }
+        .ba-invoice-infos-warpp {
+            margin-top: pxToVwMobile(45);
+        }
+        .ba-invoice-client {
+            height: pxToVwMobile(109);
+            border-radius: pxToVwMobile(7);
+            min-width: pxToVwMobile(215);
+            margin-top: pxToVwMobile(10);
+        }
+        .ba-invoice-clients-dropdown {
+            &>a {
+                font-size: pxToVwMobile(11);
+                line-height: pxToVwMobile(13);
+                img {
+                    width: pxToVwMobile(13);
+                    height: pxToVwMobile(13);
+                    margin-right: pxToVwMobile(15);
+                }
+            }
+        }
+        // ba-invoice-articles
+        .ba-invoice-articles-warpp {
+            margin-top: pxToVwMobile(40);
+            table {
+                thead {
+                    tr {
+                        th {
+                            font-size: pxToVwMobile(11);
+                            line-height: pxToVwMobile(13);
+                            padding: pxToVwMobile(18) pxToVwMobile(16);
+                            &:first-child {
+                                border-top-left-radius: pxToVwMobile(5);
+                                border-bottom-left-radius: pxToVwMobile(5);
+                            }
+                            &:nth-child(4n) {
+                                border-top-right-radius: pxToVwMobile(5);
+                                border-bottom-right-radius: pxToVwMobile(5);
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: pxToVwMobile(18) pxToVwMobile(16);
+                        }
+                    }
+                }
+            }
+        }
+        .ba-invoice-add-column-buttons-warp {
+            .ba-invoice-add-column-button-dromdown {
+                width: pxToVwMobile(60);
+                img {
+                    width: pxToVwMobile(25);
+                    height: pxToVwMobile(22);
+                }
+            }
+            .ba-invoice-add-column-button-col {
+                width: calc(100% - 70px);
+                img {
+                    width: pxToVwMobile(13);
+                    height: pxToVwMobile(13);
+                    margin-right: pxToVwMobile(10);
+                }
+                font-size: pxToVwMobile(11);
+                line-height: pxToVwMobile(13);
+                height: pxToVwMobile(45);
+            }
+        }
+        .ba-invoice-total-warpp {
+            margin-top: pxToVwMobile(40);
+            .ba-invoice-total-row {
+                &:not(.final-total-box) {
+                    width: 80%;
+                    margin-right: pxToVwMobile(40);
+                }
+                align-items: flex-start;
+                padding: pxToVwMobile(10) 0px;
+                p {
+                    font-size: pxToVwMobile(12);
+                    line-height: pxToVwMobile(18);
+                }
+                &>p {
+                    width: 50%;
+                }
+                &.final-total-box {
+                    border-radius: pxToVwMobile(5);
+                    padding: pxToVwMobile(17) pxToVwMobile(40);
+                    margin-top: pxToVwMobile(15);
+                    margin-bottom: pxToVwMobile(15);
+                }
+            }
+        }
+        .invoice-note {
+            margin-top: pxToVwMobile(40);
+        }
+        .ba-invoice-footer {
+            margin-top: pxToVwMobile(55);
+            padding: pxToVwMobile(20) pxToVwMobile(10);
+        }
+    }
+    .ba-invoice-dropdown-mission-items {
+        padding: pxToVwMobile(8);
+        .dropdown-mission-item {
+            font-size: pxToVwMobile(11);
+            line-height: pxToVwMobile(23);
+        }
+        .ba-dci-mission {
+            width: pxToVwMobile(24);
+            height: pxToVwMobile(24);
+            margin-right: pxToVwMobile(10);
+            img {
+                width: pxToVwMobile(15);
+                height: pxToVwMobile(15);
+            }
+        }
+    }
+    .combodate select {
+        border-radius: pxToVwMobile(5);
+        font-size: pxToVwMobile(13);
+        line-height: pxToVwMobile(23);
+        height: pxToVwMobile(27);
+    }
+    .ba-add-link {
+        font-size: pxToVwMobile(11);
+        line-height: pxToVwMobile(24);
+    }
+    // ba-invoice-clients-dropdown 
+    .ba-invoice-clients-dropdown {
+        .ba-invoice-dropdown-items {
+            padding: pxToVwMobile(8);
+            .dropdown-client-item {
+                border-radius: pxToVwMobile(7);
+                padding: pxToVwMobile(15) pxToVwMobile(12);
+                margin: 4px 0px;
+                .ba-dci-infos {
+                    margin-left: pxToVwMobile(15);
+                    h5 {
+                        font-size: pxToVwMobile(13);
+                        line-height: pxToVwMobile(21);
+                    }
+                    p {
+                        font-size: pxToVwMobile(10);
+                        line-height: pxToVwMobile(18);
+                    }
+                }
+                .ba-dci-letter {
+                    font-size: pxToVwMobile(17);
+                    line-height: pxToVwMobile(37);
+                    width: pxToVwMobile(32);
+                    height: pxToVwMobile(32);
+                }
+            }
+        }
+    }
+    .ba-invoice-sidezone {
+        width: 38.4307446%;
+    }
+    .ba-invoice-payment-status-panel {
+        border-radius: pxToVwMobile(15);
+        padding: pxToVwMobile(24);
+        .ba-invoice-payment-status-panel-header {
+            padding-bottom: pxToVwMobile(24);
+            margin-bottom: pxToVwMobile(24);
+            h3 {
+                font-size: pxToVwMobile(27);
+                line-height: pxToVwMobile(29);
+            }
+        }
+        .ba-cart {
+            // pay invoice status panel 
+            .ba-invoice-pay-cart-head {
+                border-radius: pxToVwMobile(7);
+                padding: pxToVwMobile(15);
+                h3 {
+                    font-size: pxToVwMobile(19);
+                    line-height: pxToVwMobile(25);
+                }
+                p {
+                    font-size: pxToVwMobile(15);
+                    line-height: pxToVwMobile(27);
+                    /* identical to box height, or 180% */
+                }
+            }
+            .ba-invoice-pay-cart-body {
+                padding: 0px;
+                height: 0;
+                transition: $baTransition;
+                ul {
+                    padding: 0;
+                    li {
+                        padding: pxToVwMobile(15) 0px;
+                        border-bottom: 1px solid rgba(16, 76, 186, 0.21);
+                        padding-left: pxToVwMobile(40);
+                        p {
+                            font-size: pxToVwMobile(13);
+                            line-height: pxToVwMobile(27);
+                            /* identical to box height, or 208% */
+                        }
+                    }
+                }
+            }
+            .ba-invoice-comment-message {
+                margin-top: pxToVwMobile(24);
+                .ba-comment-user {
+                    font-size: pxToVwMobile(17);
+                    line-height: pxToVwMobile(21);
+                    /* or 124% */
+                    width: pxToVwMobile(36);
+                    height: pxToVwMobile(36);
+                }
+                .ba-comment-controll {
+                    width: calc(100% - 50px);
+                    textarea {
+                        border-radius: pxToVwMobile(5);
+                        width: 99%;
+                        height: pxToVwMobile(88);
+                        padding: pxToVwMobile(15);
+                        font-size: pxToVwMobile(13);
+                        line-height: pxToVwMobile(16);
+                    }
+                    span {
+                        font-size: pxToVwMobile(11);
+                        line-height: pxToVwMobile(27);
+                    }
+                }
+            }
+            .ba-invoice-pay-toggle {
+                cursor: pointer;
+                margin-top: pxToVwMobile(15);
+                margin-bottom: pxToVwMobile(15);
+                p {
+                    font-size: pxToVwMobile(13);
+                    line-height: pxToVwMobile(27);
+                    /* or 208% */
+                    text-decoration-line: underline;
+                    margin-right: pxToVwMobile(10);
+                }
+                a {
+                    width: calc(29 * 0.0651111111vw);
+                    height: calc(29 * 0.0651111111vw);
+                    font-size: pxToVwMobile(19);
+                }
+            }
+        }
+        &.in {
+            .ba-cart {
+                .ba-invoice-pay-cart-body {
+                    padding: pxToVwMobile(25) 0px;
+                }
+            }
+        }
+    }
+    .ba-left-dote {
+        &::after {
+            width: pxToVwMobile(15);
+            height: pxToVwMobile(15);
+            left: pxToVwMobile(15);
+        }
+        padding-left: pxToVwMobile(40) !important;
+        &.ba-left-dote-sm {
+            padding-left: pxToVwMobile(30) !important;
+        }
+        &.ba-left-dote-sm::after {
+            width: pxToVwMobile(7);
+            height: pxToVwMobile(7);
+        }
+    }
+    .consult-list-cart-body {
+        &>h2 {
+            font-size: pxToVwMobile(33);
+            line-height: pxToVwMobile(39);
+            margin-bottom: pxToVwMobile(24);
+        }
+    }
+    // progress bar 
+    .ba-progress-bar-warpp {
+        &>label {
+            font-size: pxToVwMobile(15);
+            line-height: pxToVwMobile(19);
+        }
+        span.ba-progress-nbr {
+            font-size: pxToVwMobile(12);
+            line-height: pxToVwMobile(14);
+            margin-bottom: pxToVwMobile(8);
+        }
+        .ba-progress-bar-sm {
+            height: pxToVwMobile(5);
+            width: 100%;
+            border-radius: pxToVwMobile(20);
+            span {
+                border-radius: pxToVwMobile(20);
+                height: 100%;
+            }
+        }
+        .ba-progress-bar-md {
+            height: pxToVwMobile(9);
+            width: 100%;
+            border-radius: pxToVwMobile(20);
+            span {
+                border-radius: pxToVwMobile(20);
+                height: 100%;
+            }
+        }
+        .ba-progress-bar-lg {
+            height: pxToVwMobile(14);
+            width: 100%;
+            border-radius: pxToVwMobile(20);
+            span {
+                border-radius: pxToVwMobile(20);
+                height: 100%;
+            }
+        }
+    }
+    .light-blue-container {
+        border-radius: pxToVwMobile(15);
+        padding: pxToVwMobile(15);
+        &.lbc-in-table {
+            border: 1px solid rgba(43, 62, 98, 0.21);
+            border-radius: pxToVwMobile(5);
+        }
+    }
+    .ba-invoice-pay-cart-head-icon img {
+        width: pxToVwMobile(27);
+        height: pxToVwMobile(27);
+    }
+    .ba-comment-user {
+        font-size: pxToVwMobile(17);
+        line-height: pxToVwMobile(21);
+        width: pxToVwMobile(36);
+        height: pxToVwMobile(36);
+    }
+    .ui-crown {
+        &::after {
+            width: pxToVwMobile(21);
+            height: pxToVwMobile(21);
+        }
+        &.ui-crown-bottom-right {
+            &::after {
+                left: auto;
+                right: 5px;
+                top: auto;
+                bottom: 10px;
+            }
+        }
+    }
+    .ba-setting-block-head {
+        border-radius: 9px;
+        padding: pxToVwMobile(20);
+    }
+    .ba-outline-container {
+        border-radius: 5px;
+        padding: pxToVwMobile(30);
+    }
+    .ba-underline-title {
+        font-size: 17px;
+        line-height: 42px;
+        margin-bottom: pxToVwMobile(30);
+    }
+    a.ba-add-color {
+        width: pxToVwMobile(27);
+        height: pxToVwMobile(27);
+        img {
+            width: 12px;
+        }
+    }
+    .ba-settings-invoice-style {
+        .ba-colors-slider-warpper .ba-colors-slider {
+            width: calc(100% - 120px);
+        }
+    }
+    .ba-tags {
+        flex-wrap: wrap;
+        .ba-tag {
+            font-size: pxToVwMobile(13);
+            line-height: pxToVwMobile(15);
+            color: $blueLightened;
+            border-radius: pxToVwMobile(35);
+            height: pxToVwMobile(31);
+            padding: 0px pxToVwMobile(10);
+            margin-bottom: pxToVwMobile(15);
+            &:not(:last-child) {
+                margin-right: pxToVwMobile(5);
+            }
+        }
+        .ba-add-tag {
+            width: pxToVwMobile(31);
+            height: pxToVwMobile(31);
+            img {
+                width: pxToVwMobile(13);
+                height: pxToVwMobile(13);
+            }
+        }
+        margin: pxToVwMobile(20) 0;
+    }
+    .ba-plan-comptable-menu {
+        ul {
+            padding: 0;
+            li {
+                &:not(:last-child) {
+                    margin-bottom: pxToVwMobile(8);
+                }
+                a {
+                    padding: pxToVwMobile(16) pxToVwMobile(27);
+                    font-size: pxToVwMobile(15);
+                    line-height: pxToVwMobile(18);
+                }
+            }
+        }
+    }
+    a.ba-next-step {
+        span {
+            font-size: pxToVwMobile(13);
+            margin-right: pxToVwMobile(10);
+            text-decoration-line: underline;
+        }
+        i {
+            width: pxToVwMobile(29);
+            height: pxToVwMobile(29);
+            font-size: pxToVwMobile(20);
+        }
+    }
+    .ba-top-right {
+        top: pxToVwMobile(10);
+        right: pxToVwMobile(10);
+    }
+    .ba-profile-statistiques {
+        padding-top: pxToVwMobile(30);
+        margin-top: pxToVwMobile(30);
+    }
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th.dtr-control:before {
+    left: 17px;
+}
+
+.ba-submit-invoice-warp>form>.row {
+    flex-direction: column-reverse;
+}

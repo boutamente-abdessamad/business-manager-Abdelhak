@@ -58,6 +58,9 @@ body {
 
 // main nav 
 .ba-main-tabs {
+    .ba-main-tabs-toggle {
+        display: none;
+    }
     position: relative;
     &::after {
         content: "";
@@ -3664,9 +3667,7 @@ a.ba-add-new-time-btn {
 }
 
 // mobile 
-@media (max-width: 480px) {}
-
-
+@import "./mobile/_main.scss"
 /* ---------------------------------------------------------------------------- */
 
 

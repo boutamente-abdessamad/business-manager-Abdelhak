@@ -1,0 +1,86 @@
+// mobile 
+@media (max-width: 480px) {
+    // charts styles 
+    .ba-lg-circle-progress-center-text {
+        strong {
+            line-height: pxToVwMobile(40);
+            font-size: pxToVwMobile(30);
+            justify-content: center;
+            font-size: pxToVwMobile(21);
+            line-height: pxToVwMobile(31);
+        }
+    }
+    .ba-chart-label-links a {
+        font-size: pxToVwMobile(13);
+        line-height: pxToVwMobile(15);
+        text-decoration-line: underline;
+        color: $blue;
+    }
+    .client-figure-bar-chart {
+        height: pxToVwMobile(200)
+    }
+    .expenses-doughnut-chart {
+        height: pxToVwMobile(210)
+    }
+    .turnover-evolution-bar-chart-warp {
+        height: pxToVwMobile(320);
+    }
+    .ba-bank-chart-status {
+        margin-left: 5px;
+        p {
+            font-size: pxToVwMobile(12);
+            line-height: pxToVwMobile(23);
+        }
+        h2 {
+            font-size: pxToVwMobile(15);
+            line-height: pxToVwMobile(23);
+            span {
+                font-size: pxToVwMobile(11);
+                line-height: pxToVwMobile(21);
+                margin-left: pxToVwMobile(5);
+            }
+        }
+    }
+    .cash-available-line-chart-warp {
+        width: 100%;
+        height: pxToVwMobile(280);
+    }
+    .chart-filters {
+        margin-right: pxToVwMobile(50);
+        button {
+            font-size: pxToVwMobile(13);
+            line-height: pxToVwMobile(23);
+            border-radius: 5px;
+            padding: 1px pxToVwMobile(10);
+            margin: 0 pxToVwMobile(5);
+        }
+    }
+    .expenses-doughnut-chart-legend-list {
+        padding-right: pxToVwMobile(15);
+        margin-top: pxToVwMobile(40);
+        max-height: pxToVwMobile(76);
+        overflow: auto;
+        .expenses-doughnut-chart-legend-item {
+            padding-bottom: pxToVwMobile(10);
+            margin-bottom: pxToVwMobile(10);
+            .expenses-doughnut-chart-legend-item-percent {
+                span {
+                    width: pxToVwMobile(9);
+                    height: pxToVwMobile(9);
+                }
+                p {
+                    font-size: pxToVwMobile(12);
+                    line-height: pxToVwMobile(15);
+                    margin-left: 5px;
+                }
+            }
+            .expenses-doughnut-chart-legend-item-label {
+                width: calc(100% - 63px);
+                p {
+                    font-size: pxToVwMobile(12);
+                    line-height: pxToVwMobile(17);
+                }
+            }
+        }
+    }
+}
