@@ -190,6 +190,15 @@
             margin-bottom: 15px;
         }
     }
+    .datatable-filters-rightside {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        >* {
+            margin-bottom: 15px;
+        }
+    }
     .datatable-filters-container {
         flex-wrap: wrap;
         button {

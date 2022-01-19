@@ -6611,6 +6611,10 @@ body {
 
 .datatable-filters-leftside {
   display: flex;
+  margin-bottom: 15px;
+}
+.datatable-filters-leftside .block-title {
+  margin: 0;
 }
 
 .datatable-filters-container {
@@ -9977,6 +9981,16 @@ a.ba-add-new-time-btn img {
     justify-content: space-between;
   }
   .datatable-filters-leftside > * {
+    margin-bottom: 15px;
+  }
+
+  .datatable-filters-rightside {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .datatable-filters-rightside > * {
     margin-bottom: 15px;
   }
 

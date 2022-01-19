@@ -386,6 +386,10 @@ body {
 .datatable-filters-leftside {
     display: flex;
     // align-items: center;
+    margin-bottom: 15px;
+    .block-title {
+        margin: 0;
+    }
 }
 
 .datatable-filters-container {
