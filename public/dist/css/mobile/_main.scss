@@ -2159,46 +2159,48 @@
                 height: pxToVwMobile(70);
             }
         }
-        .ba-auth-root {
-            height: 100vh;
-            &::after {
-                width: 57.57%;
-            }
-            .ba-auth-box {
-                z-index: 1;
-                width: 42.43%;
-                padding-left: pxToVwMobile(120);
-                padding-right: pxToVwMobile(120);
-                .ba-auth-user-meta {
+    }
+    .ba-auth-root {
+        height: 100vh;
+        &::after {
+            width: 100%;
+        }
+        .ba-auth-box {
+            z-index: 1;
+            width: 90%;
+            margin: 0 auto;
+            padding: pxToVwMobile(30);
+            .ba-auth-user-meta {
+                margin-bottom: 20px;
+                img {
+                    width: pxToVwMobile(97);
+                    height: pxToVwMobile(97);
                     margin-bottom: 20px;
-                    img {
-                        width: pxToVwMobile(97);
-                        height: pxToVwMobile(97);
-                        margin-bottom: 20px;
-                    }
-                    h2 {
-                        font-size: pxToVwMobile(23);
-                        line-height: pxToVwMobile(21);
-                    }
-                    p {
-                        font-size: pxToVwMobile(13);
-                        line-height: pxToVwMobile(21);
-                    }
                 }
-                form.ba-auth-form {
-                    .btn[type="submit"] {
-                        width: 100%;
-                        margin-top: pxToVwMobile(30);
-                        padding: pxToVwMobile(16) pxToVwMobile(25);
-                    }
+                h2 {
+                    font-size: pxToVwMobile(23);
+                    line-height: pxToVwMobile(21);
                 }
+                p {
+                    font-size: pxToVwMobile(13);
+                    line-height: pxToVwMobile(21);
+                }
+            }
+            form.ba-auth-form {
+                .btn[type="submit"] {
+                    width: 100%;
+                    margin-top: pxToVwMobile(30);
+                    padding: pxToVwMobile(16) pxToVwMobile(25);
+                }
+            }
+            .ba-auth-footer {
+                margin-top: pxToVwMobile(100);
+                position: initial;
+            }
+            &.ba-register {
                 .ba-auth-footer {
-                    margin-top: pxToVwMobile(100);
-                }
-                &.ba-register {
-                    .ba-auth-footer {
-                        bottom: pxToVwMobile(-75);
-                    }
+                    position: initial;
+                    bottom: pxToVwMobile(-75);
                 }
             }
         }
