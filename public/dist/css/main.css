@@ -11208,17 +11208,21 @@ a.ba-add-new-time-btn img {
     margin-top: calc(45 * 0.25vw);
   }
 
+  .dates-line-ships {
+    flex-wrap: wrap;
+  }
   .dates-line-ships .btn.ba-btn-date-ship {
     font-size: calc(13 * 0.25vw);
     line-height: 16px;
     padding: 10px calc(15 * 0.25vw);
+    margin-bottom: 10px;
   }
   .dates-line-ships .btn.ba-btn-date-ship span {
     font-size: 11px;
     line-height: calc(19 * 0.25vw);
     color: #FFFFFF;
-    width: calc(13 * 0.25vw);
-    height: calc(13 * 0.25vw);
+    width: calc(18 * 0.25vw);
+    height: calc(18 * 0.25vw);
     right: -12px;
     top: -10px;
   }
@@ -11226,152 +11230,168 @@ a.ba-add-new-time-btn img {
     width: 16px;
     height: 16px;
   }
-  .dates-line-ships .ba-period-slider-warp {
+
+  .ba-period-slider-warp {
     width: calc(80 * 0.25vw);
   }
-  .dates-line-ships a.btn.ba-period-btn i {
+
+  a.btn.ba-period-btn i {
     font-size: calc(24 * 0.25vw);
   }
-  .dates-line-ships .ba-period-slider {
+
+  .ba-period-slider {
     display: none;
     width: calc(60 * 0.25vw);
   }
-  .dates-line-ships .ba-period-slider p {
+  .ba-period-slider p {
     font-size: calc(14 * 0.25vw);
     line-height: calc(37 * 0.25vw);
   }
-  .dates-line-ships .ba-declarations-header {
+
+  .ba-declarations-header {
     padding-bottom: calc(15 * 0.25vw);
     margin-bottom: calc(20 * 0.25vw);
     border-bottom: 1px solid rgba(43, 62, 98, 0.65);
   }
-  .dates-line-ships .ba-declarations-header h5 {
+  .ba-declarations-header h5 {
     font-size: calc(14 * 0.25vw);
     line-height: calc(15 * 0.25vw);
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #0093EB;
   }
-  .dates-line-ships .ba-cart.ba-declaration-cart p {
+
+  .ba-cart.ba-declaration-cart p {
     font-size: calc(13 * 0.25vw);
     line-height: calc(13 * 0.25vw);
     margin-bottom: calc(8 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-declaration-cart .ba-declaration-title {
+  .ba-cart.ba-declaration-cart .ba-declaration-title {
     font-size: calc(15 * 0.25vw);
     line-height: calc(18 * 0.25vw);
     text-transform: uppercase;
     margin-bottom: calc(8 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-declaration-cart .ba-declaration-total {
+  .ba-cart.ba-declaration-cart .ba-declaration-total {
     font-size: calc(13 * 0.25vw);
     line-height: calc(13 * 0.25vw);
     margin-bottom: calc(8 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-declaration-cart .ba-declaration-cart-footer {
+  .ba-cart.ba-declaration-cart .ba-declaration-cart-footer {
     border-top: 1px solid rgba(43, 62, 98, 0.65);
     margin-top: calc(15 * 0.25vw);
     padding-top: calc(15 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-declaration-cart .ba-declaration-cart-actions a {
+  .ba-cart.ba-declaration-cart .ba-declaration-cart-actions a {
     border: none;
     padding: calc(7 * 0.25vw) calc(10 * 0.25vw);
     border-radius: 3px;
   }
-  .dates-line-ships .ba-cart.ba-declaration-cart .ba-declaration-cart-actions a img {
+  .ba-cart.ba-declaration-cart .ba-declaration-cart-actions a img {
     width: calc(13 * 0.25vw);
     height: calc(13 * 0.25vw);
   }
-  .dates-line-ships .ba-comptable-doc-cart {
+
+  .ba-comptable-doc-cart {
     padding: calc(40 * 0.25vw);
     border-radius: 7px;
     height: 100%;
   }
-  .dates-line-ships .ba-comptable-doc-cart .ba-comptable-doc-cart-body {
+  .ba-comptable-doc-cart .ba-comptable-doc-cart-body {
     margin-top: calc(40 * 0.25vw);
   }
-  .dates-line-ships .ba-comptable-doc-cart .ba-comptable-doc-cart-body .docs-counter h2 {
+  .ba-comptable-doc-cart .ba-comptable-doc-cart-body .docs-counter h2 {
     font-size: calc(25 * 0.25vw);
     line-height: calc(21 * 0.25vw);
+    line-break: anywhere;
   }
-  .dates-line-ships .ba-comptable-doc-cart .ba-comptable-doc-cart-body .docs-counter p {
+  .ba-comptable-doc-cart .ba-comptable-doc-cart-body .docs-counter p {
     font-size: calc(14 * 0.25vw);
     line-height: calc(25 * 0.25vw);
+    line-break: anywhere;
   }
-  .dates-line-ships .ba-comptable-doc-cart .ba-comptable-doc-cart-footer {
+  .ba-comptable-doc-cart .ba-comptable-doc-cart-footer {
     border-top: 1px solid rgba(43, 62, 98, 0.65);
     margin-top: calc(30 * 0.25vw);
   }
-  .dates-line-ships .ba-comptable-doc-cart .ba-comptable-doc-cart-footer h2 {
+  .ba-comptable-doc-cart .ba-comptable-doc-cart-footer h2 {
     font-size: calc(15 * 0.25vw);
     line-height: calc(25 * 0.25vw);
     padding-top: calc(30 * 0.25vw);
+    line-break: anywhere;
   }
-  .dates-line-ships .ba-single-comptable-docs-warpp .light-blue-container {
-    padding: calc(68 * 0.25vw) 0;
+
+  .ba-single-comptable-docs-warpp .light-blue-container {
+    padding: calc(30 * 0.25vw) 15px;
   }
-  .dates-line-ships .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart {
+  .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart {
     border-radius: 3px;
   }
-  .dates-line-ships .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart > img {
+  .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart > img {
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.11);
-    height: calc(250 * 0.25vw);
+    height: calc(200 * 0.25vw);
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 3px;
   }
-  .dates-line-ships .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart h2 {
+  .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart h2 {
     font-size: calc(14 * 0.25vw);
     line-height: calc(25 * 0.25vw);
     margin-top: calc(10 * 0.25vw);
+    line-break: anywhere;
   }
-  .dates-line-ships .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart p {
+  .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart p {
     font-size: calc(12 * 0.25vw);
     line-height: calc(23 * 0.25vw);
   }
-  .dates-line-ships .ba-single-comptable-doc-title {
+
+  .ba-single-comptable-doc-title {
     margin-bottom: calc(30 * 0.25vw);
   }
-  .dates-line-ships .ba-single-comptable-doc-title .ba-single-comptable-doc-title-content {
+  .ba-single-comptable-doc-title .ba-single-comptable-doc-title-content {
     margin-left: calc(15 * 0.25vw);
   }
-  .dates-line-ships .ba-single-comptable-doc-title .ba-single-comptable-doc-title-content h3 {
+  .ba-single-comptable-doc-title .ba-single-comptable-doc-title-content h3 {
     font-size: calc(21 * 0.25vw);
     line-height: calc(19 * 0.25vw);
   }
-  .dates-line-ships .ba-single-comptable-doc-title .ba-single-comptable-doc-title-content p {
+  .ba-single-comptable-doc-title .ba-single-comptable-doc-title-content p {
     font-size: calc(13 * 0.25vw);
     line-height: calc(17 * 0.25vw);
   }
-  .dates-line-ships .ba-calendar-current-date-warp .ba-calendar-current-date p {
+
+  .ba-calendar-current-date-warp .ba-calendar-current-date p {
     font-size: calc(21 * 0.25vw);
     line-height: calc(25 * 0.25vw);
   }
-  .dates-line-ships .ba-calendar-current-date-warp .ba-calendar-current-date button span {
+  .ba-calendar-current-date-warp .ba-calendar-current-date button span {
     font-size: calc(21 * 0.25vw);
     line-height: calc(25 * 0.25vw);
   }
-  .dates-line-ships .ba-calendar-current-date-warp .ba-calendar-current-date button img {
+  .ba-calendar-current-date-warp .ba-calendar-current-date button img {
     width: calc(21 * 0.25vw);
     height: calc(21 * 0.25vw);
   }
-  .dates-line-ships .ba-calendar-periods {
+
+  .ba-calendar-periods {
     border-radius: 5px;
     padding: calc(6 * 0.25vw);
   }
-  .dates-line-ships .ba-calendar-periods .btn {
+  .ba-calendar-periods .btn {
     border: none;
   }
-  .dates-line-ships .ba-calendar-periods .btn.active {
+  .ba-calendar-periods .btn.active {
     box-shadow: 0px 2px 5px rgba(44, 81, 149, 0.21);
   }
-  .dates-line-ships .ba-calendar-weeks,
-.dates-line-ships .ba-calendar-days {
+
+  .ba-calendar-weeks,
+.ba-calendar-days {
     width: 100%;
     margin-top: calc(63 * 0.25vw);
   }
-  .dates-line-ships .day-box {
+
+  .day-box {
     border-radius: 5px;
     width: 100%;
     height: calc(91 * 0.25vw);
@@ -11379,32 +11399,33 @@ a.ba-add-new-time-btn img {
     border-bottom: 4px solid #0093EB;
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   }
-  .dates-line-ships .day-box > h2 {
+  .day-box > h2 {
     font-size: calc(41 * 0.25vw);
     line-height: calc(37 * 0.25vw);
     margin-right: 3px;
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   }
-  .dates-line-ships .day-box .day-content p {
+  .day-box .day-content p {
     font-size: calc(13 * 0.25vw);
     line-height: calc(17 * 0.25vw);
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   }
-  .dates-line-ships .day-box .day-content span {
+  .day-box .day-content span {
     font-size: calc(13 * 0.25vw);
     line-height: calc(17 * 0.25vw);
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   }
-  .dates-line-ships .day-box.active > h2, .dates-line-ships .day-box:hover > h2 {
+  .day-box.active > h2, .day-box:hover > h2 {
     color: #FFFFFF;
   }
-  .dates-line-ships .day-box.active .day-content p, .dates-line-ships .day-box:hover .day-content p {
+  .day-box.active .day-content p, .day-box:hover .day-content p {
     color: #FFFFFF;
   }
-  .dates-line-ships .day-box.active span, .dates-line-ships .day-box:hover span {
+  .day-box.active span, .day-box:hover span {
     color: #FFFFFF;
   }
-  .dates-line-ships .week-box {
+
+  .week-box {
     border-radius: 5px;
     width: 100%;
     flex-direction: column;
@@ -11413,39 +11434,41 @@ a.ba-add-new-time-btn img {
     border-bottom: 4px solid #0093EB;
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   }
-  .dates-line-ships .week-box > h2 {
+  .week-box > h2 {
     font-size: calc(23 * 0.25vw);
     line-height: calc(37 * 0.25vw);
     margin-right: 3px;
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   }
-  .dates-line-ships .week-box p {
+  .week-box p {
     font-size: calc(13 * 0.25vw);
     line-height: calc(17 * 0.25vw);
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   }
-  .dates-line-ships .week-box.active h2, .dates-line-ships .week-box:hover h2 {
+  .week-box.active h2, .week-box:hover h2 {
     color: #FFFFFF;
   }
-  .dates-line-ships .week-box.active p, .dates-line-ships .week-box:hover p {
+  .week-box.active p, .week-box:hover p {
     color: #FFFFFF;
   }
-  .dates-line-ships .ba-calendar-total-box {
+
+  .ba-calendar-total-box {
     min-width: calc(212 * 0.25vw);
     height: calc(91 * 0.25vw);
     border-radius: 5px;
   }
-  .dates-line-ships .ba-calendar-total-box h2 {
+  .ba-calendar-total-box h2 {
     font-size: calc(21 * 0.25vw);
     line-height: calc(37 * 0.25vw);
   }
-  .dates-line-ships a.ba-add-new-time-btn {
+
+  a.ba-add-new-time-btn {
     border: 2px dashed #50CB93;
     border-radius: 5px;
     margin-top: calc(24 * 0.25vw);
     padding: calc(31 * 0.25vw) calc(10 * 0.25vw);
   }
-  .dates-line-ships a.ba-add-new-time-btn span {
+  a.ba-add-new-time-btn span {
     font-weight: bold;
     font-size: calc(17 * 0.25vw);
     line-height: calc(20 * 0.25vw);
@@ -11454,110 +11477,120 @@ a.ba-add-new-time-btn img {
     color: #50CB93;
     margin-left: calc(10 * 0.25vw);
   }
-  .dates-line-ships a.ba-add-new-time-btn img {
+  a.ba-add-new-time-btn img {
     width: calc(20 * 0.25vw);
     height: calc(20 * 0.25vw);
   }
-  .dates-line-ships .ba-zone-empty {
+
+  .ba-zone-empty {
     border: 1px solid rgba(16, 76, 186, 0.15);
     border-radius: 7px;
     margin-top: calc(27 * 0.25vw);
     padding: calc(67 * 0.25vw) 0px;
   }
-  .dates-line-ships .ba-zone-empty img {
+  .ba-zone-empty img {
     width: calc(413 * 0.25vw);
     height: calc(342 * 0.25vw);
   }
-  .dates-line-ships .ba-no-record {
+
+  .ba-no-record {
     flex-direction: column;
     padding: calc(70 * 0.25vw) 0px;
   }
-  .dates-line-ships .ba-no-record > img {
+  .ba-no-record > img {
     width: calc(408 * 0.25vw);
     height: calc(355 * 0.25vw);
     margin-bottom: calc(40 * 0.25vw);
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .dates-line-ships .ba-input-increment-lg {
+
+  .ba-input-increment-lg {
     align-items: flex-end;
   }
-  .dates-line-ships .ba-input-increment-lg .ba-form-warpp {
+  .ba-input-increment-lg .ba-form-warpp {
     padding: 0 calc(10 * 0.25vw);
   }
-  .dates-line-ships .ba-input-increment-lg .ba-form-warpp label {
+  .ba-input-increment-lg .ba-form-warpp label {
     font-size: calc(13 * 0.25vw);
     margin-bottom: calc(5 * 0.25vw);
   }
-  .dates-line-ships .ba-input-increment-lg .btn {
+  .ba-input-increment-lg .btn {
     align-self: flex-end;
     height: calc(49 * 0.25vw);
     font-size: calc(18 * 0.25vw);
     padding: 0 calc(20 * 0.25vw);
   }
-  .dates-line-ships .separated-gray-table {
+
+  .separated-gray-table {
     border-collapse: separate;
     border-spacing: 0px calc(15 * 0.25vw);
   }
-  .dates-line-ships .separated-gray-table tr {
+  .separated-gray-table tr {
     border-radius: 5px;
     outline: 2px solid #E7EDF8;
   }
-  .dates-line-ships .separated-gray-table tr td {
+  .separated-gray-table tr td {
     vertical-align: middle;
     padding: calc(24 * 0.25vw) calc(15 * 0.25vw);
   }
-  .dates-line-ships .time-list {
+
+  .time-list {
     margin-top: calc(15 * 0.25vw);
   }
-  .dates-line-ships .list-item-datetime {
+
+  .list-item-datetime {
     font-size: calc(15 * 0.25vw);
     line-height: calc(18 * 0.25vw);
     margin-bottom: calc(10 * 0.25vw);
   }
-  .dates-line-ships .list-item-datetime img {
+  .list-item-datetime img {
     margin: 0 calc(10 * 0.25vw);
     width: calc(17 * 0.25vw);
     height: calc(17 * 0.25vw);
   }
-  .dates-line-ships .ba-menu-links li a {
+
+  .ba-menu-links li a {
     font-size: calc(12 * 0.25vw);
     line-height: calc(14 * 0.25vw);
     padding: 0 calc(14 * 0.25vw);
   }
-  .dates-line-ships .ba-menu-links li.active a {
+  .ba-menu-links li.active a {
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
   }
-  .dates-line-ships .ba-menu-links {
+
+  .ba-menu-links {
     list-style: none;
     margin-right: calc(20 * 0.25vw);
   }
-  .dates-line-ships .ba-user-dropdown-item {
+
+  .ba-user-dropdown-item {
     border-radius: 5px;
     min-width: calc(278 * 0.25vw);
     padding: calc(10 * 0.25vw) calc(20 * 0.25vw);
     margin: calc(5 * 0.25vw);
   }
-  .dates-line-ships .ba-user-dropdown-item .ba-user-dropdown-content p {
+  .ba-user-dropdown-item .ba-user-dropdown-content p {
     line-height: calc(17 * 0.25vw);
   }
-  .dates-line-ships .ba-user-dropdown-item i {
+  .ba-user-dropdown-item i {
     font-size: calc(20 * 0.25vw);
   }
-  .dates-line-ships .ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu {
+
+  .ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu {
     box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
     border-radius: calc(7 * 0.25vw);
     border: none;
   }
-  .dates-line-ships .ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu .scrolling.menu {
+  .ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu .scrolling.menu {
     border-top: none;
     border-radius: 7px !important;
   }
-  .dates-line-ships .ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu .ui.icon.input {
+  .ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu .ui.icon.input {
     margin: calc(6 * 0.25vw);
   }
-  .dates-line-ships .ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu .ui.icon.input > input {
+  .ba-semantic-dropdown.ui.dropdown .ba-semantic-dropdown-menu .ui.icon.input > input {
     padding-right: 2.67143em !important;
     border: 1px solid rgba(16, 76, 186, 0.15);
     border-radius: calc(5 * 0.25vw);
@@ -11566,113 +11599,122 @@ a.ba-add-new-time-btn img {
     color: rgba(16, 76, 186, 0.45);
     height: calc(40 * 0.25vw);
   }
-  .dates-line-ships .ba-avatars > img {
+
+  .ba-avatars > img {
     width: calc(32 * 0.25vw);
     height: calc(32 * 0.25vw);
     outline: 2px solid #FFFFFF;
   }
-  .dates-line-ships .ba-avatars > img:not(:first-child) {
+  .ba-avatars > img:not(:first-child) {
     margin-left: calc(-8 * 0.25vw);
   }
-  .dates-line-ships .ba-avatars a.add-avatar {
+  .ba-avatars a.add-avatar {
     outline: 2px solid #FFFFFF;
     width: calc(32 * 0.25vw);
     height: calc(32 * 0.25vw);
     margin-left: calc(-8 * 0.25vw);
   }
-  .dates-line-ships .ba-avatars a.add-avatar i {
+  .ba-avatars a.add-avatar i {
     font-size: 12px;
   }
-  .dates-line-ships .ba-user-meta h5 {
+
+  .ba-user-meta h5 {
     font-weight: bold;
     font-size: calc(13 * 0.25vw);
     line-height: calc(21 * 0.25vw);
     color: rgba(43, 62, 98, 0.65);
   }
-  .dates-line-ships .ba-user-meta p {
+  .ba-user-meta p {
     font-size: calc(10 * 0.25vw);
     line-height: calc(15 * 0.25vw);
   }
-  .dates-line-ships .ba-pc-cart-col {
+
+  .ba-pc-cart-col {
     padding: calc(11 * 0.25vw) calc(15 * 0.25vw);
   }
-  .dates-line-ships .ba-project-client-cart {
+
+  .ba-project-client-cart {
     padding: calc(30 * 0.25vw) calc(10 * 0.25vw);
   }
-  .dates-line-ships .ba-date-between img {
+
+  .ba-date-between img {
     width: calc(19 * 0.25vw);
     height: calc(19 * 0.25vw);
     margin-left: calc(10 * 0.25vw);
   }
-  .dates-line-ships .ba-date-between p {
+  .ba-date-between p {
     font-size: calc(15 * 0.25vw);
     line-height: calc(18 * 0.25vw);
     color: rgba(43, 62, 98, 0.65);
   }
-  .dates-line-ships .member-profile-infos .member-profile-avatar {
+
+  .member-profile-infos .member-profile-avatar {
     margin-right: calc(16 * 0.25vw);
   }
-  .dates-line-ships .member-profile-infos .member-profile-avatar img {
+  .member-profile-infos .member-profile-avatar img {
     width: calc(58 * 0.25vw);
     height: calc(58 * 0.25vw);
   }
-  .dates-line-ships .member-profile-infos .member-meta h5 {
+  .member-profile-infos .member-meta h5 {
     font-size: calc(13 * 0.25vw);
     line-height: calc(23 * 0.25vw);
   }
-  .dates-line-ships .member-profile-infos .member-meta p,
-.dates-line-ships .member-profile-infos .member-meta a {
+  .member-profile-infos .member-meta p,
+.member-profile-infos .member-meta a {
     font-size: calc(11 * 0.25vw);
     line-height: calc(16 * 0.25vw);
   }
-  .dates-line-ships .member-profile-infos.sm-member-profile .member-profile-avatar img {
+  .member-profile-infos.sm-member-profile .member-profile-avatar img {
     width: calc(49 * 0.25vw);
     height: calc(49 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-member-cart {
+
+  .ba-cart.ba-member-cart {
     border-radius: 7px;
   }
-  .dates-line-ships .ba-cart.ba-member-cart .ba-member-switcher {
+  .ba-cart.ba-member-cart .ba-member-switcher {
     right: calc(16 * 0.25vw);
     top: calc(16 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-member-cart ul.ba-member-figures {
+  .ba-cart.ba-member-cart ul.ba-member-figures {
     list-style: none;
     margin-top: calc(37 * 0.25vw);
     margin-bottom: calc(30 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-member-cart ul.ba-member-figures > li {
+  .ba-cart.ba-member-cart ul.ba-member-figures > li {
     padding: 0 calc(8 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-member-cart ul.ba-member-figures > li p {
+  .ba-cart.ba-member-cart ul.ba-member-figures > li p {
     font-size: calc(12 * 0.25vw);
     line-height: calc(11 * 0.25vw);
     margin-bottom: calc(6 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-member-cart ul.ba-member-figures > li h4 {
+  .ba-cart.ba-member-cart ul.ba-member-figures > li h4 {
     font-size: calc(17 * 0.25vw);
     line-height: calc(23 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-member-cart .ba-member-cart-footer {
+  .ba-cart.ba-member-cart .ba-member-cart-footer {
     border-top: 1px solid rgba(16, 76, 186, 0.09);
     padding-top: calc(18 * 0.25vw);
     justify-content: flex-end;
   }
-  .dates-line-ships .ba-membres-warpp {
+
+  .ba-membres-warpp {
     margin-top: calc(61 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-project-invoice-model {
+
+  .ba-cart.ba-project-invoice-model {
     padding: calc(26 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-project-invoice-model .pi-model-head {
+  .ba-cart.ba-project-invoice-model .pi-model-head {
     align-items: flex-end;
     margin-bottom: calc(26 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-project-invoice-model .pi-model-head img {
+  .ba-cart.ba-project-invoice-model .pi-model-head img {
     width: calc(42 * 0.25vw);
     height: calc(25 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-project-invoice-model .pi-medel-date {
+  .ba-cart.ba-project-invoice-model .pi-medel-date {
     font-size: calc(13 * 0.25vw);
     line-height: calc(18 * 0.25vw);
     /* or 177% */
@@ -11680,7 +11722,7 @@ a.ba-add-new-time-btn img {
     color: #0093EB;
     margin-bottom: calc(10 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-project-invoice-model .pi-model-body img {
+  .ba-cart.ba-project-invoice-model .pi-model-body img {
     height: calc(65 * 0.25vw);
     width: 100%;
     -o-object-fit: contain;
@@ -11688,126 +11730,134 @@ a.ba-add-new-time-btn img {
     -o-object-position: center;
        object-position: center;
   }
-  .dates-line-ships .ba-cart.ba-project-invoice-model .pi-model-body .pi-medel-ref {
+  .ba-cart.ba-project-invoice-model .pi-model-body .pi-medel-ref {
     font-size: calc(13 * 0.25vw);
     line-height: calc(23 * 0.25vw);
     /* identical to box height, or 177% */
     margin-bottom: calc(13 * 0.25vw);
     padding-bottom: calc(10 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-project-invoice-model .pi-model-body .pi-medel-ref::after {
+  .ba-cart.ba-project-invoice-model .pi-model-body .pi-medel-ref::after {
     width: calc(42 * 0.25vw);
     height: calc(5 * 0.25vw);
     border-radius: calc(15 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-project-invoice-model .pi-model-footer {
+  .ba-cart.ba-project-invoice-model .pi-model-footer {
     margin-top: calc(20 * 0.25vw);
   }
-  .dates-line-ships .ba-cart.ba-project-invoice-model .pi-model-footer .pi-medel-total {
+  .ba-cart.ba-project-invoice-model .pi-model-footer .pi-medel-total {
     font-size: calc(15 * 0.25vw);
     line-height: calc(23 * 0.25vw);
   }
-  .dates-line-ships .ba-project-invoice-warpp {
+
+  .ba-project-invoice-warpp {
     margin-top: calc(53 * 0.25vw);
   }
-  .dates-line-ships .ba-profile-picture-box {
+
+  .ba-profile-picture-box {
     width: calc(93 * 0.25vw);
     height: calc(99 * 0.25vw);
     margin: calc(30 * 0.25vw) auto;
   }
-  .dates-line-ships .ba-profile-picture-box img.ba-profile-picture {
+  .ba-profile-picture-box img.ba-profile-picture {
     width: calc(93 * 0.25vw);
     height: calc(93 * 0.25vw);
   }
-  .dates-line-ships .ba-profile-picture-box.online::after {
+  .ba-profile-picture-box.online::after {
     width: calc(18 * 0.25vw);
     height: calc(18 * 0.25vw);
     right: calc(8 * 0.25vw);
     bottom: calc(8 * 0.25vw);
   }
-  .dates-line-ships .ba-mpc-meta h2 {
+
+  .ba-mpc-meta h2 {
     font-size: calc(23 * 0.25vw);
     line-height: calc(28 * 0.25vw);
   }
-  .dates-line-ships .ba-mpc-meta p {
+  .ba-mpc-meta p {
     font-size: calc(17 * 0.25vw);
     line-height: calc(28 * 0.25vw);
   }
-  .dates-line-ships .ba-member-profile-cart {
+
+  .ba-member-profile-cart {
     border-radius: 5px;
   }
-  .dates-line-ships .ba-member-profile-cart .ba-mpc-profile {
+  .ba-member-profile-cart .ba-mpc-profile {
     width: 18%;
     border-radius: 5px;
     height: 100%;
     padding: calc(35 * 0.25vw) 0px;
   }
-  .dates-line-ships .ba-member-profile-cart .ba-mpc-details {
+  .ba-member-profile-cart .ba-mpc-details {
     width: 82%;
     padding-top: calc(40 * 0.25vw);
     padding-left: calc(40 * 0.25vw);
     padding-right: calc(40 * 0.25vw);
     padding-bottom: calc(20 * 0.25vw);
   }
-  .dates-line-ships .ba-member-profile-cart .ba-mpc-details .ba-mpc-col {
+  .ba-member-profile-cart .ba-mpc-details .ba-mpc-col {
     min-height: calc(90 * 0.25vw);
   }
-  .dates-line-ships .ba-member-profile-cart .ba-mpc-details .ba-mpc-col .ba-mpc-infos a,
-.dates-line-ships .ba-member-profile-cart .ba-mpc-details .ba-mpc-col .ba-mpc-infos p {
+  .ba-member-profile-cart .ba-mpc-details .ba-mpc-col .ba-mpc-infos a,
+.ba-member-profile-cart .ba-mpc-details .ba-mpc-col .ba-mpc-infos p {
     font-size: calc(15 * 0.25vw);
     line-height: calc(28 * 0.25vw);
     color: rgba(43, 62, 98, 0.65);
   }
-  .dates-line-ships .ba-member-profile-cart .ba-mpc-progress {
+  .ba-member-profile-cart .ba-mpc-progress {
     margin-top: calc(15 * 0.25vw);
     margin-bottom: calc(15 * 0.25vw);
   }
-  .dates-line-ships .ba-member-profile-cart .ba-mpc-progress .ba-progress-bar-warpp {
+  .ba-member-profile-cart .ba-mpc-progress .ba-progress-bar-warpp {
     width: calc(185 * 0.25vw);
   }
-  .dates-line-ships .ba-edit-member-profile-cart {
+
+  .ba-edit-member-profile-cart {
     border-radius: 5px;
     padding: calc(35 * 0.25vw);
   }
-  .dates-line-ships .ba-edit-member-profile-cart::after {
+  .ba-edit-member-profile-cart::after {
     width: calc(115 * 0.25vw);
     height: 100%;
     border-radius: 5px;
   }
-  .dates-line-ships .ba-edit-member-profile-cart form {
+  .ba-edit-member-profile-cart form {
     width: 100%;
     z-index: 1;
   }
-  .dates-line-ships .ba-edit-member-profile-cart form .ba-mpc-profile {
+  .ba-edit-member-profile-cart form .ba-mpc-profile {
     margin-left: calc(34 * 0.25vw);
   }
-  .dates-line-ships .ba-edit-member-profile-form {
+
+  .ba-edit-member-profile-form {
     border-radius: 5px;
     padding: calc(50 * 0.25vw);
     margin-top: calc(25 * 0.25vw);
   }
-  .dates-line-ships .ba-settings-invoice-style {
+
+  .ba-settings-invoice-style {
     margin-top: calc(40 * 0.25vw);
   }
-  .dates-line-ships .ba-settings-invoice-style > .row {
+  .ba-settings-invoice-style > .row {
     margin: 0 calc(-75 * 0.25vw);
   }
-  .dates-line-ships .ba-settings-invoice-style > .row > [class*=col-] {
+  .ba-settings-invoice-style > .row > [class*=col-] {
     padding: 0 calc(75 * 0.25vw);
   }
-  .dates-line-ships .invoice-style-model {
+
+  .invoice-style-model {
     width: 100%;
   }
-  .dates-line-ships .invoice-style-model > input:checked + img {
+  .invoice-style-model > input:checked + img {
     border: 4px solid #104CBA;
   }
-  .dates-line-ships .invoice-style-model span {
+  .invoice-style-model span {
     border-radius: 0px 0px 15px 15px;
     height: calc(25 * 0.25vw);
     width: 100%;
     z-index: 99;
   }
-  .dates-line-ships .invoice-style-model img {
+  .invoice-style-model img {
     border: 1px solid #E5E5E5;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.11);
     border-radius: calc(15 * 0.25vw);
@@ -11815,114 +11865,118 @@ a.ba-add-new-time-btn img {
     width: 100%;
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   }
-  .dates-line-ships .invoice-style-model-name {
+
+  .invoice-style-model-name {
     font-size: calc(15 * 0.25vw);
     line-height: calc(22 * 0.25vw);
     margin-top: calc(15 * 0.25vw);
   }
-  .dates-line-ships .ba-invoice-styles-container {
+
+  .ba-invoice-styles-container {
     padding: calc(60 * 0.25vw);
     margin-top: calc(40 * 0.25vw);
   }
-  .dates-line-ships .ba-invoice-styles-container > .row {
+  .ba-invoice-styles-container > .row {
     margin: 0 calc(-40 * 0.25vw);
   }
-  .dates-line-ships .ba-invoice-styles-container > .row > [class*=col-] {
+  .ba-invoice-styles-container > .row > [class*=col-] {
     padding: 0 calc(40 * 0.25vw);
   }
-  .dates-line-ships .ba-export-selection-cart {
+
+  .ba-export-selection-cart {
     border: 1px solid #E7EDF8;
     border-radius: 7px;
     padding: calc(20 * 0.25vw) calc(30 * 0.25vw);
     height: 100%;
   }
-  .dates-line-ships .ba-export-selection-cart .ba-export-selection-cart-head {
+  .ba-export-selection-cart .ba-export-selection-cart-head {
     margin-bottom: calc(30 * 0.25vw);
   }
-  .dates-line-ships .ba-plan-table table {
+
+  .ba-plan-table table {
     border-collapse: separate;
     border-spacing: 0 5px;
   }
-  .dates-line-ships .ba-plan-table table thead tr {
+  .ba-plan-table table thead tr {
     vertical-align: middle;
   }
-  .dates-line-ships .ba-plan-table table thead tr th {
+  .ba-plan-table table thead tr th {
     font-size: calc(13 * 0.25vw);
     line-height: calc(15 * 0.25vw);
     color: #FFFFFF;
   }
-  .dates-line-ships .ba-plan-table table thead tr th:first-child {
+  .ba-plan-table table thead tr th:first-child {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
   }
-  .dates-line-ships .ba-plan-table table thead tr th:last-child {
+  .ba-plan-table table thead tr th:last-child {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
   }
-  .dates-line-ships .ba-plan-table table tbody tr {
+  .ba-plan-table table tbody tr {
     outline: 1px solid rgba(16, 76, 186, 0.09);
     border-radius: 3px;
     vertical-align: middle;
   }
-  .dates-line-ships .ba-plan-table table tbody tr td {
+  .ba-plan-table table tbody tr td {
     font-size: calc(13 * 0.25vw);
     line-height: calc(23 * 0.25vw);
     vertical-align: middle;
     padding-top: calc(8 * 0.25vw);
     padding-bottom: calc(8 * 0.25vw);
   }
-  .dates-line-ships .ba-plan-table table tbody tr td:first-child {
+  .ba-plan-table table tbody tr td:first-child {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
   }
-  .dates-line-ships .ba-plan-table table tbody tr td:last-child {
+  .ba-plan-table table tbody tr td:last-child {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
   }
-  .dates-line-ships .ba-offer-type-icon img {
+
+  .ba-offer-type-icon img {
     width: calc(70 * 0.25vw);
     height: calc(70 * 0.25vw);
   }
-
-  .ba-auth-root {
-    height: 100vh;
-  }
-  .ba-auth-root::after {
-    width: 100%;
-  }
-  .ba-auth-root .ba-auth-box {
-    z-index: 1;
-    width: 90%;
-    margin: 0 auto;
-    padding: calc(30 * 0.25vw);
-  }
-  .ba-auth-root .ba-auth-box .ba-auth-user-meta {
-    margin-bottom: 20px;
-  }
-  .ba-auth-root .ba-auth-box .ba-auth-user-meta img {
-    width: calc(97 * 0.25vw);
-    height: calc(97 * 0.25vw);
-    margin-bottom: 20px;
-  }
-  .ba-auth-root .ba-auth-box .ba-auth-user-meta h2 {
-    font-size: calc(23 * 0.25vw);
-    line-height: calc(21 * 0.25vw);
-  }
-  .ba-auth-root .ba-auth-box .ba-auth-user-meta p {
-    font-size: calc(13 * 0.25vw);
-    line-height: calc(21 * 0.25vw);
-  }
-  .ba-auth-root .ba-auth-box form.ba-auth-form .btn[type=submit] {
-    width: 100%;
-    margin-top: calc(30 * 0.25vw);
-    padding: calc(16 * 0.25vw) calc(25 * 0.25vw);
-  }
-  .ba-auth-root .ba-auth-box .ba-auth-footer {
-    margin-top: calc(100 * 0.25vw);
-    position: initial;
-  }
-  .ba-auth-root .ba-auth-box.ba-register .ba-auth-footer {
-    position: initial;
-    bottom: calc(-75 * 0.25vw);
-  }
+}
+.ba-auth-root {
+  height: 100vh;
+}
+.ba-auth-root::after {
+  width: 100%;
+}
+.ba-auth-root .ba-auth-box {
+  z-index: 1;
+  width: 90%;
+  margin: 0 auto;
+  padding: calc(30 * 0.25vw);
+}
+.ba-auth-root .ba-auth-box .ba-auth-user-meta {
+  margin-bottom: 20px;
+}
+.ba-auth-root .ba-auth-box .ba-auth-user-meta img {
+  width: calc(97 * 0.25vw);
+  height: calc(97 * 0.25vw);
+  margin-bottom: 20px;
+}
+.ba-auth-root .ba-auth-box .ba-auth-user-meta h2 {
+  font-size: calc(23 * 0.25vw);
+  line-height: calc(21 * 0.25vw);
+}
+.ba-auth-root .ba-auth-box .ba-auth-user-meta p {
+  font-size: calc(13 * 0.25vw);
+  line-height: calc(21 * 0.25vw);
+}
+.ba-auth-root .ba-auth-box form.ba-auth-form .btn[type=submit] {
+  width: 100%;
+  margin-top: calc(30 * 0.25vw);
+  padding: calc(16 * 0.25vw) calc(25 * 0.25vw);
+}
+.ba-auth-root .ba-auth-box .ba-auth-footer {
+  margin-top: calc(100 * 0.25vw);
+  position: initial;
+}
+.ba-auth-root .ba-auth-box.ba-register .ba-auth-footer {
+  position: initial;
+  bottom: calc(-75 * 0.25vw);
 }/*# sourceMappingURL=main.css.map */
