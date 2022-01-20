@@ -1,89 +1,90 @@
 // mobile 
 @media (max-width: 480px) {
     .ba-alert {
-        padding: pxToVwMobileMobile(50);
-        border-radius: pxToVwMobileMobile(11);
-        min-width: pxToVwMobileMobile(306);
+        padding: pxToVwMobile(50);
+        border-radius: pxToVwMobile(11);
+        min-width: pxToVwMobile(306);
         .bar-alert-icon {
-            width: pxToVwMobileMobile(130);
-            height: pxToVwMobileMobile(130);
+            width: pxToVwMobile(130);
+            height: pxToVwMobile(130);
             background: rgba(80, 203, 147, 0.15);
             border-radius: 50%;
-            margin-bottom: pxToVwMobileMobile(20);
+            margin-bottom: pxToVwMobile(20);
             img {
-                width: pxToVwMobileMobile(49);
-                height: pxToVwMobileMobile(49);
+                width: pxToVwMobile(49);
+                height: pxToVwMobile(49);
             }
         }
         h2 {
-            font-size: pxToVwMobileMobile(21);
-            line-height: pxToVwMobileMobile(27);
+            font-size: pxToVwMobile(21);
+            line-height: pxToVwMobile(27);
             /* identical to box height, or 129% */
             letter-spacing: 0.03em;
             color: #50CB93;
             width: 100%;
-            padding-bottom: pxToVwMobileMobile(20);
-            margin-bottom: pxToVwMobileMobile(20);
+            padding-bottom: pxToVwMobile(20);
+            margin-bottom: pxToVwMobile(20);
             border-bottom: 1px solid #E7EDF8;
         }
         p {
             font-weight: normal;
-            font-size: pxToVwMobileMobile(15);
-            line-height: pxToVwMobileMobile(21);
+            font-size: pxToVwMobile(15);
+            line-height: pxToVwMobile(21);
             /* or 140% */
             letter-spacing: 0.03em;
             img {
-                margin-right: pxToVwMobileMobile(10);
-                width: pxToVwMobileMobile(36);
-                height: pxToVwMobileMobile(18px);
+                margin-right: pxToVwMobile(10);
+                width: pxToVwMobile(36);
+                height: pxToVwMobile(18px);
             }
         }
     }
     // modals 
     .ba-light-modal {
         .modal-content {
-            padding: pxToVwMobileMobile(15) pxToVwMobileMobile(30);
+            padding: pxToVwMobile(15) pxToVwMobile(30);
         }
         .ba-modal-head {
-            padding-bottom: pxToVwMobileMobile(15);
+            padding-bottom: pxToVwMobile(15);
             border-bottom: 1px solid rgba(43, 62, 98, 0.12);
-            margin-bottom: pxToVwMobileMobile(25);
+            margin-bottom: pxToVwMobile(25);
             a.ba-modal-close {
                 position: absolute;
                 right: 0;
             }
             h2 {
-                font-size: pxToVwMobileMobile(15);
-                line-height: pxToVwMobileMobile(18);
+                font-size: pxToVwMobile(15);
+                line-height: pxToVwMobile(18);
                 letter-spacing: 0.03em;
                 &.ba-md-title {
-                    font-size: pxToVwMobileMobile(23);
-                    line-height: pxToVwMobileMobile(27);
+                    font-size: pxToVwMobile(23);
+                    line-height: pxToVwMobile(27);
                 }
                 &.ba-lg-title {
-                    font-size: pxToVwMobileMobile(33);
-                    line-height: pxToVwMobileMobile(81);
+                    font-size: pxToVwMobile(18);
+                    line-height: pxToVwMobile(28);
                 }
+                margin-right: 15px;
             }
             .ba-modal-close {
                 img {
-                    width: pxToVwMobileMobile(20);
-                    height: pxToVwMobileMobile(20);
+                    width: pxToVwMobile(20);
+                    height: pxToVwMobile(20);
                 }
             }
         }
         &.ba-primary-modal {
             .ba-modal-head {
-                padding: pxToVwMobileMobile(15) pxToVwMobileMobile(30);
+                padding: pxToVwMobile(15) pxToVwMobile(30);
                 .ba-modal-close {
                     right: 15px;
                 }
             }
             .ba-modal-body {
-                padding: pxToVwMobileMobile(15) pxToVwMobileMobile(30);
+                padding: pxToVwMobile(15) pxToVwMobile(30);
             }
             .ba-modal-footer {
-                padding: pxToVwMobileMobile(15) pxToVwMobileMobile(30);
+                padding: pxToVwMobile(15) pxToVwMobile(30);
             }
         }
     }
@@ -110,6 +111,6 @@
     }
     .ba-add-time-modal .modal-content {
         border-radius: 11px;
-        padding: pxToVwMobileMobile(40);
+        padding: pxToVwMobile(40);
     }
 }

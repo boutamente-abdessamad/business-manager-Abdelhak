@@ -246,85 +246,86 @@
 
 @media (max-width: 480px) {
   .ba-alert {
-    padding: pxToVwMobileMobile(50);
-    border-radius: pxToVwMobileMobile(11);
-    min-width: pxToVwMobileMobile(306);
+    padding: calc(50 * 0.25vw);
+    border-radius: calc(11 * 0.25vw);
+    min-width: calc(306 * 0.25vw);
   }
   .ba-alert .bar-alert-icon {
-    width: pxToVwMobileMobile(130);
-    height: pxToVwMobileMobile(130);
+    width: calc(130 * 0.25vw);
+    height: calc(130 * 0.25vw);
     background: rgba(80, 203, 147, 0.15);
     border-radius: 50%;
-    margin-bottom: pxToVwMobileMobile(20);
+    margin-bottom: calc(20 * 0.25vw);
   }
   .ba-alert .bar-alert-icon img {
-    width: pxToVwMobileMobile(49);
-    height: pxToVwMobileMobile(49);
+    width: calc(49 * 0.25vw);
+    height: calc(49 * 0.25vw);
   }
   .ba-alert h2 {
-    font-size: pxToVwMobileMobile(21);
-    line-height: pxToVwMobileMobile(27);
+    font-size: calc(21 * 0.25vw);
+    line-height: calc(27 * 0.25vw);
     /* identical to box height, or 129% */
     letter-spacing: 0.03em;
     color: #50CB93;
     width: 100%;
-    padding-bottom: pxToVwMobileMobile(20);
-    margin-bottom: pxToVwMobileMobile(20);
+    padding-bottom: calc(20 * 0.25vw);
+    margin-bottom: calc(20 * 0.25vw);
     border-bottom: 1px solid #E7EDF8;
   }
   .ba-alert p {
     font-weight: normal;
-    font-size: pxToVwMobileMobile(15);
-    line-height: pxToVwMobileMobile(21);
+    font-size: calc(15 * 0.25vw);
+    line-height: calc(21 * 0.25vw);
     /* or 140% */
     letter-spacing: 0.03em;
   }
   .ba-alert p img {
-    margin-right: pxToVwMobileMobile(10);
-    width: pxToVwMobileMobile(36);
-    height: pxToVwMobileMobile(18px);
+    margin-right: calc(10 * 0.25vw);
+    width: calc(36 * 0.25vw);
+    height: calc(18px * 0.25vw);
   }
 
   .ba-light-modal .modal-content {
-    padding: pxToVwMobileMobile(15) pxToVwMobileMobile(30);
+    padding: calc(15 * 0.25vw) calc(30 * 0.25vw);
   }
   .ba-light-modal .ba-modal-head {
-    padding-bottom: pxToVwMobileMobile(15);
+    padding-bottom: calc(15 * 0.25vw);
     border-bottom: 1px solid rgba(43, 62, 98, 0.12);
-    margin-bottom: pxToVwMobileMobile(25);
+    margin-bottom: calc(25 * 0.25vw);
   }
   .ba-light-modal .ba-modal-head a.ba-modal-close {
     position: absolute;
     right: 0;
   }
   .ba-light-modal .ba-modal-head h2 {
-    font-size: pxToVwMobileMobile(15);
-    line-height: pxToVwMobileMobile(18);
+    font-size: calc(15 * 0.25vw);
+    line-height: calc(18 * 0.25vw);
     letter-spacing: 0.03em;
+    margin-right: 15px;
   }
   .ba-light-modal .ba-modal-head h2.ba-md-title {
-    font-size: pxToVwMobileMobile(23);
-    line-height: pxToVwMobileMobile(27);
+    font-size: calc(23 * 0.25vw);
+    line-height: calc(27 * 0.25vw);
   }
   .ba-light-modal .ba-modal-head h2.ba-lg-title {
-    font-size: pxToVwMobileMobile(33);
-    line-height: pxToVwMobileMobile(81);
+    font-size: calc(18 * 0.25vw);
+    line-height: calc(28 * 0.25vw);
   }
   .ba-light-modal .ba-modal-head .ba-modal-close img {
-    width: pxToVwMobileMobile(20);
-    height: pxToVwMobileMobile(20);
+    width: calc(20 * 0.25vw);
+    height: calc(20 * 0.25vw);
   }
   .ba-light-modal.ba-primary-modal .ba-modal-head {
-    padding: pxToVwMobileMobile(15) pxToVwMobileMobile(30);
+    padding: calc(15 * 0.25vw) calc(30 * 0.25vw);
   }
   .ba-light-modal.ba-primary-modal .ba-modal-head .ba-modal-close {
     right: 15px;
   }
   .ba-light-modal.ba-primary-modal .ba-modal-body {
-    padding: pxToVwMobileMobile(15) pxToVwMobileMobile(30);
+    padding: calc(15 * 0.25vw) calc(30 * 0.25vw);
   }
   .ba-light-modal.ba-primary-modal .ba-modal-footer {
-    padding: pxToVwMobileMobile(15) pxToVwMobileMobile(30);
+    padding: calc(15 * 0.25vw) calc(30 * 0.25vw);
   }
 
   .ba-primary-light-modal .ba-modal-head {
@@ -347,7 +348,7 @@
 
   .ba-add-time-modal .modal-content {
     border-radius: 11px;
-    padding: pxToVwMobileMobile(40);
+    padding: calc(40 * 0.25vw);
   }
 }
 .btn.active,
@@ -9813,10 +9814,14 @@ a.ba-add-new-time-btn img {
   .show-area {
     overflow-x: hidden;
   }
+  .show-area .ba-datatable-warpper {
+    overflow-x: scroll;
+  }
 
   .ba-main-tabs {
     position: relative;
     padding-top: calc(40 * 0.25vw);
+    margin-bottom: 15px;
   }
   .ba-main-tabs .ba-main-tabs-toggle {
     display: inline-flex;
@@ -10292,6 +10297,7 @@ a.ba-add-new-time-btn img {
   }
 
   .bank-action-cart {
+    margin-bottom: 30px;
     padding: calc(25 * 0.25vw) calc(20 * 0.25vw);
   }
   .bank-action-cart > img {
@@ -10837,6 +10843,7 @@ a.ba-add-new-time-btn img {
   .ba-cart.ba-bank-cart {
     width: 100%;
     border: none;
+    margin-bottom: 15px;
   }
   .ba-cart.ba-bank-cart img {
     height: calc(86 * 0.25vw);
@@ -10950,6 +10957,7 @@ a.ba-add-new-time-btn img {
   .reconcile-transaction-with-invoice-container .reconcile-transaction-with-invoice-header {
     border-bottom: 1px solid rgba(43, 62, 98, 0.65);
     padding-bottom: calc(25 * 0.25vw);
+    flex-wrap: wrap;
   }
   .reconcile-transaction-with-invoice-container .reconcile-transaction-with-invoice-header h2 {
     font-weight: bold;
@@ -11065,20 +11073,20 @@ a.ba-add-new-time-btn img {
   .ba-full-upload-zone {
     width: 100%;
     border-radius: calc(15 * 0.25vw);
-    height: 100vh;
+    height: 60vh;
     flex-direction: column;
   }
   .ba-full-upload-zone span {
-    font-size: calc(27 * 0.25vw);
-    line-height: calc(43 * 0.25vw);
+    font-size: calc(18 * 0.25vw);
+    line-height: calc(28 * 0.25vw);
     /* or 159% */
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
     margin-top: calc(15 * 0.25vw);
   }
   .ba-full-upload-zone img {
-    width: calc(50 * 0.25vw);
-    height: calc(73 * 0.25vw);
+    width: calc(40 * 0.25vw);
+    height: calc(60 * 0.25vw);
   }
 
   .declare-cash-flow-form-header {
@@ -11092,21 +11100,21 @@ a.ba-add-new-time-btn img {
   }
 
   .declarez-operation-form {
-    padding: calc(60 * 0.25vw);
+    padding: calc(30 * 0.25vw);
   }
   .declarez-operation-form > h2 {
     font-weight: bold;
-    font-size: calc(33 * 0.25vw);
-    line-height: calc(39 * 0.25vw);
+    font-size: calc(24 * 0.25vw);
+    line-height: calc(32 * 0.25vw);
     margin-bottom: calc(30 * 0.25vw);
   }
 
   .declarez-operation-form-content {
-    border-radius: 0px 11px 11px 0px;
+    border-radius: 0px 0 11px 11px;
     height: 100%;
     flex-direction: column;
     justify-content: flex-end;
-    padding: calc(60 * 0.25vw);
+    padding: calc(30 * 0.25vw);
   }
   .declarez-operation-form-content p {
     font-size: calc(15 * 0.25vw);

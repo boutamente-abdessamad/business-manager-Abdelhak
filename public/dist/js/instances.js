@@ -230,7 +230,7 @@ $(document).ready(() => {
                     [0, 'desc']
                 ],
                 "info": false,
-                "responsive": true,
+                "responsive": false,
                 "autoWidth": false,
                 columnDefs: [{
                     orderable: false,
@@ -298,7 +298,7 @@ $(document).ready(() => {
                 "order": [
                     [0, 'desc']
                 ],
-                "responsive": true,
+                "responsive": false,
                 "autoWidth": false,
                 columnDefs: [{
                     orderable: false,

@@ -2,11 +2,15 @@
 @media (max-width: 480px) {
     .show-area {
         overflow-x: hidden;
+        .ba-datatable-warpper {
+            overflow-x: scroll;
+        }
     }
     // main nav 
     .ba-main-tabs {
         position: relative;
         padding-top: pxToVwMobile(40);
+        margin-bottom: 15px;
         .ba-main-tabs-toggle {
             display: inline-flex;
             position: absolute;
@@ -497,6 +501,7 @@
     }
     // bank 
     .bank-action-cart {
+        margin-bottom: 30px;
         &>img {
             width: pxToVwMobile(32);
             height: pxToVwMobile(32);
@@ -1053,6 +1058,7 @@
     .ba-cart.ba-bank-cart {
         width: 100%;
         border: none;
+        margin-bottom: 15px;
         img {
             height: pxToVwMobile(86);
             width: 100%;
@@ -1184,6 +1190,7 @@
         .reconcile-transaction-with-invoice-header {
             border-bottom: 1px solid $blueOpacity;
             padding-bottom: pxToVwMobile(25);
+            flex-wrap: wrap;
             h2 {
                 font-weight: bold;
                 font-size: pxToVwMobile(21);
@@ -1288,25 +1295,24 @@
         font-size: pxToVwMobile(27);
         line-height: pxToVwMobile(32);
     }
-    .delete-division-btn {}
     .division-item {
         padding-top: pxToVwMobile(32);
     }
     .ba-full-upload-zone {
         width: 100%;
         border-radius: pxToVwMobile(15);
-        height: 100vh;
+        height: 60vh;
         flex-direction: column;
         span {
-            font-size: pxToVwMobile(27);
-            line-height: pxToVwMobile(43);
+            font-size: pxToVwMobile(18);
+            line-height: pxToVwMobile(28);
             /* or 159% */
             text-decoration-line: underline;
             margin-top: pxToVwMobile(15);
         }
         img {
-            width: pxToVwMobile(50);
-            height: pxToVwMobile(73);
+            width: pxToVwMobile(40);
+            height: pxToVwMobile(60);
         }
     }
     .declare-cash-flow-form-header {
@@ -1319,20 +1325,20 @@
         }
     }
     .declarez-operation-form {
-        padding: pxToVwMobile(60);
+        padding: pxToVwMobile(30);
         &>h2 {
             font-weight: bold;
-            font-size: pxToVwMobile(33);
-            line-height: pxToVwMobile(39);
+            font-size: pxToVwMobile(24);
+            line-height: pxToVwMobile(32);
             margin-bottom: pxToVwMobile(30);
         }
     }
     .declarez-operation-form-content {
-        border-radius: 0px 11px 11px 0px;
+        border-radius: 0px 0 11px 11px;
         height: 100%;
         flex-direction: column;
         justify-content: flex-end;
-        padding: pxToVwMobile(60);
+        padding: pxToVwMobile(30);
         p {
             font-size: pxToVwMobile(15);
             line-height: pxToVwMobile(25);
@@ -1430,7 +1436,6 @@
             font-size: pxToVwMobile(13);
             line-height: 16px;
             padding: 10px pxToVwMobile(15);
-            &.active {}
             span {
                 font-size: 11px;
                 line-height: pxToVwMobile(19);
