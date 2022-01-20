@@ -395,8 +395,12 @@ body {
 .datatable-filters-container {
     display: flex;
     justify-content: space-between;
-    button {
-        height: 100%;
+    align-items: center;
+    .btn {
+        height: pxToVw(44);
+    }
+    input {
+        height: pxToVw(44);
     }
 }
 

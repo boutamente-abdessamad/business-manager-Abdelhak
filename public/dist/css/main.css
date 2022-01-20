@@ -6621,9 +6621,13 @@ body {
 .datatable-filters-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.datatable-filters-container button {
-  height: 100%;
+.datatable-filters-container .btn {
+  height: calc(44 * 0.0651111111vw);
+}
+.datatable-filters-container input {
+  height: calc(44 * 0.0651111111vw);
 }
 
 .datatable-filters-rightside {
@@ -11498,7 +11502,7 @@ a.ba-add-new-time-btn img {
     padding: calc(70 * 0.25vw) 0px;
   }
   .ba-no-record > img {
-    width: calc(408 * 0.25vw);
+    width: 100%;
     height: calc(355 * 0.25vw);
     margin-bottom: calc(40 * 0.25vw);
     -o-object-fit: contain;
@@ -11537,6 +11541,7 @@ a.ba-add-new-time-btn img {
 
   .time-list {
     margin-top: calc(15 * 0.25vw);
+    overflow-x: scroll;
   }
 
   .list-item-datetime {
@@ -11938,45 +11943,65 @@ a.ba-add-new-time-btn img {
     width: calc(70 * 0.25vw);
     height: calc(70 * 0.25vw);
   }
-}
-.ba-auth-root {
-  height: 100vh;
-}
-.ba-auth-root::after {
-  width: 100%;
-}
-.ba-auth-root .ba-auth-box {
-  z-index: 1;
-  width: 90%;
-  margin: 0 auto;
-  padding: calc(30 * 0.25vw);
-}
-.ba-auth-root .ba-auth-box .ba-auth-user-meta {
-  margin-bottom: 20px;
-}
-.ba-auth-root .ba-auth-box .ba-auth-user-meta img {
-  width: calc(97 * 0.25vw);
-  height: calc(97 * 0.25vw);
-  margin-bottom: 20px;
-}
-.ba-auth-root .ba-auth-box .ba-auth-user-meta h2 {
-  font-size: calc(23 * 0.25vw);
-  line-height: calc(21 * 0.25vw);
-}
-.ba-auth-root .ba-auth-box .ba-auth-user-meta p {
-  font-size: calc(13 * 0.25vw);
-  line-height: calc(21 * 0.25vw);
-}
-.ba-auth-root .ba-auth-box form.ba-auth-form .btn[type=submit] {
-  width: 100%;
-  margin-top: calc(30 * 0.25vw);
-  padding: calc(16 * 0.25vw) calc(25 * 0.25vw);
-}
-.ba-auth-root .ba-auth-box .ba-auth-footer {
-  margin-top: calc(100 * 0.25vw);
-  position: initial;
-}
-.ba-auth-root .ba-auth-box.ba-register .ba-auth-footer {
-  position: initial;
-  bottom: calc(-75 * 0.25vw);
+
+  .ba-auth-root {
+    height: 100vh;
+  }
+  .ba-auth-root::after {
+    width: 100%;
+  }
+  .ba-auth-root .ba-auth-box {
+    z-index: 1;
+    width: 90%;
+    margin: 0 auto;
+    padding: calc(30 * 0.25vw);
+  }
+  .ba-auth-root .ba-auth-box .ba-auth-user-meta {
+    margin-bottom: 20px;
+  }
+  .ba-auth-root .ba-auth-box .ba-auth-user-meta img {
+    width: calc(97 * 0.25vw);
+    height: calc(97 * 0.25vw);
+    margin-bottom: 20px;
+  }
+  .ba-auth-root .ba-auth-box .ba-auth-user-meta h2 {
+    font-size: calc(23 * 0.25vw);
+    line-height: calc(21 * 0.25vw);
+  }
+  .ba-auth-root .ba-auth-box .ba-auth-user-meta p {
+    font-size: calc(13 * 0.25vw);
+    line-height: calc(21 * 0.25vw);
+  }
+  .ba-auth-root .ba-auth-box form.ba-auth-form .btn[type=submit] {
+    width: 100%;
+    margin-top: calc(30 * 0.25vw);
+    padding: calc(16 * 0.25vw) calc(25 * 0.25vw);
+  }
+  .ba-auth-root .ba-auth-box .ba-auth-footer {
+    margin-top: calc(100 * 0.25vw);
+    position: initial;
+  }
+  .ba-auth-root .ba-auth-box.ba-register .ba-auth-footer {
+    position: initial;
+    bottom: calc(-75 * 0.25vw);
+  }
+
+  .show-area > .ba-d-f-center {
+    flex-wrap: wrap;
+    padding-bottom: 27px;
+  }
+  .show-area > .ba-d-f-center > .ba-main-tabs {
+    width: 100%;
+  }
+  .show-area > .ba-d-f-center > .ba-date-between {
+    width: 100%;
+    justify-content: end;
+  }
+
+  .datatable-filters-container .btn {
+    height: calc(44 * 0.25vw);
+  }
+  .datatable-filters-container input {
+    height: calc(44 * 0.25vw);
+  }
 }/*# sourceMappingURL=main.css.map */
