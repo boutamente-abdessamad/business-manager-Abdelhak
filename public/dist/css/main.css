@@ -1483,8 +1483,8 @@ label.ba-switch-slider.lg > input:checked + span::after {
   }
 
   .ba-btn-circle {
-    width: calc(36 * 0.25vw) !important;
-    height: calc(36 * 0.25vw) !important;
+    width: calc(18 * 0.25vw) !important;
+    height: calc(18 * 0.25vw) !important;
     border-radius: 50%;
   }
   .ba-btn-circle .btn-xs {
@@ -3985,11 +3985,15 @@ a.ba-next-step i {
     font-size: calc(21 * 0.25vw) !important;
     line-height: calc(25 * 0.25vw) !important;
     margin: calc(30 * 0.25vw) 0px;
+    word-break: break-all;
+    white-space: pre-wrap;
   }
 
   .sm-text {
     font-size: 11px !important;
     line-height: calc(18 * 0.25vw) !important;
+    word-break: break-all;
+    white-space: pre-wrap;
   }
 
   .md-text {
@@ -3998,18 +4002,24 @@ a.ba-next-step i {
   }
 
   .lg-text {
-    font-size: 19px !important;
+    font-size: calc(19 * 0.25vw) !important;
     line-height: calc(23 * 0.25vw) !important;
+    word-break: break-all;
+    white-space: pre-wrap;
   }
 
   .gray-global-text {
     font-size: calc(13 * 0.25vw) !important;
     line-height: calc(20 * 0.25vw) !important;
+    word-break: break-all;
+    white-space: pre-wrap;
   }
 
   .block-title span {
     font-size: calc(27 * 0.25vw);
     line-height: calc(32 * 0.25vw);
+    word-break: break-all;
+    white-space: pre-wrap;
   }
 
   a.ba-add-doc-link {
@@ -9876,10 +9886,17 @@ a.ba-add-new-time-btn img {
   }
   .ba-main-tabs.ba-setting ul {
     list-style: none;
-    display: flex;
+    display: block;
+    height: 0;
+    max-height: 0;
   }
   .ba-main-tabs.ba-setting ul li a {
     padding: calc(20 * 0.25vw) calc(20 * 0.25vw);
+  }
+  .ba-main-tabs.ba-setting.in ul {
+    height: auto;
+    max-height: 900px;
+    opacity: 1;
   }
 
   .ba-group-buttons {
@@ -11844,10 +11861,10 @@ a.ba-add-new-time-btn img {
     margin-top: calc(40 * 0.25vw);
   }
   .ba-settings-invoice-style > .row {
-    margin: 0 calc(-75 * 0.25vw);
+    margin: 0 calc(-15 * 0.25vw);
   }
   .ba-settings-invoice-style > .row > [class*=col-] {
-    padding: 0 calc(75 * 0.25vw);
+    padding: 0 calc(15 * 0.25vw);
   }
 
   .invoice-style-model {
@@ -11898,6 +11915,9 @@ a.ba-add-new-time-btn img {
     margin-bottom: calc(30 * 0.25vw);
   }
 
+  .ba-plan-table .ba-plan-table {
+    overflow-x: scroll;
+  }
   .ba-plan-table table {
     border-collapse: separate;
     border-spacing: 0 5px;
@@ -12003,5 +12023,9 @@ a.ba-add-new-time-btn img {
   }
   .datatable-filters-container input {
     height: calc(44 * 0.25vw);
+  }
+
+  .ba-flex-warp {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */

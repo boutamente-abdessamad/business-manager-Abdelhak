@@ -61,26 +61,36 @@
         font-size: pxToVwMobile(21) !important;
         line-height: pxToVwMobile(25) !important;
         margin: pxToVwMobile(30) 0px;
+        word-break: break-all;
+        white-space: pre-wrap;
     }
     .sm-text {
         font-size: 11px !important;
         line-height: pxToVwMobile(18) !important;
+        word-break: break-all;
+        white-space: pre-wrap;
     }
     .md-text {
         font-size: 13px !important;
         line-height: pxToVwMobile(20) !important;
     }
     .lg-text {
-        font-size: 19px !important;
+        font-size: pxToVwMobile(19) !important;
         line-height: pxToVwMobile(23) !important;
+        word-break: break-all;
+        white-space: pre-wrap;
     }
     .gray-global-text {
         font-size: pxToVwMobile(13)!important;
         line-height: pxToVwMobile(20)!important;
+        word-break: break-all;
+        white-space: pre-wrap;
     }
     .block-title span {
         font-size: pxToVwMobile(27);
         line-height: pxToVwMobile(32);
+        word-break: break-all;
+        white-space: pre-wrap;
     }
     a.ba-add-doc-link {
         font-size: pxToVwMobile(13);

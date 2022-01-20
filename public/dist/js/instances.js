@@ -186,6 +186,13 @@ var initPlugins = function() {
             infinite: true,
             prevArrow: $('.colors-slider-prev'),
             nextArrow: $('.colors-slider-next'),
+              responsive: [{
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                }
+            }]
         });
     }
     let baPeriodSlider = $('.ba-period-slider');
