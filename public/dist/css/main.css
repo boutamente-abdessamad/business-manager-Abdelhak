@@ -348,7 +348,7 @@
 
   .ba-add-time-modal .modal-content {
     border-radius: 11px;
-    padding: calc(40 * 0.25vw);
+    padding: calc(30 * 0.25vw);
   }
 }
 .btn.active,
@@ -1483,8 +1483,8 @@ label.ba-switch-slider.lg > input:checked + span::after {
   }
 
   .ba-btn-circle {
-    width: calc(18 * 0.25vw) !important;
-    height: calc(18 * 0.25vw) !important;
+    width: calc(34 * 0.25vw) !important;
+    height: calc(34 * 0.25vw) !important;
     border-radius: 50%;
   }
   .ba-btn-circle .btn-xs {
@@ -6167,7 +6167,9 @@ ul.meanings-table li img {
 
 @media (max-width: 480px) {
   .calendar-container {
+    flex-wrap: wrap;
     margin-top: calc(50 * 0.25vw);
+    overflow-x: auto;
   }
   .calendar-container .fc .fc-header-toolbar {
     width: calc(100% + 195px);
@@ -6239,10 +6241,12 @@ ul.meanings-table li img {
   }
 
   .calendar-container > .fc {
-    width: calc(100% - 195px);
+    width: 800px;
+    min-width: 800px;
   }
   .calendar-container .ba-calendar-custom-cols {
-    margin-top: 10px;
+    margin-top: 30px;
+    width: 100%;
   }
   .calendar-container .ba-calendar-custom-cols .ba-calendar-custom-cols-head {
     padding: 0px 10px;
@@ -6259,7 +6263,7 @@ ul.meanings-table li img {
     line-height: calc(26 * 0.25vw);
   }
   .calendar-container .ba-calendar-custom-cols .ba-calendar-custom-col {
-    width: 193px;
+    width: 100%;
     height: calc(112 * 0.25vw);
     border-radius: 9px;
     margin: calc(4 * 0.25vw);
@@ -11415,14 +11419,16 @@ a.ba-add-new-time-btn img {
   .ba-calendar-weeks,
 .ba-calendar-days {
     width: 100%;
+    flex-wrap: wrap;
     margin-top: calc(63 * 0.25vw);
   }
 
   .day-box {
     border-radius: 5px;
-    width: 100%;
+    width: 45%;
     height: calc(91 * 0.25vw);
     margin: 0 5px;
+    margin-bottom: 15px;
     border-bottom: 4px solid #0093EB;
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   }
@@ -11454,12 +11460,13 @@ a.ba-add-new-time-btn img {
 
   .week-box {
     border-radius: 5px;
-    width: 100%;
+    width: 46%;
     flex-direction: column;
     height: calc(91 * 0.25vw);
     margin: 0 5px;
     border-bottom: 4px solid #0093EB;
     transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+    margin-bottom: 15px;
   }
   .week-box > h2 {
     font-size: calc(23 * 0.25vw);
@@ -11480,7 +11487,7 @@ a.ba-add-new-time-btn img {
   }
 
   .ba-calendar-total-box {
-    min-width: calc(212 * 0.25vw);
+    min-width: 100%;
     height: calc(91 * 0.25vw);
     border-radius: 5px;
   }
@@ -11516,7 +11523,7 @@ a.ba-add-new-time-btn img {
     padding: calc(67 * 0.25vw) 0px;
   }
   .ba-zone-empty img {
-    width: calc(413 * 0.25vw);
+    width: 100%;
     height: calc(342 * 0.25vw);
   }
 
@@ -11566,6 +11573,12 @@ a.ba-add-new-time-btn img {
     margin-top: calc(15 * 0.25vw);
     overflow-x: scroll;
   }
+  .time-list table {
+    overflow-x: scroll;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 
   .list-item-datetime {
     font-size: calc(15 * 0.25vw);
@@ -11590,7 +11603,10 @@ a.ba-add-new-time-btn img {
 
   .ba-menu-links {
     list-style: none;
-    margin-right: calc(20 * 0.25vw);
+    margin-right: calc(0 * 0.25vw);
+    display: block;
+    margin-right: 0;
+    margin: 15px 0px;
   }
 
   .ba-user-dropdown-item {
@@ -11809,18 +11825,19 @@ a.ba-add-new-time-btn img {
 
   .ba-member-profile-cart {
     border-radius: 5px;
+    flex-wrap: wrap;
   }
   .ba-member-profile-cart .ba-mpc-profile {
-    width: 18%;
+    width: 100%;
     border-radius: 5px;
     height: 100%;
     padding: calc(35 * 0.25vw) 0px;
   }
   .ba-member-profile-cart .ba-mpc-details {
-    width: 82%;
-    padding-top: calc(40 * 0.25vw);
-    padding-left: calc(40 * 0.25vw);
-    padding-right: calc(40 * 0.25vw);
+    width: 100%;
+    padding-top: calc(15 * 0.25vw);
+    padding-left: calc(15 * 0.25vw);
+    padding-right: calc(15 * 0.25vw);
     padding-bottom: calc(20 * 0.25vw);
   }
   .ba-member-profile-cart .ba-mpc-details .ba-mpc-col {
@@ -11835,6 +11852,11 @@ a.ba-add-new-time-btn img {
   .ba-member-profile-cart .ba-mpc-progress {
     margin-top: calc(15 * 0.25vw);
     margin-bottom: calc(15 * 0.25vw);
+    flex-wrap: wrap;
+  }
+  .ba-member-profile-cart .ba-mpc-progress > div {
+    width: 100%;
+    margin-bottom: 15px;
   }
   .ba-member-profile-cart .ba-mpc-progress .ba-progress-bar-warpp {
     width: calc(185 * 0.25vw);
@@ -11842,24 +11864,32 @@ a.ba-add-new-time-btn img {
 
   .ba-edit-member-profile-cart {
     border-radius: 5px;
-    padding: calc(35 * 0.25vw);
+    padding: calc(15 * 0.25vw);
   }
   .ba-edit-member-profile-cart::after {
     width: calc(115 * 0.25vw);
-    height: 100%;
+    height: calc(80 * 0.25vw);
+    width: 100%;
     border-radius: 5px;
+    right: 0;
+    bottom: unset;
   }
   .ba-edit-member-profile-cart form {
     width: 100%;
     z-index: 1;
   }
   .ba-edit-member-profile-cart form .ba-mpc-profile {
-    margin-left: calc(34 * 0.25vw);
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: calc(0 * 0.25vw);
+    width: 100%;
   }
 
   .ba-edit-member-profile-form {
     border-radius: 5px;
-    padding: calc(50 * 0.25vw);
+    padding: calc(30 * 0.25vw);
     margin-top: calc(25 * 0.25vw);
   }
 
@@ -12041,5 +12071,44 @@ a.ba-add-new-time-btn img {
 
   .ba-sub-profile .gray-br {
     border: none;
+  }
+  .ba-sub-profile .ba-d-f-center {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .ba-sub-profile .ba-profile-picture-box {
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    margin-right: 0 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .ba-calendar-header {
+    flex-wrap: wrap;
+  }
+  .ba-calendar-header .ba-calendar-header-leftside {
+    width: 100%;
+  }
+  .ba-calendar-header .ba-calendar-header-rightside {
+    width: 100%;
+  }
+
+  .ba-calendar-current-date-warp {
+    flex-wrap: wrap;
+  }
+
+  .calendar-center-header-content {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  .calendar-center-header-content .filter-input {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .calendar-center-header-content .filter-input input {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

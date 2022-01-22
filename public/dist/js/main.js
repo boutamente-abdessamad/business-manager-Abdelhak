@@ -94,8 +94,19 @@ $(document).ready(() => {
             $(this).closest('table').find('tbody>tr>td input[type=checkbox]').prop('checked', $(this).is(':checked'));
         });
 
-
-
+        if ($('.ba-calendar-custom-col').length) {
+            $('.ba-calendar-custom-col').css({
+                'min-height' :$('.ba-event-box').outerHeight() + 3 + 'px',
+            })
+        }
+        window.addEventListener('resize', function() {
+            if ($('.ba-calendar-custom-col').length) {
+                $('.ba-calendar-custom-col').css({
+                    'min-height' :$('.ba-event-box').outerHeight() + 3 + 'px',
+                })
+            }
+        })
+        
 
     } catch (e) {
         console.log('Error In script detected');

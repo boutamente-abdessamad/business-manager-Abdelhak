@@ -1622,13 +1622,15 @@
     .ba-calendar-weeks,
     .ba-calendar-days {
         width: 100%;
+        flex-wrap: wrap;
         margin-top: pxToVwMobile(63);
     }
     .day-box {
         border-radius: 5px;
-        width: 100%;
+        width: 45%;
         height: pxToVwMobile(91);
         margin: 0 5px;
+        margin-bottom: 15px;
         border-bottom: 4px solid $blueSky;
         transition: $baTransition;
         &>h2 {
@@ -1666,12 +1668,13 @@
     }
     .week-box {
         border-radius: 5px;
-        width: 100%;
+        width: 46%;
         flex-direction: column;
         height: pxToVwMobile(91);
         margin: 0 5px;
         border-bottom: 4px solid $blueSky;
         transition: $baTransition;
+        margin-bottom: 15px;
         &>h2 {
             font-size: pxToVwMobile(23);
             line-height: pxToVwMobile(37);
@@ -1694,7 +1697,7 @@
         }
     }
     .ba-calendar-total-box {
-        min-width: pxToVwMobile(212);
+        min-width: 100%;
         height: pxToVwMobile(91);
         border-radius: 5px;
         h2 {
@@ -1726,7 +1729,7 @@
         margin-top: pxToVwMobile(27);
         padding: pxToVwMobile(67) 0px;
         img {
-            width: pxToVwMobile(413);
+            width: 100%;
             height: pxToVwMobile(342);
         }
     }
@@ -1771,6 +1774,10 @@
     .time-list {
         margin-top: pxToVwMobile(15);
         overflow-x: scroll;
+        table {
+            overflow-x: scroll;
+            width: max-content;
+        }
     }
     .list-item-datetime {
         font-size: pxToVwMobile(15);
@@ -1798,7 +1805,10 @@
     }
     .ba-menu-links {
         list-style: none;
-        margin-right: pxToVwMobile(20);
+        margin-right: pxToVwMobile(0);
+        display: block;
+        margin-right: 0;
+        margin: 15px 0px;
     }
     .ba-user-dropdown-item {
         border-radius: 5px;
@@ -2022,17 +2032,18 @@
     }
     .ba-member-profile-cart {
         border-radius: 5px;
+        flex-wrap: wrap;
         .ba-mpc-profile {
-            width: 18%;
+            width: 100%;
             border-radius: 5px;
             height: 100%;
             padding: pxToVwMobile(35) 0px;
         }
         .ba-mpc-details {
-            width: 82%;
-            padding-top: pxToVwMobile(40);
-            padding-left: pxToVwMobile(40);
-            padding-right: pxToVwMobile(40);
+            width: 100%;
+            padding-top: pxToVwMobile(15);
+            padding-left: pxToVwMobile(15);
+            padding-right: pxToVwMobile(15);
             padding-bottom: pxToVwMobile(20);
             .ba-mpc-col {
                 min-height: pxToVwMobile(90);
@@ -2049,6 +2060,11 @@
         .ba-mpc-progress {
             margin-top: pxToVwMobile(15);
             margin-bottom: pxToVwMobile(15);
+            flex-wrap: wrap;
+            >div {
+                width: 100%;
+                margin-bottom: 15px;
+            }
             .ba-progress-bar-warpp {
                 width: pxToVwMobile(185);
             }
@@ -2056,23 +2072,31 @@
     }
     .ba-edit-member-profile-cart {
         border-radius: 5px;
-        padding: pxToVwMobile(35);
+        padding: pxToVwMobile(15);
         &::after {
             width: pxToVwMobile(115);
-            height: 100%;
+            height: pxToVwMobile(80);
+            width: 100%;
             border-radius: 5px;
+            right: 0;
+            bottom: unset;
         }
         form {
             width: 100%;
             z-index: 1;
             .ba-mpc-profile {
-                margin-left: pxToVwMobile(34);
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                margin-bottom: 15px;
+                margin-left: pxToVwMobile(0);
+                width: 100%;
             }
         }
     }
     .ba-edit-member-profile-form {
         border-radius: 5px;
-        padding: pxToVwMobile(50);
+        padding: pxToVwMobile(30);
         margin-top: pxToVwMobile(25);
     }
     .ba-settings-invoice-style {
@@ -2258,6 +2282,42 @@
     .ba-sub-profile {
         .gray-br {
             border: none;
+        }
+        .ba-d-f-center {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        .ba-profile-picture-box {
+            justify-content: center;
+            display: flex;
+            margin: 0;
+            margin-right: 0 !important;
+            margin-bottom: 15px !important;
+        }
+    }
+    .ba-calendar-header {
+        flex-wrap: wrap;
+        .ba-calendar-header-leftside {
+            width: 100%;
+        }
+        .ba-calendar-header-rightside {
+            width: 100%;
+        }
+    }
+    .ba-calendar-current-date-warp {
+        flex-wrap: wrap;
+    }
+    .calendar-center-header-content {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        .filter-input {
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 15px;
+            input {
+                width: 100%;
+            }
         }
     }
 }
