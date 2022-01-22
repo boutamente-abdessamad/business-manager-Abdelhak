@@ -397,10 +397,10 @@ body {
     justify-content: space-between;
     align-items: center;
     .btn {
-        height: pxToVw(44);
+        height: pxToVw(44) !important;
     }
     input {
-        height: pxToVw(44);
+        height: pxToVw(44) !important;
     }
 }
 

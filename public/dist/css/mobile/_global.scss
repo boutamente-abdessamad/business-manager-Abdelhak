@@ -916,6 +916,12 @@
     .ba-profile-statistiques {
         padding-top: pxToVwMobile(30);
         margin-top: pxToVwMobile(30);
+        flex-wrap: wrap;
+        >div {
+            width: 50%;
+            justify-content: center;
+            margin: 15px 0;
+        }
     }
 }
 

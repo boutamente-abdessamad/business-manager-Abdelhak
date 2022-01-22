@@ -215,7 +215,7 @@
     .datatable-filters-container {
         flex-wrap: wrap;
         button {
-            height: auto;
+            height: auto !important;
         }
         .me-3 {
             margin-right: 0 !important;
@@ -2243,13 +2243,21 @@
     }
     .datatable-filters-container {
         .btn {
-            height: pxToVwMobile(44);
+            height: pxToVwMobile(44) !important;
         }
         input {
-            height: pxToVwMobile(44);
+            height: pxToVwMobile(44) !important;
         }
     }
     .ba-flex-warp {
         flex-wrap: wrap;
+    }
+    .ba-plan-table {
+        overflow-x: scroll;
+    }
+    .ba-sub-profile {
+        .gray-br {
+            border: none;
+        }
     }
 }

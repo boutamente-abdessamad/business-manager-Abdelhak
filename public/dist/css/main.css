@@ -4807,6 +4807,12 @@ a.ba-next-step i {
   .ba-profile-statistiques {
     padding-top: calc(30 * 0.25vw);
     margin-top: calc(30 * 0.25vw);
+    flex-wrap: wrap;
+  }
+  .ba-profile-statistiques > div {
+    width: 50%;
+    justify-content: center;
+    margin: 15px 0;
   }
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr[role=row] > td.dtr-control:before,
@@ -6634,10 +6640,10 @@ body {
   align-items: center;
 }
 .datatable-filters-container .btn {
-  height: calc(44 * 0.0651111111vw);
+  height: calc(44 * 0.0651111111vw) !important;
 }
 .datatable-filters-container input {
-  height: calc(44 * 0.0651111111vw);
+  height: calc(44 * 0.0651111111vw) !important;
 }
 
 .datatable-filters-rightside {
@@ -10024,7 +10030,7 @@ a.ba-add-new-time-btn img {
     flex-wrap: wrap;
   }
   .datatable-filters-container button {
-    height: auto;
+    height: auto !important;
   }
   .datatable-filters-container .me-3 {
     margin-right: 0 !important;
@@ -12019,13 +12025,21 @@ a.ba-add-new-time-btn img {
   }
 
   .datatable-filters-container .btn {
-    height: calc(44 * 0.25vw);
+    height: calc(44 * 0.25vw) !important;
   }
   .datatable-filters-container input {
-    height: calc(44 * 0.25vw);
+    height: calc(44 * 0.25vw) !important;
   }
 
   .ba-flex-warp {
     flex-wrap: wrap;
+  }
+
+  .ba-plan-table {
+    overflow-x: scroll;
+  }
+
+  .ba-sub-profile .gray-br {
+    border: none;
   }
 }/*# sourceMappingURL=main.css.map */
