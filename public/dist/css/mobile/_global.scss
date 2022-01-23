@@ -949,13 +949,11 @@
             margin: 15px 0;
         }
     }
-}
-
-table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td.dtr-control:before,
-table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th.dtr-control:before {
-    left: 17px;
-}
-
-.ba-submit-invoice-warp>form>.row {
-    flex-direction: column-reverse;
+    table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td.dtr-control:before,
+    table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th.dtr-control:before {
+        left: 17px;
+    }
+    .ba-submit-invoice-warp>form>.row {
+        flex-direction: column-reverse;
+    }
 }

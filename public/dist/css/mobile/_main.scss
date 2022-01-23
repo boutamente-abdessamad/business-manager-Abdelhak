@@ -558,16 +558,22 @@
     .ba-dashboard-body {
         margin-top: pxToVwMobile(45);
     }
-    .ba-dashboard-header-leftside,
-    .ba-date-dropdown {
-        span {
-            font-size: pxToVwMobile(14);
-            line-height: pxToVwMobile(23);
-            color: $blueSky;
+    .ba-dashboard-header-leftside {
+        flex-wrap: wrap;
+        .btn {
+            width: 100%;
+            margin-bottom: pxToVwMobile(20);
         }
-        i {
-            font-size: pxToVwMobile(17);
-            color: $blueSky;
+        .ba-date-dropdown {
+            span {
+                font-size: pxToVwMobile(14);
+                line-height: pxToVwMobile(23);
+                color: $blueSky;
+            }
+            i {
+                font-size: pxToVwMobile(17);
+                color: $blueSky;
+            }
         }
     }
     .ba-operations-cat {
@@ -582,14 +588,20 @@
     }
     .ba-dashboard-head-cart {
         .ba-dashboard-head-content-cart {
+            flex-wrap: wrap;
             h5 {
                 font-size: pxToVwMobile(17);
                 line-height: pxToVwMobile(20);
             }
+            .dropdown {
+                width: 100%;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
         }
     }
     .ba-dashboard-cart {
-        padding: pxToVwMobile(40);
+        padding: pxToVwMobile(40) pxToVwMobile(15);
         padding-top: pxToVwMobile(20);
     }
     .ba-dashboard-body-cart {
@@ -625,6 +637,7 @@
         border: 0.5px solid rgba(43, 62, 98, 0.25);
         border-radius: 5px;
         padding: 5px pxToVwMobile(15);
+        width: 100%;
         img {
             width: pxToVwMobile(130);
             height: pxToVwMobile(34);
@@ -2329,6 +2342,41 @@
             input {
                 width: 100%;
             }
+        }
+    }
+    .ba-date-dropdown {
+        display: flex;
+        align-items: center;
+        span {
+            font-size: pxToVwMobile(14);
+            line-height: pxToVwMobile(23);
+        }
+        i {
+            font-size: pxToVw(17);
+        }
+    }
+    .ba-dashboard-head-cart {
+        .ba-cart-menu-tabs {
+            width: 100%;
+            ul {
+                display: block;
+                li {
+                    a {
+                        text-align: left;
+                        justify-content: left;
+                    }
+                }
+            }
+        }
+    }
+    .top-clients-filters {
+        flex-wrap: wrap;
+        .dropdown {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .btn {
+            width: 100%;
         }
     }
 }
