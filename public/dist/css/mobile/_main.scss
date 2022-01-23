@@ -689,6 +689,7 @@
         .ba-panel-head {
             padding: pxToVwMobile(21) pxToVwMobile(50);
             border-radius: pxToVwMobile(11) pxToVwMobile(11) 0px 0px;
+            flex-wrap: wrap;
             >h2 {
                 font-weight: bold;
                 font-size: pxToVwMobile(17);

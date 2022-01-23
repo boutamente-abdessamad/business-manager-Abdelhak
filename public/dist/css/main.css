@@ -6831,7 +6831,7 @@ a.ba-cart.article-action-cart p {
 }
 
 .ba-submit-article-container {
-  margin-top: calc(130 * 0.0651111111vw);
+  margin-top: calc(50 * 0.0651111111vw);
 }
 
 .import-excel-steps-warpp {
@@ -10493,6 +10493,7 @@ a.ba-add-new-time-btn img {
   .ba-panel .ba-panel-head {
     padding: calc(21 * 0.25vw) calc(50 * 0.25vw);
     border-radius: calc(11 * 0.25vw) calc(11 * 0.25vw) 0px 0px;
+    flex-wrap: wrap;
   }
   .ba-panel .ba-panel-head > h2 {
     font-weight: bold;
