@@ -2657,7 +2657,6 @@ a.ba-cart-header-back .back-link-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-header .ba-accordion-header-title {
   display: flex;
@@ -4198,8 +4197,11 @@ a.ba-next-step i {
     margin-right: calc(15 * 0.25vw);
   }
 
+  .ba-create-invoice-warpper {
+    flex-wrap: wrap;
+  }
   .ba-create-invoice-warpper .ba-create-invoice-staps {
-    width: 38.4307446%;
+    width: 100%;
     border-radius: calc(15 * 0.25vw);
     padding: calc(24 * 0.25vw);
   }
@@ -4212,16 +4214,16 @@ a.ba-next-step i {
   .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-header {
     border-top-right-radius: calc(15 * 0.0651111111vw);
     border-top-left-radius: calc(15 * 0.0651111111vw);
-    padding: calc(30 * 0.25vw);
+    padding: calc(15 * 0.25vw);
   }
   .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-header .ba-accordion-header-title .ba-accordion-header-title-icon {
-    width: calc(62 * 0.25vw);
-    height: calc(62 * 0.25vw);
+    width: calc(40 * 0.25vw);
+    height: calc(40 * 0.25vw);
     border-radius: calc(100 * 0.25vw);
   }
   .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-header .ba-accordion-header-title .ba-accordion-header-title-icon img {
-    width: calc(27 * 0.25vw);
-    height: calc(27 * 0.25vw);
+    width: calc(20 * 0.25vw);
+    height: calc(20 * 0.25vw);
   }
   .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-header .ba-accordion-header-title span {
     font-size: calc(15 * 0.25vw);
@@ -4389,7 +4391,9 @@ a.ba-next-step i {
   }
 
   .ba-create-invoice-main {
-    padding: calc(40 * 0.25vw);
+    margin-top: 30px;
+    padding: calc(15 * 0.25vw);
+    width: 100%;
   }
   .ba-create-invoice-main .ba-invoice-label {
     font-size: calc(12 * 0.25vw);
@@ -4538,7 +4542,7 @@ a.ba-next-step i {
   }
 
   .ba-invoice-sidezone {
-    width: 38.4307446%;
+    width: 100%;
   }
 
   .ba-invoice-payment-status-panel {
@@ -9912,6 +9916,7 @@ a.ba-add-new-time-btn img {
   .ba-group-buttons {
     margin-top: 15px;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .datatable-footer .ba-group-buttons .btn {
@@ -10134,10 +10139,12 @@ a.ba-add-new-time-btn img {
     line-height: calc(18 * 0.25vw);
   }
   .ba-statistics-numbers .ba-statistic-number {
-    width: 25%;
+    width: 50%;
+    margin-bottom: 30px;
   }
   .ba-statistics-numbers .ba-statistic-number:not(:last-child):after {
     height: calc(55 * 0.25vw);
+    border-right: none;
   }
 
   .filter-input {
@@ -10583,6 +10590,7 @@ a.ba-add-new-time-btn img {
   }
 
   .light-blue-container.ba-all-clients-total {
+    flex-wrap: nowrap;
     border-radius: 5px;
   }
   .light-blue-container.ba-all-clients-total p {
@@ -10636,8 +10644,8 @@ a.ba-add-new-time-btn img {
   }
 
   .user-profile-avatar {
-    width: calc(108 * 0.25vw);
-    height: calc(108 * 0.25vw);
+    width: calc(80 * 0.25vw);
+    height: calc(80 * 0.25vw);
     font-weight: bold;
     font-size: calc(27 * 0.25vw);
     line-height: calc(19 * 0.25vw);

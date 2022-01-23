@@ -254,11 +254,11 @@
                 <div class="ba-cart client-infos-cart">
 
                     <div class="row align-items-end">
-                        <div class="col-10">
+                        <div class="col-12 col-md-10">
                             <div class="row align-items-center">
-                                <div class="col-5">
+                                <div class="col-12 col-md-5">
                                     <!-- ba-inline-profile -->
-                                    <div class="ba-inline-profile-box gray-br">
+                                    <div class="ba-inline-profile-box gray-br mb-4 mb-md-0">
                                         <div class="user-profile-avatar online">
                                             MJ
                                         </div>
@@ -266,7 +266,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <div class="ba-client-content gray-br">
 
                                         <div class="ba-client-name-role">
@@ -281,7 +281,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <div class="ba-client-content">
 
                                         <ul>
@@ -296,7 +296,7 @@
 
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-md-2 mt-3 mt-md-0">
                             <div class="update-clien-info-action">
                                 <a href="" class="btn ba-btn-default">
                                     <img src="../../../public/assets/icons/gray-edit.svg" alt="">
@@ -313,7 +313,7 @@
                 <div class="row mt-3">
 
 
-                    <div class="col-8">
+                    <div class="col-12 col-md-8">
                         <div class="ba-cart h-100">
 
                             <div class="row justify-content-evenly">
@@ -325,7 +325,7 @@
 
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <div class="py-5">
                                         <div class="ba-lg-circle-progress-container">
                                             <div class="ba-lg-circle-progress-center-text" style="width: 188px; height:188px;">
@@ -344,7 +344,7 @@
 
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <div class="py-5">
                                         <div class="ba-lg-circle-progress-container">
                                             <div class="ba-lg-circle-progress-center-text" style="width: 188px; height:188px;">
@@ -368,7 +368,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-12 col-md-4 mt-3 mt-md-0">
 
                         <div class="ba-cart mb-3">
                             <!-- ba-figures-cart  -->
@@ -442,7 +442,10 @@
             </div>
             <!-- tabs  -->
             <div class="ba-main-tabs mt-5 mb-5">
-
+                <!-- toggle  -->
+                <a href="" class="ba-main-tabs-toggle">
+                    <img src="../../../public/assets/icons/blue-nav-toggle.svg" alt="">
+                </a>
                 <ul>
                     <li class="active"><a href="" class="btn">Contact</a></li>
                     <li><a href="" class="btn">Facture</a></li>
@@ -455,154 +458,156 @@
 
             </div>
             <!-- tabs  -->
-            <!-- datatable area  -->
-            <div class="ba-datatable-warpper">
+            <!-- show-area  -->
+            <div class="show-area">
+                <!-- datatable area  -->
+                <div class="ba-datatable-warpper">
 
-                <table class="ba-datatable dataTable table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>
-                                <button id="baDataTableCheckAllButton" class="datatable-check">
-                                            <i class="fa fa-square"></i>
-                                        </button>
-                            </th>
-                            <th>Nom</th>
-                            <th>Prenom</th>
-                            <th>Fonction</th>
-                            <th>Téléphone</th>
-                            <th>Email</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- tr  -->
-                        <tr>
-
-                            <td></td>
-                            <td>Jazouli</td>
-                            <td>Mohamed</td>
-                            <td>Directeur</td>
-                            <td>+212 0 636 93 99</td>
-                            <td>contact@gmail.com</td>
-                            <td>
-                                <div class="ba-user-profile-nav dropdown">
-                                    <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
-                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                    <table class="ba-datatable dataTable table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <button id="baDataTableCheckAllButton" class="datatable-check">
+                                                <i class="fa fa-square"></i>
                                             </button>
-                                    <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown1">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
-                                            </a>
-                                        </li>
-                                    </ul>
+                                </th>
+                                <th>Nom</th>
+                                <th>Prenom</th>
+                                <th>Fonction</th>
+                                <th>Téléphone</th>
+                                <th>Email</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- tr  -->
+                            <tr>
+
+                                <td></td>
+                                <td>Jazouli</td>
+                                <td>Mohamed</td>
+                                <td>Directeur</td>
+                                <td>+212 0 636 93 99</td>
+                                <td>contact@gmail.com</td>
+                                <td>
+                                    <div class="ba-user-profile-nav dropdown">
+                                        <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                                </button>
+                                        <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown1">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- tr  -->
+                            <!-- tr  -->
+                            <tr>
+
+                                <td></td>
+                                <td>Jazouli</td>
+                                <td>Mohamed</td>
+                                <td>Directeur</td>
+                                <td>+212 0 636 93 99</td>
+                                <td>contact@gmail.com</td>
+                                <td>
+                                    <div class="ba-user-profile-nav dropdown">
+                                        <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
+                                                </button>
+                                        <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown2">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- tr  -->
+
+                        </tbody>
+                    </table>
+
+
+                    <div class="datatable-footer">
+
+                        <div class="ba-group-buttons p-0">
+
+                            <a href="" class="btn ba-btn-default me-3">
+                                    Voir les clients archivés 
+                                    </a>
+
+                            <a href="" class="btn ba-btn-default">
+                                        Voir clients supprimés 
+                                    </a>
+
+                        </div>
+
+                        <!-- pagination  -->
+                        <div class="elements-pagination">
+                            <!-- options  -->
+                            <div class="pagination-more-options ba-user-profile-nav dropdown">
+                                <a href="" class="ep-more" type="button" id="paginationDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                    Plus <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <div class="dropdown-menu ba-dropdown-items pagination-more-dropdown" aria-labelledby="paginationDropDown1">
+                                    <a class="dropdown-item" href="#">plus 1</a>
+                                    <a class="dropdown-item" href="#">plus 2</a>
+                                    <a class="dropdown-item" href="#">plus 3</a>
                                 </div>
-                            </td>
-
-                        </tr>
-                        <!-- tr  -->
-                        <!-- tr  -->
-                        <tr>
-
-                            <td></td>
-                            <td>Jazouli</td>
-                            <td>Mohamed</td>
-                            <td>Directeur</td>
-                            <td>+212 0 636 93 99</td>
-                            <td>contact@gmail.com</td>
-                            <td>
-                                <div class="ba-user-profile-nav dropdown">
-                                    <button class="btn ba-btn-circle ba-btn-secondary" type="button" id="moreActionsDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
-                                                <img src="../../../public/assets/icons/blue-vertical-dots.svg" alt="">
-                                            </button>
-                                    <ul class="dropdown-menu ba-dropdown-items" aria-labelledby="moreActionsDropDown2">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gary-edit.svg" alt=""> Modifier
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gray-archive.svg" alt=""> Archiver
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="../../../public/assets/icons/gray-delete.svg" alt=""> Supprimer
-                                            </a>
-                                        </li>
-                                    </ul>
+                            </div>
+                            <!-- page limit  -->
+                            <div class="pages-limit ba-user-profile-nav dropdown">
+                                <a href="" class="ep-paged" type="button" id="paginationDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                    10 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <div class="dropdown-menu ba-dropdown-items pagination-paged-dropdown" aria-labelledby="paginationDropDown2">
+                                    <a class="dropdown-item" href="#">20</a>
+                                    <a class="dropdown-item" href="#">50</a>
+                                    <a class="dropdown-item" href="#">100</a>
                                 </div>
-                            </td>
-
-                        </tr>
-                        <!-- tr  -->
-
-                    </tbody>
-                </table>
-
-
-                <div class="datatable-footer">
-
-                    <div class="ba-group-buttons p-0">
-
-                        <a href="" class="btn ba-btn-default me-3">
-                                  Voir les clients archivés 
-                                </a>
-
-                        <a href="" class="btn ba-btn-default">
-                                    Voir clients supprimés 
-                                </a>
-
-                    </div>
-
-                    <!-- pagination  -->
-                    <div class="elements-pagination">
-                        <!-- options  -->
-                        <div class="pagination-more-options ba-user-profile-nav dropdown">
-                            <a href="" class="ep-more" type="button" id="paginationDropDown1" data-mdb-toggle="dropdown" aria-expanded="false">
-                                                Plus <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                            <div class="dropdown-menu ba-dropdown-items pagination-more-dropdown" aria-labelledby="paginationDropDown1">
-                                <a class="dropdown-item" href="#">plus 1</a>
-                                <a class="dropdown-item" href="#">plus 2</a>
-                                <a class="dropdown-item" href="#">plus 3</a>
+                            </div>
+                            <!-- elements  -->
+                            <div class="ep-elements">
+                                Eléments <span>1-6</span> / <span>1-6</span>
+                                <a href="" class="ep-prev is-last"><i class="fa fa-angle-left"
+                                                        aria-hidden="true"></i></a>
+                                <a href="" class="ep-next"><i class="fa fa-angle-right"
+                                                        aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <!-- page limit  -->
-                        <div class="pages-limit ba-user-profile-nav dropdown">
-                            <a href="" class="ep-paged" type="button" id="paginationDropDown2" data-mdb-toggle="dropdown" aria-expanded="false">
-                                                10 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                            <div class="dropdown-menu ba-dropdown-items pagination-paged-dropdown" aria-labelledby="paginationDropDown2">
-                                <a class="dropdown-item" href="#">20</a>
-                                <a class="dropdown-item" href="#">50</a>
-                                <a class="dropdown-item" href="#">100</a>
-                            </div>
-                        </div>
-                        <!-- elements  -->
-                        <div class="ep-elements">
-                            Eléments <span>1-6</span> / <span>1-6</span>
-                            <a href="" class="ep-prev is-last"><i class="fa fa-angle-left"
-                                                    aria-hidden="true"></i></a>
-                            <a href="" class="ep-next"><i class="fa fa-angle-right"
-                                                    aria-hidden="true"></i></a>
-                        </div>
+                        <!-- pagination  -->
                     </div>
-                    <!-- pagination  -->
+
                 </div>
-
+                <!-- datatable area  -->
             </div>
-            <!-- datatable area  -->
-
         </div>
         <!-- cart  -->
 

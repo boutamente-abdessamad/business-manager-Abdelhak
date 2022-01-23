@@ -274,8 +274,9 @@
     }
     // create invoice 
     .ba-create-invoice-warpper {
+        flex-wrap: wrap;
         .ba-create-invoice-staps {
-            width: 38.4307446%;
+            width: 100%;
             border-radius: pxToVwMobile(15);
             padding: pxToVwMobile(24);
             .invoice-step-acourdion {
@@ -286,15 +287,15 @@
                 .ba-accordion-header {
                     border-top-right-radius: calc(15 * 0.0651111111vw);
                     border-top-left-radius: calc(15 * 0.0651111111vw);
-                    padding: pxToVwMobile(30);
+                    padding: pxToVwMobile(15);
                     .ba-accordion-header-title {
                         .ba-accordion-header-title-icon {
                             img {
-                                width: pxToVwMobile(27);
-                                height: pxToVwMobile(27);
+                                width: pxToVwMobile(20);
+                                height: pxToVwMobile(20);
                             }
-                            width: pxToVwMobile(62);
-                            height: pxToVwMobile(62);
+                            width: pxToVwMobile(40);
+                            height: pxToVwMobile(40);
                             border-radius: pxToVwMobile(100);
                         }
                         span {
@@ -481,7 +482,9 @@
     }
     // create-invoice-main 
     .ba-create-invoice-main {
-        padding: pxToVwMobile(40);
+        margin-top: 30px;
+        padding: pxToVwMobile(15);
+        width: 100%;
         .ba-invoice-label {
             font-size: pxToVwMobile(12);
             line-height: pxToVwMobile(24);
@@ -643,7 +646,7 @@
         }
     }
     .ba-invoice-sidezone {
-        width: 38.4307446%;
+        width: 100%;
     }
     .ba-invoice-payment-status-panel {
         border-radius: pxToVwMobile(15);

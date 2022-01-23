@@ -90,6 +90,7 @@
     .ba-group-buttons {
         margin-top: 15px;
         flex-wrap: wrap;
+        width: 100%;
     }
     .datatable-footer {
         .ba-group-buttons {
@@ -311,9 +312,11 @@
             line-height: pxToVwMobile(18);
         }
         .ba-statistic-number {
-            width: 25%;
+            width: 50%;
+            margin-bottom: 30px;
             &:not(:last-child):after {
                 height: pxToVwMobile(55);
+                border-right: none;
             }
         }
     }
@@ -779,6 +782,7 @@
         }
     }
     .light-blue-container.ba-all-clients-total {
+        flex-wrap: nowrap;
         border-radius: 5px;
         p {
             font-size: pxToVwMobile(15);
@@ -829,8 +833,8 @@
         }
     }
     .user-profile-avatar {
-        width: pxToVwMobile(108);
-        height: pxToVwMobile(108);
+        width: pxToVwMobile(80);
+        height: pxToVwMobile(80);
         font-weight: bold;
         font-size: pxToVwMobile(27);
         line-height: pxToVwMobile(19);

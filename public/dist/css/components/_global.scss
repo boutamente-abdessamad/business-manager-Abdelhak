@@ -697,7 +697,9 @@ a.ba-cart-header-back {
                 cursor: pointer;
                 background-color: #FFFFFF;
                 padding: pxToVw(30);
-                @include flexCenterBetween();
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 .ba-accordion-header-title {
                     display: flex;
                     align-items: center;
