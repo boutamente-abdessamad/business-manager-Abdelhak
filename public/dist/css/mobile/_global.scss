@@ -456,7 +456,7 @@
     }
     // editable-link
     .editable-link {
-        font-size: pxToVwMobile(12);
+        font-size: pxToVwMobile(14);
         line-height: pxToVwMobile(24);
     }
     .editable-date::after {
@@ -466,6 +466,9 @@
     }
     // dotted-upload 
     .dotted-upload-zone {
+        width: 100%;
+        margin-top: 15px;
+        text-align: center;
         border-radius: pxToVwMobile(7);
         padding: pxToVwMobile(30);
         cursor: pointer;
@@ -476,7 +479,7 @@
         }
         p,
         a {
-            font-size: pxToVwMobile(10);
+            font-size: pxToVwMobile(14);
             line-height: pxToVwMobile(17);
         }
     }
@@ -485,22 +488,37 @@
         margin-top: 30px;
         padding: pxToVwMobile(15);
         width: 100%;
+        .ba-invoice-header {
+            flex-wrap: wrap;
+            .ba-invoice-header-client-infos {
+                width: 100%;
+            }
+            .ba-invoice-header-client-logo {
+                width: 100%;
+            }
+        }
         .ba-invoice-label {
-            font-size: pxToVwMobile(12);
+            font-size: pxToVwMobile(14);
             line-height: pxToVwMobile(24);
+            text-align: left !important;
         }
         .ba-invoice-infos-warpp {
             margin-top: pxToVwMobile(45);
+            flex-wrap: wrap;
+            .ba-invoice-infos {
+                width: 100%;
+            }
         }
         .ba-invoice-client {
             height: pxToVwMobile(109);
             border-radius: pxToVwMobile(7);
             min-width: pxToVwMobile(215);
             margin-top: pxToVwMobile(10);
+            width: 100%;
         }
         .ba-invoice-clients-dropdown {
             &>a {
-                font-size: pxToVwMobile(11);
+                font-size: pxToVwMobile(13);
                 line-height: pxToVwMobile(13);
                 img {
                     width: pxToVwMobile(13);
@@ -512,11 +530,15 @@
         // ba-invoice-articles
         .ba-invoice-articles-warpp {
             margin-top: pxToVwMobile(40);
+            overflow-x: auto;
+            margin-bottom: 20px;
             table {
+                width: max-content;
+                overflow-x: scroll;
                 thead {
                     tr {
                         th {
-                            font-size: pxToVwMobile(11);
+                            font-size: pxToVwMobile(13);
                             line-height: pxToVwMobile(13);
                             padding: pxToVwMobile(18) pxToVwMobile(16);
                             &:first-child {
@@ -554,12 +576,13 @@
                     height: pxToVwMobile(13);
                     margin-right: pxToVwMobile(10);
                 }
-                font-size: pxToVwMobile(11);
+                font-size: pxToVwMobile(13);
                 line-height: pxToVwMobile(13);
                 height: pxToVwMobile(45);
             }
         }
         .ba-invoice-total-warpp {
+            width: 100%;
             margin-top: pxToVwMobile(40);
             .ba-invoice-total-row {
                 &:not(.final-total-box) {
@@ -569,7 +592,7 @@
                 align-items: flex-start;
                 padding: pxToVwMobile(10) 0px;
                 p {
-                    font-size: pxToVwMobile(12);
+                    font-size: pxToVwMobile(14);
                     line-height: pxToVwMobile(18);
                 }
                 &>p {
@@ -614,7 +637,7 @@
         height: pxToVwMobile(27);
     }
     .ba-add-link {
-        font-size: pxToVwMobile(11);
+        font-size: pxToVwMobile(14);
         line-height: pxToVwMobile(24);
     }
     // ba-invoice-clients-dropdown 

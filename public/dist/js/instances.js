@@ -90,7 +90,7 @@ var initPlugins = function() {
             responsive: [{
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             }]
@@ -167,8 +167,9 @@ var initPlugins = function() {
             responsive: [{
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: true
                 }
             }]
         });

@@ -124,9 +124,15 @@
         padding: pxToVwMobile(15);
         box-sizing: border-box;
         align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
         .ba-invoice-status-item-box {
+            width: 48%;
+            min-width: 48%;
             &.ba-add-new-invoice {
                 @include flexCenterCenter();
+                width: 48%;
+                min-width: 48%;
                 flex-direction: column;
                 img {
                     width: pxToVwMobile(25);
@@ -140,10 +146,10 @@
                 }
             }
             &:not(:last-child) {
-                margin-right: pxToVwMobile(25);
+                margin-right: pxToVwMobile(0);
             }
+            margin-bottom: 15px;
             height: pxToVwMobile(245);
-            min-width: pxToVwMobile(175);
             border-radius: pxToVwMobile(15);
             &::after {
                 height: pxToVwMobile(22);

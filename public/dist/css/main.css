@@ -4364,7 +4364,7 @@ a.ba-next-step i {
   }
 
   .editable-link {
-    font-size: calc(12 * 0.25vw);
+    font-size: calc(14 * 0.25vw);
     line-height: calc(24 * 0.25vw);
   }
 
@@ -4375,6 +4375,9 @@ a.ba-next-step i {
   }
 
   .dotted-upload-zone {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
     border-radius: calc(7 * 0.25vw);
     padding: calc(30 * 0.25vw);
     cursor: pointer;
@@ -4386,7 +4389,7 @@ a.ba-next-step i {
   }
   .dotted-upload-zone p,
 .dotted-upload-zone a {
-    font-size: calc(10 * 0.25vw);
+    font-size: calc(14 * 0.25vw);
     line-height: calc(17 * 0.25vw);
   }
 
@@ -4395,21 +4398,36 @@ a.ba-next-step i {
     padding: calc(15 * 0.25vw);
     width: 100%;
   }
+  .ba-create-invoice-main .ba-invoice-header {
+    flex-wrap: wrap;
+  }
+  .ba-create-invoice-main .ba-invoice-header .ba-invoice-header-client-infos {
+    width: 100%;
+  }
+  .ba-create-invoice-main .ba-invoice-header .ba-invoice-header-client-logo {
+    width: 100%;
+  }
   .ba-create-invoice-main .ba-invoice-label {
-    font-size: calc(12 * 0.25vw);
+    font-size: calc(14 * 0.25vw);
     line-height: calc(24 * 0.25vw);
+    text-align: left !important;
   }
   .ba-create-invoice-main .ba-invoice-infos-warpp {
     margin-top: calc(45 * 0.25vw);
+    flex-wrap: wrap;
+  }
+  .ba-create-invoice-main .ba-invoice-infos-warpp .ba-invoice-infos {
+    width: 100%;
   }
   .ba-create-invoice-main .ba-invoice-client {
     height: calc(109 * 0.25vw);
     border-radius: calc(7 * 0.25vw);
     min-width: calc(215 * 0.25vw);
     margin-top: calc(10 * 0.25vw);
+    width: 100%;
   }
   .ba-create-invoice-main .ba-invoice-clients-dropdown > a {
-    font-size: calc(11 * 0.25vw);
+    font-size: calc(13 * 0.25vw);
     line-height: calc(13 * 0.25vw);
   }
   .ba-create-invoice-main .ba-invoice-clients-dropdown > a img {
@@ -4419,9 +4437,17 @@ a.ba-next-step i {
   }
   .ba-create-invoice-main .ba-invoice-articles-warpp {
     margin-top: calc(40 * 0.25vw);
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  .ba-create-invoice-main .ba-invoice-articles-warpp table {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    overflow-x: scroll;
   }
   .ba-create-invoice-main .ba-invoice-articles-warpp table thead tr th {
-    font-size: calc(11 * 0.25vw);
+    font-size: calc(13 * 0.25vw);
     line-height: calc(13 * 0.25vw);
     padding: calc(18 * 0.25vw) calc(16 * 0.25vw);
   }
@@ -4445,7 +4471,7 @@ a.ba-next-step i {
   }
   .ba-create-invoice-main .ba-invoice-add-column-buttons-warp .ba-invoice-add-column-button-col {
     width: calc(100% - 70px);
-    font-size: calc(11 * 0.25vw);
+    font-size: calc(13 * 0.25vw);
     line-height: calc(13 * 0.25vw);
     height: calc(45 * 0.25vw);
   }
@@ -4455,6 +4481,7 @@ a.ba-next-step i {
     margin-right: calc(10 * 0.25vw);
   }
   .ba-create-invoice-main .ba-invoice-total-warpp {
+    width: 100%;
     margin-top: calc(40 * 0.25vw);
   }
   .ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row {
@@ -4466,7 +4493,7 @@ a.ba-next-step i {
     margin-right: calc(40 * 0.25vw);
   }
   .ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row p {
-    font-size: calc(12 * 0.25vw);
+    font-size: calc(14 * 0.25vw);
     line-height: calc(18 * 0.25vw);
   }
   .ba-create-invoice-main .ba-invoice-total-warpp .ba-invoice-total-row > p {
@@ -4511,7 +4538,7 @@ a.ba-next-step i {
   }
 
   .ba-add-link {
-    font-size: calc(11 * 0.25vw);
+    font-size: calc(14 * 0.25vw);
     line-height: calc(24 * 0.25vw);
   }
 
@@ -9944,10 +9971,14 @@ a.ba-add-new-time-btn img {
     padding: calc(15 * 0.25vw);
     box-sizing: border-box;
     align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .ba-invoices-status-container .ba-invoice-status-item-box {
+    width: 48%;
+    min-width: 48%;
+    margin-bottom: 15px;
     height: calc(245 * 0.25vw);
-    min-width: calc(175 * 0.25vw);
     border-radius: calc(15 * 0.25vw);
   }
   .ba-invoices-status-container .ba-invoice-status-item-box.ba-add-new-invoice {
@@ -9955,6 +9986,8 @@ a.ba-add-new-time-btn img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 48%;
+    min-width: 48%;
     flex-direction: column;
   }
   .ba-invoices-status-container .ba-invoice-status-item-box.ba-add-new-invoice img {
@@ -9968,7 +10001,7 @@ a.ba-add-new-time-btn img {
     color: #104CBA;
   }
   .ba-invoices-status-container .ba-invoice-status-item-box:not(:last-child) {
-    margin-right: calc(25 * 0.25vw);
+    margin-right: calc(0 * 0.25vw);
   }
   .ba-invoices-status-container .ba-invoice-status-item-box::after {
     height: calc(22 * 0.25vw);
