@@ -1781,12 +1781,12 @@ header.ba-header nav.ba-navbar a.ba-sidebar-toggle img {
   margin-bottom: calc(25 * 0.0651111111vw);
   border-radius: 50%;
   width: calc(38 * 0.0651111111vw);
+  min-width: calc(38 * 0.0651111111vw);
   height: calc(38 * 0.0651111111vw);
   overflow: hidden;
 }
 .ba-sidebar ul.ba-sidebar-items li a span {
   transition: 0.1s all cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition-delay: 0.2s;
   font-family: Roboto;
   overflow: hidden;
   font-style: normal;
@@ -1798,7 +1798,10 @@ header.ba-header nav.ba-navbar a.ba-sidebar-toggle img {
   color: #104CBA;
   margin-left: calc(15 * 0.0651111111vw);
   opacity: 0;
-  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  margin-left: 0;
 }
 .ba-sidebar ul.ba-sidebar-items li a img {
   width: calc(17 * 0.0651111111vw);
@@ -1820,7 +1823,10 @@ body.ba-sidebar-open .ba-sidebar ul.ba-sidebar-items li a {
 }
 body.ba-sidebar-open .ba-sidebar ul.ba-sidebar-items li a span {
   opacity: 1;
-  display: block;
+  visibility: visible;
+  margin-left: calc(15 * 0.0651111111vw);
+  height: auto;
+  width: auto;
 }
 body.ba-sidebar-open .ba-sidebar .ba-sidebar-toggle i {
   transform: rotate(180deg);

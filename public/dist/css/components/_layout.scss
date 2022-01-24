@@ -212,11 +212,12 @@ header.ba-header {
                 margin-bottom: pxToVw(25);
                 border-radius: 50%;
                 width: pxToVw(38);
+                min-width: pxToVw(38);
                 height: pxToVw(38);
                 overflow: hidden;
                 span {
                     transition: .1s all cubic-bezier(0.65, 0.05, 0.36, 1);
-                    transition-delay: .2s;
+                    // transition-delay: .5s;
                     font-family: Roboto;
                     overflow: hidden;
                     font-style: normal;
@@ -228,7 +229,10 @@ header.ba-header {
                     color: $blue;
                     margin-left: pxToVw(15);
                     opacity: 0;
-                    display: none;
+                    visibility: hidden;
+                    width: 0;
+                    height: 0;
+                    margin-left: 0;
                 }
                 img {
                     width: pxToVw(17);
@@ -252,7 +256,10 @@ body.ba-sidebar-open {
                 padding: pxToVw(0) pxToVw(17);
                 span {
                     opacity: 1;
-                    display: block;
+                    visibility: visible;
+                    margin-left: pxToVw(15);
+                    height: auto;
+                    width: auto;
                 }
             }
         }
