@@ -30,6 +30,11 @@ $(document).ready(() => {
             initPlugins();
         });
         // hide invoice
+        $('body').on('click', '.ba-accordion-header', function(e) {
+            e.preventDefault();
+            $(this).closest('.ba-accordion-container ').toggleClass('in');
+        });
+        // hide invoice
         $('body').on('click', '.ba-invoice-trigger-close', function(e) {
             e.preventDefault();
             $(this).closest('.ba-invoice-viwer').removeClass('in');
