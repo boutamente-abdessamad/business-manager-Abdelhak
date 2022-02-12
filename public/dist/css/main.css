@@ -1715,7 +1715,7 @@ header.ba-header nav.ba-navbar a.ba-sidebar-toggle img {
   position: absolute;
   top: calc(60 * 0.0651111111vw);
   left: 0;
-  height: auto;
+  bottom: 0;
   padding: calc(18 * 0.0651111111vw);
   width: calc(85 * 0.0651111111vw);
   padding-top: 0;
@@ -6455,6 +6455,7 @@ body {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   margin: 0;
+  position: relative;
 }
 
 .ba-main-tabs {
