@@ -1180,7 +1180,7 @@ button.btn.ba-connexion-btn img {
   color: #FFFFFF;
 }
 .ba-btn-purple:hover {
-  background-color: #5b37e5;
+  background-color: #ff3300;
   color: #FFFFFF;
 }
 
@@ -2342,6 +2342,10 @@ a.ba-add-doc-link i {
 
 .h-100vh {
   height: 100vh;
+}
+
+.gray-b {
+  border: 1px solid rgba(16, 76, 186, 0.09);
 }
 
 .gray-bb {
@@ -3626,6 +3630,13 @@ a.editable-click:hover {
   height: calc(15 * 0.0651111111vw);
   left: calc(15 * 0.0651111111vw);
   border-radius: 50%;
+}
+.ba-left-dote.ba-left-dote-square {
+  padding-left: calc(20 * 0.0651111111vw) !important;
+}
+.ba-left-dote.ba-left-dote-square::after {
+  left: 0;
+  border-radius: 3px;
 }
 .ba-left-dote.ba-left-dote-sm {
   padding-left: calc(30 * 0.0651111111vw) !important;
@@ -5352,6 +5363,52 @@ ul.meanings-table li img {
   line-height: calc(23 * 0.0651111111vw);
   color: rgba(43, 62, 98, 0.65);
   padding: calc(10 * 0.0651111111vw) 2px;
+}
+
+table.ba-primary-table {
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+}
+table.ba-primary-table > thead tr {
+  position: relative;
+}
+table.ba-primary-table > thead tr::after {
+  position: absolute;
+  content: "";
+  background: #104CBA;
+  border-radius: 7px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+table.ba-primary-table > thead tr th {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  color: #104CBA;
+  border: none;
+}
+table.ba-primary-table > tbody tr.light-blue-container:first-child td:first-child {
+  border-top-left-radius: 5px;
+}
+table.ba-primary-table > tbody tr.light-blue-container:first-child td:last-child {
+  border-top-right-radius: 5px;
+}
+table.ba-primary-table > tbody tr.light-blue-container:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+table.ba-primary-table > tbody tr.light-blue-container:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+table.ba-primary-table > tbody tr td {
+  vertical-align: middle;
+}
+table.ba-primary-table > tbody tr:last-child td {
+  border-bottom: none;
 }
 
 @media (max-width: 480px) {
@@ -10033,6 +10090,82 @@ a.ba-add-new-time-btn img {
 }
 .ba-accordion-container.in .ba-accordion-body {
   display: block;
+}
+
+.ba-cart-menu-tabs.repports-main-tabs {
+  width: 100%;
+}
+.ba-cart-menu-tabs.repports-main-tabs::after {
+  background: rgba(16, 76, 186, 0.09);
+  height: 5px;
+}
+.ba-cart-menu-tabs.repports-main-tabs ul li a {
+  color: rgba(43, 62, 98, 0.65);
+  padding: 25px 15px;
+}
+.ba-cart-menu-tabs.repports-main-tabs ul li a img {
+  opacity: 0.5;
+}
+.ba-cart-menu-tabs.repports-main-tabs ul li.active a {
+  color: #104CBA;
+}
+.ba-cart-menu-tabs.repports-main-tabs ul li.active a img {
+  opacity: 1;
+}
+.ba-cart-menu-tabs.repports-main-tabs ul li.active a::after {
+  height: 5px;
+  background: #104CBA;
+}
+.ba-cart-menu-tabs.repports-main-tabs.comptable-nav ul li a {
+  padding: 21px 6px;
+  text-align: left;
+  line-height: 21px;
+}
+
+.ba-repport-states-figure span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+}
+.ba-repport-states-figure .md-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #2B3E62;
+}
+
+.repport-main-warpp {
+  padding-top: 39px;
+}
+.repport-main-warpp .ba-repport-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.repport-main-warpp .ba-repport-figures {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+.repport-main-warpp .ba-repport-figures .ba-repport-figure {
+  padding-right: 40px;
+  border-right: 1px solid rgba(43, 62, 98, 0.21);
+}
+.repport-main-warpp .ba-repport-figures .ba-repport-figure:not(:first-child) {
+  padding-left: 40px;
+}
+.repport-main-warpp .ba-repport-figures .ba-repport-figure:last-child {
+  border-right: none;
 }
 
 @media (max-width: 480px) {

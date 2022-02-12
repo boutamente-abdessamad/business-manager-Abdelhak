@@ -239,51 +239,9 @@
             <!-- main  -->
             <div class="repport-main-warpp">
 
-                <div class="row align-items-center gx-5">
-
-                    <div class="col-6">
-                        <div class="row align-items-center g-5">
-                            <div class="col-5">
-                                <div class="ba-repport-_doughnut_chart">
-                                    <canvas id="ba_repport_doughnut_chart"></canvas>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <div class="row g-5">
-                                    <div class="col-6">
-                                        <div class="ba-repport-states-figure">
-                                            <span class="ba-left-dote ba-left-dote-danger ba-left-dote-square">65</span>
-                                            <p class="gray-global-text">Factures  en attente</p>
-                                            <p class="md-text">352 €</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="ba-repport-states-figure">
-                                            <span class="ba-left-dote ba-left-dote-success ba-left-dote-square">65</span>
-                                            <p class="gray-global-text">Factures  en attente</p>
-                                            <p class="md-text">352 €</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="ba-repport-states-figure">
-                                            <span class="ba-left-dote ba-left-dote-warning ba-left-dote-square">65</span>
-                                            <p class="gray-global-text">Factures  en attente</p>
-                                            <p class="md-text">352 €</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="ba-repport-states-figure">
-                                            <span class="ba-left-dote ba-left-dote-primary ba-left-dote-square">65</span>
-                                            <p class="gray-global-text">Factures  en attente</p>
-                                            <p class="md-text">352 €</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-6">
+                <div class="row align-items-center gx-5 justify-content-end">
+                   
+                    <div class="col-5">
                             <div class="ba-repport-actions">
                                   <!-- Filtres -->
                                     <button class="btn ba-btn-default me-3" type="button" >
@@ -304,20 +262,18 @@
                                     </button>
                                     <!-- Filtres -->
                             </div>
-                            <div class="ba-repport-figures">
-                                <div class="ba-repport-figure">
-                                    <p class="gray-global-text">Total Facture </p>
-                                    <p class="lg-text ba-ui-bold">2530</p>
-                                </div>
-                                <div class="ba-repport-figure">
-                                    <p class="gray-global-text">Total Clients</p>
-                                    <p class="lg-text ba-ui-bold">95</p>
-                                </div>
-                            </div>
                     </div>
 
                 </div>
 
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="ba-d-f-center">
+                            <div class="ba-comment-user text-white ba-warning-bg">B</div>
+                            <p class="md-text ms-2">Client Bnjaloun </p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="ba-primary-table-warpp">
 
@@ -325,117 +281,80 @@
 
                         <thead>
 
-                            <th style="width:60%">Clients</th>
-                            <th>Total facturé </th>
-                            <th>Total encaissé</th>
-                            <th>Montant dû</th>
+                            <th style="width:60%">Date facture</th>
+                            <th>Numéro de facture  </th>
+                            <th>Montant</th>
 
                         </thead>
 
                         <tbody>
 
+                            <tr>
+                                <td><p class="md-text ba-ui-bold">01/01/2021</p></td>
+                                <td>
+                                    <p class="md-text ba-ui-bold">F02396002</p>
+                                </td>
+                                <td>
+                                    <p class="md-text ba-ui-bold">70 €</p>
+                                </td>
+                            </tr>
                             <tr class="light-blue-container">
-                                <td><p class="md-text ba-ui-bold">Tous les clients</p></td>
-                                <td>
-                                    <p class="md-text ba-ui-bold">125 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text ba-ui-bold">65 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text ba-ui-bold">60 €</p>
+                                <td colspan="4" class="text-end" >
+                                    <p class="md-text ba-ui-bold">TOTAL 70 €</p>
                                 </td>
                             </tr>
                         </tbody>
 
                     </table>
 
-                    <table class="ba-primary-table table" style=" border-spacing: 0px; border-collapse:none;">
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="ba-d-f-center">
+                            <div class="ba-comment-user text-white ba-warning-bg">B</div>
+                            <p class="md-text ms-2">Client Bnjaloun </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ba-primary-table-warpp">
+
+                    <table class="ba-primary-table table" >
 
                         <thead>
 
-                            <th style="width:60%">Clients</th>
-                            <th>Total facturé </th>
-                            <th>Total encaissé</th>
-                            <th>Montant dû</th>
+                            <th style="width:60%">Date facture</th>
+                            <th>Numéro de facture  </th>
+                            <th>Montant</th>
 
                         </thead>
 
                         <tbody>
 
                             <tr>
+                                <td><p class="md-text ba-ui-bold">01/01/2021</p></td>
                                 <td>
-                                    <div class="ba-d-f-center">
-                                        <div class="ba-comment-user text-white ba-primary-bg">A</div>
-                                        <p class="md-text ms-2">Client Alami </p>
-                                    </div>
+                                    <p class="md-text ba-ui-bold">F02396002</p>
                                 </td>
                                 <td>
-                                    <p class="md-text">125 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">65 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">60 €</p>
+                                    <p class="md-text ba-ui-bold">70 €</p>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <div class="ba-d-f-center">
-                                        <div class="ba-comment-user text-white ba-danger-bg">F</div>
-                                        <p class="md-text ms-2">Client Filali </p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="md-text">125 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">65 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">60 €</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="ba-d-f-center">
-                                        <div class="ba-comment-user text-white ba-warning-bg">B</div>
-                                        <p class="md-text ms-2">Client Bnjaloun </p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="md-text">125 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">65 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">60 €</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="ba-d-f-center">
-                                        <div class="ba-comment-user text-white ba-success-bg">J</div>
-                                        <p class="md-text ms-2">Client Jazouli </p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="md-text">125 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">65 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">60 €</p>
+                            <tr class="light-blue-container">
+                                <td colspan="4" class="text-end" >
+                                    <p class="md-text ba-ui-bold">TOTAL 70 €</p>
                                 </td>
                             </tr>
                         </tbody>
 
                     </table>
 
-
+                </div>
+                <div class="light-blue-container text-end">
+                    <div class="total-row text-end">
+                        <label for="">Total global </label>
+                        <h2>130 €</h2>
+                    </div>
                 </div>
 
             </div>
@@ -511,13 +430,13 @@
                             <div class="col-12">
                                 <!-- input  -->
                                 <div class="ba-form-warpp">
-                                    <label for="" class="ba-form-label">Statut de la facture </label>
+                                    <label for="" class="ba-form-label">Type</label>
                                     <div class="ba-select-warpper w-100 mb-0  ba-form-control-style ">
                                         <select id="" class="selectpicker ba-select">
-                                        <option value="Envoyée">Envoyée </option>
-                                        <option value="Envoyée">Envoyée </option>
-                                        <option value="Envoyée">Envoyée </option>
-                                        <option value="Envoyée">Envoyée </option>
+                                        <option value="Total facturé">Total facturé </option>
+                                        <option value="Total facturé">Total facturé </option>
+                                        <option value="Total facturé">Total facturé </option>
+                                        <option value="Total facturé">Total facturé </option>
                                     </select>
                                     </div>
                                 </div>

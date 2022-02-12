@@ -14,12 +14,14 @@
         border-spacing: 0px pxToVw(15);
         border: none;
         border-collapse: separate;
+
         &>tbody {
             &>tr:not(.ba-invoice-form-tr) {
                 &>td {
                     &.dt-control {
                         cursor: pointer;
                     }
+
                     transition: .1s all cubic-bezier(0.65, 0.05, 0.36, 1);
                     font-weight: 500;
                     border-width: 1px;
@@ -36,39 +38,48 @@
                     border: none;
                     border-top: 1px solid rgba(16, 76, 186, 0.1) !important;
                     border-bottom: 1px solid rgba(16, 76, 186, 0.1) !important;
+
                     &:first-child {
                         border-left: 1px solid rgba(16, 76, 186, 0.1) !important;
                         border-top-left-radius: pxToVw(5);
                         border-bottom-left-radius: pxToVw(5);
                     }
+
                     &:last-child {
                         border-bottom-right-radius: pxToVw(5);
                         border-top-right-radius: pxToVw(5);
                         border-right: 1px solid rgba(16, 76, 186, 0.1) !important;
                     }
                 }
+
                 transition: .1s all cubic-bezier(0.65, 0.05, 0.36, 1);
                 background: rgba(252, 252, 252, 50%);
                 mix-blend-mode: normal;
                 mix-blend-mode: normal;
                 border-radius: 0;
+
                 &:hover {
                     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1), 0px 5px 8px rgba(0, 0, 0, 0.07), 0px 1px 14px rgba(0, 0, 0, 0.06);
+
                     td {
                         background: #FFFFFF !important;
                         border-bottom: 1px solid rgba(16, 76, 186, 0.37) !important;
                         border-top: 1px solid rgba(16, 76, 186, 0.37) !important;
+
                         &:first-child {
                             border-left: 1px solid rgba(16, 76, 186, 0.37) !important;
                         }
+
                         &:last-child {
                             border-right: 1px solid rgba(16, 76, 186, 0.37) !important;
                         }
                     }
                 }
+
                 &.ba-datatable-row-title {
                     border: none;
                     box-shadow: none;
+
                     td {
                         pointer-events: none;
                         width: 100%;
@@ -83,19 +94,24 @@
                         line-height: pxToVw(20);
                         letter-spacing: 0.03em;
                         color: $blue;
+
                         &::before {
                             display: none !important;
                         }
                     }
+
                     &:hover {
                         box-shadow: none;
+
                         td {
                             background: #FFFFFF !important;
                             border-bottom: none !important;
                             border-top: none !important;
+
                             &:first-child {
                                 border-left: none !important;
                             }
+
                             &:last-child {
                                 border-right: none !important;
                             }
@@ -104,6 +120,7 @@
                 }
             }
         }
+
         &>tfoot {
             tr {
                 td {
@@ -131,6 +148,7 @@
                 }
             }
         }
+
         &>thead {
             tr {
                 th {
@@ -150,6 +168,7 @@
             }
         }
     }
+
     padding-top: pxToVw(15);
     // margin: pxToVw(15);
     // margin-top: pxToVw(0);
@@ -201,6 +220,7 @@ table.dataTable {
                 font-weight: 600;
                 transform: rotate(180deg);
             }
+
             &:before {
                 content: "\f107";
                 right: pxToVw(3);
@@ -211,6 +231,7 @@ table.dataTable {
                 font-weight: 600;
             }
         }
+
         .sorting_asc {
             &:after {
                 content: "\f107";
@@ -222,6 +243,7 @@ table.dataTable {
                 font-weight: 600;
                 transform: rotate(180deg);
             }
+
             &:before {
                 content: "\f107";
                 right: pxToVw(3);
@@ -232,6 +254,7 @@ table.dataTable {
                 font-weight: 600;
             }
         }
+
         .sorting_desc {
             &:after {
                 content: "\f107";
@@ -243,6 +266,7 @@ table.dataTable {
                 font-weight: 600;
                 transform: rotate(180deg);
             }
+
             &:before {
                 content: "\f107";
                 right: pxToVw(3);
@@ -253,6 +277,7 @@ table.dataTable {
                 font-weight: 600;
             }
         }
+
         .sorting_asc_disabled {
             &:after {
                 content: "\f107";
@@ -264,6 +289,7 @@ table.dataTable {
                 font-weight: 600;
                 transform: rotate(180deg);
             }
+
             &:before {
                 content: "\f107";
                 right: pxToVw(3);
@@ -274,6 +300,7 @@ table.dataTable {
                 font-weight: 600;
             }
         }
+
         .sorting_desc_disabled {
             &:after {
                 content: "\f107";
@@ -285,6 +312,7 @@ table.dataTable {
                 font-weight: 600;
                 transform: rotate(180deg);
             }
+
             &:before {
                 content: "\f107";
                 right: pxToVw(3);
@@ -296,6 +324,7 @@ table.dataTable {
             }
         }
     }
+
     tbody {
         td.select-checkbox {
             &:before {
@@ -307,6 +336,7 @@ table.dataTable {
                 border: 1px solid rgba(43, 62, 98, 0.22);
                 border-radius: 5px;
             }
+
             &:after {
                 left: pxToVw(23);
                 width: pxToVw(26);
@@ -314,6 +344,7 @@ table.dataTable {
                 height: pxToVw(26);
             }
         }
+
         th.select-checkbox {
             &:before {
                 left: pxToVw(23);
@@ -322,6 +353,7 @@ table.dataTable {
                 height: pxToVw(26);
                 border: 2px solid $blue;
             }
+
             &:after {
                 left: pxToVw(23);
                 width: pxToVw(26);
@@ -329,21 +361,25 @@ table.dataTable {
                 height: pxToVw(26);
             }
         }
+
         >tr.selected {
             background-color: #3f51b51c;
         }
+
         >tr.ba-invoice-form-tr {
             >td {
                 padding: 0;
                 cursor: pointer;
             }
         }
+
         >tr {
             >.selected {
                 background-color: #3f51b51c;
             }
         }
     }
+
     tr.selected {
         td.select-checkbox {
             &:after {
@@ -364,6 +400,7 @@ table.dataTable {
                 text-shadow: unset;
             }
         }
+
         th.select-checkbox {
             &:after {
                 content: "\f14a";
@@ -395,9 +432,11 @@ table.dataTable {
     border: 1px solid rgba(43, 62, 98, 0.22);
     box-sizing: border-box;
     border-radius: pxToVw(5);
+
     i {
         font-size: pxToVw(19);
         color: $blue;
+
         &.fa-square {
             color: transparent;
         }
@@ -420,6 +459,7 @@ table.dataTable {
 .elements-pagination {
     @include flexCenter();
     justify-content: flex-end;
+
     a {
         font-family: Roboto;
         font-style: normal;
@@ -428,9 +468,11 @@ table.dataTable {
         font-size: pxToVw(13);
         line-height: pxToVw(15);
         color: $blueText;
+
         &:not(:last-child) {
             margin-right: pxToVw(5);
         }
+
         i {
             font-size: pxToVw(18);
             margin: 0px pxToVw(3);
@@ -442,6 +484,7 @@ table.dataTable {
     margin-left: pxToVw(15);
     font-size: pxToVw(13);
     @include flexCenter();
+
     span {
         font-family: Roboto;
         font-style: normal;
@@ -463,6 +506,7 @@ a.is-last {
 
 .pagination-more-dropdown {
     min-width: pxToVw(100) !important;
+
     a.dropdown-item {
         text-align: center;
         margin-left: 0;
@@ -471,6 +515,7 @@ a.is-last {
 
 .pagination-paged-dropdown {
     min-width: pxToVw(8) !important;
+
     a.dropdown-item {
         text-align: center;
         margin-left: 0;
@@ -490,6 +535,7 @@ ul.meanings-table {
     list-style: none;
     align-items: center;
     display: flex;
+
     li {
         p {
             font-family: Roboto;
@@ -500,12 +546,14 @@ ul.meanings-table {
             color: #373737;
             margin-bottom: 0;
         }
+
         img {
             width: pxToVw(27);
             height: pxToVw(27);
             margin-right: pxToVw(10);
             object-fit: contain;
         }
+
         display: flex;
         margin-right:pxToVw(30);
         align-items: center;
@@ -531,6 +579,86 @@ ul.meanings-table {
     color: $blueOpacity;
     padding: pxToVw(10) 2px;
 }
+
+
+table.ba-primary-table {
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+
+    >thead {
+        tr {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: #104CBA;
+                border-radius: 7px;
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+
+            th {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 23px;
+                color: #104CBA;
+                border: none;
+            }
+        }
+
+    }
+
+    >tbody {
+        tr.light-blue-container {
+            &:first-child {
+                td {
+
+                    &:first-child {
+                        border-top-left-radius: 5px;
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: 5px;
+                    }
+                }
+            }
+
+            &:last-child {
+                td {
+                    &:first-child {
+                        border-bottom-left-radius: 5px;
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+            }
+        }
+
+        tr {
+            td {
+                vertical-align: middle;
+
+            }
+
+            &:last-child {
+                td {
+                    border-bottom: none
+                }
+            }
+        }
+
+    }
+}
+
+
 
 // mobile 
 @import "../mobile/datetables.scss";

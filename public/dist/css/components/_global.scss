@@ -364,6 +364,10 @@ a.ba-add-doc-link {
     height: 100vh;
 }
 
+.gray-b {
+    border: 1px solid $blueLight;
+}
+
 .gray-bb {
     border-bottom: 1px solid $blueLight;
 }
@@ -1626,6 +1630,13 @@ a.editable-click:hover {
         border-radius: 50%;
     }
     padding-left: pxToVw(40) !important;
+    &.ba-left-dote-square{
+        padding-left: pxToVw(20) !important;
+        &::after {
+            left: 0;
+                border-radius:3px;
+            }
+    }
     &.ba-left-dote-sm {
         padding-left: pxToVw(30) !important;
     }

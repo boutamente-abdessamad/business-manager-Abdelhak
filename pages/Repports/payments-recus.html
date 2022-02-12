@@ -239,51 +239,16 @@
             <!-- main  -->
             <div class="repport-main-warpp">
 
-                <div class="row align-items-center gx-5">
-
-                    <div class="col-6">
-                        <div class="row align-items-center g-5">
-                            <div class="col-5">
-                                <div class="ba-repport-_doughnut_chart">
-                                    <canvas id="ba_repport_doughnut_chart"></canvas>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <div class="row g-5">
-                                    <div class="col-6">
-                                        <div class="ba-repport-states-figure">
-                                            <span class="ba-left-dote ba-left-dote-danger ba-left-dote-square">65</span>
-                                            <p class="gray-global-text">Factures  en attente</p>
-                                            <p class="md-text">352 €</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="ba-repport-states-figure">
-                                            <span class="ba-left-dote ba-left-dote-success ba-left-dote-square">65</span>
-                                            <p class="gray-global-text">Factures  en attente</p>
-                                            <p class="md-text">352 €</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="ba-repport-states-figure">
-                                            <span class="ba-left-dote ba-left-dote-warning ba-left-dote-square">65</span>
-                                            <p class="gray-global-text">Factures  en attente</p>
-                                            <p class="md-text">352 €</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="ba-repport-states-figure">
-                                            <span class="ba-left-dote ba-left-dote-primary ba-left-dote-square">65</span>
-                                            <p class="gray-global-text">Factures  en attente</p>
-                                            <p class="md-text">352 €</p>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="row align-items-center gx-5 justify-content-end">
+                    <div class="col-7">
+                         <div class="ba-repport-figures">
+                            <div class="ba-repport-figure">
+                                <p class="gray-global-text">Total des paiements reçus</p>
+                                <p class="lg-text ba-ui-bold">1150 €</p>
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-6">
+                    <div class="col-5">
                             <div class="ba-repport-actions">
                                   <!-- Filtres -->
                                     <button class="btn ba-btn-default me-3" type="button" >
@@ -304,66 +269,31 @@
                                     </button>
                                     <!-- Filtres -->
                             </div>
-                            <div class="ba-repport-figures">
-                                <div class="ba-repport-figure">
-                                    <p class="gray-global-text">Total Facture </p>
-                                    <p class="lg-text ba-ui-bold">2530</p>
-                                </div>
-                                <div class="ba-repport-figure">
-                                    <p class="gray-global-text">Total Clients</p>
-                                    <p class="lg-text ba-ui-bold">95</p>
-                                </div>
-                            </div>
                     </div>
 
                 </div>
 
-
-                <div class="ba-primary-table-warpp">
-
-                    <table class="ba-primary-table table" >
-
-                        <thead>
-
-                            <th style="width:60%">Clients</th>
-                            <th>Total facturé </th>
-                            <th>Total encaissé</th>
-                            <th>Montant dû</th>
-
-                        </thead>
-
-                        <tbody>
-
-                            <tr class="light-blue-container">
-                                <td><p class="md-text ba-ui-bold">Tous les clients</p></td>
-                                <td>
-                                    <p class="md-text ba-ui-bold">125 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text ba-ui-bold">65 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text ba-ui-bold">60 €</p>
-                                </td>
-                            </tr>
-                        </tbody>
-
-                    </table>
+               <div class="ba-primary-table-warpp mt-5">
 
                     <table class="ba-primary-table table" style=" border-spacing: 0px; border-collapse:none;">
 
                         <thead>
 
-                            <th style="width:60%">Clients</th>
-                            <th>Total facturé </th>
-                            <th>Total encaissé</th>
-                            <th>Montant dû</th>
+                            <th>Date</th>
+                            <th>Clients</th>
+                            <th>Mode de paiement</th>
+                            <th>Description</th>
+                            <th>Paiement pour</th>
+                            <th>Montant</th>
 
                         </thead>
 
                         <tbody>
 
                             <tr>
+                                 <td>
+                                    <p class="md-text">01/01/2021</p>
+                                </td>
                                 <td>
                                     <div class="ba-d-f-center">
                                         <div class="ba-comment-user text-white ba-primary-bg">A</div>
@@ -371,66 +301,42 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <p class="md-text">125 €</p>
+                                    <p class="md-text">Virement</p>
                                 </td>
                                 <td>
-                                    <p class="md-text">65 €</p>
+                                    <p class="md-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                                 </td>
                                 <td>
-                                    <p class="md-text">60 €</p>
+                                    <p class="md-text">facture #2 </p>
+                                </td>
+                                <td>
+                                    <p class="md-text">780 €</p>
                                 </td>
                             </tr>
                             <tr>
+                                 <td>
+                                    <p class="md-text">01/01/2021</p>
+                                </td>
                                 <td>
                                     <div class="ba-d-f-center">
-                                        <div class="ba-comment-user text-white ba-danger-bg">F</div>
-                                        <p class="md-text ms-2">Client Filali </p>
+                                        <div class="ba-comment-user text-white ba-primary-bg">A</div>
+                                        <p class="md-text ms-2">Client Alami </p>
                                     </div>
                                 </td>
                                 <td>
-                                    <p class="md-text">125 €</p>
+                                    <p class="md-text">Virement</p>
                                 </td>
                                 <td>
-                                    <p class="md-text">65 €</p>
+                                    <p class="md-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                                 </td>
                                 <td>
-                                    <p class="md-text">60 €</p>
+                                    <p class="md-text">facture #2 </p>
+                                </td>
+                                <td>
+                                    <p class="md-text">780 €</p>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <div class="ba-d-f-center">
-                                        <div class="ba-comment-user text-white ba-warning-bg">B</div>
-                                        <p class="md-text ms-2">Client Bnjaloun </p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="md-text">125 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">65 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">60 €</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="ba-d-f-center">
-                                        <div class="ba-comment-user text-white ba-success-bg">J</div>
-                                        <p class="md-text ms-2">Client Jazouli </p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="md-text">125 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">65 €</p>
-                                </td>
-                                <td>
-                                    <p class="md-text">60 €</p>
-                                </td>
-                            </tr>
+                         
                         </tbody>
 
                     </table>
@@ -465,7 +371,7 @@
                     </div>
                     <!-- body  -->
                     <div class="ba-modal-body">
-                        <div class="row">
+                           <div class="row">
                             <div class="col-12">
                                 <label for=""  class="ba-form-label">Période</label>
                             </div>
@@ -493,8 +399,7 @@
                             </div>
                         </div>
                         <div class="row">
-
-                            <div class="col-12">
+                             <div class="col-12">
                                 <!-- input  -->
                                 <div class="ba-form-warpp">
                                     <label for="" class="ba-form-label">Clients</label>
@@ -511,19 +416,34 @@
                             <div class="col-12">
                                 <!-- input  -->
                                 <div class="ba-form-warpp">
-                                    <label for="" class="ba-form-label">Statut de la facture </label>
+                                    <label for="" class="ba-form-label">Modes de paiements</label>
                                     <div class="ba-select-warpper w-100 mb-0  ba-form-control-style ">
                                         <select id="" class="selectpicker ba-select">
-                                        <option value="Envoyée">Envoyée </option>
-                                        <option value="Envoyée">Envoyée </option>
-                                        <option value="Envoyée">Envoyée </option>
-                                        <option value="Envoyée">Envoyée </option>
+                                        <option value="Virment">Virment </option>
+                                        <option value="Virment">Virment </option>
+                                        <option value="Virment">Virment </option>
+                                        <option value="Virment">Virment </option>
                                     </select>
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="col-12">
+                                <!-- input  -->
+                                <div class="ba-form-warpp">
+                                    <label for="" class="ba-form-label">Paiements pour</label>
+                                    <div class="ba-select-warpper w-100 mb-0  ba-form-control-style ">
+                                        <select id="" class="selectpicker ba-select">
+                                        <option value="Factures">Factures </option>
+                                        <option value="Factures">Factures </option>
+                                        <option value="Factures">Factures </option>
+                                        <option value="Factures">Factures </option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                           
                         </div>
+                     
 
                     </div>
                     <!-- footer  -->

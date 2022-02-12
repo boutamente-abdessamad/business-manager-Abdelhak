@@ -280,6 +280,50 @@ $(document).ready(() => {
             }
         });
     }
+    // doughnut chart Les dépenses
+     if (document.getElementById('ba_repport_doughnut_chart')) {
+        const ba_repport_doughnut_chart_ctx = document.getElementById('ba_repport_doughnut_chart').getContext('2d');
+        var ba_repport_doughnut_chart_data = {
+            labels: ['Factures à payer', 'Facture encaissée', 'Factures  en attente',"Factures à catégoriser"],
+            datasets: [
+                {
+                    label: 'fournisseur de matières premières',
+                    data: [40,20,10,30],
+                    backgroundColor: [
+                        '#50CB93',
+                        '#FBB429',
+                        '#F8485E',
+                        '#7C9AF2',
+                    ],
+                    borderColor: [
+                        '#50CB93',
+                        '#FBB429',
+                        '#F8485E',
+                        '#7C9AF2',
+                    ],
+                    borderWidth:0
+                },
+               
+            ]
+        };
+
+           
+        const  ba_repport_doughnut_chart = new Chart(ba_repport_doughnut_chart_ctx, {
+            type: 'doughnut',
+            data:ba_repport_doughnut_chart_data,
+            options: {
+                responsive: true,
+                cutout: 75, 
+                borderRadius: 0, 
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                },
+            }
+        });
+    }
 
 
 

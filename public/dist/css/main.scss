@@ -3817,6 +3817,98 @@ a.ba-add-new-time-btn {
         }
 }
 
+.ba-cart-menu-tabs.repports-main-tabs {
+    width: 100%;
+    &::after {
+        background: $blueLight;
+        height: 5px;
+    }
+    ul {
+        li {
+            a {
+                color: $blueOpacity;
+               padding: 25px 15px;
+               img{
+                   opacity: 0.5;
+               }
+            }
+            &.active {
+                a {
+                    color: $blue;
+                     img{
+                        opacity: 1;
+                    }
+                    &::after {
+                        height: 5px;
+                        background: $blue;
+                    }
+                }
+            }
+        }
+    }
+    &.comptable-nav {
+        ul{
+            li {
+                a{
+                    padding: 21px 6px;
+                    text-align: left;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+}
+
+
+.ba-repport-states-figure{
+    span {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #2B3E62;
+    }
+    
+    .md-text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #2B3E62;
+    }
+}
+
+.repport-main-warpp {
+    padding-top: 39px;
+    .ba-repport-actions {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .ba-repport-figures {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    
+    .ba-repport-figure {
+        padding-right: 40px;
+        border-right: 1px solid rgba(43, 62, 98, 0.21);
+       &:not(:first-child){
+            padding-left: 40px;
+       }
+       &:last-child{
+            border-right: none;
+       }
+    }
+}
+}
 
 
 
