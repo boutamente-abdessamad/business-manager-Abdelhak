@@ -51,7 +51,14 @@ $(document).ready(() => {
         });
         $('.ba-main-tabs-toggle').on('click', function(e) {
             e.preventDefault();
-            $(this).closest('.ba-main-tabs').toggleClass('in');
+            let closest1 =  $(this).closest('.ba-main-tabs');
+            let closest2 =  $(this).closest('.ba-cart-menu-tabs');
+            if (closest1) {
+                closest1.toggleClass('in');
+            }
+            if (closest2) {
+                closest2.toggleClass('in');
+            }
         });
         // tabs
         $('body').on('click', '.ba-cart-menu-tabs>ul>li>a', function(e) {

@@ -113,4 +113,34 @@
         border-radius: 11px;
         padding: pxToVwMobile(30);
     }
+        .modal {
+        @media (min-width: 1480px) {
+            .modal-xl {
+                max-width: 1420px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .modal-xl {
+                max-width: 1140px;
+            }
+        }
+        @media (min-width: 1500px) {
+            .modal-xl {
+                max-width: 1400px;
+            }
+        }
+        @media (min-width: 992px) {
+            .modal-md {
+                max-width: pxToVwMobile(600);
+            }
+        }
+        @media (min-width: 700px) {
+            .modal-mdx {
+                max-width: pxToVwMobile(520);
+            }
+        }
+        .modal-mds {
+            max-width: pxToVwMobile(380);
+        }
+    }
 }
