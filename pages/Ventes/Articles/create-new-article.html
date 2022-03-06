@@ -199,12 +199,12 @@
                 </a>
                 <!-- group buttons  -->
                 <div class="ba-group-buttons p-0">
-                    <a href="" class="btn ba-btn-primary ba-btn-round me-3">
+                    <a href="" class="btn ba-btn-primary ba-btn-round me-3"  data-mdb-toggle="modal" data-mdb-target="#add_article_modal">
                         <img src="../../../public/assets/icons/light-plus.svg" alt="">
                         <span> Création d’un nouvel article au catalogue </span>
                     </a>
                     <a href="" class="btn ba-btn-primary ba-btn-round">
-                        <img src="../../../public/assets/icons/light-plus.svg" alt="">
+                        <img src="../../../public/assets/icons/light-plus.svg" alt=""  data-mdb-toggle="modal" data-mdb-target="#add_article_modal">
                         <span>Ajouter plusieurs articles au catalogue  </span>
                     </a>
                 </div>
@@ -214,12 +214,28 @@
             <!-- header actions  -->
 
             <!-- ba-submit-article -->
-            <div class="ba-submit-article-container">
+         
+            <!-- ba-submit-article -->
 
-                <div class="row justify-content-center">
 
-                    <div class="col-12 col-md-8">
-                        <div class="ba-panel ba-default-panel">
+
+
+        </div>
+        <!-- cart  -->
+
+
+    </main>
+    <!-- main  -->
+    <!--===============================================-->
+    <!--============== ./app root  ======================-->
+    <!--===============================================-->
+    <!-- Modal -->
+
+    <!-- Ajouter une réduction -->
+    <div class="modal fade ba-modal-auto-size blue-light-modal" id="add_article_modal" tabindex="-1" aria-labelledby="add_discount_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                     <div class="ba-panel ba-default-panel">
                             <!-- panel head  -->
                             <div class="ba-panel-head">
                                 <h2>Consultation d'un article au catalogue</h2>
@@ -349,7 +365,7 @@
                             </div>
 
                             <div class="ba-panel-footer">
-                                <button type="button" class="btn ba-btn-default me-2">
+                                <button type="button" data-mdb-dismiss="modal" class="btn ba-btn-default me-2">
                                     <span>Annuler</span>
                                 </button>
                                 <button type="submit" class="btn ba-btn-success">
@@ -358,46 +374,6 @@
                             </div>
 
                         </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- ba-submit-article -->
-
-
-
-
-        </div>
-        <!-- cart  -->
-
-
-    </main>
-    <!-- main  -->
-    <!--===============================================-->
-    <!--============== ./app root  ======================-->
-    <!--===============================================-->
-    <!-- Modal -->
-
-    <!-- Ajouter une réduction -->
-    <div class="modal fade ba-modal-auto-size blue-light-modal" id="add_discount_modal" tabindex="-1" aria-labelledby="add_discount_modalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="add_discount_modalLabel">Ajouter une réduction</h5>
-                </div>
-                <div class="modal-body">
-
-                    <div class="side-text-input input-sufix" attr-sufix="%">
-                        <input type="text" class="ba-form-controll">
-                        <label>du sous-total de la facture</label>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn ba-btn-default ba-btn-sm" data-mdb-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn ba-btn-primary ba-btn-sm">Ajouter une réduction</button>
-                </div>
             </div>
         </div>
     </div>

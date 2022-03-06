@@ -155,7 +155,6 @@ header.ba-header {
     position: absolute;
     top: pxToVw(60);
     left: 0;
-    bottom: 0;
     padding: pxToVw(18);
     width: pxToVw(85);
     padding-top: 0;
@@ -279,7 +278,7 @@ main.ba-app-root {
     padding: pxToVw(20);
     padding-left: pxToVw(110);
     .ba-main-cart {
-        padding: pxToVw(40) pxToVw(50);
+        padding: pxToVw(30) pxToVw(50);
         background: #FFFFFF;
         box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1), 0px 7px 10px rgba(0, 0, 0, 0.07), 0px 2px 16px rgba(0, 0, 0, 0.06);
         border-radius: pxToVw(15);

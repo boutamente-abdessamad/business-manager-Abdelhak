@@ -199,6 +199,15 @@
                     Déposer une facture
                 </a>
 
+                  <div class="ba-group-buttons p-0">
+                    <a href="" class="btn ba-btn-primary ba-btn-round me-3"  data-mdb-toggle="modal" data-mdb-target="#import_invoices_modal">
+                        <img src="../../../public/assets/icons/light-plus.svg" alt="">
+                        <span> Facture(s) de vente(s) </span>
+                    </a>
+                 
+                </div>
+                <!-- group buttons  -->
+
             </div>
             <!-- header actions  -->
 
@@ -208,7 +217,33 @@
                 <div class="row justify-content-center">
 
                     <div class="col-12 col-md-9">
-                        <div class="ba-panel">
+                      
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ba-submit-invoice -->
+
+
+
+
+        </div>
+        <!-- cart  -->
+
+
+    </main>
+    <!-- main  -->
+    <!--===============================================-->
+    <!--============== ./app root  ======================-->
+    <!--===============================================-->
+    <!-- Modal -->
+
+    <!-- Ajouter une réduction -->
+    <div class="modal fade ba-modal-auto-size blue-light-modal" id="import_invoices_modal" tabindex="-1" aria-labelledby="import_invoices_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                 <div class="ba-panel">
                             <!-- panel head  -->
                             <div class="ba-panel-head ba-primary-bg">
                                 <h2>Facture(s) de vente(s)</h2>
@@ -287,6 +322,7 @@
                                                     </div>
 
                                                     <div class="ba-form-submit text-center mt-5 d-none d-md-block">
+                                                         <button type="button" class="btn ba-btn-default ba-btn-sm" data-mdb-dismiss="modal">Annuler</button>
                                                         <button type="submit" class="btn ba-btn-success ba-btn-round">Enregistrer</button>
                                                     </div>
                                                 </div>
@@ -300,46 +336,6 @@
                             </div>
 
                         </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- ba-submit-invoice -->
-
-
-
-
-        </div>
-        <!-- cart  -->
-
-
-    </main>
-    <!-- main  -->
-    <!--===============================================-->
-    <!--============== ./app root  ======================-->
-    <!--===============================================-->
-    <!-- Modal -->
-
-    <!-- Ajouter une réduction -->
-    <div class="modal fade ba-modal-auto-size blue-light-modal" id="add_discount_modal" tabindex="-1" aria-labelledby="add_discount_modalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="add_discount_modalLabel">Ajouter une réduction</h5>
-                </div>
-                <div class="modal-body">
-
-                    <div class="side-text-input input-sufix" attr-sufix="%">
-                        <input type="text" class="ba-form-controll">
-                        <label>du sous-total de la facture</label>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn ba-btn-default ba-btn-sm" data-mdb-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn ba-btn-primary ba-btn-sm">Ajouter une réduction</button>
-                </div>
             </div>
         </div>
     </div>

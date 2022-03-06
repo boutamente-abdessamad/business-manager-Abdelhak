@@ -229,7 +229,7 @@ body {
         &:not(:last-child) {
             margin-right: pxToVw(25);
         }
-        height: pxToVw(245);
+        height: pxToVw(261);
         min-width: pxToVw(175);
         background-color: #FFFFFF;
         box-sizing: border-box;
@@ -291,6 +291,7 @@ body {
             border-radius: pxToVw(15);
             z-index: 1;
             .ba-invoice-status-skeleton {
+                padding: pxToVw(8);
                 img {
                     height: pxToVw(139);
                     width: 100%;
@@ -546,16 +547,16 @@ body {
 .ba-cart.article-action-cart {
     @include flexCenterBetween();
     .article-cart-icon {
-        width: pxToVw(60);
-        height: pxToVw(60);
+        width: pxToVw(40);
+        height: pxToVw(40);
         background: $blueLight;
         display: flex;
         border-radius: 50%;
         align-items: center;
         justify-content: center;
         img {
-            width: pxToVw(23);
-            height: pxToVw(23);
+            width: pxToVw(20);
+            height: pxToVw(20);
         }
     }
     @at-root {
@@ -592,7 +593,7 @@ body {
 }
 
 .import-excel-steps-warpp {
-    padding: pxToVw(30);
+    padding: pxToVw(15);
     .import-excel-step {
         @include flexCenterBetween();
         p {
@@ -624,7 +625,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: pxToVw(57) 0px;
+    padding: pxToVw(40) 0px;
     margin-bottom: pxToVw(42);
     span {
         font-family: Roboto;
@@ -647,7 +648,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: pxToVw(63) 0;
+    padding: pxToVw(30) 0;
     img {
         width: pxToVw(64);
         height: pxToVw(64);
@@ -681,7 +682,7 @@ body {
 }
 
 .ba-import-excel-warpp {
-    padding: pxToVw(70);
+    padding: pxToVw(15);
 }
 
 // bank 
