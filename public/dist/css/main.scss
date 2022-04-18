@@ -199,7 +199,6 @@ body {
 // invoices-status
 .ba-invoices-status-container {
     background: #F1F5FB;
-    margin-top: pxToVw(40);
     border-radius: pxToVw(15);
     padding: pxToVw(18);
     display: flex;
@@ -398,7 +397,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .btn {
+    .btn:not(.ba-btn-circle) {
         height: pxToVw(44) !important;
     }
     input {
@@ -622,8 +621,6 @@ body {
     box-sizing: border-box;
     border-radius: pxToVw(11);
     display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
     padding: pxToVw(40) 0px;
     margin-bottom: pxToVw(42);
@@ -631,11 +628,15 @@ body {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: pxToVw(15);
+        font-size: pxToVw(13);
         line-height: pxToVw(21);
         text-decoration-line: underline;
         color: #2E7D32;
         margin-top: pxToVw(15);
+    }
+    img {
+        width: 45px;
+        margin-right: 15px;
     }
 }
 
@@ -650,9 +651,9 @@ body {
     justify-content: center;
     padding: pxToVw(30) 0;
     img {
-        width: pxToVw(64);
-        height: pxToVw(64);
-        margin-bottom: pxToVw(48);
+        width: pxToVw(55);
+        height: pxToVw(55);
+        margin-bottom: pxToVw(20);
     }
     p {
         font-family: Roboto;
@@ -688,8 +689,8 @@ body {
 // bank 
 .bank-action-cart {
     &>img {
-        width: pxToVw(32);
-        height: pxToVw(32);
+        width: pxToVw(26);
+        height: pxToVw(26);
         transition: $baTransition;
     }
     &:hover {
@@ -746,7 +747,7 @@ body {
         }
     }
     @include flexCenterBetween();
-    padding: pxToVw(25) pxToVw(20);
+    padding: pxToVw(16) pxToVw(15);
     .bank-action-cart-icon {
         width: pxToVw(60);
         height: pxToVw(60);
@@ -768,7 +769,7 @@ body {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
-                font-size: pxToVw(17);
+                font-size: pxToVw(15);
                 line-height: pxToVw(21);
                 letter-spacing: 0.03em;
                 color: $blueOpacity;
@@ -778,7 +779,7 @@ body {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
-                font-size: pxToVw(21);
+                font-size: pxToVw(18);
                 line-height: pxToVw(23);
                 color: #FD625E;
                 margin: 0;
@@ -1600,15 +1601,15 @@ ba-dashboard-header-rightside {
         width: calc(100% - ( 80 * 0.0651111111vw));
         .supplier-item {
             display: block;
-            padding: pxToVw(30);
+            padding: pxToVw(17);
             min-width: pxToVw(240);
             margin-bottom: pxToVw(15);
             p {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
-                font-size: pxToVw(15);
-                line-height: pxToVw(45);
+                font-size: pxToVw(13);
+                line-height: pxToVw(38);
                 margin-top: pxToVw(16);
                 letter-spacing: 0.03em;
                 color: $blueOpacity;
@@ -1618,7 +1619,7 @@ ba-dashboard-header-rightside {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
-                font-size: pxToVw(23);
+                font-size: pxToVw(18);
                 line-height: pxToVw(23);
                 color: $blueText;
                 margin: 0;
@@ -1833,21 +1834,21 @@ ba-dashboard-header-rightside {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: pxToVw(21);
+    font-size: pxToVw(15);
     line-height: pxToVw(25);
     display: flex;
     align-items: center;
     color: $blueText;
     padding: pxToVw(10);
     img {
-        width: pxToVw(150);
-        height: pxToVw(51);
+        width: pxToVw(130);
+        height: pxToVw(30);
         object-fit: cover;
         border-radius: pxToVw(5);
         margin-right: pxToVw(28);
     }
     i {
-        font-size: pxToVw(24);
+        font-size: pxToVw(18);
         margin-right: pxToVw(10);
         margin-left: pxToVw(10);
         color: #979797;
@@ -2149,7 +2150,7 @@ span.quation-text {
     width: 100%;
     background: #F1F5FB;
     border-radius: pxToVw(15);
-    height: 100vh;
+    height: calc(100vh - 300px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2158,8 +2159,8 @@ span.quation-text {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: pxToVw(27);
-        line-height: pxToVw(43);
+        font-size: pxToVw(15);
+        line-height: pxToVw(30);
         /* or 159% */
         display: flex;
         align-items: center;
@@ -2170,8 +2171,8 @@ span.quation-text {
         margin-top: pxToVw(15);
     }
     img {
-        width: pxToVw(50);
-        height: pxToVw(73);
+        width: pxToVw(30);
+        height: pxToVw(44);
     }
 }
 

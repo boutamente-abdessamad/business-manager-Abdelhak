@@ -1086,7 +1086,7 @@
   font-size: 19px;
 }
 [class*=ba-btn-] i.dark-back-round {
-  background-color: #00000024;
+  background-color: rgba(0, 0, 0, 0.1411764706);
   border-radius: 50%;
   width: calc(20 * 0.0651111111vw);
   height: calc(20 * 0.0651111111vw);
@@ -1200,7 +1200,7 @@ button.btn.ba-connexion-btn img {
   color: #2B3E62;
 }
 .ba-btn-secondary:hover {
-  background-color: #1a479933;
+  background-color: rgba(26, 71, 153, 0.2);
   color: #2B3E62;
 }
 
@@ -1219,7 +1219,7 @@ button.btn.ba-connexion-btn img {
   border: 1px solid rgba(43, 62, 98, 0.25);
 }
 .ba-btn-default:hover {
-  background-color: #1a479933;
+  background-color: rgba(26, 71, 153, 0.2);
   color: #2B3E62;
 }
 
@@ -1288,7 +1288,7 @@ button.btn.ba-connexion-btn img {
   color: #2B3E62;
 }
 .editable-cancel:hover {
-  background-color: #1a479933;
+  background-color: rgba(26, 71, 153, 0.2);
   color: #2B3E62;
 }
 
@@ -2332,16 +2332,16 @@ a.ba-add-doc-link i {
 }
 
 .ba-icon-lg {
-  width: calc(62 * 0.0651111111vw);
-  height: calc(62 * 0.0651111111vw);
+  width: calc(55 * 0.0651111111vw);
+  height: calc(55 * 0.0651111111vw);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 .ba-icon-lg img {
-  width: calc(27 * 0.0651111111vw);
-  height: calc(27 * 0.0651111111vw);
+  width: calc(22 * 0.0651111111vw);
+  height: calc(22 * 0.0651111111vw);
 }
 
 .ba-icon-md {
@@ -2545,7 +2545,7 @@ input:focus-visible {
 }
 
 .dropdown .dropdown-menu.ba-dropdown-items {
-  box-shadow: 0px 3px 11px #00000029;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1607843137);
 }
 .dropdown .dropdown-menu.ba-dropdown-items .dropdown-item {
   background: rgba(246, 246, 249, 0.33);
@@ -4200,7 +4200,7 @@ a.ba-next-step i {
   }
 
   .dropdown .dropdown-menu.ba-dropdown-items {
-    box-shadow: 0px 3px 11px #00000029;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1607843137);
   }
   .dropdown .dropdown-menu.ba-dropdown-items .dropdown-item {
     padding: calc(5 * 0.25vw) calc(10 * 0.25vw);
@@ -5209,14 +5209,14 @@ table.dataTable tbody th.select-checkbox:after {
   height: calc(26 * 0.0651111111vw);
 }
 table.dataTable tbody > tr.selected {
-  background-color: #3f51b51c;
+  background-color: rgba(63, 81, 181, 0.1098039216);
 }
 table.dataTable tbody > tr.ba-invoice-form-tr > td {
   padding: 0;
   cursor: pointer;
 }
 table.dataTable tbody > tr > .selected {
-  background-color: #3f51b51c;
+  background-color: rgba(63, 81, 181, 0.1098039216);
 }
 table.dataTable tr.selected td.select-checkbox:after {
   content: "\f14a";
@@ -6609,7 +6609,6 @@ body {
 
 .ba-invoices-status-container {
   background: #F1F5FB;
-  margin-top: calc(40 * 0.0651111111vw);
   border-radius: calc(15 * 0.0651111111vw);
   padding: calc(18 * 0.0651111111vw);
   display: flex;
@@ -6803,7 +6802,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.datatable-filters-container .btn {
+.datatable-filters-container .btn:not(.ba-btn-circle) {
   height: calc(44 * 0.0651111111vw) !important;
 }
 .datatable-filters-container input {
@@ -7027,8 +7026,6 @@ a.ba-cart.article-action-cart p {
   box-sizing: border-box;
   border-radius: calc(11 * 0.0651111111vw);
   display: flex;
-  align-items: center;
-  flex-direction: column;
   justify-content: center;
   padding: calc(40 * 0.0651111111vw) 0px;
   margin-bottom: calc(42 * 0.0651111111vw);
@@ -7037,12 +7034,16 @@ a.ba-cart.article-action-cart p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: calc(15 * 0.0651111111vw);
+  font-size: calc(13 * 0.0651111111vw);
   line-height: calc(21 * 0.0651111111vw);
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2E7D32;
   margin-top: calc(15 * 0.0651111111vw);
+}
+.ba-download-excel-file img {
+  width: 45px;
+  margin-right: 15px;
 }
 
 .ba-import-excel-file {
@@ -7057,9 +7058,9 @@ a.ba-cart.article-action-cart p {
   padding: calc(30 * 0.0651111111vw) 0;
 }
 .ba-import-excel-file img {
-  width: calc(64 * 0.0651111111vw);
-  height: calc(64 * 0.0651111111vw);
-  margin-bottom: calc(48 * 0.0651111111vw);
+  width: calc(55 * 0.0651111111vw);
+  height: calc(55 * 0.0651111111vw);
+  margin-bottom: calc(20 * 0.0651111111vw);
 }
 .ba-import-excel-file p {
   font-family: Roboto;
@@ -7096,11 +7097,11 @@ a.ba-cart.article-action-cart p {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: calc(25 * 0.0651111111vw) calc(20 * 0.0651111111vw);
+  padding: calc(16 * 0.0651111111vw) calc(15 * 0.0651111111vw);
 }
 .bank-action-cart > img {
-  width: calc(32 * 0.0651111111vw);
-  height: calc(32 * 0.0651111111vw);
+  width: calc(26 * 0.0651111111vw);
+  height: calc(26 * 0.0651111111vw);
   transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .bank-action-cart:hover > img {
@@ -7151,7 +7152,7 @@ a.ba-cart.article-action-cart p {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: calc(17 * 0.0651111111vw);
+  font-size: calc(15 * 0.0651111111vw);
   line-height: calc(21 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: rgba(43, 62, 98, 0.65);
@@ -7161,7 +7162,7 @@ a.ba-cart.article-action-cart p {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: calc(21 * 0.0651111111vw);
+  font-size: calc(18 * 0.0651111111vw);
   line-height: calc(23 * 0.0651111111vw);
   color: #FD625E;
   margin: 0;
@@ -7420,7 +7421,7 @@ ba-dashboard-header-rightside {
 }
 .ba-panel .ba-panel-body {
   background: #FFFFFF;
-  box-shadow: 0px 3px 11px #0000003d;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2392156863);
   border-radius: calc(11 * 0.0651111111vw);
   padding: calc(50 * 0.0651111111vw);
 }
@@ -7985,7 +7986,7 @@ ba-dashboard-header-rightside {
 }
 .suppliers-slider-container .suppliers-slider .supplier-item {
   display: block;
-  padding: calc(30 * 0.0651111111vw);
+  padding: calc(17 * 0.0651111111vw);
   min-width: calc(240 * 0.0651111111vw);
   margin-bottom: calc(15 * 0.0651111111vw);
 }
@@ -7993,8 +7994,8 @@ ba-dashboard-header-rightside {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: calc(15 * 0.0651111111vw);
-  line-height: calc(45 * 0.0651111111vw);
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(38 * 0.0651111111vw);
   margin-top: calc(16 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: rgba(43, 62, 98, 0.65);
@@ -8004,7 +8005,7 @@ ba-dashboard-header-rightside {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: calc(23 * 0.0651111111vw);
+  font-size: calc(18 * 0.0651111111vw);
   line-height: calc(23 * 0.0651111111vw);
   color: #2B3E62;
   margin: 0;
@@ -8222,7 +8223,7 @@ ba-dashboard-header-rightside {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: calc(21 * 0.0651111111vw);
+  font-size: calc(15 * 0.0651111111vw);
   line-height: calc(25 * 0.0651111111vw);
   display: flex;
   align-items: center;
@@ -8230,15 +8231,15 @@ ba-dashboard-header-rightside {
   padding: calc(10 * 0.0651111111vw);
 }
 .ba-bank-dropdown-btn img {
-  width: calc(150 * 0.0651111111vw);
-  height: calc(51 * 0.0651111111vw);
+  width: calc(130 * 0.0651111111vw);
+  height: calc(30 * 0.0651111111vw);
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: calc(5 * 0.0651111111vw);
   margin-right: calc(28 * 0.0651111111vw);
 }
 .ba-bank-dropdown-btn i {
-  font-size: calc(24 * 0.0651111111vw);
+  font-size: calc(18 * 0.0651111111vw);
   margin-right: calc(10 * 0.0651111111vw);
   margin-left: calc(10 * 0.0651111111vw);
   color: #979797;
@@ -8514,7 +8515,7 @@ span.quation-text {
   width: 100%;
   background: #F1F5FB;
   border-radius: calc(15 * 0.0651111111vw);
-  height: 100vh;
+  height: calc(100vh - 300px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8524,8 +8525,8 @@ span.quation-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: calc(27 * 0.0651111111vw);
-  line-height: calc(43 * 0.0651111111vw);
+  font-size: calc(15 * 0.0651111111vw);
+  line-height: calc(30 * 0.0651111111vw);
   /* or 159% */
   display: flex;
   align-items: center;
@@ -8537,8 +8538,8 @@ span.quation-text {
   margin-top: calc(15 * 0.0651111111vw);
 }
 .ba-full-upload-zone img {
-  width: calc(50 * 0.0651111111vw);
-  height: calc(73 * 0.0651111111vw);
+  width: calc(30 * 0.0651111111vw);
+  height: calc(44 * 0.0651111111vw);
 }
 
 .declare-cash-flow-form-header {
@@ -10890,7 +10891,7 @@ a.ba-add-new-time-btn img {
     color: #FFFFFF;
   }
   .ba-panel .ba-panel-body {
-    box-shadow: 0px 3px 11px #0000003d;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2392156863);
     border-radius: calc(11 * 0.25vw);
     padding: calc(30 * 0.25vw);
   }
