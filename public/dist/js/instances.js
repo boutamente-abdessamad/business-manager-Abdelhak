@@ -55,15 +55,15 @@ var initPlugins = function() {
         $('.ba-select').selectpicker();
     }
     // editor wysiwyg
-    var editor = new FroalaEditor('#editor_wysiwyg', {
-            codeMirror: false,
-            tabSize: 4
-        })
-        // editor wysiwyg
-    var editor2 = new FroalaEditor('.editor-wysiwyg', {
-            codeMirror: false,
-            tabSize: 4
-        })
+    if ($('#editor_wysiwyg').length) {
+        tinymce.init({selector:'#editor_wysiwyg'});
+    }
+    if ($('.editor-wysiwyg').length) {
+        tinymce.init({selector:'.editor-wysiwyg'});
+    }
+
+        
+ 
         // daterangepicker
     if ($('.date-range').length) {
         $('.date-range').daterangepicker({
