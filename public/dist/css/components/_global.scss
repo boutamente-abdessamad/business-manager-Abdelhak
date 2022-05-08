@@ -59,7 +59,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: pxToVw(23);
+        font-size: pxToVw(18);
         line-height: pxToVw(27);
         letter-spacing: 0.03em;
         color: $blueText;
@@ -591,7 +591,7 @@ input {
 .ba-cart {
     background: #FFFFFF;
     box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
-    border-radius: pxToVw(11);
+    border-radius: pxToVw(6);
     padding: pxToVw(15);
 }
 
@@ -733,7 +733,7 @@ a.ba-cart-header-back {
                 border-top-left-radius: calc(15 * 0.0651111111vw);
                 cursor: pointer;
                 background-color: #FFFFFF;
-                padding: pxToVw(30);
+                padding: pxToVw(15);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -742,11 +742,11 @@ a.ba-cart-header-back {
                     align-items: center;
                     .ba-accordion-header-title-icon {
                         img {
-                            width: pxToVw(27);
-                            height: pxToVw(27);
+                            width: pxToVw(20);
+                            height: pxToVw(20);
                         }
-                        width: pxToVw(62);
-                        height: pxToVw(62);
+                        width: pxToVw(50);
+                        height: pxToVw(50);
                         background: #E7EDF8;
                         border-radius: pxToVw(100);
                         @include flexCenterCenter();
@@ -1751,7 +1751,7 @@ a.editable-click:hover {
 
 .light-blue-container {
     background: $blueLightBg;
-    border-radius: pxToVw(15);
+    border-radius: pxToVw(8);
     padding: pxToVw(15);
     &.lbc-in-table {
         background: #E7EDF8;
@@ -1819,8 +1819,12 @@ a.editable-click:hover {
 .ba-outline-container {
     border: 1px solid $blueLight;
     border-radius: 5px;
-    padding: pxToVw(30);
+    padding: pxToVw(15);
     position: relative;
+}
+
+.h-40{
+    height: pxToVw(40);
 }
 
 .ba-underline-title {

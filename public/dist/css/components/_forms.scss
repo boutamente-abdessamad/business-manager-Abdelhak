@@ -191,6 +191,13 @@
                 }
             }
         }
+        &.ba-md-select {
+            .bootstrap-select {
+                &>.dropdown-toggle {
+                    height: pxToVw(45);
+                }
+            }
+        }
         &.ba-lg-select {
             .bootstrap-select {
                 &>.dropdown-toggle {

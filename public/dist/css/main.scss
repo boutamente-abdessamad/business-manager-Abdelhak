@@ -57,6 +57,12 @@ body {
     position: relative;
 }
 
+.ba-cart-menu-tabs{
+     .ba-main-tabs-toggle {
+        display: none;
+    } 
+}
+
 // main nav 
 .ba-main-tabs {
     .ba-main-tabs-toggle {
@@ -164,8 +170,8 @@ body {
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
-        font-size: pxToVw(43);
-        line-height: pxToVw(50);
+        font-size: pxToVw(35);
+        line-height: pxToVw(40);
         text-align: center;
         letter-spacing: 0.03em;
         color: $blue;
@@ -1224,8 +1230,8 @@ ba-dashboard-header-rightside {
     padding: pxToVw(8);
     border-radius: 5px;
     img {
-        width: pxToVw(23);
-        height: pxToVw(23);
+        width: pxToVw(18);
+        height: pxToVw(18);
     }
 }
 
@@ -1237,8 +1243,8 @@ ba-dashboard-header-rightside {
 }
 
 .user-profile-avatar {
-    width: pxToVw(108);
-    height: pxToVw(108);
+    width: pxToVw(90);
+    height: pxToVw(90);
     background: #E7EDF8;
     border-radius: 50%;
     font-family: Roboto;
@@ -1359,7 +1365,7 @@ ba-dashboard-header-rightside {
 }
 
 .ba-cart.client-infos-cart {
-    padding: calc(50 * 0.0651111111vw);
+    padding: pxToVw(30);
 }
 
 // purchase-invoice
@@ -1976,7 +1982,7 @@ ba-dashboard-header-rightside {
             font-family: Roboto;
             font-style: normal;
             font-weight: bold;
-            font-size: pxToVw(21);
+            font-size: pxToVw(15);
             line-height: pxToVw(31);
             letter-spacing: 0.03em;
             color: $blueText;
@@ -2052,7 +2058,7 @@ ba-dashboard-header-rightside {
 }
 
 .rti-submit-btn {
-    min-height: pxToVw(59);
+    min-height: pxToVw(45);
 }
 
 .ba-mounths-filter-container {
@@ -2415,18 +2421,16 @@ span.quation-text {
             font-family: Poppins;
             font-style: normal;
             font-weight: 600;
-            font-size: 11px;
+            font-size: 9px;
             line-height: pxToVw(19);
             display: flex;
             align-items: center;
             text-align: center;
             color: #FFFFFF;
             position: absolute;
-            width: pxToVw(13);
-            ;
+            width: pxToVw(18);
             justify-content: center;
-            height: pxToVw(13);
-            ;
+            height: pxToVw(18);
             right: -12px;
             border-radius: 50%;
             top: -10px;
@@ -2507,7 +2511,6 @@ a.btn.ba-period-btn i {
         font-weight: 500;
         font-size: pxToVw(15);
         line-height: pxToVw(18);
-        text-transform: uppercase;
         color: $blueText;
         margin-bottom: pxToVw(8);
     }
@@ -2543,7 +2546,7 @@ a.btn.ba-period-btn i {
 
 .ba-comptable-doc-cart {
     display: block;
-    padding: pxToVw(40);
+    padding: pxToVw(20);
     box-shadow: 0px 2px 5px rgba(16, 76, 186, 0.15);
     border-radius: 7px;
     height: 100%;
@@ -2555,7 +2558,7 @@ a.btn.ba-period-btn i {
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 600;
-                font-size: pxToVw(25);
+                font-size: pxToVw(20);
                 line-height: pxToVw(21);
                 color: $blueText;
                 margin: 0;
@@ -2564,7 +2567,7 @@ a.btn.ba-period-btn i {
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 500;
-                font-size: pxToVw(14);
+                font-size: pxToVw(13);
                 line-height: pxToVw(25);
                 color: $blueOpacity;
                 margin: 0;
@@ -2573,16 +2576,16 @@ a.btn.ba-period-btn i {
     }
     .ba-comptable-doc-cart-footer {
         border-top: 1px solid $blueOpacity;
-        margin-top: pxToVw(30);
+        margin-top: pxToVw(15);
         h2 {
             font-family: Roboto;
             font-style: normal;
             font-weight: 500;
-            font-size: pxToVw(15);
-            line-height: pxToVw(25);
+            font-size: pxToVw(13);
+            line-height: pxToVw(19);
             letter-spacing: 0.03em;
             color: $blueText;
-            padding-top: pxToVw(30);
+            padding-top: pxToVw(15);
             margin: 0;
         }
     }
@@ -2597,9 +2600,9 @@ a.btn.ba-period-btn i {
         border-radius: 3px;
         &>img {
             box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.11);
-            height: pxToVw(250);
+            height: pxToVw(284);
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 3px;
         }
         h2 {
@@ -2665,7 +2668,7 @@ a.btn.ba-period-btn i {
             font-family: Roboto;
             font-style: normal;
             font-weight: 500;
-            font-size: pxToVw(21);
+            font-size: pxToVw(17);
             line-height: pxToVw(25);
             display: flex;
             align-items: center;
@@ -2678,7 +2681,7 @@ a.btn.ba-period-btn i {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
-                font-size: pxToVw(21);
+                font-size: pxToVw(16);
                 line-height: pxToVw(25);
                 display: flex;
                 align-items: center;
@@ -2686,8 +2689,8 @@ a.btn.ba-period-btn i {
                 color: $blueText;
             }
             img {
-                width: pxToVw(21);
-                height: pxToVw(21);
+                width: pxToVw(18);
+                height: pxToVw(18);
             }
         }
     }
@@ -2737,7 +2740,7 @@ a.btn.ba-period-btn i {
         font-family: Poppins;
         font-style: normal;
         font-weight: normal;
-        font-size: pxToVw(41);
+        font-size: pxToVw(35);
         line-height: pxToVw(37);
         display: flex;
         align-items: center;
@@ -3117,7 +3120,7 @@ a.ba-add-new-time-btn {
 }
 
 .ba-project-client-cart {
-    padding: pxToVw(30) pxToVw(10);
+    padding: pxToVw(15) pxToVw(10);
 }
 
 .ba-date-between {
@@ -3241,7 +3244,7 @@ a.ba-add-new-time-btn {
 }
 
 .ba-membres-warpp {
-    margin-top: pxToVw(61);
+    margin-top: pxToVw(30);
 }
 
 .ba-cart.ba-project-invoice-model {
@@ -3679,7 +3682,9 @@ a.ba-add-new-time-btn {
 .ba-report-box{
     position: relative;
     height: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: pxToVw(25);
     .ba-star-radio {
         width: pxToVw(16);
@@ -3700,7 +3705,7 @@ a.ba-add-new-time-btn {
         color: $blue;
     }
     .ba-repports-box-footer {
-        border-top: 5px solid $blueLightBg;
+        border-top: 2px solid $blueLightBg;
         padding-top: pxToVw(15);
         text-align: right;
         font-size: pxToVw(17);
@@ -3855,6 +3860,7 @@ a.ba-add-new-time-btn {
                     padding: pxToVw(21) pxToVw(6);
                     text-align: left;
                     line-height: pxToVw(21);
+                    font-size: pxToVw(11);
                 }
             }
         }
@@ -3889,7 +3895,7 @@ a.ba-add-new-time-btn {
 }
 
 .repport-main-warpp {
-    padding-top: pxToVw(39);
+    padding-top: pxToVw(0);
     .ba-repport-actions {
         display: flex;
         justify-content: flex-end;

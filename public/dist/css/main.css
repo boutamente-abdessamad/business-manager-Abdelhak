@@ -538,6 +538,9 @@
 .ba-select-warpper.ba-light-select .bootstrap-select > .dropdown-toggle {
   background-color: white;
 }
+.ba-select-warpper.ba-md-select .bootstrap-select > .dropdown-toggle {
+  height: calc(45 * 0.0651111111vw);
+}
 .ba-select-warpper.ba-lg-select .bootstrap-select > .dropdown-toggle {
   height: calc(60 * 0.0651111111vw);
 }
@@ -1334,15 +1337,15 @@ button.btn.ba-connexion-btn img {
   width: calc(14 * 0.0651111111vw);
 }
 .ba-excel-file-upload.ba-excel-file-lg {
-  padding: calc(25 * 0.0651111111vw) calc(20 * 0.0651111111vw);
+  padding: calc(20 * 0.0651111111vw) calc(15 * 0.0651111111vw);
   justify-content: start;
 }
 .ba-excel-file-upload.ba-excel-file-lg .ba-excel-file-text {
   border: none;
 }
 .ba-excel-file-upload.ba-excel-file-lg .ba-excel-file-text img {
-  width: calc(35 * 0.0651111111vw);
-  height: calc(40 * 0.0651111111vw);
+  width: calc(25 * 0.0651111111vw);
+  height: calc(35 * 0.0651111111vw);
 }
 .ba-excel-file-upload.ba-excel-file-lg .ba-excel-file-text p {
   margin-left: 90px;
@@ -2069,7 +2072,7 @@ main.ba-app-root .ba-main-cart {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: calc(23 * 0.0651111111vw);
+  font-size: calc(18 * 0.0651111111vw);
   line-height: calc(27 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: #2B3E62;
@@ -2596,7 +2599,7 @@ input:focus-visible {
 .ba-cart {
   background: #FFFFFF;
   box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.21);
-  border-radius: calc(11 * 0.0651111111vw);
+  border-radius: calc(6 * 0.0651111111vw);
   padding: calc(15 * 0.0651111111vw);
 }
 
@@ -2725,7 +2728,7 @@ a.ba-cart-header-back .back-link-icon {
   border-top-left-radius: 0.9766666665vw;
   cursor: pointer;
   background-color: #FFFFFF;
-  padding: calc(30 * 0.0651111111vw);
+  padding: calc(15 * 0.0651111111vw);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2735,8 +2738,8 @@ a.ba-cart-header-back .back-link-icon {
   align-items: center;
 }
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-header .ba-accordion-header-title .ba-accordion-header-title-icon {
-  width: calc(62 * 0.0651111111vw);
-  height: calc(62 * 0.0651111111vw);
+  width: calc(50 * 0.0651111111vw);
+  height: calc(50 * 0.0651111111vw);
   background: #E7EDF8;
   border-radius: calc(100 * 0.0651111111vw);
   display: flex;
@@ -2745,8 +2748,8 @@ a.ba-cart-header-back .back-link-icon {
   flex-wrap: wrap;
 }
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-header .ba-accordion-header-title .ba-accordion-header-title-icon img {
-  width: calc(27 * 0.0651111111vw);
-  height: calc(27 * 0.0651111111vw);
+  width: calc(20 * 0.0651111111vw);
+  height: calc(20 * 0.0651111111vw);
 }
 .ba-create-invoice-warpper .ba-create-invoice-staps .invoice-step-acourdion .ba-accordion-header .ba-accordion-header-title span {
   font-family: Roboto;
@@ -3774,7 +3777,7 @@ a.editable-click:hover {
 
 .light-blue-container {
   background: #F1F5FB;
-  border-radius: calc(15 * 0.0651111111vw);
+  border-radius: calc(8 * 0.0651111111vw);
   padding: calc(15 * 0.0651111111vw);
 }
 .light-blue-container.lbc-in-table {
@@ -3843,8 +3846,12 @@ a.editable-click:hover {
 .ba-outline-container {
   border: 1px solid rgba(16, 76, 186, 0.09);
   border-radius: 5px;
-  padding: calc(30 * 0.0651111111vw);
+  padding: calc(15 * 0.0651111111vw);
   position: relative;
+}
+
+.h-40 {
+  height: calc(40 * 0.0651111111vw);
 }
 
 .ba-underline-title {
@@ -6486,6 +6493,10 @@ body {
   position: relative;
 }
 
+.ba-cart-menu-tabs .ba-main-tabs-toggle {
+  display: none;
+}
+
 .ba-main-tabs {
   position: relative;
 }
@@ -6574,8 +6585,8 @@ body {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: calc(43 * 0.0651111111vw);
-  line-height: calc(50 * 0.0651111111vw);
+  font-size: calc(35 * 0.0651111111vw);
+  line-height: calc(40 * 0.0651111111vw);
   text-align: center;
   letter-spacing: 0.03em;
   color: #104CBA;
@@ -7614,8 +7625,8 @@ ba-dashboard-header-rightside {
   border-radius: 5px;
 }
 .ba-action-link img {
-  width: calc(23 * 0.0651111111vw);
-  height: calc(23 * 0.0651111111vw);
+  width: calc(18 * 0.0651111111vw);
+  height: calc(18 * 0.0651111111vw);
 }
 
 .create-client-file-warpp .light-blue-container {
@@ -7624,8 +7635,8 @@ ba-dashboard-header-rightside {
 }
 
 .user-profile-avatar {
-  width: calc(108 * 0.0651111111vw);
-  height: calc(108 * 0.0651111111vw);
+  width: calc(90 * 0.0651111111vw);
+  height: calc(90 * 0.0651111111vw);
   background: #E7EDF8;
   border-radius: 50%;
   font-family: Roboto;
@@ -7740,7 +7751,7 @@ ba-dashboard-header-rightside {
 }
 
 .ba-cart.client-infos-cart {
-  padding: 3.255555555vw;
+  padding: calc(30 * 0.0651111111vw);
 }
 
 .purchase-invoice-item {
@@ -8345,7 +8356,7 @@ ba-dashboard-header-rightside {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: calc(21 * 0.0651111111vw);
+  font-size: calc(15 * 0.0651111111vw);
   line-height: calc(31 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: #2B3E62;
@@ -8419,7 +8430,7 @@ ba-dashboard-header-rightside {
 }
 
 .rti-submit-btn {
-  min-height: calc(59 * 0.0651111111vw);
+  min-height: calc(45 * 0.0651111111vw);
 }
 
 .ba-mounths-filter-container {
@@ -8777,16 +8788,16 @@ span.quation-text {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 9px;
   line-height: calc(19 * 0.0651111111vw);
   display: flex;
   align-items: center;
   text-align: center;
   color: #FFFFFF;
   position: absolute;
-  width: calc(13 * 0.0651111111vw);
+  width: calc(18 * 0.0651111111vw);
   justify-content: center;
-  height: calc(13 * 0.0651111111vw);
+  height: calc(18 * 0.0651111111vw);
   right: -12px;
   border-radius: 50%;
   top: -10px;
@@ -8863,7 +8874,6 @@ a.btn.ba-period-btn i {
   font-weight: 500;
   font-size: calc(15 * 0.0651111111vw);
   line-height: calc(18 * 0.0651111111vw);
-  text-transform: uppercase;
   color: #2B3E62;
   margin-bottom: calc(8 * 0.0651111111vw);
 }
@@ -8897,7 +8907,7 @@ a.btn.ba-period-btn i {
 
 .ba-comptable-doc-cart {
   display: block;
-  padding: calc(40 * 0.0651111111vw);
+  padding: calc(20 * 0.0651111111vw);
   box-shadow: 0px 2px 5px rgba(16, 76, 186, 0.15);
   border-radius: 7px;
   height: 100%;
@@ -8913,7 +8923,7 @@ a.btn.ba-period-btn i {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: calc(25 * 0.0651111111vw);
+  font-size: calc(20 * 0.0651111111vw);
   line-height: calc(21 * 0.0651111111vw);
   color: #2B3E62;
   margin: 0;
@@ -8922,24 +8932,24 @@ a.btn.ba-period-btn i {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: calc(14 * 0.0651111111vw);
+  font-size: calc(13 * 0.0651111111vw);
   line-height: calc(25 * 0.0651111111vw);
   color: rgba(43, 62, 98, 0.65);
   margin: 0;
 }
 .ba-comptable-doc-cart .ba-comptable-doc-cart-footer {
   border-top: 1px solid rgba(43, 62, 98, 0.65);
-  margin-top: calc(30 * 0.0651111111vw);
+  margin-top: calc(15 * 0.0651111111vw);
 }
 .ba-comptable-doc-cart .ba-comptable-doc-cart-footer h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: calc(15 * 0.0651111111vw);
-  line-height: calc(25 * 0.0651111111vw);
+  font-size: calc(13 * 0.0651111111vw);
+  line-height: calc(19 * 0.0651111111vw);
   letter-spacing: 0.03em;
   color: #2B3E62;
-  padding-top: calc(30 * 0.0651111111vw);
+  padding-top: calc(15 * 0.0651111111vw);
   margin: 0;
 }
 
@@ -8952,10 +8962,10 @@ a.btn.ba-period-btn i {
 }
 .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart > img {
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.11);
-  height: calc(250 * 0.0651111111vw);
+  height: calc(284 * 0.0651111111vw);
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 3px;
 }
 .ba-single-comptable-docs-warpp .ba-single-comptable-doc-cart h2 {
@@ -9020,7 +9030,7 @@ a.btn.ba-period-btn i {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: calc(21 * 0.0651111111vw);
+  font-size: calc(17 * 0.0651111111vw);
   line-height: calc(25 * 0.0651111111vw);
   display: flex;
   align-items: center;
@@ -9032,7 +9042,7 @@ a.btn.ba-period-btn i {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: calc(21 * 0.0651111111vw);
+  font-size: calc(16 * 0.0651111111vw);
   line-height: calc(25 * 0.0651111111vw);
   display: flex;
   align-items: center;
@@ -9040,8 +9050,8 @@ a.btn.ba-period-btn i {
   color: #2B3E62;
 }
 .ba-calendar-current-date-warp .ba-calendar-current-date button img {
-  width: calc(21 * 0.0651111111vw);
-  height: calc(21 * 0.0651111111vw);
+  width: calc(18 * 0.0651111111vw);
+  height: calc(18 * 0.0651111111vw);
 }
 
 .ba-calendar-header {
@@ -9089,7 +9099,7 @@ a.btn.ba-period-btn i {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: calc(41 * 0.0651111111vw);
+  font-size: calc(35 * 0.0651111111vw);
   line-height: calc(37 * 0.0651111111vw);
   display: flex;
   align-items: center;
@@ -9455,7 +9465,7 @@ a.ba-add-new-time-btn img {
 }
 
 .ba-project-client-cart {
-  padding: calc(30 * 0.0651111111vw) calc(10 * 0.0651111111vw);
+  padding: calc(15 * 0.0651111111vw) calc(10 * 0.0651111111vw);
 }
 
 .ba-date-between {
@@ -9573,7 +9583,7 @@ a.ba-add-new-time-btn img {
 }
 
 .ba-membres-warpp {
-  margin-top: calc(61 * 0.0651111111vw);
+  margin-top: calc(30 * 0.0651111111vw);
 }
 
 .ba-cart.ba-project-invoice-model {
@@ -9998,7 +10008,9 @@ a.ba-add-new-time-btn img {
 .ba-report-box {
   position: relative;
   height: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: calc(25 * 0.0651111111vw);
 }
 .ba-report-box .ba-star-radio {
@@ -10020,7 +10032,7 @@ a.ba-add-new-time-btn img {
   color: #104CBA;
 }
 .ba-report-box .ba-repports-box-footer {
-  border-top: 5px solid #F1F5FB;
+  border-top: 2px solid #F1F5FB;
   padding-top: calc(15 * 0.0651111111vw);
   text-align: right;
   font-size: calc(17 * 0.0651111111vw);
@@ -10152,6 +10164,7 @@ a.ba-add-new-time-btn img {
   padding: calc(21 * 0.0651111111vw) calc(6 * 0.0651111111vw);
   text-align: left;
   line-height: calc(21 * 0.0651111111vw);
+  font-size: calc(11 * 0.0651111111vw);
 }
 
 .ba-repport-states-figure span {
@@ -10178,7 +10191,7 @@ a.ba-add-new-time-btn img {
 }
 
 .repport-main-warpp {
-  padding-top: calc(39 * 0.0651111111vw);
+  padding-top: calc(0 * 0.0651111111vw);
 }
 .repport-main-warpp .ba-repport-actions {
   display: flex;

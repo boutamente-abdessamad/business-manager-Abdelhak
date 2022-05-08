@@ -306,13 +306,13 @@ button.btn.ba-connexion-btn {
         }
     }
     &.ba-excel-file-lg {
-        padding: pxToVw(25) pxToVw(20);
+        padding: pxToVw(20) pxToVw(15);
         justify-content: start;
         .ba-excel-file-text {
             border: none;
             img {
-                width: pxToVw(35);
-                height: pxToVw(40);
+                width: pxToVw(25);
+                height: pxToVw(35);
             }
             p {
                 margin-left: 90px;
