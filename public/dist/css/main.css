@@ -1740,6 +1740,7 @@ header.ba-header nav.ba-navbar a.ba-sidebar-toggle img {
 /* .............. ./Sidebar syles ............... */
 .ba-sidebar {
   z-index: 9;
+  bottom: 0;
   transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
   background: #FFFFFF;
   box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.1), 0px 7px 10px 1px rgba(0, 0, 0, 0.07), 0px 2px 16px 1px rgba(0, 0, 0, 0.06);
@@ -6491,6 +6492,9 @@ body {
           text-decoration-line: none;
   margin: 0;
   position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .ba-cart-menu-tabs .ba-main-tabs-toggle {

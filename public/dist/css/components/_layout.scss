@@ -146,6 +146,7 @@ header.ba-header {
         margin-top: pxToVw(74);
     }
     z-index: 9;
+    bottom: 0;
     transition: $baTransition;
     background: #FFFFFF;
     box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.1),
