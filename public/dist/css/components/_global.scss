@@ -8,6 +8,10 @@
     display: flex;
 }
 
+.ba-fs-17{
+    font-size: pxToVw(17);
+}
+
 .ba-back-hr::after {
     content: "";
     width: 45%;
@@ -378,6 +382,10 @@ a.ba-add-doc-link {
 
 .gray-br {
     border-right: 1px solid $blueLight;
+}
+
+.blue-bb{
+    border-bottom: 1px solid rgba(16, 76, 186, 0.28);
 }
 
 .ba-opacity-25 {

@@ -161,12 +161,14 @@ body {
 .ba-group-buttons {
     display: flex;
     padding: pxToVw(25) 0px;
+    align-items: center;
 }
 
 // ba-statistics-numbers
 .ba-statistics-numbers {
     @include flexCenterBetween();
     margin-top: pxToVw(25);
+    margin-bottom: pxToVw(45);
     h2 {
         font-family: Poppins;
         font-style: normal;
@@ -341,7 +343,7 @@ body {
 .filter-input {
     max-width: pxToVw(224);
     position: relative;
-    height: pxToVw(40);
+    height: pxToVw(44);
     &.left-icon {
         input {
             text-indent: pxToVw(50);
@@ -394,7 +396,6 @@ body {
 .datatable-filters-leftside {
     display: flex;
     // align-items: center;
-    margin-bottom: pxToVw(15);
     .block-title {
         margin: 0;
     }
@@ -404,6 +405,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: pxToVw(15);
     .btn:not(.ba-btn-circle) {
         height: pxToVw(44) !important;
     }
@@ -600,8 +603,18 @@ body {
 
 .import-excel-steps-warpp {
     padding: pxToVw(15);
+     &>.row>[class*="col-"]:not(:last-child) {
+         .import-excel-step {
+             border-right: 1px solid rgba(16, 76, 186, 0.15);
+         }
+    }
     .import-excel-step {
-        @include flexCenterBetween();
+        display: flex;
+        align-items: center;
+       
+        &>[class*="ba-icon-"]{
+            margin-right:  pxToVw(15);
+        }
         p {
             font-family: Roboto;
             font-style: normal;
@@ -629,8 +642,8 @@ body {
     border-radius: pxToVw(11);
     display: flex;
     justify-content: center;
-    padding: pxToVw(40) 0px;
-    margin-bottom: pxToVw(42);
+    padding: pxToVw(25) 0px;
+    margin-bottom: pxToVw(35);
     span {
         font-family: Roboto;
         font-style: normal;
@@ -656,7 +669,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: pxToVw(30) 0;
+    padding: pxToVw(40) 0;
     img {
         width: pxToVw(55);
         height: pxToVw(55);
@@ -741,9 +754,9 @@ body {
             }
         }
     }
-    &.danger-bank-cart {
+    &.warning-bank-cart {
         .bank-action-cart-icon {
-            background-color: $redTbg;
+            background-color: $orangTbg;
         }
         .bank-action-cart-content {
             .bank-action-cart-content-text {
@@ -1268,7 +1281,7 @@ ba-dashboard-header-rightside {
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: pxToVw(17);
+        font-size: pxToVw(16);
         line-height: pxToVw(19);
         /* or 112% */
         align-items: center;
@@ -1284,8 +1297,8 @@ ba-dashboard-header-rightside {
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: pxToVw(17);
-        line-height: pxToVw(28);
+        font-size: pxToVw(16);
+        line-height: pxToVw(24);
         /* or 112% */
         display: flex;
         align-items: center;
@@ -1297,8 +1310,8 @@ ba-dashboard-header-rightside {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: pxToVw(17);
-        line-height: pxToVw(28);
+        font-size: pxToVw(16);
+        line-height: pxToVw(24);
         /* or 112% */
         align-items: center;
         letter-spacing: 0.03em;
@@ -1317,8 +1330,8 @@ ba-dashboard-header-rightside {
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: pxToVw(15);
-            line-height: pxToVw(24);
+            font-size: pxToVw(13);
+            line-height: pxToVw(21);
             /* or 180% */
             display: flex;
             align-items: center;
@@ -1617,7 +1630,6 @@ ba-dashboard-header-rightside {
                 font-weight: normal;
                 font-size: pxToVw(13);
                 line-height: pxToVw(38);
-                margin-top: pxToVw(16);
                 letter-spacing: 0.03em;
                 color: $blueOpacity;
                 border-bottom: 1px solid $blueOpacity;
@@ -2601,7 +2613,7 @@ a.btn.ba-period-btn i {
         border-radius: 3px;
         &>img {
             box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.11);
-            height: pxToVw(284);
+            height: pxToVw(260);
             width: 100%;
             object-fit: contain;
             border-radius: 3px;
@@ -3099,7 +3111,7 @@ a.ba-add-new-time-btn {
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: pxToVw(13);
+        font-size: pxToVw(15);
         line-height: pxToVw(21);
         letter-spacing: 0.03em;
         color: rgba(43, 62, 98, 0.65);
@@ -3109,7 +3121,7 @@ a.ba-add-new-time-btn {
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: pxToVw(10);
+        font-size: pxToVw(12);
         line-height: pxToVw(15);
         color: $blueOpacity;
         margin: 0;
@@ -3513,12 +3525,12 @@ a.ba-add-new-time-btn {
 
 .ba-invoice-styles-container {
     padding: pxToVw(60);
-    margin-top: pxToVw(40);
+    margin-top: pxToVw(20);
     >.row {
-        margin: 0 pxToVw(-40);
+        margin: 0 pxToVw(-20);
         align-items: center;
         >[class*="col-"] {
-            padding: 0 pxToVw(40);
+            padding: 0 pxToVw(20);
         }
     }
 }

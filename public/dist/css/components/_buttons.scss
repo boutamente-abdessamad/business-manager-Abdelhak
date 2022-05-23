@@ -52,12 +52,12 @@
         margin-left: pxToVw(10);
     }
     i {
-        font-size: 19px;
+        font-size: pxToVw(15);
         &.dark-back-round {
             background-color: #00000024;
             border-radius: 50%;
-            width: pxToVw(20);
-            height: pxToVw(20);
+            width: pxToVw(18);
+            height: pxToVw(18);
             display: inline-flex;
             justify-content: center;
             align-items: center;
@@ -220,7 +220,7 @@ button.btn.ba-connexion-btn {
 }
 
 .ba-btn-round {
-    border-radius: pxToVw(100);
+    border-radius: pxToVw(100) !important;
 }
 
 .ba-btn-circle {
